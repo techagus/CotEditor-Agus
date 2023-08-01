@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="es">
 
 <head>
 	<meta charset="UTF-8"/>
@@ -6,37 +6,37 @@
 	<link rel="stylesheet" href="../../Shared/sty/standard.css"/>
 	<script defer src="../../Shared/js/toc.js"></script>
 	
-	<title>Change priorities of text encodings in CotEditor</title>
+	<title>Cambiar las prioridades de las codificaciones de texto en CotEditor</title>
 </head>
 
 <body>
 <a name="howto_customize_encoding_order"></a>
 
-<h1>Change priorities of text encodings in CotEditor</h1>
+<h1>Cambiar las prioridades de las codificaciones de texto en CotEditor</h1>
 
-<p>You can prioritize specific encodings to detect text encoding of documents.</p>
+<p>Puedes priorizar codificaciones específicas para detectar la codificación de texto de los documentos.</p>
 
 <figure>
 	<img src="../gfx/encodingPriority@2x.png" width="500" alt="Encoding priority setting dialog"/>
 </figure>
 
-<p>To change the priority of encoding detection on file opening:</p>
+<p>Para cambiar la prioridad de la detección de codificación al abrir el archivo:</p>
 <ol>
-	<li>Choose CotEditor &gt; Settings.</li>
-	<li>Select the Format pane.</li>
-	<li>In the “priority of encodings” section, click the Edit List button.</li>
-	<li>Move up the encodings you use frequently.<br />
-	(Here, we recommend placing UTF-16 <strong>after</strong> other often-used encodings, as UTF-16 can encode most characters.)</li>
+	<li>Elija CotEditor &gt; Ajustes.</li>
+	<li>Seleccione el panel Formato.</li>
+	<li>En la sección "Prioridad de las codificaciones", haga clic en el botón Editar lista.</li>
+	<li>Mueve hacia arriba las codificaciones que usas con frecuencia.<br />
+	(Aquí, recomendamos colocar UTF-16 <strong>después</strong> de otras codificaciones de uso frecuente, ya que UTF-16 puede codificar la mayoría de los caracteres.)</li>
 </ol>
-<p>Though you can change the order of encodings, you cannot delete them. Just move down the encodings you don’t use.</p>
-<p>Besides, “Unicode (UTF-8)” and “Unicode (UTF-8) with BOM” are always handled as a set. Because the BOM (byte order mark) will be taken into account when trying to encode data into UTF-8, there is no effect on the detection precision that the order of these two encodings is fixed.</p>
+<p>Aunque puedes cambiar el orden de las codificaciones, no puedes eliminarlas. Simplemente baja las codificaciones que no usas.</p>
+<p>Además, "Unicode (UTF-8)" y "Unicode (UTF-8) con BOM" siempre se manejan como un conjunto. Debido a que la lista de materiales (marca de orden de bytes) se tendrá en cuenta al intentar codificar datos en UTF-8, no hay ningún efecto en la precisión de detección de que el orden de estas dos codificaciones sea fijo.</p>
 
 
 <section id="cf">
-<h2>See also</h2>
+<h2>Ver también</h2>
 <ul>
-	<li><a href="about_shiftjis.html">Use four kinds of Shift JIS properly</a></li>
-	<li><a href="settings_format.html">Change Format settings</a></li>
+	<li><a href="about_shiftjis.html">Usa cuatro tipos de Shift JIS correctamente</a></li>
+	<li><a href="settings_format.html">Cambiar la configuración del formato</a></li>
 </ul>
 </section>
 

@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="es">
 
 <head>
 	<meta charset="UTF-8"/>
@@ -6,94 +6,94 @@
 	<link rel="stylesheet" href="../../Shared/sty/standard.css"/>
 	<script defer src="../../Shared/js/toc.js"></script>
 	
-	<title>Work with cot command</title>
+	<title>Trabajar con el comando cot</title>
 </head>
 
 <body>
 <a name="about_cot"></a>
 
-<h1>Work with <code>cot</code> command</h1>
+<h1>Trabajar con el comando <code>cot</code></h1>
 
-<p>CotEditor has '<strong>cot</strong>' command-line tool which allows you to control CotEditor from the command-line. To use <code>cot</code> command, install it at first.</p>
+<p>CotEditor tiene '<strong>cot</strong>' una herramienta de línea de comandos que le permite controlar CotEditor desde el terminal. Para usar el comando <code>cot</code>, instálalo primero.</p>
 
-<p class="openapp"><a href="x-help-action://openApp?bundleId=com.coteditor.CotEditor">Open CotEditor for me</a></p>
+<p class="openapp"><a href="x-help-action://openApp?bundleId=com.coteditor.CotEditor">Abre CotEditor para mí</a></p>
 
 
-<h2>Install cot command</h2>
-<p>You can install the <code>cot</code> command-line tool to the desired location by creating a symbolic link in Terminal. The <code>cot</code> substance is bundled at '<code>Contents/SharedSupport/bin/cot</code>' in CotEditor.app. Unless you are particular about the location, we recommend creating the symbolic link at '<code>/usr/local/bin/</code>'.</p>
-<p>To create a symbolic link at the recommended location, run the following lines in Terminal.</p>
+<h2>Instalar comando cot</h2>
+<p>Puedes instalar el comando <code>cot</code> a la ubicación deseada mediante la creación de un enlace simbólico en el Terminal. El programa <code>cot</code> es incluye en '<code>Contents/SharedSupport/bin/cot</code>' de CotEditor.app. A menos que desees personalizar la ubicación, te recomendamos crear el enlace simbólico en '<code>/usr/local/bin/</code>'.</p>
+<p>Para crear un enlace simbólico en la ubicación recomendada, ejecute las siguientes líneas en Terminal.</p>
 <pre class="source"><code>mkdir /usr/local/bin/
 ln -s /Applications/CotEditor.app/Contents/SharedSupport/bin/cot /usr/local/bin/cot</code></pre>
 
 
-<h3>Security authorization</h3>
-<p>In macOS, user authorization is required to control CotEditor from other applications in which <code>cot</code> command is used. The authorization is normally done via the dialog displayed when using the <code>cot</code> command for the first time. However, in some cases, you may need to authorize it manually from System Settings &gt; privacy &amp; Security &gt; Automation. Select the checkbox for <strong>CotEditor</strong> (and also <strong>System Events</strong> for <code>--wait</code> option) under your client application, such as Terminal.</p>
+<h3>Autorización de seguridad</h3>
+<p>En macOS, se requiere la autorización del usuario para controlar CotEditor desde otras aplicaciones en las que el comando <code>cot</code> se utiliza. La autorización se realiza normalmente a través del cuadro de diálogo que se muestra al usar el comando <code>cot</code> por primera vez. Sin embargo, en algunos casos, es posible que tenga que autorizarlo manualmente desde Ajustes del Sistema &gt; Privacidad y seguridad &gt; Automatización. Selecciona la casilla de verificación para <strong>CotEditor</strong> (y también <strong>Eventos del sistema</strong> para la opción <code>--espera</code> ) bajo la solicitud de cliente, como Terminal.</p>
 
 
-<h3>Installation of Python 3</h3>
-<p>The cot command is implemented in Python 3. However, because Python has no longer been bundled into the system since macOS 12.3, you need to install <code>python3</code> manually for the cot command.</p>
-<p>The developer tools provided by Apple include <code>python3</code>. Run the following line in Terminal to install Apple’s Command Line Developer Tools. Obviously, any <code>python3</code> installed via other methods can be used as well.</p>
+<h3>Instalación de Python 3</h3>
+<p>El comando cot se implementa en Python 3. Sin embargo, debido a que Python ya no se ha incluido en el sistema desde macOS 12.3, debes instalar <code>python3</code> manualmente para el comando cot.</p>
+<p>Las herramientas de desarrollo proporcionadas por Apple incluyen <code>python3</code>. Ejecute la siguiente línea en Terminal para instalar las herramientas de desarrollo de la línea de comandos de Apple. Obviamente, cualquier <code>python3</code> Instalado a través de otros métodos también se puede usar.</p>
 
 <pre class="source"><code>xcode-select --install</code></pre>
 
 
-<h2>Uninstall cot command</h2>
+<h2>Desinstalar cot</h2>
 
-<p>To uninstall <code>cot</code> command at the recommended location above via Terminal is like the following:</p>
+<p>Para desinstalar el comando <code>cot</code> en la ubicación recomendada arriba a través del Terminal ejecuta:</p>
 <pre class="source"><code>unlink /usr/local/bin/cot</code></pre>
 
 
-<h2>Use with options</h2>
-<p>The following options can be used on <code>cot</code> command.</p>
+<h2>Usar con opciones</h2>
+<p>Las siguientes opciones se pueden utilizar en el comando <code>cot</code>.</p>
 
 <table>
 	<thead>
-		<tr><th>Option</th><th>Description</th></tr>
+		<tr><th>Opción</th><th>Descripción</th></tr>
 	</thead>
 	<tbody>
-		<tr><th><code>-w</code>, <code>--wait</code></th><td>Wait for opened file to be closed before returning to a prompt.</td></tr>
-		<tr><th><code>-n</code>, <code>--new</code></th><td>Create a new blank document.</td></tr>
-		<tr><th><code>-l</code>, <code>--line</code> <code>&lt;line&gt;</code></th><td>Jump to specific line in opened document. <code>&lt;line&gt;</code> is an integer specifying the number of line.</td></tr>
-		<tr><th><code>-c</code>, <code>--column</code> <code>&lt;column&gt;</code></th><td>Jump to specific column in opened document. <code>&lt;column&gt;</code> is an integer specifying the number of column.</td></tr>
-		<tr><th><code>-b</code>, <code>--background</code></th><td>Do not bring the application to the foreground.</td></tr>
-		<tr><th><code>-h</code>, <code>--help</code></th><td>Show help.</td></tr>
-		<tr><th><code>-v</code>, <code>--version</code></th><td>Print version information.</td></tr>
+		<tr><th><code>-w</code>, <code>--wait</code></th><td>Espera hasta que se cierre el archivo abierto antes de volver al prompt.</td></tr>
+		<tr><th><code>-n</code>, <code>--new</code></th><td>Crear un nuevo documento en blanco.</td></tr>
+		<tr><th><code>-l</code>, <code>--line</code> <code>&lt;line&gt;</code></th><td>Saltar a una línea específica en el documento abierto. <code>&lt;line&gt;</code> es un entero que especifica el número de la línea.</td></tr>
+		<tr><th><code>-c</code>, <code>--column</code> <code>&lt;column&gt;</code></th><td>Saltar a una columna específica en el documento abierto. <code>&lt;column&gt;</code> Es un entero que especifica el número de la columna.</td></tr>
+		<tr><th><code>-b</code>, <code>--background</code></th><td>No poner la aplicación en primer plano.</td></tr>
+		<tr><th><code>-h</code>, <code>--help</code></th><td>Mostrar ayuda.</td></tr>
+		<tr><th><code>-v</code>, <code>--version</code></th><td>Información de la versión utilizada.</td></tr>
 	</tbody>
 </table>
 
-<p>For <code>--line</code> and <code>--column</code> options, you can specify a negative number to count from the end of the document (<code>--line</code> option) or a line (<code>--column</code> option).</p>
+<p>Para las opciones <code>--line</code> y <code>--column</code>, puedes especificar un número negativo para contar desde el final del documento.</p>
 
-<h2>Examples</h2>
-<p>A simple <code>cot</code> command will launch CotEditor, or just activate it if CotEditor is already running.</p>
+<h2>Ejemplos</h2>
+<p>Un comando simple <code>cot</code> para iniciar CotEditor, o simplemente para activarlo si CotEditor ya se está ejecutando.</p>
 
 <pre class="source"><code>cot
 </code></pre>
 
-<p>The following command opens the foo.txt file on CotEditor and moves the insertion point to line 200 in the opened document. <code>cot</code> command does nothing if foo.txt file does not exist.</p>
+<p>El siguiente comando abre el archivo foo.txt en CotEditor y mueve el punto de inserción a la línea 200 en el documento abierto. <code>cot</code> El comando no hace nada si el archivo foo.txt no existe.</p>
 
 <pre class="source"><code>cot --line 200 foo.txt
 </code></pre>
 
-<p>The following command opens the foo.txt file on CotEditor and moves the insertion point to the end of the document.</p>
+<p>El siguiente comando abre el archivo foo.txt en CotEditor y mueve el punto de inserción al final del documento.</p>
 
 <pre class="source"><code>cot --line -1 --column -1 foo.txt
 </code></pre>
 
-<p>You can also pipe a text. CotEditor will open a new document with the piped text.</p>
+<p>También puedes enviar un texto utilizando una tuberia. CotEditor abrirá un nuevo documento con el texto canalizado.</p>
 
-<pre class="source"><code>echo &quot;I am a dog but also a cow at the same time.&quot; | cot
+<pre class="source"><code>echo &quot;Soy un perro, pero también una vaca al mismo tiempo.&quot; | cot
 </code></pre>
 
-<p>Using <code>--wait</code> option, CotEditor can be used as the editor for <code>git</code>.</p>
+<p>Usando la opción <code>--wait</code>, CotEditor se puede utilizar como editor para <code>git</code>.</p>
 
 <pre class="source"><code>git config --global core.editor &quot;cot -w&quot;
 </code></pre>
 
 
 <section id="cf">
-<h2>See also</h2>
+<h2>Ver también</h2>
 <ul>
-	<li><a href="settings_general.html">Change General settings</a></li>
+	<li><a href="settings_general.html">Cambiar la configuración general</a></li>
 </ul>
 </section>
 

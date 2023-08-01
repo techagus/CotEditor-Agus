@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="es">
 
 <head>
 	<meta charset="UTF-8"/>
@@ -6,45 +6,45 @@
 	<link rel="stylesheet" href="../../Shared/sty/standard.css"/>
 	<script defer src="../../Shared/js/toc.js"></script>
 	
-	<title>Display invisible characters in CotEditor</title>
+	<title>Mostrar caracteres invisibles en CotEditor</title>
 </head>
 
 <body>
 
-<h1>Display invisible characters in CotEditor</h1>
+<h1>Mostrar caracteres invisibles en CotEditor</h1>
 
-<p>The Invisible Characters feature allows you to draw invisible characters, such as special characters for formatting, in a document with alternative symbols so that you can find where they are.</p>
+<p>La función de caracteres invisibles te permite dibujar caracteres invisibles, como caracteres especiales para dar formato, en un documento con símbolos alternativos para que puedas encontrar dónde están.</p>
 
 
-<h2>Change visibility of invisible characters</h2>
+<h2>Cambiar la visibilidad de los caracteres invisibles</h2>
 
-<h3>Temporary changing the current document </h3>
+<h3>Cambio temporal del documento actual </h3>
 
-<p>You can switch the visibility of invisible characters in the current document by performing one of the following:</p>
+<p>Puede cambiar la visibilidad de los caracteres invisibles en el documento actual realizando una de las siguientes acciones:</p>
 
 <ul>
-	<li>Choose Show/Hide Invisible Characters command from the Format menu.</li>
-	<li>Select the Invisibles button in the window toolbar (The Invisibles button can be added by customizing the toolbar).</li>
-	<li>Select the Invisibles button in the Touch Bar (The Invisibles button can be added by customizing the Touch Bar).</li>
+	<li>Elija el comando Mostrar/Ocultar caracteres invisibles en el menú Formato.</li>
+	<li>Seleccione el botón Invisibles en la barra de herramientas de la ventana (el botón Invisibles se puede añadir personalizando la barra de herramientas).</li>
+	<li>Seleccione el botón Invisibles en la Touch Bar (el botón Invisibles se puede añadir personalizando la Touch Bar).</li>
 </ul>
 
-<p>The change here doesn’t override the CotEditor’s default setting.</p>
+<p>El cambio aquí no anula la configuración predeterminada de CotEditor.</p>
 
 
-<h3>Default setting</h3>
+<h3>Configuración predeterminada</h3>
 
-<p>You can change the default setting of the invisible visibility in the <a href="settings_appearance.html">Appearance</a> settings pane by selecting the “Show invisible character” checkbox.</p>
-
-
-<h3>Print invisible characters on printing</h3>
-
-<p>You can set whether printing also invisible characters on print in the <a href="settings_print.html">Print</a> settings pane for the default setting, or in the print dialog for an individual document.</p>
+<p>Puedes cambiar la configuración predeterminada de la visibilidad de invisibles en el panel <a href="settings_appearance.html">Aspecto</a> en Ajustes, seleccionando la casilla de verificación “Mostrar caracteres invisibles”.</p>
 
 
+<h3>Imprimir caracteres invisibles en la impresión</h3>
 
-<h2>Types of invisible characters</h2>
+<p>Puedes establecer si imprimir también caracteres invisibles en la impresión en el panel <a href="settings_print.html">Imprimir</a> de Ajustes, hay tres opciones para elegir: No imprimir, Igual que la configuración del documento e Imprimir.</p>
 
-<p>In the <a href="settings_appearance.html">Appearance</a> settings pane, you can set which types of invisible characters are shown when the invisible character display is enabled. The types correspond to the following characters:</p>
+
+
+<h2>Tipos de caracteres invisibles</h2>
+
+<p>En el panel <a href="settings_appearance.html">Aspecto</a> de Ajustes, puedes establecer qué tipos de caracteres invisibles se muestran cuando la visualización de caracteres invisibles está habilitada. Los tipos corresponden a los siguientes caracteres:</p>
 
 <table>
 	<style>
@@ -59,21 +59,21 @@
 	</colgroup>
 	
 	<thead>
-		<tr><th>Label</th><th><abbr title="Symbol">Sym.</abbr></th><th>Characters (code point)</th><th>Description</th></tr>
+		<tr><th>Label</th><th><abbr title="Symbol">Sym.</abbr></th><th>Caracteres (punto de código)</th><th>Descripción</th></tr>
 	</thead>
 	
 	<tbody>
 		<tr>
-			<th>Line ending</th>
+			<th>Final de línea</th>
 			<td><span class="invisible">↩</span></td>
 			<td><ul>
 				<li>U+000A <small>(LINE FEED)</small></li>
 				<li>U+000D <small>(CARRIAGE RETURN)</small></li>
 				<li>U+0085 <small>(NEW LINE)</small></li>
 				<li>U+2028 <small>(LINE SEPARATOR)</small></li>
-				<li>U+2029 <small>(PARAGRAPH SEPARATOR)</small></li>
+				<li>U+2029 <small>((PARAGRAPH SEPARATOR)</small></li>
 			</ul></td>
-			<td>The control characters indicating a line break. The CRLF type line ending (combination of <code>U+000D</code> and <code>U+000A</code>) is also drawn as a single character.</td>
+			<td>Los caracteres de control que indican un salto de línea. El final de línea de tipo CRLF (combinación de <code>U+000D</code> y <code>U+000A</code>) también se dibuja como un solo carácter.</td>
 		</tr>
 		
 		<tr>
@@ -82,7 +82,7 @@
 			<td><ul>
 				<li>U+0009 <small>(HORIZONTAL TABULATION)</small></li>
 			</ul></td>
-			<td>A kind of whitespace character with a flexible width sending the next character to a certain position. In coding, it is often used for indentation.</td>
+			<td>Una especie de carácter de espacio en blanco con un ancho flexible que envía el siguiente carácter a una posición determinada. En la codificación, a menudo se usa para la sangría.</td>
 		</tr>
 		
 		<tr>
@@ -91,7 +91,7 @@
 			<td><ul>
 				<li>U+0020 <small>(SPACE)</small></li>
 			</ul></td>
-			<td>The sandard space character.</td>
+			<td>El carácter de espacio normal.</td>
 		</tr>
 		
 		<tr>
@@ -102,24 +102,24 @@
 				<li>U+2007 <small>(FIGURE SPACE)</small></li>
 				<li>U+202F <small>(NARROW NO-BREAK SPACE)</small></li>
 			</ul></td>
-			<td>The space characters avoiding breaking the line before/after it.</td>
+			<td>Los caracteres del espacio evitan romper la línea antes/después.</td>
 		</tr>
 		
 		<tr>
 			<td><span class="invisible">□</span></td>
 			<td><ul>
-				<li>U+3000 <small>(IDEOGRAPHIC SPACE)</small></li>
+				<li>U+3000 <small>((IDEOGRAPHIC SPACE)</small></li>
 			</ul></td>
-			<td>A kind of space characters commonly used in Japanese writing. As known as full-width space.</td>
+			<td>Un tipo de caracteres espaciales comúnmente utilizados en la escritura japonesa. Como se conoce como espacio de ancho completo.</td>
 		</tr>
 		
 		<tr>
 			<td><span class="invisible">⹀</span></td>
 			<td><ul>
-				<li>U+2000..U+200A <small>(various spaces)</small></li>
+				<li>U+2000..U+200A <small>(Varios espacios)</small></li>
 				<li>U+205F <small>(MEDIUM MATHEMATICAL SPACE)</small></li>
 			</ul></td>
-			<td>Whitespace characters in various widths and uses. They correspond to all of the remaining whitespace characters in Unicode category Zs (space separator).</td>
+			<td>Caracteres de espacios en blanco en varios anchos y usos. Corresponden a todos los caracteres de espacio en blanco restantes en la categoría Z de Unicode (separador de espacios).</td>
 		</tr>
 		
 		<tr>
@@ -133,20 +133,20 @@
 				<li>U+200C <small>(ZERO WIDTH NON-JOINER)</small></li>
 				<li>U+2060 <small>(WORD JOINER)</small></li>
 				<li>U+FEFF <small>(ZERO WIDTH NO-BREAK SPACE)</small></li>
-				<li>U+061C, U+200E..U+200F, U+202A..U+202E, U+2066..U+206F <small>(bidi-text controls)</small></li>
-				<li>U+FFF9..U+FFFB <small>(interlinear annotations)</small></li>
+				<li>U+061C, U+200E..U+200F, U+202A..U+202E, U+2066..U+206F <small>(Controles de texto bidi)</small></li>
+				<li>U+FFF9..U+FFFB <small>(Anotaciones interlineales)</small></li>
 			</ul></td>
-			<td>Special characters that are not printed as a graphic character but used for controlling or formatting documents. They correspond to all of Unicode category Cc (control) and some of Cf (format).</td>
+			<td>Caracteres especiales que no se imprimen como un carácter gráfico, sino que se utilizan para controlar o dar formato a documentos. Corresponden a toda la categoría Unicode Cc (control) y parte de Cf (formato).</td>
 		</tr>
 	</tbody>
 </table>
 
 
 <section id="cf">
-<h2>See also</h2>
+<h2>Ver también</h2>
 <ul>
-	<li><a href="settings_appearance.html">Change Appearance settings</a></li>
-	<li><a href="settings_print.html">Change Print settings</a></li>
+	<li><a href="settings_appearance.html">Cambiar la configuración de aspecto</a></li>
+	<li><a href="settings_print.html">Cambiar la configuración de impresión</a></li>
 </ul>
 </section>
 

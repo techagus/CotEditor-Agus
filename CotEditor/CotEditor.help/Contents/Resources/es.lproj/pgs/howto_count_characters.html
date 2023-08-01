@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="es">
 
 <head>
 	<meta charset="UTF-8"/>
@@ -6,42 +6,42 @@
 	<link rel="stylesheet" href="../../Shared/sty/standard.css"/>
 	<script defer src="../../Shared/js/toc.js"></script>
 	
-	<title>Count characters in CotEditor</title>
+	<title>Contar caracteres en CotEditor</title>
 </head>
 
 <body>
 <a name="howto_count_characters"></a>
 
-<h1>Count characters in CotEditor</h1>
+<h1>Contar caracteres en CotEditor</h1>
 
-<p>CotEditor has a feature to live-count characters in the document during editing.</p>
-
-
-<h2>Standard character count</h2>
-
-<p>CotEditor can display the character count both in the status bar and the document inspector. By the standard character count, it counts each grapheme cluster, that is defined as the extended grapheme cluster in Unicode.</p>
-
-<p>A grapheme cluster is a sequence of one or more Unicode code points that should be treated as a single unit for humans. For instance, while a normal character, such as A, is naturally counted as one character, an emoji consisting of multiple Unicode code points, such as 1️⃣ (<code>U+0031</code> <code>U+FE0F</code> <code>U+20E3</code>), will also be counted as one character.</p>
+<p>CotEditor tiene una función para contar de forma instantánea los caracteres en el documento durante la edición.</p>
 
 
-<h2>Advanced character count</h2>
+<h2>Recuento estándar de caracteres</h2>
 
-<p>From the Advanced Character Count command in the Text menu, you can count characters in various ways.</p>
+<p>CotEditor puede mostrar el recuento de caracteres tanto en la barra de estado como en el inspector de documentos. Por el recuento de caracteres estándar, cuenta cada clúster de grafemas, que se define como el clúster de grafemas extendido en Unicode.</p>
+
+<p>Un clúster de grafemas es una secuencia de uno o más puntos de código Unicode que deben tratarse como una sola unidad para los humanos. Por ejemplo, mientras que un carácter normal, como A, se cuenta naturalmente como un carácter, un emoji que consiste en múltiples puntos de código Unicode, como 1️⃣ (<code>U+0031</code> <code>U+FE0F</code> <code>U+20E3</code>), también se contará como un carácter.</p>
+
+
+<h2>Recuento avanzado de caracteres</h2>
+
+<p>Desde el comando de recuento avanzado de caracteres en el menú Texto, puede contar los caracteres de varias maneras.</p>
 
 <figure>
 	<img src="../gfx/advancedCount@2x.png" width="725" alt="Advanced character count option dialog"/>
 </figure>
 
-<p>When starting the advanced character count, the counter appears at the bottom of the editor. The counter live-counts the characters in the way you set in the advanced character count option dialog. While text is selected in the editor, the counter displays the number of the selected characters; otherwise, it displays the number of the entire character in the document. You can drag the counter to put it out of the way.</p>
-<p>The options are shared in the application. When you changed the options in an editor, the way to count in other editors are also changed.</p>
+<p>Al iniciar el recuento avanzado de caracteres, el contador aparece en la parte inferior del editor. El contador cuenta en vivo los caracteres de la forma en que se establece en el cuadro de diálogo de opción de conteo de caracteres avanzado. Mientras se selecciona el texto en el editor, el contador muestra el número de caracteres seleccionados; de lo contrario, muestra el número total de caracteres del documento. Puedes arrastrar el contador para quitarlo de en medio.</p>
+<p>Las opciones se comparten en la aplicación. Cuando cambiaste las opciones en un editor, también se cambia la forma de contar en otros editores.</p>
 
-<p>Note that the advanced character count can affect the processing performance according to the combination of the settings especially when the document to count has a large size. To stop the count, choose Text &gt; Stop Advanced Character Count command.</p>
+<p>Tenga en cuenta que el recuento avanzado de caracteres puede afectar el rendimiento del procesamiento de acuerdo con la combinación de la configuración, especialmente cuando el documento a contar tiene un tamaño grande. Para detener el recuento, elija Texto &gt; Detener el recuento avanzado de caracteres.</p>
 
 
 <section id="cf">
-<h2>See also</h2>
+<h2>Ver también</h2>
 <ul>
-	<li><a href="howto_inspect_fileinfo.html">Get information about a document</a></li>
+	<li><a href="howto_inspect_fileinfo.html">Obtener información sobre el documento</a></li>
 </ul>
 </section>
 
