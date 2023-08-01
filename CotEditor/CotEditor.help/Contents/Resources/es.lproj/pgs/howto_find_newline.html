@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="es">
 
 <head>
 	<meta charset="UTF-8"/>
@@ -6,60 +6,60 @@
 	<link rel="stylesheet" href="../../Shared/sty/standard.css"/>
 	<script defer src="../../Shared/js/toc.js"></script>
 	
-	<title>Find or replace a line ending in CotEditor</title>
+	<title>Busca o reemplaza un final de línea en CotEditor</title>
 </head>
 
 <body>
 
-<h1>Find or replace a line ending in CotEditor</h1>
+<h1>Busca o reemplaza un final de línea en CotEditor</h1>
 
-<h2>Input a line ending</h2>
+<h2>Introduzca un final de línea</h2>
 
-<p>Typing <kbd>Option</kbd>-<kbd>Return</kbd> in a input field in the Find window breaks a line.</p>
-
-
-<h2>Find line endings</h2>
-
-<h3>Textual search</h3>
-
-<p>On the normal textual search, the line endings contained in the search string are assumed as the line ending code used in the document being searched for. That is, it doesn’t match the line endings that differ from the document line ending type.</p>
+<p>Teclear <kbd>Alt</kbd>-<kbd>Return</kbd> en un campo de entrada en la ventana Buscar.</p>
 
 
-<h3>Regular expression search</h3>
+<h2>Buscar finales de línea</h2>
 
-<p>As with the textual search, the line endings contained in the search string are assumed as the line ending code used in the document being searched for. On the other hand, the line endings specified as a metacharacter or a Unicode code point in the regular expression pattern are treated as-is regardless of the line endings type of the target document.</p>
+<h3>Búsqueda de texto</h3>
+
+<p>En la búsqueda de texto normal, los finales de línea contenidos en la cadena de búsqueda se asumen como el código de final de línea utilizado en el documento que se está buscando. Es decir, no coincide con los finales de línea que difieren del tipo de final de línea del documento.</p>
+
+
+<h3>Búsqueda con expresiones regulares</h3>
+
+<p>Al igual que con la búsqueda textual, los finales de línea contenidos en la cadena de búsqueda se asumen como el código de final de línea utilizado en el documento que se está buscando. Por otro lado, los finales de línea especificados como un metacarácter o un punto de código Unicode en el patrón de expresión regular se tratan tal cual, independientemente del tipo de final de línea del documento de destino.</p>
 
 <table>
-    <caption>Metacharacters indicating a line ending in the regular expression</caption>
+    <caption>Metacaracteres que indican un final de línea en la expresión regular</caption>
 	
 	<thead>
-		<tr><th>Pattern</th><th>Description</th></tr>
+		<tr><th>Patrón</th><th>Descripción</th></tr>
 	</thead>
 	<tbody>
-		<tr><td>\n</td><td><code>U+000A</code>, the line ending character for LF</td></tr>
-		<tr><td>\r</td><td><code>U+000D</code>, the line ending character for CR</td></tr>
-		<tr><td>\r\n</td><td>The sequence of <code>U+000D</code> and <code>U+000A</code>, the line ending character for CRLF</td></tr>
-		<tr><td>\R</td><td>Any kind of line endings from <code>U+000A</code> (LF), <code>U+000B</code>, <code>U+000C</code>, <code>U+000D</code> (CR), <code>U+0085</code>, <code>U+2028</code>, <code>U+2029</code>, or the sequence of <code>U+000D</code> <code>U+000A</code> (CRLF).</td></tr>
+		<tr><td>\n</td><td><code>U+000A</code>, el carácter de final de línea para LF</td></tr>
+		<tr><td>\r</td><td><code>U+000D</code>, el carácter de final de línea para CR</td></tr>
+		<tr><td>\r\n</td><td>La secuencia de <code>U+000D</code> y <code>U+000A</code>, el carácter de final de línea para CRLF</td></tr>
+		<tr><td>\R</td><td>Cualquier tipo de final de línea de <code>U+000A</code> (LF), <code>U+000B</code>, <code>U+000C</code>, <code>U+000D</code> (CR), <code>U+0085</code>, <code>U+2028</code>, <code>U+2029</code>, o la secuencia de <code>U+000D</code> <code>U+000A</code> (CRLF).</td></tr>
 	</tbody>
 </table>
 
 
-<h2>Replace with line endings</h2>
+<h2>Reemplazar con finales de línea</h2>
 
-<p>As for the text replacing with, all line endings even ones defined as a metacharacter like<code>\n</code> or captured are assumed as the document line ending.</p>
+<p>En cuanto al texto que se reemplaza con, todos los finales de línea, incluso las definidas como un metacarácter <code>\n</code> o similar se asume como el final de la línea del documento.</p>
 
-<p>For example, when replacing the find string “dog\Rcow” with the replacement string “$0\r” using the regular expression in a document whose line ending type is LF (<code>\n</code>), the substring “dog<span class="invisible">\r\n</span>cow” in the document matches as well, and theoretically, the regular expression should replace it with “dog<span class="invisible">\r\n</span>cow<span class="invisible">\r</span>”; however CotEditor actually replaces it with “dog<span class="invisible">\n</span>cow<span class="invisible">\n</span>”.</p>
+<p>Por ejemplo, al reemplazar la cadena de búsqueda "dog\Rcow" con la cadena de reemplazo "$0\r" usando la expresión regular en un documento cuyo tipo de final de línea es LF (<code>\n</code>), La subcadena "perro<span class="invisible">\r\n</span>cow” en el documento también coincide, y teóricamente, la expresión regular debería reemplazarla por "perro<span class="invisible">\r\n</span>cow<span class="invisible">\r</span>”; sin embargo, CotEditor en realidad lo reemplaza por "perro<span class="invisible">\n</span>cow<span class="invisible">\n</span>”.</p>
 
-<p>There is currently no way to replace with line endings other than the document line ending.</p>
+<p>Actualmente no hay forma de reemplazar con finales de línea, que no sea el final de línea del documento.</p>
 
 
 
 <section id="cf">
-<h2>See also</h2>
+<h2>Ver también</h2>
 <ul>
-	<li><a href="about_line_endings.html">Handle various types of line endings</a></li>
-	<li><a href="howto_find.html">Find or replace text</a></li>
-	<li><a href="about_regex.html">Use the regular expression</a></li>
+	<li><a href="about_line_endings.html">Manejar varios tipos de finales de línea</a></li>
+	<li><a href="howto_find.html">Buscar o reemplazar texto</a></li>
+	<li><a href="about_regex.html">Usa la expresión regular</a></li>
 </ul>
 </section>
 

@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="es">
 
 <head>
 	<meta charset="UTF-8"/>
@@ -6,104 +6,104 @@
 	<link rel="stylesheet" href="../../Shared/sty/standard.css"/>
 	<script defer src="../../Shared/js/toc.js"></script>
 	
-	<title>Find or replace text in CotEditor</title>
+	<title>Buscar o reemplazar texto en CotEditor</title>
 </head>
 
 <body>
 <a name="howto_find"></a>
 
-<h1>Find or replace text in CotEditor</h1>
+<h1>Buscar o reemplazar texto en CotEditor</h1>
 
-<p>CotEditor has a powerful find and replacement feature that also can use regular expression.</p>
+<p>CotEditor tiene una potente función de búsqueda y reemplazo que también puede usar expresiones regulares.</p>
 
 <p><img src="../gfx/findpanel@2x.png" width="747" alt=""/></p>
 
 
 <section>
-<h2>Find/Replacement Fields</h2>
-<p>Enter the text to find to the find field, the field with a lope icon; and enter the text to replace with to the replacement field, the field with a pen icon. When the replacement field is empty by replacement, the matched texts are just removed.</p>
+<h2>Campos de búsqueda/reemplazo</h2>
+<p>Introduzca el texto a encontrar en el campo de búsqueda, el campo con un icono de lupa; e introduzca el texto para reemplazar en el campo de reemplazo, el campo con un icono de lápiz. Cuando el campo de reemplazo está vacío, los textos coincidentes se eliminarán.</p>
 
-<p>To insert the following special characters to the fields, use the following key combinations:</p>
+<p>Para insertar los siguientes caracteres especiales en los campos, utilice las siguientes combinaciones de teclas:</p>
 
 <table>
 	<thead>
-		<tr><th>Character</th><th>Key combination</th></tr>
+		<tr><th>Carácter</th><th>Combinación de teclas</th></tr>
 	</thead>
 	
 	<tbody>
-		<tr><td>line ending character</td><td><kbd>Option</kbd>-<kbd>Return</kbd></td></tr>
-		<tr><td>tab character</td><td><kbd>Option</kbd>-<kbd>Tab</kbd></td></tr>
+		<tr><td>Carácter de final de línea</td><td><kbd>Alt</kbd>-<kbd>Return</kbd></td></tr>
+		<tr><td>Carácter de tabulación</td><td><kbd>Alt</kbd>-<kbd>Tab</kbd></td></tr>
 	</tbody>
 </table>
 
-<h2>Find/Replacement Histories</h2>
+<h2>Historiales de búsqueda/reemplazo</h2>
 
-<p>You can re-use previous find/replacement strings by selecting them from the lope/pen icon in the field.</p>
+<p>Puede reutilizar las cadenas de búsqueda/reemplazo anteriores seleccionándolas en el icono de lupa/lápiz en el campo correspondiente.</p>
 </section>
 
 
 <section>
-<h2>Options</h2>
+<h2>Opciones</h2>
 
 <table>
 	<thead>
-		<tr><th>Option</th><th>Description</th></tr>
+		<tr><th>Opción</th><th>Descripción</th></tr>
 	</thead>
 	<tbody>
-		<tr><td>Regular Expression</td><td>Search with regular expression.</td></tr>
-		<tr><td>Ignore Case</td><td>Ignore character case on search.</td></tr>
-		<tr><td>In Selection</td><td>Search text only from selection.</td></tr>
+		<tr><td>Expresión regular</td><td>Búsqueda con expresión regular.</td></tr>
+		<tr><td>Ignorar mayúsculas/minúsculas</td><td>Ignorar mayúsculas y minúsculas en la búsqueda.</td></tr>
+		<tr><td>En la selección</td><td>Buscar texto solo en el texto seleccionado.</td></tr>
 	</tbody>
 </table>
 </section>
 
 
 <section>
-<h2>Advanced Find Options</h2>
+<h2>Opciones de búsqueda avanzada</h2>
 
-<p>You can customize find behavior from the advanced find options panel. The advanced find options panel will be opened when you click the gear button in the Find window.</p>
+<p>Puedes personalizar el comportamiento de búsqueda desde el panel de opciones de búsqueda avanzada. El panel de opciones de búsqueda avanzada se abrirá cuando haga clic en el botón (...) en la ventana Buscar y reemplazar.</p>
 
 <table>
 	<thead>
-		<tr><th>Option</th><th>Description</th></tr>
+		<tr><th>Opción</th><th>Descripción</th></tr>
 	</thead>
 	<tbody>
-		<tr><td>Wrap search around</td><td>Find from the the beginning of the document if there is no match after the insertion point.</td></tr>
-		<tr><td>Search incrementally</td><td>Search document as you type in the search field.</td></tr>
+		<tr><td>Envolver la búsqueda</td><td>Busca desde el principio del documento si no hay coincidencia después del punto de inserción.</td></tr>
+		<tr><td>Buscar de forma incremental</td><td>Busca en el documento mientras escribes en el campo de búsqueda.</td></tr>
 	</tbody>
 </table>
 
 
 <section>
-<h3>Textual Search</h3>
+<h3>Búsqueda textual</h3>
 <p>Options for search when the regular expression is turned off.</p>
 
 <table>
 	<thead>
-		<tr><th>Option</th><th>Description</th><th>Default</th></tr>
+		<tr><th>Opción</th><th>Descripción</th><th>Valor por defecto</th></tr>
 	</thead>
 	<tbody>
-		<tr><td>Match only whole word</td><td>Restrict search results to the whole words.</td><td>Off</td></tr>
-		<tr><td>Distinguish characters strictly</td><td>Exact character-by-character equivalence.</td><td>Off</td></tr>
-		<tr><td>Ignore diacritical marks</td><td>Search ignores diacritical marks (e.g., ö = o).</td><td>Off</td></tr>
-		<tr><td>Ignore width differences</td><td>Search ignores width differences in character forms (e.g., ａ = a).</td><td>Off</td></tr>
+		<tr><td>Empareja solo la palabra completa</td><td>Restringir los resultados de la búsqueda a las palabras completas.</td><td>Off</td></tr>
+		<tr><td>Distinguir estrictamente los caracteres</td><td>Equivalencia exacta carácter por carácter.</td><td>Off</td></tr>
+		<tr><td>Ignorar las marcas diacríticas</td><td>La búsqueda ignora las marcas diacríticas (por ejemplo, ö = o).</td><td>Off</td></tr>
+		<tr><td>Ignorar las diferencias de ancho</td><td>La búsqueda ignora las diferencias de ancho en las formas de caracteres(por ejemplo, ａ = a).</td><td>Off</td></tr>
 	</tbody>
 </table>
 </section>
 
 <section>
-<h3>Regular Expression Search</h3>
-<p>Options for search when the regular expression is enabled.</p>
+<h3>Búsqueda de expresiones regulares</h3>
+<p>Opciones para la búsqueda cuando la expresión regular está habilitada.</p>
 
 <table>
 	<thead>
-		<tr><th>Option</th><th>Description</th><th>Default</th></tr>
+		<tr><th>Opción</th><th>Descripción</th><th>Valor por defecto</th></tr>
 	</thead>
 	<tbody>
-		<tr><td>Dot matches line separators</td><td>Allow . to match any character, including newline characters (singleline).</td><td>Off</td></tr>
-		<tr><td>Anchors match lines</td><td>Allow ^ and $ to match the start and end of lines (multiline).</td><td>On</td></tr>
-		<tr><td>Use Unicode word boundaries</td><td>Use Unicode TR#29 to specify word boundaries</td><td>Off</td></tr>
-		<tr><td>Unescape replacement string</td><td>Unescape meta characters with backslash in replacement string.</td><td>On</td></tr>
+		<tr><td>El punto coincide con los separadores de líneas</td><td>Permitir que . coincida con cualquier carácter, incluidos los caracteres de nueva línea (una sola línea).</td><td>Off</td></tr>
+		<tr><td>Los anclajes coinciden con las líneas</td><td>Permitir que ^ y $ coincidan con el inicio y el final de las líneas (multilínea).</td><td>On</td></tr>
+		<tr><td>Usa los límites de las palabras Unicode</td><td>Usa Unicode TR#29 para especificar los límites de las palabras</td><td>Off</td></tr>
+		<tr><td>Cadena de reemplazo de Unescape</td><td>Desvíe los meta caracteres con barra invertida en la cadena de reemplazo.</td><td>On</td></tr>
 	</tbody>
 </table>
 </section>
@@ -112,11 +112,11 @@
 
 
 <section id="cf">
-<h2>See also</h2>
+<h2>Ver también</h2>
 <ul>
-	<li><a href="howto_find_newline.html">Find or replace a line ending</a></li>
-	<li><a href="about_regex.html">Use the regular expression</a></li>
-	<li><a href="howto_multiple_replace.html">Replace text by multiple rules</a></li>
+	<li><a href="howto_find_newline.html">Busca o reemplaza un final de línea</a></li>
+	<li><a href="about_regex.html">Usa la expresión regular</a></li>
+	<li><a href="howto_multiple_replace.html">Reemplazar el texto con varias reglas</a></li>
 </ul>
 </section>
 
