@@ -1,0 +1,101 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="keywords" content="cot, command"/>
+	<link rel="stylesheet" href="../../Shared/sty/standard.css"/>
+	<script defer src="../../Shared/js/toc.js"></script>
+	
+	<title>Work with cot command</title>
+</head>
+
+<body>
+<a name="about_cot"></a>
+
+<h1>Work with <code>cot</code> command</h1>
+
+<p>CotEditor has '<strong>cot</strong>' command-line tool which allows you to control CotEditor from the command-line. To use <code>cot</code> command, install it at first.</p>
+
+<p class="openapp"><a href="x-help-action://openApp?bundleId=com.coteditor.CotEditor">Open CotEditor for me</a></p>
+
+
+<h2>Install cot command</h2>
+<p>You can install the <code>cot</code> command-line tool to the desired location by creating a symbolic link in Terminal. The <code>cot</code> substance is bundled at '<code>Contents/SharedSupport/bin/cot</code>' in CotEditor.app. Unless you are particular about the location, we recommend creating the symbolic link at '<code>/usr/local/bin/</code>'.</p>
+<p>To create a symbolic link at the recommended location, run the following lines in Terminal.</p>
+<pre class="source"><code>mkdir /usr/local/bin/
+ln -s /Applications/CotEditor.app/Contents/SharedSupport/bin/cot /usr/local/bin/cot</code></pre>
+
+
+<h3>Security authorization</h3>
+<p>In macOS, user authorization is required to control CotEditor from other applications in which <code>cot</code> command is used. The authorization is normally done via the dialog displayed when using the <code>cot</code> command for the first time. However, in some cases, you may need to authorize it manually from System Settings &gt; privacy &amp; Security &gt; Automation. Select the checkbox for <strong>CotEditor</strong> (and also <strong>System Events</strong> for <code>--wait</code> option) under your client application, such as Terminal.</p>
+
+
+<h3>Installation of Python 3</h3>
+<p>The cot command is implemented in Python 3. However, because Python has no longer been bundled into the system since macOS 12.3, you need to install <code>python3</code> manually for the cot command.</p>
+<p>The developer tools provided by Apple include <code>python3</code>. Run the following line in Terminal to install Apple’s Command Line Developer Tools. Obviously, any <code>python3</code> installed via other methods can be used as well.</p>
+
+<pre class="source"><code>xcode-select --install</code></pre>
+
+
+<h2>Uninstall cot command</h2>
+
+<p>To uninstall <code>cot</code> command at the recommended location above via Terminal is like the following:</p>
+<pre class="source"><code>unlink /usr/local/bin/cot</code></pre>
+
+
+<h2>Use with options</h2>
+<p>The following options can be used on <code>cot</code> command.</p>
+
+<table>
+	<thead>
+		<tr><th>Option</th><th>Description</th></tr>
+	</thead>
+	<tbody>
+		<tr><th><code>-w</code>, <code>--wait</code></th><td>Wait for opened file to be closed before returning to a prompt.</td></tr>
+		<tr><th><code>-n</code>, <code>--new</code></th><td>Create a new blank document.</td></tr>
+		<tr><th><code>-l</code>, <code>--line</code> <code>&lt;line&gt;</code></th><td>Jump to specific line in opened document. <code>&lt;line&gt;</code> is an integer specifying the number of line.</td></tr>
+		<tr><th><code>-c</code>, <code>--column</code> <code>&lt;column&gt;</code></th><td>Jump to specific column in opened document. <code>&lt;column&gt;</code> is an integer specifying the number of column.</td></tr>
+		<tr><th><code>-b</code>, <code>--background</code></th><td>Do not bring the application to the foreground.</td></tr>
+		<tr><th><code>-h</code>, <code>--help</code></th><td>Show help.</td></tr>
+		<tr><th><code>-v</code>, <code>--version</code></th><td>Print version information.</td></tr>
+	</tbody>
+</table>
+
+<p>For <code>--line</code> and <code>--column</code> options, you can specify a negative number to count from the end of the document (<code>--line</code> option) or a line (<code>--column</code> option).</p>
+
+<h2>Examples</h2>
+<p>A simple <code>cot</code> command will launch CotEditor, or just activate it if CotEditor is already running.</p>
+
+<pre class="source"><code>cot
+</code></pre>
+
+<p>The following command opens the foo.txt file on CotEditor and moves the insertion point to line 200 in the opened document. <code>cot</code> command does nothing if foo.txt file does not exist.</p>
+
+<pre class="source"><code>cot --line 200 foo.txt
+</code></pre>
+
+<p>The following command opens the foo.txt file on CotEditor and moves the insertion point to the end of the document.</p>
+
+<pre class="source"><code>cot --line -1 --column -1 foo.txt
+</code></pre>
+
+<p>You can also pipe a text. CotEditor will open a new document with the piped text.</p>
+
+<pre class="source"><code>echo &quot;I am a dog but also a cow at the same time.&quot; | cot
+</code></pre>
+
+<p>Using <code>--wait</code> option, CotEditor can be used as the editor for <code>git</code>.</p>
+
+<pre class="source"><code>git config --global core.editor &quot;cot -w&quot;
+</code></pre>
+
+
+<section id="cf">
+<h2>See also</h2>
+<ul>
+	<li><a href="settings_general.html">Change General settings</a></li>
+</ul>
+</section>
+
+</body>
+</html>

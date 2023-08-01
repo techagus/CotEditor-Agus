@@ -1,0 +1,38 @@
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="keywords" content="text encoding, encoding, detection"/>
+	<link rel="stylesheet" href="../../Shared/sty/standard.css"/>
+	<script defer src="../../Shared/js/toc.js"></script>
+	
+	<title>Utilice declaraciones de codificación para la detección de codificación en CotEditor</title>
+</head>
+
+<body>
+
+<h1>Utilice declaraciones de codificación para la detección de codificación en CotEditor</h1>
+
+<p>Cuando la opción "Referir a la declaración de codificación en el documento" está activada en el panel de configuración de formato, CotEditor lee los siguientes tipos de declaraciones de codificación (si las hay) — <code>charset=</code>, <code>encoding=</code>, <code>@charset</code>, <code>encoding:</code> y <code>coding:</code> — al abrir un archivo. Si se escriben correctamente, estas declaraciones se utilizarán para determinar la codificación de texto del archivo.</p>
+<p>Una declaración puede estar en cualquier parte del documento, ya sea en el área de comentarios o en una oración simple. Cuando desee usar una frase como "charset=UTF-8" a pesar de que la codificación de su documento no es UTF-8, debe poner una declaración de codificación real antes de la frase, o desactivar la opción "Referirse a la declaración de codificación en el documento" en la configuración de formato.</p>
+
+<ul>
+	<li>El alcance para escanear declaraciones está limitado a 2000 caracteres desde el encabezado del documento.</li>
+	<li>Para que la detección de declaraciones funcione, tienes que poner un signo igual ("=", no hay otros caracteres) justo después “<code>charset</code>” o “<code>encoding</code>.”</li>
+	<li>Codifica el nombre que viene después de “<code>charset=</code>” o “<code>encoding=</code>” puede ser sin comillas dobles (&quot;) rodeandole.</li>
+	<li>En el caso de que haya varias declaraciones de codificación en su documento, CotEditor utiliza la primera para determinar la codificación de texto.</li>
+	<li>Cuando la codificación se declara como Shift JIS (escrito como <code>charset=&quot;Shift_JIS&quot;</code>), CotEditor elige el priorizado (el superior en la lista de codificación) entre "japonés (Shift JIS)" y "japonés (Shift JIS X0213).”<br />
+	→ <a href="howto_customize_encoding_order.html">Cambiar las prioridades de las codificaciones de texto</a></li>
+</ul>
+
+
+<section id="cf">
+<h2>See also</h2>
+<ul>
+	<li><a href="settings_format.html">Cambiar la configuración del formato</a></li>
+	<li><a href="howto_customize_encoding_order.html">Cambiar las prioridades de las codificaciones de texto</a></li>
+</ul>
+</section>
+
+</body>
+</html>
