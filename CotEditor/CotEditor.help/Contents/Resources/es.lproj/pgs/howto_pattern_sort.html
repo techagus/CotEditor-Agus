@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="es">
 
 <head>
 	<meta charset="UTF-8"/>
@@ -6,80 +6,80 @@
 	<link rel="stylesheet" href="../../Shared/sty/standard.css"/>
 	<script defer src="../../Shared/js/toc.js"></script>
 	
-	<title>Sort lines using specific pattern in CotEditor</title>
+	<title>Ordenar líneas usando un patrón específico en CotEditor</title>
 </head>
 
 <body>
 <a name="howto_pattern_sort"></a>
 
-<h1>Sort lines using specific pattern in CotEditor</h1>
+<h1>Ordenar líneas usando un patrón específico en CotEditor</h1>
 
-<p>From Sort by Pattern command in the Text &gt; Lines menu, you can sort selected lines by specifying the way to compare.</p>
+<p>Desde el comando Ordenar por patrón... en el menú Texto &gt; Líneas, puedes ordenar las líneas seleccionadas especificando la forma de comparar.</p>
 
 
-<p>The simple Sort command in the Text &gt; Lines menu is the same as sorting “Entire line” with “Ignore case” and “Respect language rules” options on.</p>
+<p>El simple comando Ordenar en el menú Texto &gt; Líneas es la misma que ordenar "Línea entera" con las opciones "Ignorar mayusculas y minúsculas" y "Respetar las reglas del lenguaje" activadas.</p>
 
 
 <section>
-<h2>Sample</h2>
+<h2>Ejemplo</h2>
 
-<p>In this field, you can check which part in a line will be used for sort comparison.</p>
+<p>En este campo, puede comprobar qué parte de una línea se utilizará para la comparación de clasificación.</p>
 </section>
 
 <section>
-<h2>Sort key</h2>
-<p>Specify the part in lines to compare on sort.</p>
+<h2>Ordenar clave</h2>
+<p>Especifique la parte en las líneas para comparar en la clasificación.</p>
 
 <dl>
-	<dt>Column</dt>
-	<dd>Treat lines as CSV (character-separated values) format and use the specific column for comparison. Whitespace around the separator will just be ignored.</dd>
+	<dt>Columna</dt>
+	<dd>Trate las líneas como formato CSV (valores separados por caracteres) y utilice la columna específica para la comparación. Los espacios en blanco alrededor del separador se ignorarán.</dd>
 	<dd><dl>
-		<dt>Delimiter</dt>
-		<dd>The character separating each column. You can use escape sequences such as <code>\t</code> for the tabular character. A comma will be used when this field is blank.</dd>
-		<dt>Position</dt>
-		<dd>The number of the column to use as the sort key. The column count starts at 1.</dd>
+		<dt>Delimitador</dt>
+		<dd>El carácter que separa cada columna. Puedes usar secuencias de escape como <code>\t</code> para el carácter del tabulador. Se usará una coma cuando este campo esté en blanco.</dd>
+		<dt>Posición</dt>
+		<dd>El número de la columna que se utilizará como clave de ordenación. El recuento de columnas comienza en 1.</dd>
 	</dl></dd>
 
-	<dt>Regular expression</dt>
-	<dd>Specify the part to compare with the regular expression.</dd>
+	<dt>Expresión regular</dt>
+	<dd>Especifique la parte para comparar con la expresión regular.</dd>
 	<dd><dl>
-		<dt>Pattern</dt>
-		<dd>The regular expression pattern to extract the part to compare.</dd>
-		<dt>Ignore case</dt>
-		<dd>Whether ignore the character case by extracting the regular expression pattern. This option will be used only for the sort key extraction. To set case-insensitive state for the sort phase, set in the sort option bellow.</dd>
-		<dt>Use captured group</dt>
-		<dd>The part in matches to use as the sort key. The entire match will be used when this checkbox is turned off.</dd>
+		<dt>Patrón</dt>
+		<dd>El patrón de expresión regular para extraer la parte a comparar.</dd>
+		<dt>Ignorar mayúsculas y minúsculas</dt>
+		<dd>Se ignoran mayúsculas y minúsculas extrayendo el patrón de expresión regular. Esta opción se utilizará solo para la extracción de la clave de clasificación. Para establecer un estado insensible a mayúsculas y minúsculas para la fase de clasificación, establezca la opción de clasificación a continuación.</dd>
+		<dt>Usar grupo capturado</dt>
+		<dd>La parte de las coincidencias para usar como clave de clasificación. Toda la coincidencia se utilizará cuando esta casilla de verificación esté desactivada.</dd>
 	</dl></dd>
 
-	<dt>Entire line</dt>
-	<dd>Compare entire lines.</dd>
+	<dt>Toda la línea</dt>
+	<dd>Se comparan líneas enteras.</dd>
 </dl>
 </section>
 
 
 <section>
-<h2>Sort options</h2>
-<p>Options to control behavior on comparing sort keys.</p>
+<h2>Opciones de clasificación</h2>
+<p>Opciones para controlar el comportamiento al comparar las claves de clasificación.</p>
 
 <table>
 	<thead>
-		<tr><th>Option</th><th>Description</th></tr>
+		<tr><th>Opción</th><th>Descripción</th></tr>
 	</thead>
 	<tbody>
-		<tr><td>Ignore case</td><td>Ignore character case on sort.</td></tr>
-		<tr><td>Respect language rules</td><td>Fuzzily sort respecting the current language setting. i.e.: ignoring trivial differences such as character widths or diacritical marks.</td></tr>
-		<tr><td>Treat numbers as numeric value</td><td>Numbers within the sort keys are compared as numeric value. (e.g.: file12 &gt; file5)</td></tr>
-		<tr><td>Keep the first line at the top</td><td>Ignore the first line by sorting.</td></tr>
-		<tr><td>In descending order</td><td>Sort results in descending order.</td></tr>
+		<tr><td>Ignorar mayúsculas y minúsculas</td><td>Ignorar mayúsculas y minúsculas en la ordenación.</td></tr>
+		<tr><td>Respeta las reglas del lenguaje</td><td>Clasificar de forma que respeta la configuración actual del idioma. Es decir, ignorar las diferencias triviales, como los anchos de caracteres o las marcas diacríticas.</td></tr>
+		<tr><td>Tratar los números como valor numérico</td><td>Los números dentro de las claves de clasificación se comparan como valor numérico. (ejemplo: archivo12 &gt; archivo5)</td></tr>
+		<tr><td>Mantén la primera línea en la parte superior</td><td>Ignora la primera línea al ordenar.</td></tr>
+		<tr><td>En orden descendente</td><td>Ordenar los resultados en orden descendente.</td></tr>
 	</tbody>
 </table>
 </section>
 
 
 <section id="cf">
-    <h2>See also</h2>
+    <h2>Ver también</h2>
     <ul>
-        <li><a href="about_regex.html">Use the regular expression</a></li>
+        <li><a href="about_regex.html">Usa la expresión regular</a></li>
     </ul>
 </section>
 

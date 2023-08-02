@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="es">
 
 <head>
 	<meta charset="UTF-8"/>
@@ -6,119 +6,119 @@
 	<link rel="stylesheet" href="../../Shared/sty/standard.css"/>
 	<script defer src="../../Shared/js/toc.js"></script>
 	
-	<title>Replace text by multiple rules in CotEditor</title>
+	<title>Reemplazar el texto con varias reglas en CotEditor</title>
 </head>
 
 <body>
 <a name="howto_multiple_replace"></a>
 
-<h1>Replace text by multiple rules in CotEditor</h1>
+<h1>Reemplazar el texto con varias reglas en CotEditor</h1>
 
-<p>Using the <dfn>Multiple Replacement</dfn> feature, you can process multiple text replacements at once in succession. The replacement rules can be stored as a named preset and reused when you need.</p>
+<p>Usando la prestación <dfn>Reemplazo múltiple</dfn>, puedes procesar varios reemplazos de texto a la vez en sucesión. Las reglas de reemplazo se pueden almacenar como un ajuste preestablecido con nombre y reutilizar cuando lo necesite.</p>
 
 
 
-<h2>Use Multiple Replace window</h2>
+<h2>Usar la ventana de reemplazo múltiple</h2>
 
-<p>You can open the Multiple Replace window to manage and process the multiple replacements in your document.</p>
+<p>Puede abrir la ventana Reemplazo múltiple para administrar y procesar los reemplazos múltiples en su documento.</p>
 
 <ol>
-	<li>Choose Find &gt; Multiple Replace.</li>
+	<li>Elegir Buscar &gt; Reemplazo múltiple...</li>
 </ol>
 
 <p><img src="../gfx/multiple_replace_panel@2x.png" width="587" alt=""/></p>
 
 
 
-<h2>Manage replacement definitions</h2>
+<h2>Gestionar las definiciones de reemplazo</h2>
 
-<p>The stored replacement definitions that you created before are listed in the list on the left.</p>
+<p>Las definiciones de reemplazo almacenadas que creó antes se enumeran en la lista de la izquierda.</p>
 
 <ul>
-	<li>Click the Add button + at the bottom of the list to create a new replacement definition.</li>
-	<li>Click the Remove button - at the bottom of the list to delete the replacement definition that is selected in the list.</li>
-	<li>Click again the selected definition in the list to rename it.</li>
-	<li>Click the Advanced button with a gear symbol for further operations.</li>
+	<li>Haga clic en el botón Añadir + en la parte inferior de la lista para crear una nueva definición de reemplazo.</li>
+	<li>Haga clic en el botón Eliminar - en la parte inferior de la lista para eliminar la definición de reemplazo que está seleccionada en la lista.</li>
+	<li>Haga clic de nuevo en la definición seleccionada en la lista para cambiarle el nombre.</li>
+	<li>Haga clic en el botón Avanzado (...) para más operaciones.</li>
 </ul>
 
 
 
-<h3>Export/import replacement definitions</h3>
+<h3>Definiciones de reemplazo de exportación/importación</h3>
 
-<p>You can export your replacement definitions to transfer them to another computer. Each replacement definition becomes a single <dfn>CotEditor replacement definition</dfn> file, which has a .cotrpl filename extension and of which content is written in JSON format.</p>
+<p>Puedes exportar tus definiciones de reemplazo para transferirlas a otro ordenador. Cada definición de reemplazo se convierte en un solo archivo de <dfn>Definición de reemplazo de CotEditor</dfn>, que tiene una extensión de nombre de archivo .cotrpl y cuyo contenido está escrito en formato JSON.</p>
 
 <ul>
-	<li><b>Export</b>: Select a definition to export in the list on the left, then choose Export or Share in the Advanced menu at the bottom of the list.</li>
-	<li><b>Import</b>: Drop replacement definition files to the list on the left. Alternatively, choose Import in the Advanced menu, then select the replacement definition files to import.</li>
+	<li><b>Export</b>: Seleccione una definición para exportar en la lista de la izquierda, luego elija Exportar o Compartir en el menú Avanzado en la parte inferior de la lista.</li>
+	<li><b>Import</b>: Suelta los archivos de definición de reemplazo en la lista de la izquierda. Alternativamente, elija Importar en el menú Avanzado y, a continuación, seleccione los archivos de definición de reemplazo para importar.</li>
 </ul>
 
 
 
-<h2>Process multiple replacements</h2>
+<h2>Procesar múltiples reemplazos</h2>
 
-<p>The definition selected in the list on the left is shown in the editor area on the right side. The replacement rules in the editor area will be performed row by row from top to bottom at once.</p>
+<p>La definición seleccionada en la lista de la izquierda se muestra en el área del editor del lado derecho. Las reglas de reemplazo en el área del editor se realizarán fila por fila de arriba a abajo.</p>
 
-<p>Use the buttons at the bottom of the editor area to perform multiple replacements.</p>
+<p>Utilice los botones en la parte inferior del área del editor para realizar múltiples reemplazos.</p>
 
 <ul>
-	<li><b>Replace All</b>: Perform the replacement for the frontmost document.</li>
-	<li><b>Highlight</b>: Highlight all matches in the frontmost document*.</li>
+	<li><b>Reemplazar todo</b>: Realice el reemplazo para el documento principal.</li>
+	<li><b>Reslatar todo</b>: Resalte todas las coincidencias en el documento principal*.</li>
 </ul>
 
-<p>* Beware that the matches by the Highlight command can be different from the replacement targets when you perform actual Replace All, because, on the Replace All, the succeeding rows are applied to the document that the previous rows above have already been applied to.</p>
+<p>* Tenga en cuenta que las coincidencias del comando Resaltar pueden ser diferentes de los objetivos de reemplazo cuando realiza Reemplazar todo real, porque, en Reemplazar todo, las filas siguientes se aplican al documento al que ya se han aplicado las filas anteriores.</p>
 
 
 
-<h2>Edit replacement definition</h2>
+<h2>Editar definición de reemplazo</h2>
 
-<p>You can create your own replacement definitions to process multiple replacements.</p>
+<p>Puede crear sus propias definiciones de reemplazo para procesar múltiples reemplazos.</p>
 
 
-<h3>Create a new replacement definition</h3>
+<h3>Crear una nueva definición de reemplazo</h3>
 
 <ol>
-	<li>Click the Add button + at the bottom of the list on the left side to create a new replacement definition.</li>
-	<li>Click the Add button + in the editor area on the right side to create a new replacement rule.</li>
-	<li>Input your desired replacement rule to the added row.</li>
+	<li>Haga clic en el botón Añadir + en la parte inferior de la lista en el lado izquierdo para crear una nueva definición de reemplazo.</li>
+	<li>Haga clic en el botón Añadir + en el área del editor del lado derecho para crear una nueva regla de reemplazo.</li>
+	<li>Introduzca la regla de reemplazo deseada en la fila añadida.</li>
 </ol>
 
-<p>You don’t need to perform a save after the modification because your changes will be saved automatically immediately during the edit.</p>
+<p>No es necesario que realices un guardado después de la modificación porque tus cambios se guardarán automáticamente inmediatamente durante la edición.</p>
 
-<p>A row with an invalid replacement rule will just be skipped when the replacement is performed.</p>
+<p>Una fila con una regla de reemplazo no válida se omitirá cuando se realice el reemplazo.</p>
 
 
 
-<h3>Replacement rule options</h3>
+<h3>Opciones de regla de reemplazo</h3>
 
 <table>
 	<thead>
-		<tr><th>Option</th><th>Description</th></tr>
+		<tr><th>Opción</th><th>Descripción</th></tr>
 	</thead>
 	<tbody>
-		<tr><th>(checkbox)</th><td>If the checkbox is turned off, the row will not be applied and just be skipped. You can use this option to keep a replacement rule that will optionally be used.</td></tr>
-		<tr><th>Find</th><td>A string to search for. You cannot leave this field blank. When it is blank, the row will be ignored as it is invalid.</td></tr>
-		<tr><th>Replace With</th><td>A string to replace with. If you leave this field, the matches are just deleted.</td></tr>
-		<tr><td>RE</td><td>Search with regular expression (abbreviation of <u>R</u>egular <u>E</u>xpression).</td></tr>
-		<tr><td>IC</td><td>Ignore character case on search (abbreviation of <u>I</u>gnore <u>C</u>ase).</td></tr>
-		<tr><th>Description</th><td>You can use this field to leave a comment about the rule. The description doesn’t affect to replacement. This field can be left blank.</td></tr>
+		<tr><th>(Casilla de verificación)</th><td>Si la casilla de verificación está desactivada, la fila no se aplicará y simplemente se omitirá. Puedes usar esta opción para mantener una regla de reemplazo que se utilizará opcionalmente.</td></tr>
+		<tr><th>Buscar</th><td>Una cadena para buscar. No puede dejar este campo en blanco. Cuando esté en blanco, la fila se ignorará, ya que no es válida.</td></tr>
+		<tr><th>Reemplazar Con/th><td>Una cadena para reemplazar. Si sales de este campo, las coincidencias se acabarán eliminando.</td></tr>
+		<tr><td>RE</td><td>Búsqueda con expresión regular (abreviatura de <u>R</u>egular <u>E</u>xpresión).</td></tr>
+		<tr><td>IC</td><td>Ignorar mayúsculas y minúsculas en la búsqueda (abreviatura de <u>I</u>gnorar <u>C</u>apitalización).</td></tr>
+		<tr><th>Descripción</th><td>Puedes usar este campo para dejar un comentario sobre la regla. La descripción no afecta al reemplazo. Este campo se puede dejar en blanco.</td></tr>
 	</tbody>
 </table>
 
 
 
-<h2>Advanced find options</h2>
+<h2>Opciones de búsqueda avanzadas</h2>
 
-<p>You can customize the delicate find behavior of replacement from the advanced options view. Those settings are also saved to your replacement definition and applied to all rules in the same replacement definition. Click the gear button in the Multiple Replace window, then click checkboxes to change the behavior.</p>
+<p>Puedes personalizar el delicado comportamiento de búsqueda del reemplazo desde la vista de opciones avanzadas. Esos ajustes también se guardan en su definición de reemplazo y se aplican a todas las reglas en la misma definición de reemplazo. Haga clic en el botón (...) en la ventana Reemplazo múltiple y, a continuación, haga clic en las casillas de verificación para cambiar el comportamiento.</p>
 
-<p>To learn about details of each option item, see <a href="howto_find.html">Find or replace text</a>.</p>
+<p>Para obtener más información sobre los detalles de cada opción, consulte <a href="howto_find.html">Buscar o reemplazar texto</a>.</p>
 
 
 
 <section id="cf">
-<h2>See also</h2>
+<h2>Ver también</h2>
 <ul>
-	<li><a href="howto_find.html">Find or replace text</a></li>
-	<li><a href="about_regex.html">Use the regular expression</a></li>
+	<li><a href="howto_find.html">Buscar o reemplazar texto</a></li>
+	<li><a href="about_regex.html">Usa la expresión regular</a></li>
 </ul>
 </section>
 
