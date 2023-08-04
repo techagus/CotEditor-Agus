@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="es">
 
 <head>
 	<meta charset="UTF-8"/>
@@ -7,38 +7,38 @@
 	<link rel="stylesheet" href="../../Shared/sty/pygmentize.css"/>
 	<script defer src="../../Shared/js/toc.js"></script>
 	
-	<title>Add scripting hooks to CotEditor scripts</title>
+	<title>Añadir ganchos de scripting a los scripts de CotEditor</title>
 </head>
 
 <body>
 
-<h1>Add scripting hooks to CotEditor scripts</h1>
+<h1>Añadir ganchos de scripting a los scripts de CotEditor</h1>
 
-<p>Scripting hooks allow CotEditor scripts to be executed on certain events. The following events are available with CotEditor:</p>
-
-<ul>
-	<li><code>document opened</code> : after you opened the file and then the contents were loaded</li>
-	<li><code>document saved</code> : after you saved the file and then the contents were stored</li>
-</ul>
-
-<p>See `CotEditor Event Handler suite` section on AppleScript Dictionary for further information.</p>
-
-<p>The rest of this page describes how to include the script hooking to your CotEditor script.</p>
-
-<h2>Synopsis</h2>
-
-<p>Scripts with scripting hook must conform to the following protocols:</p>
+<p>Los ganchos de scripting permiten que los scripts de CotEditor se ejecuten en ciertos eventos. Los siguientes eventos están disponibles con CotEditor:</p>
 
 <ul>
-	<li>written in AppleScript or JavaScript for Automation (JXA)</li>
-	<li>stored in the form of a script bundle (`.scptd`)</li>
+	<li><code>document opened</code> : después de abrir el archivo y cargar su contenido</li>
+	<li><code>document saved</code> : después de guardar el archivo y almacenar su contenido</li>
 </ul>
 
-<p>In addition, events to subscribe to and handlers for them must be declared, as described below.</p>
+<p>Consulte la sección "CotEditor Event Handler suite" en el Diccionario AppleScript para obtener más información.</p>
 
-<h2>Structure of Script Bundle</h2>
+<p>El resto de esta página describe cómo incluir el gancho del script que se conecta a tu script de CotEditor.</p>
 
-<p>A script bundle is the directory structure as follows:</p>
+<h2>Sinopsis</h2>
+
+<p>Los scripts con gancho de scripting deben ajustarse a los siguientes protocolos:</p>
+
+<ul>
+	<li>escrito en AppleScript o JavaScript para la automatización (JXA)</li>
+	<li>almacenado en forma de un paquete de scripts (`.scptd`)</li>
+</ul>
+
+<p>Además, se deben declarar los eventos a los que suscribirse y los controladores para ellos, como se describe a continuación.</p>
+
+<h2>Estructura del paquete de scripts</h2>
+
+<p>Un paquete de scripts tiene la estructura de directorios de la siguiente manera:</p>
 
 <pre>
 HookingScript.scptd
@@ -53,9 +53,9 @@ HookingScript.scptd
             └── TXT.rtf
 </pre>
 
-<p>Any scripts can be exported in this form with Script Editor.app, which is one of the standard applications distributed with macOS.</p>
+<p>Cualquier script se puede exportar en este formulario con Script Editor.app, que es una de las aplicaciones estándar distribuidas con macOS.</p>
 
-<p>To support scripting hooks, the list of events to subscribing must be written in `Contents/Info.plist`. `Info.plist` is a property list containing the metadata of the bundle and formatted in XML like the following example:</p>
+<p>Para admitir los ganchos de scripting, la lista de eventos para suscribirse debe escribirse en `Contents/Info.plist`. `Info.plist` es una lista de propiedades que contiene los metadatos del paquete y está formateada en XML como en el siguiente ejemplo:</p>
 
 <pre class="highlight source"><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
 <span class="cp">&lt;!DOCTYPE plist PUBLIC &quot;-//Apple//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt;</span>
@@ -71,7 +71,7 @@ HookingScript.scptd
 <span class="nt">&lt;/plist&gt;</span>
 </pre>
 
-<p>The events to subscribe must be stored at the key `CotEditorHandlers` and in the form of `array` of `string`.</p>
+<p>Los eventos a los que suscribirse deben almacenarse en la clave `CotEditorHandlers` y en forma de `array` de `string`.</p>
 
 <pre class="highlight source"><span></span><span class="nt">&lt;key&gt;</span>CotEditorHandlers<span class="nt">&lt;/key&gt;</span>
 <span class="nt">&lt;array&gt;</span>
@@ -80,13 +80,13 @@ HookingScript.scptd
 <span class="nt">&lt;/array&gt;</span>
 </pre>
 
-<h2>Event handlers</h2>
+<h2>Manipuladores de eventos</h2>
 
-<p>An event handler is a block to receive certain events that the application caused and do something with the received event. In this section, the manners to write an event handler are described with a simple example, which shows the dialog on opening and saving a file.</p>
+<p>Un controlador de eventos es un bloque para recibir ciertos eventos que la aplicación causó y hacer algo con el evento recibido. En esta sección, las formas de escribir un controlador de eventos se describen con un ejemplo simple, que muestra el cuadro de diálogo para abrir y guardar un archivo.</p>
 
 <h3>AppleScript</h3>
 
-<p>In AppleScript, handlers are written with a `using terms from` block and `on` blocks.</p>
+<p>En AppleScript, los controladores se escriben con un bloque `using terms from` y `on` bloques.</p>
 
 <pre class="highlight source"><span></span><span class="k">using terms from</span> <span class="nb">application</span> <span class="s2">&quot;CotEditor&quot;</span>
     <span class="nb">on</span> <span class="na">document</span> <span class="nv">opened</span> <span class="nv">theDocument</span>
@@ -101,9 +101,9 @@ HookingScript.scptd
 <span class="k">end</span> <span class="k">using terms from</span>
 </pre>
 
-<h3>JavaScript for Automation (JXA)</h3>
+<h3>JavaScript para Automatización (JXA)</h3>
 
-<p>In JXA, `function` statements on the global object will create handlers.</p>
+<p>En JXA, las declaraciones `function` en el objeto global crearán manejadores.</p>
 
 <pre class="highlight source"><span></span><span class="nx">CotEditor</span> <span class="o">=</span> <span class="nx">Application</span><span class="p">.</span><span class="nx">currentApplication</span><span class="p">()</span>
 <span class="nx">CotEditor</span><span class="p">.</span><span class="nx">includeStandardAdditions</span> <span class="o">=</span> <span class="kc">true</span>
@@ -118,11 +118,11 @@ HookingScript.scptd
 </pre>
 
 <section id="cf">
-<h2>See also</h2>
+<h2>Ver también</h2>
 <ul>
 	<li><a href="script_overview.html">Script CotEditor</a></li>
-	<li><a href="script_menu.html">Customize the Script menu</a></li>
-	<li><a href="script_osascript.html">Script CotEditor with AppleScript</a></li>
+	<li><a href="script_menu.html">Personaliza el menú Script</a></li>
+	<li><a href="script_osascript.html">Script CotEditor con AppleScript</a></li>
 </ul>
 </section>
 

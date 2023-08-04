@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="es">
 
 <head>
 	<meta charset="UTF-8"/>
@@ -6,62 +6,62 @@
 	<link rel="stylesheet" href="../../Shared/sty/standard.css"/>
 	<script defer src="../../Shared/js/toc.js"></script>
 	
-	<title>Support different CotEditor versions in AppleScript</title>
+	<title>Compatible con diferentes versiones de CotEditor en AppleScript</title>
 </head>
 
 <body>
 
-<h1>Support different CotEditor versions in AppleScript</h1>
+<h1>Compatible con diferentes versiones de CotEditor en AppleScript</h1>
 
-<p>This page lists up the previous specific changes on AppleScript support in CotEditor.</p>
+<p>TSu página enumera los cambios específicos anteriores sobre el soporte de AppleScript en CotEditor.</p>
 
 
 <article>
-<h2>Terminology change on CotEditor 4.4.0</h2>
+<h2>Cambio de terminología en CotEditor 4.4.0</h2>
 
 <section>
-	<h3>Deprecate <code>length</code></h3>
-	<p>The <code>length</code> property for the ‘document’ object was deprecated.</p>
-	<p>For backward compatibility, CotEditor 4.4.0 still accepts using this property; however, it can be removed someday in the future without announcement.</p>
+	<h3>Desechar <code>length</code></h3>
+	<p>La propiedad <code>length</code> para el objeto ‘document’ se ha desechado.</p>
+	<p>Por compatibilidad con versiones anteriores, CotEditor 4.4.0 todavía acepta el uso de esta propiedad; sin embargo, se puede eliminar algún día en el futuro sin previo aviso.</p>
 </section>
 <section>
-	<h3>Delete backward compatibility of <code>path</code></h3>
-	<p>The <code>path</code> property, which was deprecated in CotEditor 2.0.0 but stealthily kept for backward compatibility, is completely deleted in this version.</p>
+	<h3>Eliminar la compatibilidad con versiones anteriores de <code>path</code></h3>
+	<p>La propiedad <code>path</code>, que fué desechada en CotEditor 2.0.0 pero guardada sigilosamente para la compatibilidad con versiones anteriores, se elimina por completo en esta versión.</p>
 </section>
 </article>
 
 
 <article>
-<h2>Terminology change on CotEditor 4.1.0</h2>
+<h2>TCambio de erminología en CotEditor 4.1.0</h2>
 
 <section>
 	<h3>Jump</h3>
-	<p>A new command <code>jump</code> was added to the ‘document’ object.</p>
+	<p>Un nuevo comando <code>jump</code> se añadió al objeto ‘document’.</p>
 </section>
 <section>
-	<h3>Support encodings with BOM</h3>
-	<p>A new property <code>has BOM</code> was added to the ‘document’ object.</p>
-	<p>A new option <code>BOM</code> was added to the <code>convert</code> command.</p>
-</section>
-</article>
-
-
-<article>
-<h2>Terminology change on CotEditor 4.0.7</h2>
-
-<section>
-	<h3>Encoding <code>convert</code> / <code>reinterpret</code></h3>
-	<p>Now <code>convert</code> and <code>reinterpret</code> commands accept the encoding also in the IANA charset name.</p>
+	<h3>Admite codificaciones con BOM</h3>
+	<p>Una nueva propiedad <code>has BOM</code> se añadió al objeto ‘document’.</p>
+	<p>Una nueva opción<code>BOM</code> se añadió al comando <code>convert</code>.</p>
 </section>
 </article>
 
 
 <article>
-<h2>Terminology change on CotEditor 3.9.7</h2>
+<h2>Cambio de terminología en CotEditor 4.0.7</h2>
 
 <section>
-	<h3>Smart quotes</h3>
-	<p>The following new commands were added to the ‘selection’ object.</p>
+	<h3>Codificación <code>convert</code> / <code>reinterpret</code></h3>
+	<p>Ahora los comandos <code>convert</code> y <code>reinterpret</code> aceptan también la codificación del conjunto de caracteres IANA.</p>
+</section>
+</article>
+
+
+<article>
+<h2>Cambio de terminología en CotEditor 3.9.7</h2>
+
+<section>
+	<h3>Comillas inteligentes</h3>
+	<p>Los siguientes nuevos comandos se añadieron al objeto ‘selection’.</p>
 	<ul class="nostyle">
 		<li><code>smarten quotes</code></li>
 		<li><code>straighten quotes</code></li>
@@ -72,53 +72,53 @@
 
 
 <article>
-<h2>Terminology change on CotEditor 3.5.0</h2>
+<h2>Cambio de terminología en CotEditor 3.5.0</h2>
 
 <section>
-	<h3>Editor’s opacity</h3>
-	<p><code>view opacity</code> property was deprecated on CotEditor 3.5.0.</p>
-	<p>Please note that <strong>there is no backward compatibility</strong> with this change.</p>
+	<h3>Opacidad del editor</h3>
+	<p> La propiedad <code>view opacity</code> se ha desechado en CotEditor 3.5.0.</p>
+	<p>Tenga en cuenta que con este cambio <strong>no hay compatibilidad con versiones anteriores</strong>.</p>
 </section>
 </article>
 
 
 <article>
-<h2>Terminology change on CotEditor 3.1.2</h2>
+<h2>Cambio de terminología en CotEditor 3.1.2</h2>
 
 <section>
-	<h3>Auto tab expansion</h3>
-	<p>A new property <code>expands tab</code> was added to the ‘document’ object.</p>
+	<h3>Expansión automática de la tabulación</h3>
+	<p>Una nueva propiedad <code>expands tab</code> se añadió al  objeto ‘document’.</p>
 </section>
 </article>
 
 
 <article>
-<h2>Terminology change on CotEditor 2.6.0</h2>
+<h2>Cambio de terminología en CotEditor 2.6.0</h2>
 
 <section>
-	<h3>Line spacing property</h3>
-	<p><code>line spacing</code> property was deprecated on CotEditor 2.6.0.</p>
-	<p>Please note that <strong>there is no backward compatibility</strong> with this change.</p>
+	<h3>Propiedad de espaciado de líneas</h3>
+	<p>La propiedad <code>line spacing</code> se ha desechado en CotEditor 2.6.0.</p>
+	<p>Tenga en cuenta que con este cambio <strong>no hay compatibilidad con versiones anteriores</strong>.</p>
 </section>
 </article>
 
 
 <article>
-<h2>Terminology change on CotEditor 2.5.3</h2>
+<h2>Cambio de terminología en CotEditor 2.5.3</h2>
 
 <section>
-	<h3>Unicode normalization</h3>
-	<p>A new value <code>Modified NFC</code> was added to the <code>normalize unicode</code> command.</p>
+	<h3>Normalización Unicode</h3>
+	<p>Un nuevo valor <code>Modified NFC</code> se añadió al comando <code>normalize unicode</code>.</p>
 </section>
 </article>
 
 
 <article>
-<h2>Terminology change on CotEditor 2.3.0</h2>
+<h2>Cambio de terminología en CotEditor 2.3.0</h2>
 
 <section>
-	<h3>Selected line editing</h3>
-	<p>The following new commands were added to the ‘selection’ object.</p>
+	<h3>Edición de línea seleccionada</h3>
+	<p>Los siguientes nuevos comandos se añadieron al objeto ‘selection’.</p>
 	<ul class="nostyle">
 		<li><code>move line up</code></li>
 		<li><code>move line down</code></li>
@@ -131,21 +131,21 @@
 
 
 <article>
-<h2>Terminology change on CotEditor 2.2.2</h2>
+<h2>Cambio de terminología en CotEditor 2.2.2</h2>
 
 <section>
-	<h3>Unicode normalization</h3>
-	<p>A new value <code>Modified NFD</code> was added to the <code>normalize unicode</code> command.</p>
+	<h3>Normalización Unicode</h3>
+	<p>Un nuevo valor <code>Modified NFD</code> se añadió al  comando <code>normalize unicode</code>.</p>
 </section>
 </article>
 
 
 <article>
-<h2>Terminology change on CotEditor 2.2.0</h2>
+<h2>Cambio de terminología en CotEditor 2.2.0</h2>
 
 <section>
-	<h3>Unicode normalization</h3>
-	<p>A new value <code>NFCK Casefold</code> was added to the <code>normalize unicode</code> command.</p>
+	<h3>Normalización Unicode</h3>
+	<p>Un nuevo valor <code>NFCK Casefold</code> se añadió al comando <code>normalize unicode</code>.</p>
 </section>
 </article>
 
@@ -161,72 +161,72 @@
 
 
 <article>
-<h2>Terminology change on CotEditor 2.0.1</h2>
+<h2>Cambio de terminología en CotEditor 2.0.1</h2>
 
 <section>
-	<h3>Comment handling</h3>
-	<p>New commands <code>comment out</code> and <code>uncomment</code> were added to the ‘selection’ object.</p>
+	<h3>Manejo de comentarios</h3>
+	<p>Nuevos comandos <code>comment out</code> y <code>uncomment</code> Se agregaron al objeto ‘selection’.</p>
 </section>
 </article>
 
 
 <article>
-<h2>Terminology change on CotEditor 2.0.0</h2>
+<h2>Cambio de terminología en CotEditor 2.0.0</h2>
 
 <section>
-	<h3>Unicode normalization</h3>
-	<p>The command <code>unicode normalization</code> on CotEditor 1.x was renamed on 2.0 to <code>normalize unicode</code>. The function and parameters are the same as before.</p>
-	<p>Please note that <strong>there is no backward compatibility</strong> with this change.</p>
+	<h3>Normalización Unicode</h3>
+	<p>El comando <code>unicode normalization</code> en CotEditor 1.x fue renombrado en 2.0 a <code>normalize unicode</code>. La función y los parámetros son los mismos que antes.</p>
+	<p>Tenga en cuenta que con este cambio <strong>no hay compatibilidad con versiones anteriores</strong>.</p>
 </section>
 
 <section>
-	<h3>Discontinuation of <code>path</code> property</h3>
-	<p>The <code>path</code> property of ‘document’ object is discontinued on the modern AppleScript’s Standard Suite for a long time. Since CotEditor adopted it on version 2.0, this property is also deprecated on CotEditor.  Use new <code>file</code> property instead. While <code>path</code> property returns a text object, <code>file</code> property returns a file object.</p>
-	<p>For backward compatibility, CotEditor 2.0 added a hidden <code>path</code> property to ‘document’ object uniquely; however, do not use it if you create new scripts and we also recommend migrating your previous scripts to use <code>file</code> property. Because this `path` property can be removed someday in the future without announcement.</p>
+	<h3>Abandono de la propiedad <code>path</code></h3>
+	<p>La propiedad <code>path</code> del objeto ‘document’ se ha abandonado en la Suite Standard de AppeScript's desde hace bastante tiempo. Dado que CotEditor lo adoptó en la versión 2.0, esta propiedad también ha quedado obsoleta en CotEditor.  Usar la nueva propiedad <code>file</code> en su lugar. Mientras la propiedad <code>path</code> devuelve un objeto de texto, la propiedad <code>file</code> devuelve un objeto archivo.</p>
+	<p>Para compatibilidad con versiones anteriores, CotEditor 2.0 agregó una propiedad oculta <code>path</code> al objeto ‘document’ unicamente; sin embargo, no lo use si crea nuevos scripts y también recomendamos migrar sus scripts anteriores para usarl la propiedad <code>file</code>. Porque esta propiedad `path` se puede eliminar algún día en el futuro sin previo aviso.</p>
 </section>
 
 <section>
-	<h3>Update of internal code for <code>range</code> property</h3>
-	<p>The internal code for <code>range</code> property of the text selection object to identify itself has been changed on CotEditor 2.0.  The key for the range property is still <code>range</code>, so you don’t need to care about this if you write a new script. However, <strong>compiled</strong> AppleScripts (.scpt) which were written previously might need some updates for this change.</p>
+	<h3>Actualización del código interno para la propiedad <code>range</code></h3>
+	<p>El código interno para la propiedad <code>range</code> del objeto de selección de texto para identificarse se ha cambiado en CotEditor 2.0. La clave para la propiedad del rango sigue siendo <code>range</code>, así que no tienes que preocuparte por esto si escribes un nuevo guión. Sin embargo, AppleScripts (.scpt) <strong>compilados</strong> que fueron escritos anteriormente, podría necesitar algunas actualizaciones para este cambio.</p>
 
-	<h4>How to fix:</h4>
-	<p>Open your .scpt files on AppleScript Editor (or Script Editor), the words that were <code>range</code> previously might be changed to <code>«class prng»</code> or something like that. Overwrite them with <code>range</code> again. And save them.<br/>
-This issue doesn’t occur with plain-text AppleScript (.applescript). </p>
+	<h4>Cómo arreglarlos:</h4>
+	<p>Abre tus archivos .scpt en AppleScript Editor (o Script Editor), las palabras que fueron <code>range</code> anteriormente podrían cambiarse a <code>«class prng»</code> o algo así. Sobrescribirlos con <code>range</code> de nuevo. Y guárdalos.<br/>
+Este problema no se produce con el texto sin formato de AppleScript (.applescript). </p>
 </section>
 </article>
 
 
 <article>
-<h2>Terminology change on CotEditor 1.5.0</h2>
+<h2>Cambio de terminología en CotEditor 1.5.0</h2>
 
 <section>
-	<h3>Window transparency</h3>
-	<p>According to the changing of the mechanism to make the window transparent on CotEditor 1.5, the terms about window opacity for AppleScript were also changed. The <b>document</b>’s properties till on version 1.4:</p>
+	<h3>Transparencia de la ventana</h3>
+	<p>De acuerdo con el cambio del mecanismo para hacer que la ventana sea transparente en CotEditor 1.5, también se cambiaron los términos sobre la opacidad de la ventana para AppleScript. Las propiedades <b>document</b>'s hasta la versión 1.4:</p>
 
 	<ul class="nostyle">
-		<li><code>transparency</code>: The transparency of Window or TextView. (real, from ‘0.2’ to ‘1.0’)</li>
-		<li><code>alpha only textView</code>: Whether the transparency setting affects only the TextView or not. (boolean)</li>
+		<li><code>transparency</code>: La transparencia de Ventana o TextView. (real, de '0.2' a '1.0')</li>
+		<li><code>alpha only textView</code>: Si la configuración de transparencia afecta solo a TextView o no. (booleano)</li>
 	</ul>
 	
-	<p>were deprecated, and the new <b>window</b>’s property:</p>
+	<p>Estaban obsoletos, y la nueva propiedad <b>window</b>’s:</p>
 	
 	<ul class="nostyle">
-		<li><code>view opacity</code>: The opacity of the view. (real, from ‘0.2’ to ‘1.0’)</li>
+		<li><code>view opacity</code>: La opacidad de la vista. (real, de '0.2' a '1.0')</li>
 	</ul>
 	
-	<p>was added instead.</p>
+	<p>se añadió en su lugar.</p>
 	
-	<p>Because the previous term “transparency” was incorrectly used until version 1.4, the property name was renamed from “transparency” to “opacity” but the value to set is not changed. Namely, 1.0 means fully opaque on both properties.</p>
-	<p>Please note that <strong>there is no backward compatibility</strong> with this change.</p>
+	<p>Porque el término anterior “transparency” se usó incorrectamente hasta la versión 1.4, el nombre de la propiedad fue renombrado de “transparency” a “opacity” pero el valor a establecer no cambia. Es decir, 1.0 significa totalmente opaco en ambas propiedades.</p>
+	<p>Tenga en cuenta que con este cambio <strong>no hay compatibilidad con versiones anteriores</strong>.</p>
 </section>
 
 <section>
-	<h3>Selection object directly under the application</h3>
-	<p>In version 0.6, the initial release of CotEditor, if you didn’t specify the ‘selection’ object, the frontmost window’s contents will be selected. But it actually didn’t work correctly and therefore deprecated. This method was kept valid however to maintain backward compatibility.</p>
-	<p>On CotEditor 1.5, it is formally removed.  Specify the target like below, when you get the ‘selection’ object.</p>
+	<h3>Selección del objeto directamente desde la aplicación</h3>
+	<p>En la versión 0.6, la versión inicial de CotEditor, si no se especifica el objeto ‘selection’, se seleccionará el contenido de la ventana frontal. Pero en realidad esto no funcionó correctamente y, por lo tanto, quedó obsoleto. Sin embargo, este método se mantuvo válido para mantener la compatibilidad con versiones anteriores.</p>
+	<p>En CotEditor 1.5, se elimina formalmente.  Especifique el objetivo como se muestra a continuación, cuando obtenga el objeto ‘selection’.</p>
 	
 <figure>
-<figcaption>example 1.</figcaption>
+<figcaption>ejemplo 1.</figcaption>
 <pre class="source"><code class="AppleScript">tell application "CotEditor"
 	contents of selection <b>of front document</b>
 end tell
@@ -234,7 +234,7 @@ end tell
 </figure>
 
 <figure>
-<figcaption>example 2.</figcaption>
+<figcaption>ejemplo 2.</figcaption>
 <pre class="source"><code class="AppleScript">tell application "CotEditor"
 	<b>tell document 1</b>
 		contents of selection
@@ -247,9 +247,9 @@ end tell
 
 
 <section id="cf">
-<h2>See also</h2>
+<h2>Ver también</h2>
 <ul>
-	<li><a href="script_osascript.html">Script CotEditor with AppleScript</a></li>
+	<li><a href="script_osascript.html">Script CotEditor con AppleScript</a></li>
 </ul>
 </section>
 </body>

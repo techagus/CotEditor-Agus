@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="es">
 
 <head>
 	<meta charset="UTF-8"/>
@@ -6,100 +6,100 @@
 	<link rel="stylesheet" href="../../Shared/sty/standard.css"/>
 	<script defer src="../../Shared/js/toc.js"></script>
 	
-	<title>Customize Script menu in CotEditor</title>
+	<title>Personalizar el menú Script en CotEditor</title>
 </head>
 
 <body>
 
-<h1>Customize Script menu in CotEditor</h1>
+<h1>Personalizar el menú Script en CotEditor</h1>
 
-<p>You can change the order of sripts in the menu or assign keyboard shortcuts to scripts by modifying the filenames of your scripts in the script folder.</p>
+<p>Puede cambiar el orden de los scripts en el menú o asignar atajos de teclado a los scripts modificando los nombres de archivo de sus scripts en la carpeta de scripts.</p>
 
 
-<h2>Order of items in the menu</h2>
+<h2>Orden de los artículos en el menú</h2>
 
-<p>By adding “number + closing parenthesis ())” at the head of the name, you can line up the files in numeric order. The part “number + )” won’t be shown in the menu.</p>
+<p>Al agregar "número + paréntesis de cierre ())" en la parte superior del nombre, puede alinear los archivos en orden numérico. La parte "número + )" no se mostrará en el menú.</p>
 
 <table>
-	<caption>Example</caption>
+	<caption>Ejemplo</caption>
 	<thead>
-		<tr><th>Filename</th><th>Display in the menu</th></tr>
+		<tr><th>Nombre del archivo</th><th>Mostrar en el menú</th></tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td><strong>01)</strong>Open File.scpt</td>
-			<td>Open File</td>
+			<td><strong>01)</strong>Abrir Archivo.scpt</td>
+			<td>Abrir archivo</td>
 		</tr>
 	</tbody>
 </table>
 
 
-<h2>Separators</h2>
+<h2>Separadores</h2>
 
-<p>A folder named “-” appears as a separator line in the menu. By adding “number + closing parenthesis ())” at the head of the folder name, you can put a separator between the menu items.</p>
+<p>Una carpeta llamada "-" aparece como una línea separadora en el menú. Al agregar "número + paréntesis de cierre ())" en la parte inferior del nombre de la carpeta, puede poner un separador entre los elementos del menú.</p>
 
 
-<h2>Hidden files/folders</h2>
+<h2>Archivos/carpetas ocultos</h2>
 
-<p>A file/folder whose name begins with the underscore “_” will not be lined up in the script menu. You can use it for setting files, library scripts, and so on.</p>
+<p>Un archivo/carpeta cuyo nombre comience con el guión bajo "_" no se alineará en el menú del script. Puedes usarlo para configurar archivos, scripts de biblioteca, y así sucesivamente.</p>
 
 
 <h2>Submenus</h2>
 
-<p>Scripts placed in a folder in the scripts folder will appear as submenus.</p>
+<p>Los scripts colocados en una carpeta de la carpeta de scripts aparecerán como submenús.</p>
 
 
-<h2>Keyboard shortcuts</h2>
+<h2>Atajos de teclado</h2>
 
-<p>By adding “dot (.) + modifier key + shortcut key” in front of the extension, you can assign a keyboard shortcut to the script.</p>
+<p>Al agregar "punto (.) + tecla modificadora + tecla del atajo" delante de la extensión, puede asignar un atajo de teclado al script.</p>
 
 <ul>
-	<li>Shortcut keys are case sensitive. The one in uppercase indicates that “the Shift key should be pressed together.” See the examples below to see how it works.</li>
-	<li>A shortcut key must come after modifier keys and must be one letter. Thus, you can’t assign the keys such as <kbd>F1</kbd> or <kbd>Delete</kbd> to scripts.</li>
-	<li>When the keyboard shortcut you set is already taken by another function, the shortcut for the script will be ignored.</li>
+	<li>Las teclas de acceso directo distinguen entre mayúsculas y minúsculas. El que está en mayúsculas indica que "la tecla Mayús debe presionarse juntas". Vea los ejemplos a continuación para ver cómo funciona.</li>
+	<li>Una tecla del atajo debe venir después de las teclas modificadoras y debe tener una letra. Por lo tanto, no puedes asignar como tecla del atajo <kbd>F1</kbd> o <kbd>Delete</kbd> a los scripts.</li>
+	<li>Cuando el atajo de teclado que hayas establecido ya esté tomado por otra función, el atajo para el script se ignorará.</li>
 </ul>
 
 <table>
-	<caption>Modifier key notations</caption>
+	<caption>Teclas modificadoras</caption>
 	<thead>
-		<tr><th>Notation</th><th>Equivalent key</th></tr>
+		<tr><th>Notación</th><th>Tecla equivalente</th></tr>
 	</thead>
 	<tbody>
 		<tr><td>^</td><td><kbd>Control</kbd></td></tr>
-		<tr><td>$</td><td><kbd>Shift</kbd></td></tr>
-		<tr><td>~</td><td><kbd>Option</kbd></td></tr>
-		<tr><td>@</td><td><kbd>Command</kbd></td></tr>
+		<tr><td>$</td><td><kbd>May</kbd></td></tr>
+		<tr><td>~</td><td><kbd>Alt</kbd></td></tr>
+		<tr><td>@</td><td><kbd>Comando</kbd></td></tr>
 	</tbody>
 </table>
 
 <table>
-	<caption>Examples</caption>
+	<caption>Ejemplos</caption>
 	<thead>
-		<tr><th>Filename</th><th>Display in the menu</th><th>Shortcut</th></tr>
+		<tr><th>Nombre del archivo</th><th>Mostrar en el menú</th><th>Atajo</th></tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td>Insert String<strong>.@e</strong>.scpt</td>
-			<td>Insert String</td>
-			<td><kbd>Command</kbd>-<kbd>E</kbd></td>
+			<td>Insertar cadena<strong>.@e</strong>.scpt</td>
+			<td>Insertar cadena</td>
+			<td><kbd>Comando</kbd>-<kbd>E</kbd></td>
 		</tr>
 		<tr>
-			<td>03)Insert Date<strong>.@~Y</strong>.scpt</td>
-			<td>Insert Date</td>
-			<td><kbd>Option</kbd>-<kbd>Shift</kbd>-<kbd>Command</kbd>-<kbd>Y</kbd></td>
+			<td>03)Insertar fecha<strong>.@~Y</strong>.scpt</td>
+			<td>Insertar fecha</td>
+			<td><kbd>Alt</kbd>-<kbd>May</kbd>-<kbd>Comando</kbd>-<kbd>Y</kbd></td>
 		</tr>
 	</tbody>
 </table>
 
 
-<h3>Set the same shortcut to multiple scripts</h3>
+<h3>Establecer el mismo acceso directo a varios scripts</h3>
 
-<p>CotEditor changes keyboard shortcut mapping dinamically to prioritize the scripts in the subfolder whose name is the same as the frontmost document’s syntax when the same keyboard shortcut is determined in multiple CotEditor scripts.</p>
+<p>CotEditor cambia la asignación de atajos de teclado dinámicamente para priorizar los scripts en la subcarpeta cuyo nombre es el mismo que la sintaxis del documento principal cuando se determina el mismo atajo de teclado en varios scripts de CotEditor.</p>
 
 
 
 <section id="cf">
-<h2>See also</h2>
+<h2>Ver también</h2>
 <ul>
 	<li><a href="script_overview.html">Script CotEditor</a></li>
 </ul>
