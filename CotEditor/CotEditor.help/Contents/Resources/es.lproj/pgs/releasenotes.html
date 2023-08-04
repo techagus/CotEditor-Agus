@@ -446,28 +446,28 @@
 
 
 	<section>
-		<h2>Improvements</h2>
+		<h2>Mejoras</h2>
 
 		<ul>
-			<li>Rename the Highlight command to Highlight All.</li>
-			<li>Tweak CotEditor’s setting view in the print dialog.</li>
-			<li>Update Markdown syntax style to highlight code blocks with indentation (Thanks to Rafael Viotti!).</li>
-			<li><span class="trivial">trivial</span>: Improve the text selection behavior with key bindings.</li>
-			<li><span class="trivial">trivial</span>: Disable the Select All command when no documents are available.</li>
+			<li>Cambié el nombre del comando Resaltar a Resaltar todo.</li>
+			<li>Ajustar la vista de configuración de CotEditor en el cuadro de diálogo de impresión.</li>
+			<li>Actualicé el estilo de sintaxis de Markdown para resaltar los bloques de código con sangría (¡Gracias a Rafael Viotti!).</li>
+			<li><span class="trivial">trivial</span>: Mejorar el comportamiento de selección de texto con atajos de teclado.</li>
+			<li><span class="trivial">trivial</span>: Deshabilite el comando Seleccionar todo cuando no haya documentos disponibles.</li>
 		</ul>
 	</section>
 
 
 	<section>
-		<h2>Fixes</h2>
+		<h2>Correcciones</h2>
 
 		<ul>
-			<li>Fix an issue on macOS 13 that the Find All button in the find panel was not localized.</li>
-			<li>Fix an issue on CotEditor 4.4.0 that <code>contents of selection</code> of a document object returned its entire contents.</li>
-			<li>Fix an issue that the application could hang up when the insertion point moved over invisible control characters by the Control-Shift-arrow keys.</li>
-			<li>Fix an issue that the last of multiple insertion points locates at the end of the document was not drawn.</li>
-			<li>Fix an issue that the insertion point immediately exited automatically closed quote marks when the smart quote feature is enabled.</li>
-			<li>Fix an issue that the initial window height could differ from the user-specified setting.</li>
+			<li>Soluciona un problema en macOS 13 por el que el botón Buscar todo en el panel de búsqueda no estaba localizado.</li>
+			<li>Solucionar un problema en CotEditor 4.4.0 que <code>contents of selection</code> de un objeto de documento devolvió todo su contenido.</li>
+			<li>Soluciona un problema en el que la aplicación podía colgarse cuando el punto de inserción se movía sobre los caracteres de control invisibles mediante las teclas de flecha Control-Mayús.</li>
+			<li>Solucionar un problema que el último de los múltiples puntos de inserción que se encuentra al final del documento no se dibujaba.</li>
+			<li>Soluciona un problema de que el punto de inserción salía inmediatamente de las comillas cerradas automáticamente cuando la función de comillas inteligentes está habilitada.</li>
+			<li>Solucionar un problema por el que la altura inicial de la ventana podría diferir de la configuración especificada por el usuario.</li>
 		</ul>
 	</section>
 </article>
@@ -476,68 +476,68 @@
 <article>
 	<header>
 		<h1>CotEditor 4.4.0</h1>
-		<p>release: <time>2022-10-22</time></p>
+		<p>Lanzamiento <time>22-10-2022</time></p>
 	</header>
 
 
 	<section>
-		<h2>New Features</h2>
+		<h2>Nuevas características</h2>
 
 		<ul>
-			<li>Add Advanced Character Count feature to the Text menu.</li>
-			<li>Dynamically prioritize the scripts in the subfolder whose name is the same as the frontmost document’s syntax style when the same keyboard shortcut is determined in multiple CotEditor scripts.</li>
-			<li>Add URL Encode/Decode commands to the Text &gt; Transformations submenu.</li>
-			<li>Display a dot in the window tab if the document has unsaved changes.</li>
-			<li>Add the option to draw the separator line between the line number view and the editor.</li>
-			<li>Add syntax styles for DOT (Thanks to usr-sse2!) and TypeScript.</li>
+			<li>Añadir la función de recuento avanzado de caracteres al menú Texto.</li>
+			<li>Priorizar dinámicamente los scripts en la subcarpeta cuyo nombre es el mismo que el estilo de sintaxis del documento principal cuando se determina el mismo atajo de teclado en múltiples scripts de CotEditor.</li>
+			<li>Añadir comandos de codificación/decodificación de URL al submenú texto &gt; Transformaciones.</li>
+			<li>Muestra un puntos en la pestaña de la ventana si el documento tiene cambios no guardados.</li>
+			<li>Añade la opción de dibujar la línea separadora entre la vista de número de línea y el editor.</li>
+			<li>Añade estilos de sintaxis para DOT (¡Gracias a usr-sse2!) y TypeScript.</li>
 		</ul>
 	</section>
 
 
 	<section>
-		<h2>Improvements</h2>
+		<h2>Mejoras</h2>
 
 		<ul>
-			<li>Support <strong>macOS 13 Ventura</strong>.</li>
-			<li>Change the system requirement to <strong>macOS 12 Monterey and later</strong>.</li>
-			<li>Improve the Find All button only on macOS 13 Ventura (and later) to enable performing additional commands.</li>
-			<li>Store the state of the “Don’t ask again for this document” option for the inconsistent line endings alert and respect it for future open.<ul>
-				<li><strong>for advanced users</strong>: Now you can also disable the feature entirely within the application by running the following command in Terminal, though it is not recommended:<br/>
+			<li>Soporta <strong>macOS 13 Ventura</strong>.</li>
+			<li>Cambiar el requisito del sistema a<strong>macOS 12 Monterey y posteriores</strong>.</li>
+			<li>Mejora el botón Buscar todo solo en macOS 13 Ventura (y versiones posteriores) para habilitar la ejecución de comandos adicionales.</li>
+			<li>Almacene el estado de la opción "No vuelva a pedir este documento" para la alerta de finales de línea inconsistentes y respételo para la apertura futura.<ul>
+				<li><strong>para usuarios avanzados</strong>: Ahora también puede desactivar la función por completo dentro de la aplicación ejecutando el siguiente comando en Terminal, aunque no se recomienda:<br/>
 					<code>defaults write com.coteditor.CotEditor suppressesInconsistentLineEndingAlert -bool YES</code></li>
     		</ul></li>
-			<li>Deprecate the <code>length</code> property in AppleScript (Use <code>number of characters of contents</code> instead).</li>
-			<li>Support the split cursor for bidirectional languages in multi-cursor editing.</li>
-			<li>Update the CotEditor’s setting view in the print panel.</li>
-			<li>Change the location and column count to start with zero.</li>
-			<li>Add the history menu to the regular expression patterns in the pattern sort dialog.</li>
-			<li>Display the error message in the pattern sort dialog if the regular expression pattern is invalid.</li>
-			<li>Improve the algorithm to parse numbers in the Sort by Pattern command.</li>
-			<li>Improve the algorithm of uncommenting.</li>
-			<li>Improve the algorithm of encoding detection.</li>
-			<li>Improve VoiceOver support.</li>
-			<li>Deprecate the “Ignore line endings when counting characters” option.</li>
-			<li>Deprecate the option to hide file size in the status bar.</li>
-			<li>Remove the text length display in the document inspector.</li>
-			<li>Improve stability.</li>
-			<li><span class="trivial">trivial</span>: Adjust ticks in the line number view for vertical orientation.</li>
-			<li><span class="trivial">trivial</span>: Save documents asynchronously.</li>
-			<li><span class="trivial">trivial</span>: Visually adjust the filter field in the outline inspector.</li>
-			<li><span class="trivial">trivial</span>: Organize the editor’s contextual menu.</li>
-			<li><span class="trivial">trivial</span>: Improve the basic regular expression syntax reference.</li>
-			<li><span class="trivial">trivial</span>: Improve the status bar display.</li>
-			<li><span class="trivial">trivial</span>: Optimize the script menu update.</li>
-			<li><span class="trivial">dev</span>: Update the build environment to Xcode 14.1 (macOS 13 SDK).</li>
-			<li><span class="trivial">dev</span>: Migrate helpindex to cshelpindex.</li>
-			<li><span class="label">non-AppStore ver.</span>: Optimize the script menu update.</li>
+			<li>Desechada la propiedad <code>length</code> en AppleScript (Usar <code>number of characters of contents</code> en su lugar).</li>
+			<li>Admite el cursor dividido para lenguajes bidireccionales en la edición multicursor.</li>
+			<li>Actualizar la vista de configuración de CotEditor en el panel de impresión.</li>
+			<li>Cambiar la ubicación y el recuento de columnas para comenzar con cero.</li>
+			<li>Añade el menú de historial a los patrones de expresión regular en el cuadro de diálogo de clasificación de patrones.</li>
+			<li>Mostrar el mensaje de error en el cuadro de diálogo de clasificación de patrones si el patrón de expresión regular no es válido.</li>
+			<li>Mejorar el algoritmo para analizar números en el comando Ordenar por patrón.</li>
+			<li>Mejorar el algoritmo de descomentado.</li>
+			<li>Mejorar el algoritmo de detección de codificación.</li>
+			<li>Mejorar el soporte de VoiceOver.</li>
+			<li>Desechar la opción "Ignorar finales de línea al contar caracteres".</li>
+			<li>Desechar la opción de ocultar el tamaño del archivo en la barra de estado.</li>
+			<li>Eliminar la visualización de la longitud del texto en el inspector de documentos.</li>
+			<li>Mejorar la estabilidad.</li>
+			<li><span class="trivial">trivial</span>: Ajustar marcas en la vista del número de línea para la orientación vertical.</li>
+			<li><span class="trivial">trivial</span>: Guarde documentos de forma asíncrona.</li>
+			<li><span class="trivial">trivial</span>: Ajuste visualmente el campo de filtro en el inspector de esquema.</li>
+			<li><span class="trivial">trivial</span>: Organizar el menú contextual del editor.</li>
+			<li><span class="trivial">trivial</span>: Mejorar la referencia básica de sintaxis de expresiones regulares.</li>
+			<li><span class="trivial">trivial</span>: Mejorar la visualización de la barra de estado.</li>
+			<li><span class="trivial">trivial</span>: Optimizar la actualización del menú de scripts.</li>
+			<li><span class="trivial">dev</span>: Actualizar el entorno de compilación a Xcode 14.1 (macOS 13 SDK).</li>
+			<li><span class="trivial">dev</span>: Migrar helpindex a cshelpindex.</li>
+			<li><span class="label">non-AppStore ver.</span>: Optimizar la actualización del menú de scripts.</li>
 		</ul>
 	</section>
 
 
 	<section>
-		<h2>Fixes</h2>
+		<h2>Correcciones</h2>
 
 		<ul>
-			<li>Fix an issue that the empty draft documents silently discarded remained in the Open Recents menu.</li>
+			<li>Solucionar un problema por el que los borradores de documentos vacíos desechados silenciosamente permanecían en el menú Abrir recientes.</li>
 		</ul>
 	</section>
 </article>
@@ -546,16 +546,16 @@
 <article>
 	<header>
 		<h1>CotEditor 4.3.6</h1>
-		<p>release: <time>2022-10-01</time></p>
+		<p>Lanzamiento: <time>01-10-2022</time></p>
 	</header>
 
 
 	<section>
-		<h2>Fixes</h2>
+		<h2>Correcciones</h2>
 
 		<ul>
-			<li>Fix an issue on CotEditor 4.3.5 that the option “Give execute permission” in the save dialog was occasionally ignored.</li>
-			<li>Fix a typo in PHP syntax style (Thanks to DAnn2012!).</li>
+			<li>Se ha corregido un problema en CotEditor 4.3.5 de que la opción "Dar permiso de ejecución" en el cuadro de diálogo de guardado se ignoraba ocasionalmente.</li>
+			<li>Corrige un error tipográfico en el estilo de sintaxis PHP (Gracias a DAnn2012!).</li>
 		</ul>
 	</section>
 </article>
@@ -564,21 +564,21 @@
 <article>
 	<header>
 		<h1>CotEditor 4.3.5</h1>
-		<p>release: <time>2022-09-17</time></p>
+		<p>Lanzamiento: <time>17-09-2022</time></p>
 	</header>
 
 
 	<section>
-		<h2>Improvements</h2>
+		<h2>Mejoras</h2>
 
 		<ul>
-			<li><span class="label">non-AppStore ver.</span>: Update Sparkle from 2.2.1 to 2.2.2.</li>
+			<li><span class="label">verisón no-AppStore</span>: Actualicé Sparkle de 2.2.1 a 2.2.2.</li>
 		</ul>
 	</section>
 
 
 	<section>
-		<h2>Fixes</h2>
+		<h2>Correcciones</h2>
 
 		<ul>
 			<li>Fix an issue that the option “Give execute permission” in the save dialog was applied to the document even when the save operation was cancelled.</li>

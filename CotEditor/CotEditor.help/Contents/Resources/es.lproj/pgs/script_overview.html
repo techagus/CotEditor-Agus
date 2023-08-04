@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="es">
 
 <head>
 	<meta charset="UTF-8"/>
@@ -14,7 +14,7 @@
 
 <h1>Script CotEditor</h1>
 
-<p>CotEditor has a scripting feature that lets you run your own scripts on CotEditor to manipulate documents or launch external programs. Your scripts are shown in the Script menu represented with <object type="image/svg+xml" data="../../Shared/gfx/script.svg" height="14">script icon</object>.</p>
+<p>CotEditor tiene una función de secuencias de comandos que le permite ejecutar sus propios scripts en CotEditor para manipular documentos o iniciar programas externos. Sus scripts se muestran en el menú de scripts representado con el icono <object type="image/svg+xml" data="../../Shared/gfx/script.svg" height="14"></object>.</p>
 
 <figure>
 	<img src="../gfx/ov_scriptmenu@2x.png" alt="[Script menu]" width="400"/>
@@ -22,43 +22,43 @@
 
 
 
-<h2>Scripting types</h2>
-<p>On CotEditor, there are two different ways to write scripts:</p>
+<h2>Tipos de scripting</h2>
+<p>En CotEditor, hay dos formas diferentes de escribir scripts:</p>
 <ul>
 	<li>AppleScript</li>
 	<li>UNIX script</li>
 </ul>
 
-<p>While AppleScript (incl. JXA; JavaScript for Automation) can control CotEditor’s document more flexibly, UNIX scripts can only modify the contents of the frontmost document. However, as for UNIX scripts, you can write them in various languages, for example; Python, Ruby, Perl, and so on. Choose a script type to suit your use. For details about how to write your scripts, refer to <a href="script_osascript.html">Script CotEditor with AppleScript</a> or <a href="script_unixscript.html">Script CotEditor with UNIX script</a>.</p>
+<p>Mientras que AppleScript (incl. JXA; JavaScript para Automatización) puede controlar el documento de CotEditor de manera más flexible, los scripts UNIX solo pueden modificar el contenido del documento principal. Sin embargo, en cuanto a los scripts de UNIX, puedes escribirlos en varios idiomas, por ejemplo; Python, Ruby, Perl, etc. Elige un tipo de guión que se adapte a tu uso. Para obtener más información sobre cómo escribir sus guiones, consulte <a href="script_osascript.html">Script CotEditor con AppleScript</a> or <a href="script_unixscript.html">Script CotEditor con script UNIX</a>.</p>
 
 
-<h2>Add/delete scripts</h2>
+<h2>Añadir/eliminar scripts</h2>
 
-<p>To add scripts to or remove scripts from the Script menu, follow the instruction below:</p>
+<p>Para añadir o eliminar scripts del menú de scripts, siga las siguientes instrucciones:</p>
 <ol>
-	<li>Choose Script &gt; Open Scripts Folder in CotEditor and the Finder opens the folder for CotEditor scripts at:<br/>
+	<li>Elegir icono script del menú &gt; Abrir la carpeta de scripts y en el Finder se abrirá la carpeta de scripts de CotEditor en:<br/>
 	~/Library/Application Scripts/com.coteditor.CotEditor/</li>
-	<li>Put your script files in this folder, or remove them from there.</li>
-	<li>The changes you made inside the scripts folder will be automatically reflected in the menu.</li>
+	<li>Pon tus archivos de script en esta carpeta o elimínalos de allí.</li>
+	<li>Los cambios que hayas realizado dentro de la carpeta de scripts se reflejarán automáticamente en el menú.</li>
 </ol>
 
-<p>You can change the order of scripts or assign keyboard shortcuts by modifying the names of your script files. See <a href="script_menu.html">Customize the Script menu</a> for the details.</p>
+<p>Puede cambiar el orden de los scripts o asignar métodos abreviados de teclado modificando los nombres de sus archivos de script. Ver <a href="script_menu.html">Personaliza el menú Script</a> para más detalles.</p>
 
 
-<h2>Get existing CotEditor scripts</h2>
-<p>The CotEditor project provides some sample scripts. You can get them on:<br/>
+<h2>Obtener los scripts existentes de CotEditor</h2>
+<p>El proyecto CotEditor proporciona algunos scripts de muestra. Puedes obtenerlos en:<br/>
 <a href="https://github.com/coteditor/SampleScripts" rel="external">coteditor/SampleScripts -GitHub</a></p>
 
-<p>Some kind users may distribute their scripts for CotEditor online. Some of them are listed on:<br/>
+<p>Algunos usuarios pueden distribuir sus scripts para CotEditor en línea. Algunos de ellos están listados en:<br/>
 <a href="https://github.com/coteditor/CotEditor/wiki/CotEditor-Scripts" rel="external">CotEditor Scripts -CotEditor Wiki</a></p>
 
 
 <section id="cf">
-<h2>See also</h2>
+<h2>Ver también</h2>
 <ul>
-	<li><a href="script_menu.html">Customize the Script menu</a></li>
-	<li><a href="script_osascript.html">Script CotEditor with AppleScript</a></li>
-	<li><a href="script_unixscript.html">Script CotEditor with UNIX script</a></li>
+	<li><a href="script_menu.html">Personaliza el menú Script</a></li>
+	<li><a href="script_osascript.html">Script CotEditor con AppleScript</a></li>
+	<li><a href="script_unixscript.html">Script CotEditor con script UNIX</a></li>
 </ul>
 </section>
 
