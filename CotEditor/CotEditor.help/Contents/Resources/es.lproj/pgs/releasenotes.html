@@ -581,13 +581,13 @@
 		<h2>Correcciones</h2>
 
 		<ul>
-			<li>Fix an issue that the option “Give execute permission” in the save dialog was applied to the document even when the save operation was cancelled.</li>
-			<li>Address an issue since macOS 12.4 that the buttons in the save dialog became occasionally unresponsive when the application is running in some specific Japanese environment.</li>
-			<li>Fix an issue that the column of the outline pane was narrower than the list width.</li>
-			<li>Fix an issue that memory could leak when the opacity toolbar item is used.</li>
-			<li>Fix an issue that the width of the line number view was not updated when the content was changed on disk.</li>
-			<li>Fix some typos.</li>
-			<li><span class="label">non-AppStore ver.</span>: Fix an issue that a message about the software update in the General pane was hidden.</li>
+			<li>Soluciona un problema por el que la opción "Dar permiso de ejecución" en el cuadro de diálogo de guardado se aplicaba al documento incluso cuando se cancelaba la operación de guardado.</li>
+			<li>Solucionar un problema desde macOS 12.4 por el que los botones en el cuadro de diálogo de guardar ocasionalmente dejaban de responder cuando la aplicación se ejecuta en algún entorno japonés específico.</li>
+			<li>Soluciona un problema por el que la columna del panel esquema era más estrecha que el ancho de la lista.</li>
+			<li>Solucionar un problema que podría crear una fuga de la memoria cuando se utiliza el elemento opacidad de la barra de herramientas.</li>
+			<li>Se ha corregido un problema por el que el ancho de la vista del número de línea no se actualizaba cuando habia un cambio en el contenido del disco.</li>
+			<li>Corrige algunos errores tipográficos.</li>
+			<li><span class="label">versión no-AppStore</span>: Solucionar un problema por el que se ocultaba un mensaje sobre la actualización de software en el panel General.</li>
 		</ul>
 	</section>
 </article>
@@ -596,15 +596,15 @@
 <article>
 	<header>
 		<h1>CotEditor 4.3.4</h1>
-		<p>release: <time>2022-08-26</time></p>
+		<p>Lanzamiento: <time>26-08-2022</time></p>
 	</header>
 
 
 	<section>
-		<h2>Fixes</h2>
+		<h2>Correcciones</h2>
 
 		<ul>
-			<li>Fix an issue on CotEditor 4.3.3 that the window size was not inherited from the last document.</li>
+			<li>Se ha corregido un problema en CotEditor 4.3.3 de que el tamaño de la ventana no se heredaba del último documento.</li>
 		</ul>
 	</section>
 </article>
@@ -614,18 +614,18 @@
 <article>
 	<header>
 		<h1>CotEditor 4.3.3</h1>
-		<p>release: <time>2022-08-13</time></p>
+		<p>Lanzamiento: <time>13-08-2022</time></p>
 	</header>
 
 
 	<section>
-		<h2>Fixes</h2>
+		<h2>Correcciones</h2>
 
 		<ul>
-			<li>Fix an issue that the application could hang up when an opened document shared in iCloud Drive was modified in another machine.</li>
-			<li>Fix an issue that document windows sometimes did not shift the initial position from the last window.</li>
-			<li>Fix an issue that the scrollable area of the editor in vertical layout orientation could be clipped wrongly when scaled.</li>
-			<li>Fix an issue that some text was not localized.</li>
+			<li>Solucionar un problema en el que la aplicación podía colgarse cuando un documento abierto compartido en iCloud Drive se modificaba en otra máquina.</li>
+			<li>Solucionar un problema por el que las ventanas de documentos a veces no cambiaban la posición inicial de la última ventana.</li>
+			<li>Se ha corregido un problema por el que el área desplazable del editor en la orientación del diseño vertical podría recortarse incorrectamente cuando se escalaba.</li>
+			<li>Soluciona un problema por el que algún texto no se traducia.</li>
 		</ul>
 	</section>
 </article>
@@ -635,25 +635,25 @@
 <article>
 	<header>
 		<h1>CotEditor 4.3.2</h1>
-		<p>release: <time>2022-07-30</time></p>
+		<p>Lanzamiento: <time>30-07-2022</time></p>
 	</header>
 
 
 	<section>
-		<h2>Improvements</h2>
+		<h2>Mejoras</h2>
 
 		<ul>
-			<li><span class="label">non-AppStore ver.</span>: Update Sparkle to 2.2.1.</li>
+			<li><span class="label">versión no-AppStore</span>: Actualiza Sparkle a 2.2.1.</li>
 		</ul>
 	</section>
 
 
 	<section>
-		<h2>Fixes</h2>
+		<h2>Correcciones</h2>
 
 		<ul>
-			<li>Fix an issue that the tab width setting was not respected when printing.</li>
-			<li>Fix an issue that the length of invisible tab characters was drawn wrongly in the right-to-left writing direction.</li>
+			<li>Soluciona un problema por el que la configuración del ancho de la pestaña no se respetaba al imprimir.</li>
+			<li>Soluciona un problema por el que la longitud de los caracteres de tabulación invisibles se dibujaba incorrectamente en la dirección de escritura de derecha a izquierda.</li>
 		</ul>
 	</section>
 </article>
@@ -663,40 +663,40 @@
 <article>
 	<header>
 		<h1>CotEditor 4.3.1</h1>
-		<p>release: <time>2022-07-03</time></p>
+		<p>Lanzamiento: <time>03-07-2022</time></p>
 	</header>
 
 
 	<section>
-		<h2>New Features</h2>
+		<h2>Nuevas características</h2>
 
 		<ul>
-			<li>Add new Shuffle command to the Text &gt; Lines submenu.</li>
+			<li>Añade un nuevo comando Orden aleatorio en el submenú Texto &gt; Líneas.</li>
 		</ul>
 	</section>
 
 
 	<section>
-		<h2>Improvements</h2>
+		<h2>Mejoras</h2>
 
 		<ul>
-			<li>Optimize the performance for editor splitting.</li>
-			<li>Avoid sluggishness by incremental search in large documents.</li>
-			<li>Optimize the performance of highlighting selected text instances.</li>
-			<li>Remove the limitation to highlight a large number of instances of the selected text.</li>
-			<li>Scroll the editor by the Move Line Up/Down commands so that the moved lines are visible.</li>
-			<li>Change the behavior of the metacharacter <code>\v</code> in the regular expression for text search to confirm with the current ICU specification.</li>
-			<li>Update Swift syntax style to add keywords.</li>
-			<li><span class="trivial">trivial</span>: Update French localization.</li>
+			<li>Optimizar el rendimiento para la división del editor.</li>
+			<li>Evitar la lentitud de la búsqueda incremental en documentos grandes.</li>
+			<li>Optimizar el rendimiento del resaltado de las instancias de texto seleccionadas.</li>
+			<li>Eliminar la limitación para resaltar un gran número de instancias del texto seleccionado.</li>
+			<li>Desplácese por el editor por los comandos Mover línea arriba/abajo para que las líneas movidas sean visibles.</li>
+			<li>Cambiar el comportamiento del metacaracter <code>\v</code> en la expresión regular para la búsqueda de texto para confirmar con la especificación actual de la UCI.</li>
+			<li>Actualizar el estilo de sintaxis de Swift para añadir palabras clave.</li>
+			<li><span class="trivial">trivial</span>: Actualizar la traducción al francés.</li>
 		</ul>
 	</section>
 
 
 	<section>
-		<h2>Fixes</h2>
+		<h2>Correcciones</h2>
 
 		<ul>
-			<li>Fix an issue that memory rarely leaked on closing documents.</li>
+			<li>Solucionar un problema en el que existe alguna vez fuga de memoria al cerrar documentos.</li>
 		</ul>
 	</section>
 </article>
@@ -706,7 +706,7 @@
 <article>
 	<header>
 		<h1>CotEditor 4.3.0</h1>
-		<p>release: <time>2022-06-18</time></p>
+		<p>Lanzamiento: <time>18-06-2022</time></p>
 	</header>
 
 

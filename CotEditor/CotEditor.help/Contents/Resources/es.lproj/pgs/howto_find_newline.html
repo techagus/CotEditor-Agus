@@ -48,9 +48,9 @@
 
 <p>En cuanto al texto que se reemplaza con, todos los finales de línea, incluso las definidas como un metacarácter <code>\n</code> o similar se asume como el final de la línea del documento.</p>
 
-<p>Por ejemplo, al reemplazar la cadena de búsqueda "dog\Rcow" con la cadena de reemplazo "$0\r" usando la expresión regular en un documento cuyo tipo de final de línea es LF (<code>\n</code>), La subcadena "perro<span class="invisible">\r\n</span>cow” en el documento también coincide, y teóricamente, la expresión regular debería reemplazarla por "perro<span class="invisible">\r\n</span>cow<span class="invisible">\r</span>”; sin embargo, CotEditor en realidad lo reemplaza por "perro<span class="invisible">\n</span>cow<span class="invisible">\n</span>”.</p>
+<p>Por ejemplo, al reemplazar la cadena de búsqueda "perro\Rvaca" con la cadena de reemplazo "$0\r" usando la expresión regular en un documento cuyo tipo de final de línea es LF (<code>\n</code>), La subcadena "perro<span class="invisible">\r\n</span>vaca” en el documento también coincide, y teóricamente, la expresión regular debería reemplazarla por "perro<span class="invisible">\r\n</span>vaca<span class="invisible">\r</span>”; sin embargo, CotEditor en realidad lo reemplaza por "perro<span class="invisible">\n</span>vaca<span class="invisible">\n</span>”.</p>
 
-<p>Actualmente no hay forma de reemplazar con finales de línea, que no sea el final de línea del documento.</p>
+<p>Actualmente no hay forma de reemplazar con finales de línea, que no sean el final de línea del documento.</p>
 
 
 
