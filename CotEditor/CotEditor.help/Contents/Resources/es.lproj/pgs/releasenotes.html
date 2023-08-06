@@ -711,37 +711,37 @@
 
 
 	<section>
-		<h2>New Features</h2>
+		<h2>Nuevas características</h2>
 
 		<ul>
-			<li>Incremental search in the Find window.</li>
+			<li>Búsqueda incremental en la ventana Buscar.</li>
 		</ul>
 	</section>
 
 
 	<section>
-		<h2>Improvements</h2>
+		<h2>Mejoras</h2>
 
 		<ul>
-			<li>Drastically improved the performance of syntax highlighting on large documents so that no rainbow cursor appears.</li>
-			<li>Stop displaying the progress indicator for syntax highlight on large documents and apply the highlight asynchronously instead.</li>
-			<li>Optimize the time to open large documents.</li>
-			<li>Avoid re-parsing syntax on printing.</li>
-			<li>Update the style of the search progress dialog.</li>
-			<li>Remove the preference option to disable syntax highlighting.</li>
-			<li>Update Swift syntax style to support Swift 5.7.</li>
-			<li><span class="trivial">trivial</span>: Suppress the inconsistent line ending alert in the Versions browsing.</li>
+			<li>Se ha mejorado drásticamente el rendimiento del resaltado de sintaxis en documentos grandes para que no aparezca ningún cursor de arco iris.</li>
+			<li>Deje de mostrar el indicador de progreso para resaltar la sintaxis en documentos grandes y aplique el resaltado de forma asíncrona en su lugar.</li>
+			<li>Optimizar el tiempo para abrir documentos grandes.</li>
+			<li>Evite revisar la sintaxis en la impresión.</li>
+			<li>Actualizar el estilo del cuadro de diálogo de progreso de búsqueda.</li>
+			<li>Eliminar la opción de preferencia para desactivar el resaltado de sintaxis.</li>
+			<li>Actualizar el estilo de sintaxis de Swift para que admita Swift 5.7.</li>
+			<li><span class="trivial">trivial</span>: Suprimir la alerta de finalización de línea inconsistente en la navegación de versiones.</li>
 		</ul>
 	</section>
 
 
 	<section>
-		<h2>Fixes</h2>
+		<h2>Correcciones</h2>
 
 		<ul>
-			<li>Fix an issue that the application crashed with very specific fonts.</li>
-			<li>Fix an issue that the highlights of Find All in the editor remained even when closing the Find window.</li>
-			<li>Fix an issue that the application could become unresponsive when trying to show the file mapping conflicts.</li>
+			<li>Soluciona un problema por el que la aplicación se bloqueaba con fuentes muy específicas.</li>
+			<li>Soluciona un problema por el que los aspectos más destacados de Buscar todo en el editor permanecían incluso al cerrar la ventana Buscar.</li>
+			<li>Solucionar un problema por el que la aplicación podía dejar de responder al intentar mostrar los conflictos de asignación de archivos.</li>
 		</ul>
 	</section>
 </article>
@@ -751,30 +751,30 @@
 <article>
 	<header>
 		<h1>CotEditor 4.2.3</h1>
-		<p>release: <time>2022-06-05</time></p>
+		<p>Lanazamiento: <time>05-06-2022</time></p>
 	</header>
 
 
 	<section>
-		<h2>Improvements</h2>
+		<h2>Mejoras</h2>
 
 		<ul>
-			<li>Make the font size of the find result table changeable by <kbd>Command</kbd>-<kbd>Plus sign</kbd> (+) or <kbd>Command</kbd>-<kbd>Minus sign</kbd> (-) while focusing on the result table.</li>
-			<li>Rewrite the algorithm parsing comments and quoted text.</li>
-			<li>Update LaTeX syntax style to improve highlighting.</li>
-			<li>Update the following syntax styles to fix syntax highlighting: DTD, INI, JSON, LaTeX, Markdown, PHP, Perl, reStructuredText, Ruby, Shell Script, Textile, XML, and YAML.</li>
-			<li>Update SQL syntax style to support inline comment highlighting with <code>#</code>.</li>
-			<li><span class="trivial">trivial</span>: Change the color names in the Stylesheet Keyword color palette in the color code panel to lower case.</li>
+			<li>Haz que el tamaño de fuente de la tabla de resultados de búsqueda sea cambiable por <kbd>Comando</kbd>-<kbd>Signo más</kbd> (+) o <kbd>Comando</kbd>-<kbd>Signo menos</kbd> (-) mientras se centra en la tabla de resultados.</li>
+			<li>Reescribe el algoritmo de análisis de comentarios y comillas de texto.</li>
+			<li>Actualizar el estilo de sintaxis de LaTeX para mejorar el resaltado.</li>
+			<li>Actualice los siguientes estilos de sintaxis para corregir el resaltado de sintaxis: DTD, INI, JSON, LaTeX, Markdown, PHP, Perl, reStructuredText, Ruby, Shell Script, Textile, XML y YAML.</li>
+			<li>Actualizar el estilo de sintaxis SQL para admitir el resaltado de comentarios en línea con <code>#</code>.</li>
+			<li><span class="trivial">trivial</span>: Cambie los nombres de los colores a minúsculas en la paleta de colores de la palabra clave de la hoja de estilo en el panel de código de color.</li>
 		</ul>
 	</section>
 
 
 	<section>
-		<h2>Fixes</h2>
+		<h2>Correcciones</h2>
 
 		<ul>
-			<li>Fix an issue by documents with the CRLF line ending that the editor did not scroll by changing selection with the <kbd>Shift</kbd>-<kbd>arrow</kbd> keys.</li>
-			<li>Fix an issue that letters in the editor were drawn in wrong glyphs when updating the font under very specific conditions.</li>
+			<li>Solucionar un problema de documentos con el final de línea CRLF que hace que el editor no se desplace cambiando la selección con las teclas <kbd>May</kbd>-<kbd>flechas</kbd>.</li>
+			<li>Solucionar un problema de que las letras en el editor se dibujaban en glifos incorrectos al actualizar la fuente en condiciones muy específicas.</li>
 		</ul>
 	</section>
 </article>
@@ -784,34 +784,34 @@
 <article>
 	<header>
 		<h1>CotEditor 4.2.2</h1>
-		<p>release: <time>2022-05-26</time></p>
+		<p>Lanzamiento: <time>26-05-2022</time></p>
 	</header>
 
 
 	<section>
-		<h2>Improvements</h2>
+		<h2>Mejoras</h2>
 
 		<ul>
-			<li>Perform automatic indentation even when inserting a newline while selecting text.</li>
-			<li>Alert for registering the key bindings that are not actually supported.</li>
-			<li>Update Markdown and Textile syntax styles to fix highlighting.</li>
-			<li>Improve the indent style detection.</li>
-			<li>Improve traditional Chinese localization (thanks to Shiki Suen!).</li>
-			<li>Update the help contents.</li>
-			<li><span class="trivial">trivial</span>: Change UTI for TeX document to <code>org.tug.tex</code>.</li>
-			<li><span class="trivial">dev</span>: Update the build environment to Xcode 13.4 (macOS 12.3 SDK).</li>
+			<li>Realice una sangría automática incluso al insertar una nueva línea al seleccionar texto.</li>
+			<li>Alerta para registrar los atajos de teclado que en realidad no son compatibles.</li>
+			<li>Actualizar los estilos de sintaxis Markdown y Textile para corregir el resaltado.</li>
+			<li>Mejorar la detección del estilo de sangría.</li>
+			<li>Mejora la traducción al chino tradicional (¡gracias a Shiki Suen!).</li>
+			<li>Actualizar el contenido de la ayuda.</li>
+			<li><span class="trivial">trivial</span>: Cambiar UTI para el documento TeX a <code>org.tug.tex</code>.</li>
+			<li><span class="trivial">dev</span>: Actualizar el entorno de compilación a Xcode 13.4 (macOS 12.3 SDK).</li>
 		</ul>
 	</section>
 
 
 	<section>
-		<h2>Fixes</h2>
+		<h2>Correcciones</h2>
 
 		<ul>
-			<li>Fix an issue that changing text selection with the Shift and an arrow keys could move the selection in the wrong direction.</li>
-			<li>Fix an issue that the Outline pane occasionally showed the horizontal scroller.</li>
-			<li>Fix an issue that the stored action names for customized key bindings were wrong.</li>
-			<li>Fix some unlocalized text.</li>
+			<li>Soluciona un problema por el que cambiar la selección de texto con las teclas Mayúsculas y una flecha podría mover la selección en la dirección equivocada.</li>
+			<li>Solucionar un problema que el panel Esquema mostraba ocasionalmente el desplazamiento horizontal.</li>
+			<li>Solucionar un problema de que los nombres de las acciones almacenadas para los atajos de teclado personalizados eran incorrectos.</li>
+			<li>Arreglar algún texto no traducido.</li>
 		</ul>
 	</section>
 </article>
@@ -821,27 +821,27 @@
 <article>
 	<header>
 		<h1>CotEditor 4.2.1</h1>
-		<p>release: <time>2022-05-11</time></p>
+		<p>rLanzamiento: <time>11-05-2022</time></p>
 	</header>
 
 
 	<section>
-		<h2>New Features</h2>
+		<h2>Nuevas características</h2>
 
 		<ul>
-			<li>Add Chinese (Traditional) localization (thanks to Shiki Suen!).</li>
+			<li>Añade la traducción al chino (tradicional) (¡gracias a Shiki Suen!).</li>
 		</ul>
 	</section>
 
 
 	<section>
-		<h2>Fixes</h2>
+		<h2>Correcciones</h2>
 
 		<ul>
-			<li>Fix an issue on CotEditor 4.2.0 that restoring documents on macOS 11.x made the application unstable.</li>
-			<li>Fix an issue on CotEditor 4.2.0 that some snippet settings could not be inserted in a specific condition.</li>
-			<li>Fix the help content style in Dark Mode.</li>
-			<li>Fix the description of “Important change in CotEditor 4.2.0” in the Simplified Chinese localization.</li>
+			<li>Se ha corregido un problema en CotEditor 4.2.0 por el que la restauración de documentos en macOS 11.x hacía que la aplicación fuera inestable.</li>
+			<li>Soluciona un problema en CotEditor 4.2.0 por el que algunos ajustes de fragmentos no se podían insertar en una condición específica.</li>
+			<li>Corregir el estilo del contenido de ayuda en modo oscuro.</li>
+			<li>Corregir la descripción de "Cambio importante en CotEditor 4.2.0" en la traducción en chino simplificado.</li>
 		</ul>
 	</section>
 </article>
@@ -851,69 +851,69 @@
 <article>
 <header>
 	<h1>CotEditor 4.2.0</h1>
-	<p>release: <time>2022-05-09</time></p>
+	<p>Lanzamiento: <time>09-05-2022</time></p>
 </header>
 
-<p class="important">This version contains some specific changes that may require manual migration by users. See <a href="specification_changes_on_4.2.html">Important changes on CotEditor 4.2</a> for details.</p>
+<p class="important">TSu versión contiene algunos cambios específicos que pueden requerir la migración manual por parte de los usuarios. See <a href="specification_changes_on_4.2.html">Cambios importantes en CotEditor 4.2</a> for details.</p>
 
 
 	<section>
-		<h2>New Features</h2>
+		<h2>Nuevas características</h2>
 
 		<ul>
-			<li>Ability to handle documents holding multiple types of line endings.</li>
-			<li>Alert inconsistent line endings in the document when opening or reloading.</li>
-			<li>List up the inconsistent line endings in the Warnings pane in the inspector.</li>
-			<li>Minor line endings, namely NEL (New Line), LS (Line Separator), and PS (Paragraph Separator), are added to the line endings options (These items are visible only either when pressing the <kbd>Option</kbd> key or when the document’s line ending is one of these).</li>
-			<li>Add the hidden Paste Exactly command (<kbd>Command</kbd>-<kbd>Option</kbd>-<kbd>V</kbd>) that pastes text in the clipboard without any modification, such as adjusting line endings to the document setting.</li>
-			<li>Add an option Selection to the Pages section in the Print dialog to print only the selected text in the document.</li>
-			<li>Add history to the Unicode code point input.</li>
-			<li>Support Handoff.</li>
-			<li>Export setting files, such as themes or multiple replacements, to the Finder just by dropping the setting name from the Preferences.</li>
-			<li>Transfer settings among CotEditors in different machines via Universal Control by dragging the setting name and dropping it to the setting list area in another CotEditor.</li>
+			<li>Capacidad para manejar documentos que tienen múltiples tipos de finales de línea.</li>
+			<li>Alerta de finales de línea inconsistentes en el documento al abrir o volver a cargar.</li>
+			<li>Enumere los finales de línea inconsistentes en el panel Advertencias del inspector.</li>
+			<li>Los finales de línea menores, a saber, NEL (Nueva línea), LS (Separador de líneas) y PS (Separador de párrafos), se agregan a las opciones de finales de línea (estos elementos solo son visibles cuando se presiona la tecla <kbd>Alt</kbd> o cuando el final de la línea del documento es uno de ellos).</li>
+			<li>Añade el comando oculto Pegar exactamente (<kbd>Comando</kbd>-<kbd>Alt</kbd>-<kbd>V</kbd>) que pega texto en el portapapeles sin ninguna modificación, como ajustar los finales de línea a la configuración del documento.</li>
+			<li>Añadir la opción de Selección a la sección Páginas en el cuadro de diálogo Imprimir, para imprimir solo el texto seleccionado en el documento.</li>
+			<li>Añadir historial a la entrada de punto de código Unicode.</li>
+			<li>Entrega de apoyo.</li>
+			<li>Exporte los archivos de configuración, como temas o múltiples reemplazos, al Finder simplemente soltando el nombre de la configuración en las Preferencias.</li>
+			<li>Configuración de transferencia entre CotEditors en diferentes máquinas a través de Universal Control arrastrando el nombre de la configuración y soltándolo en el área de la lista de ajustes en otro CotEditor.</li>
 		</ul>
 	</section>
 
 
 	<section>
-		<h2>Improvements</h2>
+		<h2>Mejoras</h2>
 
 		<ul>
-			<li>Update document icons.</li>
-			<li>Detect the line ending in documents more intelligently.</li>
-			<li>Indent snippet text with multiple lines to the indention level where will be inserted.</li>
-			<li>Improve the scrolling behavior by normal size documents by enabling the non-contiguous text layout mode only with large documents.</li>
-			<li>Optimize syntax parsing.</li>
-			<li>Rename the Incompatible Characters pane to the Warnings pane to share the pane with the inconsistent line ending list.</li>
-			<li>Locate the vertical scroller for the editor on the left side when the writing direction is right-to-left.</li>
-			<li>Print the line numbers on the right side on printing if the writing direction is right-to-left.</li>
-			<li>Adjust the vertical position of line numbers on printing.</li>
-			<li>Restore the characters even incompatible with the document encoding when restoring documents from the last session.</li>
-			<li>Display code points instead of being left blank in the incompatible character list for whitespaces.</li>
-			<li>Update HTML syntax style to display <code>hr</code> elements as separators in the Outline.</li>
-			<li>Add steppers to the font setting controls.</li>
-			<li>Restore the file encoding to one the user explicitly set in the last session.</li>
-			<li>Prefer using .yml for syntax definition files over .yaml.</li>
-			<li>Deprecate the feature to replace <code>$LN</code> in the outline menu template with the line number of the occurrence.</li>
-			<li>Remove original document icons for CoffeeScript and Tcl.</li>
-			<li>Revise text for more Mac-like expression.</li>
-			<li>Update the help contents.</li>
-			<li>Improve stability.</li>
-			<li><span class="trivial">trivial</span>: Accept script files for the Script menu with an uppercased file extension.</li>
-			<li><span class="trivial">trivial</span>: Replace <code>\n</code> with <code>\R</code> for the newline metacharacter in the Basic Regular Expression Syntax reference.</li>
-			<li><span class="trivial">trivial</span>: Tweak Anura theme.</li>
-			<li><span class="trivial">trivial</span>: Enable the secure state restoration introduced in macOS 12.</li>
-			<li><span class="trivial">dev</span>: Update Yams from 5.0.0 to 5.0.1.</li>
+			<li>Actualizar iconos de documentos.</li>
+			<li>Detecta los finales de línea en los documentos de forma más inteligente.</li>
+			<li>Sangrar fragmento de texto con varias líneas al nivel de sangría donde se insertará.</li>
+			<li>Mejorar el comportamiento de desplazamiento de los documentos de tamaño normal habilitando el modo de diseño de texto no contiguo solo con documentos grandes.</li>
+			<li>Optimizar el análisis de sintaxis.</li>
+			<li>Cambie el nombre del panel Caracteres incompatibles al panel Advertencias para compartir el panel con la lista de final de línea inconsistente.</li>
+			<li>Localice el desplazador vertical para el editor en el lado izquierdo cuando la dirección de escritura sea de derecha a izquierda.</li>
+			<li>Imprima los números de línea en el lado derecho al imprimir si la dirección de escritura es de derecha a izquierda.</li>
+			<li>Ajuste la posición vertical de los números de línea en la impresión.</li>
+			<li>Restaurar los caracteres incluso incompatibles con la codificación del documento al restaurar documentos de la última sesión.</li>
+			<li>Mostrar puntos de código en lugar de dejarlos en blanco en la lista de caracteres incompatibles para espacios en blanco.</li>
+			<li>Actualice el estilo de sintaxis HTML para mostrar los elementos <code>hr</code> como separadores en el esquema.</li>
+			<li>Añadir pasos a los controles de configuración de fuentes.</li>
+			<li>Restaure la codificación del archivo a una que el usuario estableció explícitamente en la última sesión.</li>
+			<li>Prefiero usar .yml para archivos de definición de sintaxis en lugar de .yaml.</li>
+			<li>Desechar la función para reemplazar<code>$LN</code> en la plantilla del menú de esquema con el número de línea de la ocurrencia.</li>
+			<li>Eliminar los iconos originales del documento para CoffeeScript y Tcl.</li>
+			<li>Revisa el texto para obtener más expresiones similares a las de Mac.</li>
+			<li>Actualizar el contenido de la ayuda.</li>
+			<li>Mejorar la estabilidad.</li>
+			<li><span class="trivial">trivial</span>: Aceptar archivos de script para el menú Script con una extensión de archivo en mayúsculas.</li>
+			<li><span class="trivial">trivial</span>: Reemplazar <code>\n</code> con <code>\R</code>  o el metacarácter de nueva línea en la referencia de sintaxis de expresión regular básica.</li>
+			<li><span class="trivial">trivial</span>: Ajustar el tema de Anura.</li>
+			<li><span class="trivial">trivial</span>: Habilitar la restauración de estado seguro introducida en macOS 12.</li>
+			<li><span class="trivial">dev</span>: Actualice Yams de 5.0.0 a 5.0.1.</li>
 		</ul>
 	</section>
 
 
 	<section>
-		<h2>Fixes</h2>
+		<h2>Correcciones</h2>
 
 		<ul>
-			<li>Fix an issue that the changes of syntax styles after the launch were not applied to the file mapping.</li>
-			<li><span class="trivial">trivial</span>: Fix an issue that the Script menu appeared in the shortcut menu even when no script exists.</li>
+			<li>Soluciona un problema por el que los cambios en los estilos de sintaxis después del lanzamiento no se aplicaban a la asignación de archivos.</li>
+			<li><span class="trivial">trivial</span>: Soluciona un problema por el que el menú Script aparecía en el menú de atajo de teclado incluso cuando no existe script.</li>
 		</ul>
 	</section>
 </article>
@@ -923,30 +923,30 @@
 <article>
 	<header>
 		<h1>CotEditor 4.1.5</h1>
-		<p>release: <time>2022-04-09</time></p>
+		<p>Lanzamiento: <time>09-04-2022</time></p>
 	</header>
 
 
 	<section>
-		<h2>Improvements</h2>
+		<h2>Mejoras</h2>
 
 		<ul>
-			<li>Add a temporal highlight for the current match in the editor (thanks to Ethan Wong!).</li>
-			<li>Update HTML syntax style for better highlighting with <code>'</code> character.</li>
-			<li>Update Swift syntax style to fix outline extraction.</li>
+			<li>Añade un resaltado temporal para el patrón actual en el editor (¡gracias a Ethan Wong!).</li>
+			<li>Actualice el estilo de sintaxis HTML para resaltar mejor con el carácter <code>'</code>.</li>
+			<li>Actualizar el estilo de sintaxis de Swift para corregir la extracción del esquema.</li>
 		</ul>
 	</section>
 
 
 	<section>
-		<h2>Fixes</h2>
+		<h2>Correcciones</h2>
 
 		<ul>
-			<li>Fix an issue that reverting a document to one stored with a different file encoding from the current encoding could fail.</li>
-			<li>Fix an issue that the split view did not inherit the font style and the writing direction.</li>
-			<li>Fix an issue that the icons for Shift Left/Right commands were swapped.</li>
-			<li>Fix an issue that the incompatible character pane did not show the message “No incompatible characters were found.” when all of the existing incompatible characters are cleared.</li>
-			<li><span class="trivial">trivial</span>: Fix localization of a Unicode block name.</li>
+			<li>Solucionar un problema por el que la revisión de un documento, a uno almacenado con una codificación de archivo diferente a la codificación actual, podría fallar.</li>
+			<li>Soluciona un problema por el que la vista dividida no heredara el estilo de fuente y la dirección de escritura.</li>
+			<li>Se ha corregido un problema por el que se intercambiaban los iconos de los comandos Mayús izquierda/derecha.</li>
+			<li>Soluciona un problema por el que el panel de caracteres incompatibles no mostraba el mensaje "No se encontraron caracteres incompatibles" cuando se borraban todos los caracteres incompatibles existentes.</li>
+			<li><span class="trivial">trivial</span>: Corregir la traducción de un nombre de bloque Unicode.</li>
 		</ul>
 	</section>
 </article>
@@ -956,29 +956,29 @@
 <article>
 	<header>
 		<h1>CotEditor 4.1.4</h1>
-		<p>release: <time>2022-03-26</time></p>
+		<p>rLanzamiento: <time>26-03-2022</time></p>
 	</header>
 
 
 	<section>
-		<h2>Improvements</h2>
+		<h2>Mejoras</h2>
 
 		<ul>
-			<li>Update Swift syntax style to add keywords added in Swift 5.6.</li>
-			<li>Update YAML syntax style for better coloring.</li>
-			<li><span class="trivial">trivial</span>: Improve progress message for the Find/Replace All.</li>
-			<li><span class="trivial">dev</span>: Update the build environment to Xcode 13.3 (Swift 5.6).</li>
+			<li>Actualizar el estilo de sintaxis de Swift para añadir palabras clave añadidas en Swift 5.6.</li>
+			<li>Actualizar el estilo de sintaxis YAML para un mejor color.</li>
+			<li><span class="trivial">trivial</span>: Mejorar el mensaje de progreso para Buscar/Reemplazar todo.</li>
+			<li><span class="trivial">dev</span>: Actualice el entorno de compilación a Xcode 13.3 (Swift 5.6).</li>
 		</ul>
 	</section>
 
 
 	<section>
-		<h2>Fixes</h2>
+		<h2>Correcciones</h2>
 
 		<ul>
-			<li>Fix an issue that the file extension proposed in the save dialog for untitled document did not reflect the latest syntax style.</li>
-			<li>Fix an issue that the application could not open Haskell files.</li>
-			<li>Fix a potential crash when opening files via Services.</li>
+			<li>Solucionar un problema por el que la extensión de archivo propuesta en el cuadro de diálogo de guardar para un documento sin título no reflejaba el último estilo de sintaxis.</li>
+			<li>Solucionar un problema por el que la aplicación no podía abrir los archivos Haskell.</li>
+			<li>Solucionar un posible bloqueo al abrir archivos a través de los Servicios.</li>
 		</ul>
 	</section>
 </article>
@@ -988,12 +988,12 @@
 <article>
 	<header>
 		<h1>CotEditor 4.1.3</h1>
-		<p>release: <time>2022-03-05</time></p>
+		<p>Lanzamiento: <time>05-03-2022</time></p>
 	</header>
 
 
 	<section>
-		<h2>Improvements</h2>
+		<h2>Mejoras</h2>
 
 		<ul>
 			<li>Use <code>python3</code> instead of <code>python</code> for running the <code>cot</code> command so that macOS 12.3 and later can use the Python installed via the Apple’s developer tools (From macOS 12.3 on, cot command requires an additional install of python3).</li>

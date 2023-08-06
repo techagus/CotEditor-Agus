@@ -1,68 +1,68 @@
-<html lang="en">
+<html lang="es">
 
 <head>
 	<meta charset="UTF-8"/>
-	<meta name="keywords" content="syntax, file mapping, extension, shebang, interpreter"/>
+	<meta name="keywords" content="Sintaxis, mapeo de archivos, extensión,Shebang, interpreter"/>
 	<link rel="stylesheet" href="../../Shared/sty/standard.css"/>
 	<script defer src="../../Shared/js/toc.js"></script>
 	
-	<title>Map files to syntaxes in CotEditor</title>
+	<title>Asigna archivos a sintaxis en CotEditor</title>
 </head>
 
 <body>
 <a name="syntax_file_mapping"></a>
 
-<h1>Map files to syntaxes in CotEditor</h1>
+<h1>Asignar archivos a sintaxis en CotEditor</h1>
 
-<p>When opening a file, CotEditor detects the document type and applies the corresponding syntax automatically.</p>
+<p>Al abrir un archivo, CotEditor detecta el tipo de documento y aplica la sintaxis correspondiente automáticamente.</p>
 
-<p>The File Mapping definitions in each syntax are used for this detection.</p>
+<p>Las definiciones de asignación de archivos en cada sintaxis se utilizan para esta detección.</p>
 
-<h2>Priority order of file mapping</h2>
+<h2>Orden de prioridad de la asignación de archivos</h2>
 
-<p>CotEditor detects the corresponding syntax in the following order:</p>
+<p>CotEditor detecta la sintaxis correspondiente en el siguiente orden:</p>
 
 <ol>
-	<li>Filename extension<ul>
-		<li>Try determining syntax from the filename extension. The case is basically ignored; however, case-matched ones are prioritized if multiple syntaxes are found</li>
-		<li>e.g.: .html → HTML</li>
-		<li>e.g.: .hTmL → HTML</li>
-		<li>e.g.: .py → Python</li>
+	<li>Extensión de nombre de archivo<ul>
+		<li>Intenta determinar la sintaxis de la extensión del nombre de archivo. Mayúsculas y minúsculas son básicamente ignoradas; sin embargo, los que coinciden con la capitalización se priorizan si se encuentran múltiples sintaxis</li>
+		<li>ej.: .html → HTML</li>
+		<li>ej.: .hTmL → HTML</li>
+		<li>ej.: .py → Python</li>
 	</ul></li>
-	<li>Filename<ul>
-		<li>When there is no syntax in which the find filename extension is defined or the filename doesn’t have an extension, then try determining syntax from the whole filename.</li>
-		<li>e.g.: .htaccess → Apache</li>
-		<li>e.g.: makefile → Makefile</li>
+	<li>Nombre del archivo<ul>
+		<li>Cuando no hay una sintaxis en la que se defina la extensión de nombre de archivo de búsqueda o el nombre de archivo no tenga una extensión, intenta determinar la sintaxis utilizando el nombre de archivo.</li>
+		<li>ej: .htaccess → Apache</li>
+		<li>ej: makefile → Makefile</li>
 	</ul></li>
-	<li>Shebang in the first line of the document<ul>
-		<li>When there is no corresponding syntax for the extension and the filename, and if the first line of the document content is a shebang, then try determining syntax from the shebang. In this trial, the interpreter names which is defined in the syntaxes are used. The interpreter can be either the last part of the path just after <code>#!</code> or the next term to the path if the path targets <code>env</code>.</li>
-		<li>e.g.: <code>#!/usr/bin/perl</code> → Perl (interpreter: <code>perl</code>)</li>
-		<li>e.g.: <code>#!/usr/bin/env python3</code> → Python (interpreter: <code>python3</code>)</li>
+	<li>Shebang en la primera línea del documento<ul>
+		<li>Cuando no hay una sintaxis correspondiente para la extensión y el nombre de archivo, y si la primera línea del contenido del documento es un 'shebang', intenta determinar la sintaxis del shebang. En esta prueba, se utilizan los nombres de los intérpretes que se definen en las sintaxis. El intérprete puede ser la última parte de la ruta justo después de <code>#!</code> o el siguiente término a la ruta si la ruta apunta a <code>env</code>.</li>
+		<li>e.g.: <code>#!/usr/bin/perl</code> →Perl (intérprete: <code>perl</code>)</li>
+		<li>e.g.: <code>#!/usr/bin/env python3</code> → Python (intérprete: <code>python3</code>)</li>
 	</ul></li>
-	<li>XML declaration<ul>
-		<li>When there is no corresponding syntax up to here but the file content starts with an XML declaration, syntax is automatically set to “XML.”</li>
+	<li>Declaración XML<ul>
+		<li>Cuando no hay una sintaxis correspondiente hasta aquí, pero el contenido del archivo comienza con una declaración XML, la sintaxis se establece automáticamente en "XML".</li>
 		<li>e.g.: <code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</code> → XML</li>
 	</ul></li>
-	<li>None<ul>
-		<li>If no appropriate syntax can be found at all, the “None” syntax would be set.</li>
+	<li>Ninguna<ul>
+		<li>Si no se puede encontrar ninguna sintaxis adecuada, se establecería la sintaxis "Ninguna".</li>
 	</ul></li>
 </ol>
 
-<p>When there are multiple syntaxes in the same level like the filename extension level or the filename level, custom syntaxes are prioritized over the bundled syntaxes. And yet, if there are multiple corresponding syntaxes, the first found syntax will be applied automatically.</p>
+<p>Cuando hay varias sintaxis en el mismo nivel, como el nivel de extensión de nombre de archivo o el nivel de nombre de archivo, las sintaxis personalizadas se priorizan sobre las sintaxis incluidas. Y, sin embargo, si hay varias sintaxis correspondientes, la primera sintaxis encontrada se aplicará automáticamente.</p>
 
-<h2>File mapping conflicts</h2>
+<h2>Conflictos de mapeo de archivos</h2>
 
-<p>There are no conflicts among the bundled syntaxes. However, if you added custom syntaxes or modified the bundled syntaxes, the file mapping can conflict. You can see the existence of mapping conflicts from the Show File Mapping Conflict command in the Format pane in the Settings. If the menu item is gray-out, it means: there is no conflict.</p>
+<p>No hay conflictos entre las sintaxis incluidas. Sin embargo, si agregó sintaxis personalizadas o modificó las sintaxis incluidas, la asignación de archivos puede entrar en conflicto. Puede ver la existencia de conflictos de asignación desde el comando 'Mostrar conflicto de mapeo de archivos' en el panel Formato de los Ajustes. Si el elemento del menú está en gris, significa que no hay conflicto.</p>
 
-<p>You can just leave the file mapping conflicts as long as you can open files with your expected syntax. There is no side issue.</p>
+<p>Puedes dejar los conflictos de mapeo de archivos siempre y cuando puedas abrir los archivos con la sintaxis esperada. No hay ningún problema secundario.</p>
 
 
 
 <section id="cf">
-<h2>See also</h2>
+<h2>Ver también</h2>
 <ul>
-	<li><a href="syntax_definition.html">Define a syntax</a></li>
-	<li><a href="settings_format.html">Change Format settings</a></li>
+	<li><a href="syntax_definition.html">Definir una sintaxis</a></li>
+	<li><a href="settings_format.html">Cambiar la configuración del formato</a></li>
 </ul>
 </section>
 

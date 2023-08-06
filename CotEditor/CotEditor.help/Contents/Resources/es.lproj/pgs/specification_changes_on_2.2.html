@@ -1,39 +1,39 @@
-<html lang="en">
+<html lang="es">
 
 <head>
 	<meta charset="UTF-8"/>
-	<meta name="keywords" content="migration, specification change, sandbox"/>
+	<meta name="keywords" content="Migración, cambio de especificación, sandbox"/>
 	<link rel="stylesheet" href="../../Shared/sty/standard.css"/>
 	<script defer src="../../Shared/js/toc.js"></script>
 	
-	<title>Important changes on CotEditor 2.2</title>
+	<title>Cambios importantes en CotEditor 2.2</title>
 </head>
 
 <body>
 
-<h1>Important changes on CotEditor 2.2</h1>
+<h1>Cambios importantes en CotEditor 2.2</h1>
 
-<p>CotEditor has been Sandboxed since version 2.2.0. It includes some specification changes from the previous versions in order to conform to the Sandbox and the Mac App Store rules. If you’ve used the legacy version before, you may need some manual migrations.</p>
-
-
-<h2>User Settings Location</h2>
-<p>The location of the general CotEditor settings moved from <code>~/Library/Application Support/CotEditor/</code> to <code>~/Library/Containers/com.coteditor.CotEditor/Data/Library/Application Support/CotEditor/</code>. This migration will be automatically done on the first launch of CotEditor 2.2.0.</p>
+<p>CotEditor ha estado en sandbox desde la versión 2.2.0. Incluye algunos cambios de especificación con respecto a las versiones anteriores para cumplir con las reglas de Sandbox y Mac App Store. Si has usado la versión heredada antes, es posible que necesites una migración manuals.</p>
 
 
-<h2>Scripts Folder Location</h2>
-<p>The location of the scripts folder moved from <code>~/Library/Application Support/CotEditor/ScriptMenu/</code> to <code>~/Library/Application Scripts/com.coteditor.CotEditor/</code>. <strong>Users need to migrate their script to the new folder manually</strong>, since CotEditor doesn’t have the write permission to the new location.</p>
+<h2>Ubicación de la configuración del usuario</h2>
+<p>La ubicación de la configuración general de CotEditor se movió de <code>~/Library/Application Support/CotEditor/</code> a <code>~/Library/Containers/com.coteditor.CotEditor/Data/Library/Application Support/CotEditor/</code>. Esta migración se realizará automáticamente en el primer lanzamiento de CotEditor 2.2.0.</p>
 
 
-<h2><code>cot</code> Command-Line Tool</h2>
-<p>From CotEditor 2.2.0, the <code>cot</code> command-line tool is no more bundled to CotEditor.app but provided separately on our web site. Download the new one from <del>http://coteditor.com/cot</del> and isntall it manually. The old one is not compatible with CotEditor 2.2.0.</p>
-<p class="addition"><span>(update)</span> Since CotEditor 2.3.0, the cot command has been bundled into the CotEditor.app again. Refer <a href="about_cot.html">Work with cot command</a> for the latest installation guidance.</p>
+<h2>Ubicación de la carpeta de scripts</h2>
+<p>TLa ubicación de la carpeta de scripts se trasladó de <code>~/Library/Application Support/CotEditor/ScriptMenu/</code> a <code>~/Library/Application Scripts/com.coteditor.CotEditor/</code>. <strong>Los usuarios necesitan migrar su script a la nueva carpeta manualmente</strong>, ya que CotEditor no tiene el permiso de escritura en la nueva ubicación.</p>
+
+
+<h2><code>cot</code> Herramienta de línea de comandos</h2>
+<p>Desde CotEditor 2.2.0, la herramienta en linea de comando <code>cot</code> ya no se incluye en CotEditor.app, sino que se proporciona por separado en nuestro sitio web. Descarga el nuevo de <del>http://coteditor.com/cot</del> e instalaló manualmente. El antiguo no es compatible con CotEditor 2.2.0.</p>
+<p class="addition"><span>(actualización)</span> Desde CotEditor 2.3.0, el comando cot se ha incluido de nuevo en CotEditor.app. Remitir a <a href="about_cot.html">Trabajar con el comando cot</a> para la última guía de instalación.</p>
 
 
 <section id="cf">
-<h2>See also</h2>
+<h2>Ver también</h2>
 <ul>
-	<li><a href="whats_new_in_2.2.html">What’s New in CotEditor 2.2</a></li>
-	<li><a href="releasenotes.html">Release notes</a></li>
+	<li><a href="whats_new_in_2.2.html">Novedades de CotEditor 2.2</a></li>
+	<li><a href="releasenotes.html">Notas de la versión</a></li>
 </ul>
 </section>
 

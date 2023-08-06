@@ -2,103 +2,103 @@
 
 <head>
 	<meta charset="UTF-8"/>
-	<meta name="keywords" content="syntax, style"/>
+	<meta name="keywords" content="sintaxis, estilo"/>
 	<link rel="stylesheet" href="../../Shared/sty/standard.css"/>
 	<script defer src="../../Shared/js/toc.js"></script>
 	
-	<title>Define syntax highlighting in CotEditor</title>
+	<title>Definir el resaltado de sintaxis en CotEditor</title>
 </head>
 
 <body>
 <a name="syntax_highlight_settings"></a>
 
-<h1>Define syntax highlighting in CotEditor</h1>
+<h1>Definir el resaltado de sintaxis en CotEditor</h1>
 
-<h2>Types of syntax highlighting</h2>
+<h2>Tipos de resaltado de sintaxis</h2>
 
-<p>The code elements that CotEditor’s syntax coloring uses are as follows:</p>
+<p>Los elementos de código que utiliza la coloración de sintaxis de CotEditor son los siguientes:</p>
 
 <table>
 	<thead>
-		<tr><th>Element</th><th>Description</th><th>Examples</th></tr>
+		<tr><th>Elemento</th><th>Descripción</th><th>Ejemplos</th></tr>
 	</thead>
 	
 	<tbody>
-	<tr><th>Keywords</th>
-	<td>Keywords in source code such as reserved words of programming languages.</td>
+	<tr><th>Palabras clave</th>
+	<td>Palabras clave en el código fuente, como palabras reservadas de lenguajes de programación.</td>
 	<td><code>for</code>, <code>while</code>, <code>if</code></td></tr>
 	
-	<tr><th>Commands</th>
-	<td>Functions or commands in source code.</td>
+	<tr><th>Comandos</th>
+	<td>Funciones o comandos en el código fuente.</td>
 	<td><code>print</code>, <code>filter</code>, <code>func()</code></td></tr>
 	
-	<tr><th>Types</th>
-	<td>Types in source code or headings in structured language.</td>
+	<tr><th>Tipos</th>
+	<td>Tipos en el código fuente o encabezados en lenguaje estructurado.</td>
 	<td><code>int</code>, <code>bool</code>, <code>Object</code></td></tr>
 	
-	<tr><th>Attributes</th>
-	<td>Attributes in source code.</td>
+	<tr><th>Atributos</th>
+	<td>Atributos en el código fuente.</td>
 	<td><code>&lt;html <span style="color:-apple-system-blue">lang</span>=&quot;ja&quot;&gt;</code>, <code>@classmethod</code></td></tr>
 	
 	<tr><th>Variables</th>
-	<td>Variables in source code.</td>
+	<td>Variables en el código fuente.</td>
 	<td><code>$foo</code>, <code>self</code></td></tr>
 	
-	<tr><th>Values</th>
-	<td>Value constants in source code.</td>
+	<tr><th>Valores</th>
+	<td>Valores constantes en el código fuente.</td>
 	<td><code>Null</code>, <code>True</code>, <code>False</code></td></tr>
 	
-	<tr><th>Numbers</th>
-	<td>Numeric constants in source code.</td>
+	<tr><th>Números</th>
+	<td>Constantes numéricas en el código fuente.</td>
 	<td><code>Int i = <span style="color: -apple-system-blue;">0</span>;</code></td></tr>
 	
-	<tr><th>Strings</th>
-	<td>String constants in source code.</td>
-	<td><code>String s = <span style="color: -apple-system-blue">&quot;Hello World&quot;</span></code></td></tr>
+	<tr><th>Cadenas</th>
+	<td>Constantes de cadena en el código fuente.</td>
+	<td><code>String s = <span style="color: -apple-system-blue">&quot;Hola Mundo&quot;</span></code></td></tr>
 	
-	<tr><th>Characters</th>
-	<td>Character constants in source code.</td>
+	<tr><th>Caracteres</th>
+	<td>Constantes de caracteres en el código fuente.</td>
 	<td><code>Char c = <span style="color: -apple-system-blue">'a'</span></code></td></tr>
 	
-	<tr><th>Comments</th>
-	<td>Comments in source code.</td>
+	<tr><th>Comentarios</th>
+	<td>Comentarios en el código fuente.</td>
 	<td><code>/* 〜 */</code>, <code># 〜</code></td></tr>
 	</tbody>
 </table>
 
-<p>CotEditor colors the code elements in the following order: 1) keywords, 2) commands, 3) types, 4) attributes, 5) variables, 6) values, 7) numbers, 8) strings, 9) characters, 10) comments. When your document contains an item to be colored that matches multiple categories (for example, keywords and commands), the color of the latter in the order will overwrite the former’s.</p>
+<p>CotEditor colorea los elementos de código en el siguiente orden: 1) palabras clave, 2) comandos, 3) tipos, 4) atributos, 5) variables, 6) valores, 7) números, 8) cadenas, 9) caracteres, 10) comentarios. Cuando su documento contiene un elemento a colorear que coincide con múltiples categorías (por ejemplo, palabras clave y comandos), el color de este último en el orden sobrescribirá el de los primeros.</p>
 
 
 
-<h2>Customize syntax highlighting</h2>
+<h2>Personalizar el resaltado de sintaxis</h2>
 
-<p>Syntax coloring rules are determined by the following settings:</p>
+<p>Las reglas de coloración de la sintaxis están determinadas por los siguientes ajustes:</p>
 
 <table>
 	<thead>
-		<tr><th>Field</th><th>Description</th></tr>
+		<tr><th>Campo</th><th>Descripción</th></tr>
 	</thead>
 	<tbody>
-		<tr><th>RE</th><td>If this option is selected, both Begin-string and End-string will be considered regular expressions (RE stands for Regular Expression).</td></tr>
-		<tr><th>IC</th><td>If this option is selected, the case will be ignored during the search (IC stands for Ignore Case). For example, if you set “abc” as Begin-string and check IC, “ABC” or “abc” or “Abc” in your document will be matched.</td></tr>
-		<tr><th>Begin String</th><td>A string that denotes the beginning of the search pattern. This is required to search the code elements you want to be colored.</td></tr>
-		<tr><th>End String</th><td>A string that denotes the end of the search pattern. This field can be left blank.</td></tr>
-		<tr><th>Description</th><td>You can use this field to leave a comment about the term. Description doesn’t affect syntax highlighting. This field can be left blank.</td></tr>
+		<tr><th>RE</th><td>Si se selecciona esta opción, tanto la cadena de inicio como la cadena final se considerarán expresiones regulares (RE significa expresión regular).</td></tr>
+		<tr><th>IC</th><td>Si se selecciona esta opción, se ignorarán mayúsculas y minúsculas durante la búsqueda (IC significa Ignorar Capitalización). Por ejemplo, si establece "abc" como cadena de inicio y está seleccionada IC, "ABC" o "abc" o "Abc" en su documento coincidirán.</td></tr>
+		<tr><th>Cadena de inicio</th><td>Una cadena que denota el comienzo del patrón de búsqueda. Esto es necesario para buscar los elementos de código que quieres colorear.</td></tr>
+		<tr><th>Cadena final</th><td>Una cadena que denota el final del patrón de búsqueda. Este campo se puede dejar en blanco.</td></tr>
+		<tr><th>Descripción</th><td>Puedes usar este campo para dejar un comentario sobre el término. La descripción no afecta al resaltado de sintaxis. Este campo se puede dejar en blanco.</td></tr>
 	</tbody>
 </table>
 
 <ul>
-	<li>A definition whose Begin-string is blank will be ignored.</li>
-	<li>A definition whose End-string is blank and RE is turned off will be used for defining the completion list as well.</li>
-	<li>The RE setting affects both Begin-string and End-string, which means they should be written in the regular expression or plain form both together.</li>
+	<li>Se ignorará una definición cuya cadena de inicio esté en blanco.</li>
+	<li>Una definición cuya cadena final esté en blanco y RE esté desactivada también se utilizará para definir la lista de autocompletado.</li>
+	<li>La configuración RE afecta tanto a la cadena de inicio como a la cadena final, lo que significa que deben escribirse en la expresión regular o en forma simple, ambos juntos.</li>
 </ul>
 
 
 <section id="cf">
-<h2>See also</h2>
+<h2>Ver también</h2>
 <ul>
-	<li><a href="syntax_definition.html">Define a syntax</a></li>
-	<li><a href="about_regex.html">Use the regular expression</a></li>
+	<li><a href="syntax_definition.html">Definir una sintaxis</a></li>
+	<li><a href="about_regex.html">Usa la expresión regular</a></li>
 </ul>
 </section>
 

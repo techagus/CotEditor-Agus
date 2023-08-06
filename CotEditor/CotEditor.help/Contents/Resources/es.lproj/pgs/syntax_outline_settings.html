@@ -1,58 +1,57 @@
-<html lang="en">
+<html lang="es">
 
 <head>
 	<meta charset="UTF-8"/>
-	<meta name="keywords" content="Outline"/>
+	<meta name="keywords" content="Esquema"/>
 	<link rel="stylesheet" href="../../Shared/sty/standard.css"/>
 	<script defer src="../../Shared/js/toc.js"></script>
 	
-	<title>Define Outline extraction rules in CotEditor</title>
+	<title>Definir las reglas de extracción de esquemas en CotEditor</title>
 </head>
 
 <body>
 <a name="syntax_outline_settings"></a>
 
-<h1>Define Outline extraction rules in CotEditor</h1>
+<h1>Definir las reglas de extracción de esquemas en CotEditor</h1>
 
-<p>The options for the Outline settings are as follows:</p>
+<p>Las opciones para la configuración del esquema son las siguientes:</p>
 
 <table>
 	<thead>
-		<tr><th>Field</th><th>Description</th></tr>
+		<tr><th>Campo</th><th>Descripción</th></tr>
 	</thead>
 	<tbody>
-		<tr><th>Regular Expression String</th><td>The in-document strings matched by the regular expressions you set here will appear in the drop-down menu. This setting is required to search the items to be listed (RE stands for Regular Expression).</td></tr>
-		<tr><th>IC</th><td>If this is selected, case will be ignored during the search. For example, the expression “abc” matches “ABC” or “abc” or “Abc” in your document (IC stands for Ignore Case).</td></tr>
-		<tr><th>Title Pattern</th><td>Here, you can format the titles of the Outline items. Both the “Regular Expression String” setting and the setting here determine how the corresponding item is titled in the list.</td></tr>
+		<tr><th>Cadena de expresión regular</th><td>Las cadenas del documento que coincidan con las expresiones regulares que establezcas aquí aparecerán en el menú desplegable. Esta configuración es necesaria para buscar los elementos que se enumeran (RE significa Expresión Regular).</td></tr>
+		<tr><th>IC</th><td>Si esto está seleccionado, las mayúsculas y minúsculas se ignorarán durante la búsqueda. Por ejemplo, la expresión "abc" coincide con "ABC" o "abc" o "Abc" en su documento (IC significa Ignorar Capitalización).</td></tr>
+		<tr><th>Patrón de título</th><td>Aquí, puede dar formato a los títulos de los elementos de esquema. Tanto la configuración de "cadena de expresión regular" como la configuración aquí determinan cómo se titula el elemento correspondiente en la lista.</td></tr>
 	</tbody>
 </table>
 
-<p>The meta characters you can use in the Title Pattern are as follows:</p>
+<p>Los metacaracteres que puedes usar en el patrón de título son los siguientes:</p>
 
 <table>
 	<thead>
-		<tr><th>Metacharacter</th><th>Description</th></tr>
+		<tr><th>Metacarácter</th><th>Descripción</th></tr>
 	</thead>
 	<tbody>
-		<tr><th>(blank)</th><td>The whole string matched by your regular expression.</td></tr>
-		<tr><th><code>$0</code></th><td>The whole string matched by your regular expression.</td></tr>
-		<tr><th><code>$1</code> ... <code>$9</code></th><td>The string matched by the first through ninth parenthesized subexpression in your regular expression.</td></tr>
-		<tr><th><code>-</code></th><td>A separator of the menu
-	(invalid when other letters than “-” are included).</td></tr>
+		<tr><th>(espacio)</th><td>Toda la cadena coincide con tu expresión regular.</td></tr>
+		<tr><th><code>$0</code></th><td>Toda la cadena coincide con tu expresión regular.</td></tr>
+		<tr><th><code>$1</code> ... <code>$9</code></th><td>La cadena que coincide con la subexpresión entre paréntesis de la primera a la novena en su expresión regular.</td></tr>
+		<tr><th><code>-</code></th><td>Un separador del menú (inválido cuando se incluyen otras letras que no sean "-").</td></tr>
 	</tbody>
 </table>
 
 <ul>
-	<li>To show a meta character such as “$0” in the menu, you need to put a backslash (&#x005C;) in front of it. You won’t see that backslash (&#x005C;) in the menu.</li>
+	<li>Para mostrar un metacarácter como "$0" en el menú, tienes que poner un barra invertida (&#x005C;) delante de él. No verás esa barra invertida (&#x005C;) en el menú.</li>
 </ul>
 
 
 <section id="cf">
-<h2>See also</h2>
+<h2>Ver también</h2>
 <ul>
-	<li><a href="howto_show_outlinemenu.html">Build Outline of a document</a></li>
-	<li><a href="syntax_definition.html">Define a syntax</a></li>
-	<li><a href="about_regex.html">Use the regular expression</a></li>
+	<li><a href="howto_show_outlinemenu.html">Construir el esquema de un documento</a></li>
+	<li><a href="syntax_definition.html">Definir una sintaxis</a></li>
+	<li><a href="about_regex.html">Usa la expresión regular</a></li>
 </ul>
 </section>
 

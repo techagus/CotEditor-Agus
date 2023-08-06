@@ -1,54 +1,52 @@
-<html lang="en">
+<html lang="es">
 
 <head>
 	<meta charset="UTF-8"/>
-	<meta name="keywords" content="migration, specification change,outline,AppleScript"/>
+	<meta name="keywords" content="Migración, cambio de especificación, esquema, AppleScript"/>
 	<link rel="stylesheet" href="../../Shared/sty/standard.css"/>
 	<script defer src="../../Shared/js/toc.js"></script>
 	
-	<title>Important changes on CotEditor 2.0</title>
+	<title>Cambios importantes en CotEditor 2.0</title>
 </head>
 
 <body>
-<h1>Important changes on CotEditor 2.0</h1>
+<h1>Cambios importantes en CotEditor 2.0</h1>
 
-<p>CotEditor 2.0 includes some specification changes for customization from the previous versions. If you’ve used the legacy version before, you may need some manual migrations.</p>
+<p>CotEditor 2.0 incluye algunos cambios de especificación para la personalización de las versiones anteriores. Si has usado la versión heredada antes, es posible que necesites algunas migraciones manuales.</p>
 
 
-<h2>Syntax Style Format</h2>
-<p>The format for syntax style definition has been changed significantly. The user customized styles will be translated automatically to the new style format on the first launch of CotEditor 2. However, we recommend to update or rewrite your styles to conform to the new features for syntax style like the comment-out toggling or new highlighting variations.</p>
-<p>You may find some new additional syntax styles on our <a href="https://github.com/coteditor/CotEditor/wiki/Additional-Syntax-Styles" rel="external">Wiki page</a>.</p>
+<h2>Formato de estilo de sintaxis</h2>
+<p>El formato para la definición del estilo de sintaxis ha cambiado significativamente. Los estilos personalizados por el usuario se traducirán automáticamente al nuevo formato de estilo en el primer lanzamiento de CotEditor 2. Sin embargo, recomendamos actualizar o reescribir sus estilos para ajustarse a las nuevas características para el estilo de sintaxis, como el cambio de comentarios o las nuevas variaciones de resaltado.</p> <p>Puede encontrar algunos nuevos estilos de sintaxis adicionales en nuestra <a href="https://github.com/coteditor/CotEditor/wiki/Additional-Syntax-Styles" rel="external">página Wiki</a>.</p>
 
-<h2>Regular Expression Engine for Outline Extracting</h2>
-<p>Those who have customized syntax styles in CotEditor 1.x may have to fix their definition to extract outline menu manually, because the regular expression engine for outline parsing has been changed in 2.0 from Oniguruma to ICU library.
-Validate your customized syntax styles in syntax style editor and follow the messages.</p>
+<h2>Motor de expresión regular para la extracción de esquemas</h2>
+<p>Aquellos que tienen estilos de sintaxis personalizados en CotEditor 1.x pueden tener que arreglar su definición para extraer el menú de esquema manualmente, porque el motor de expresión regular para el análisis de esquema se ha cambiado en 2.0 de Oniguruma a la biblioteca de la ICU. Valida tus estilos de sintaxis personalizados en el editor de estilos de sintaxis y sigue los mensajes.</p>
 
-<p>The typical points to fix are:</p>
+<p>Los puntos típicos a arreglar son:</p>
 
 <ul>
-	<li>The “<code>{</code>” and “<code>}</code>” as character must always be escaped with backslash “<code>\</code>” in ICU, however not in Oniguruma.</li>
-	<li>The definition of “<code>$&amp;</code>” for the whole matched string was removed in 2.0. Use “<code>$0</code>” instead to get the same effect.</li>
+	<li>El “<code>{</code>” y “<code>}</code>” son caracteres que siempre se deben escapar con una barra invertida “<code>\</code>” en ICU, esto no hacía falta en Oniguruma.</li>
+	<li>La definición de “<code>$&amp;</code>” para toda la cadena coincidente se eliminó en 2.0. Usa “<code>$0</code>” en su lugar para obtener el mismo efecto.</li>
 </ul>
 
-<p>See “<a href="about_regex.html">Use the regular expression</a>” for all regex syntax.</p>
+<p>Ver “<a href="about_regex.html">Usa la expresión regular</a>” para toda la sintaxis de expresiones regulares.</p>
 
 
-<h2>API for AppleScript</h2>
-<p>Some specifications for scripting support have been updated on CotEditor 2.0. From this, some user scripts may not run correctly on 2.0 without modifying. See “<a href="script_osascript.html">Script CotEditor with AppleScript</a>” for details of this specification change.</p>
+<h2>API para AppleScript</h2>
+<p>Algunas especificaciones para el soporte de scripting se han actualizado en CotEditor 2.0. A partir de esto, es posible que algunos scripts de usuario no se ejecuten correctamente en 2.0 sin modificarlos. Ver “<a href="script_osascript.html">Script CotEditor con AppleScript</a>” para los detalles de este cambio de especificación.</p>
 
 
-<h2>Bundle Identifier</h2>
-<p>The bundle identifier for CotEditor was changed from “com.aynimac.CotEditor” to “com.coteditor.CotEditor”. From this change, file mappings or other links to CotEditor (e.g. external editor) outside CotEditor can be reset. Please link them again, if links are lost.</p>
+<h2>Identificador de paquete</h2>
+<p>TEl identificador del paquete para CotEditor se cambió de “com.aynimac.CotEditor” a “com.coteditor.CotEditor”. FRom este cambio, las asignaciones de archivos u otros enlaces a CotEditor (por ejemplo, editor externo) fuera de CotEditor se deben restablecer. Por favor, enlázalos de nuevo, si se han perdido los enlaces.</p>
 
-<p><em>For advanced users</em>: Notice that the filenames for preferences and the domain name for “<code>defaults</code>” command in Terminal was also changed.</p>
+<p><em>Para usuarios avanzados</em>: Tenga en cuenta que los nombres de archivo para las preferencias y el nombre de dominio para el comando “<code>defaults</code>” en el Terminal también ha cambiado.</p>
 
 
 <section id="cf">
-<h2>See also</h2>
+<h2>Ver también</h2>
 <ul>
-	<li><a href="whats_new_in_2.0.html">What’s new in CotEditor 2.0?</a></li>
-	<li><a href="specification_changes_on_2.2.html">Important changes on CotEditor 2.2</a></li>
-	<li><a href="releasenotes.html">Release notes</a></li>
+	<li><a href="whats_new_in_2.0.html">¿Qué hay de nuevo en CotEditor 2.0?</a></li>
+	<li><a href="specification_changes_on_2.2.html">Cambios importantes en CotEditor 2.2</a></li>
+	<li><a href="releasenotes.html">Notas de la versión</a></li>
 </ul>
 </section>
 

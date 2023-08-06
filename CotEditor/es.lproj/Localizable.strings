@@ -725,7 +725,7 @@
 
 /* MARK: SyntaxManager */
 // Syntax name
-"None" = "Nada";
+"None" = "Ninguna";
 
 // Description for editing bundled syntax
 "Bundled syntaxes can’t be renamed." = "Los estilos incluidos no se pueden cambiar de nombre.";  // FIXME: style -> syntax

@@ -1,44 +1,44 @@
-<html lang="en">
+<html lang="es">
 
 <head>
 	<meta charset="UTF-8"/>
-	<meta name="keywords" content="Snippets settings, snippet, File Drop"/>
+	<meta name="keywords" content="Configuración de fragmentos, fragmento, entrega de archivos"/>
 	<link rel="stylesheet" href="../../Shared/sty/standard.css"/>
 	<script defer src="../../Shared/js/toc.js"></script>
 	
-	<title>Change Snippets settings in CotEditor</title>
+	<title>Cambiar la configuración de fragmentos en CotEditor</title>
 </head>
 
 <body>
 <a name="settings_snippets"></a>
 
-<h1>Change Snippets settings in CotEditor</h1>
+<h1>Cambiar la configuración de fragmentos en CotEditor</h1>
 
-<p>In the CotEditor app <img class="appicon" src="../../Shared/gfx/icon_16x16@2x.png" height="16" alt=""/> on your Mac, use Snippets settings to define preset texts to insert with a command or by dropping a file onto the editor. To change these settings, choose CotEditor &gt; Settings, then click Snippets.</p>
+<p>En la aplicación CotEditor <img class="appicon" src="../../Shared/gfx/icon_16x16@2x.png" height="16" alt=""/>En tu Mac, usa la configuración de Snippets para definir textos preestablecidos para insertar con un comando o soltando un archivo en el editor. Para cambiar esta configuración, elija CotEditor &gt; Ajustes, luego haz clic en Fragmentos.</p>
 
-<p class="openapp"><a href="x-help-action://openApp?bundleId=com.coteditor.CotEditor">Open CotEditor for me</a></p>
+<p class="openapp"><a href="x-help-action://openApp?bundleId=com.coteditor.CotEditor"> Abre CotEditor para mí</a></p>
 
 
 <table class="settings">
-<caption>Command</caption>
+<caption>Comando</caption>
 <thead>
-	<tr><th>Option</th><th>Description</th></tr>
+	<tr><th>Opción</th><th>Descripción</th></tr>
 </thead>
 
 <tbody>
 	<tr>
-		<th>Command definitions</th>
-		<td>Define the snippet insertion command. The commands defined here will be assigned to the Text &gt; Insert Snippet menu.<ul>
-			<li><strong>Syntax</strong>: The snippet is available and listed in the snippet menu only when a document having this syntax is frontmost. If this field is empty (All), all documents are eligible.</li>
-			<li><strong>Name</strong>: The name of the command that will be displayed in the menu for this snippet.</li>
-			<li><strong>Key</strong>: A keyboard shortcut to perform this snippet insertion command. A shortcut is optional and can be left blank.</li>
+		<th>Definiciones de comandos</th>
+		<td>Defina el comando de inserción de fragmentos. Los comandos definidos aquí se asignarán al menú Texto &gt; Insertar fragmento.<ul>
+			<li><strong>Estilo de sintaxis</strong>: El fragmento está disponible y aparece en el menú de fragmentos solo cuando un documento que tiene esta sintaxis está en primer plano. Si este campo está vacío (Todos), todos los documentos son elegibles.</li>
+			<li><strong>Nombre</strong>: El nombre del comando que se mostrará en el menú de este fragmento.</li>
+			<li><strong>Teclas</strong>: El atajo de teclado para realizar este comando de inserción de fragmentos. El atajo de teclado es opcional y se puede dejar en blanco.</li>
 			</ul></td>
 	</tr>
 	<tr>
-		<th>Insertion formart</th>
-		<td>Set the text to be inserted with the command selected in the command definition list above.
+		<th>Insertar Formato</th>
+		<td>Establezca el texto que se insertará con el comando seleccionado en la lista de definición de comandos anterior.
 			<ul>
-				<li>When a snippet contains <code>&lt;&lt;&lt;CURSOR&gt;&gt;&gt;</code>, the word <code>&lt;&lt;&lt;CURSOR&gt;&gt;&gt;</code> will be removed on insertion and move the insertion point there instead.</li>
+				<li>Cuando un fragmento contiene <code>&lt;&lt;&lt;CURSOR&gt;&gt;&gt;</code>, la palabra <code>&lt;&lt;&lt;CURSOR&gt;&gt;&gt;</code> se eliminará en la inserción y se moverá el punto de inserción allí en su lugar.</li>
 			</ul></td>
 	</tr>
 </tbody>
@@ -46,26 +46,26 @@
 
 
 <table class="settings">
-<caption>File Drop</caption>
+<caption>Entrega de archivos</caption>
 <thead>
-	<tr><th>Option</th><th>Description</th></tr>
+	<tr><th>Opción</th><th>Descripción</th></tr>
 </thead>
 
 <tbody>
 	<tr>
-		<th>File drop definitions</th>
-		<td>Define the conditions to perform the file drop. When files are dropped directly into the editor and the conditions defined here are fulfilled, the text that matches the files can be inserted at the drop location.<ul>
-			<li><strong>Syntax</strong>: The setting is performed only when a file is dropped to a document having this syntax. If this field is empty (All), all documents are eligible.</li>
-			<li><strong>Extensions</strong>: The setting is performed only when a file with one of these extensions is dropped. If this field is empty (All), all files are eligible. No dot is required for filename extensions. You can set multiple extensions by separating them by a comma.</li>
-			<li><strong>Description</strong>: You can use this field to leave a comment about the row. This field doesn’t affect the file drop behavior and can be left blank.</li>
+		<th>Definiciones de entrega de archivos</th>
+		<td>Defina las condiciones para realizar la entrega del archivo. Cuando los archivos se insertan directamente en el editor y se cumplen las condiciones definidas aquí, el texto que coincide con los archivos se puede insertar en la ubicación de inserción.<ul>
+			<li><strong>Estilo de sintaxis</strong>: La configuración se realiza solo cuando un archivo se elimina en un documento que tiene esta sintaxis. Si este campo está vacío (Todos), todos los documentos son elegibles.</li>
+			<li><strong>Extensiones</strong>: La configuración se realiza solo cuando se entrega un archivo con una de estas extensiones. Si este campo está vacío (Todos), todos los archivos son elegibles. No se requiere ningún punto para las extensiones de nombre de archivo. Puedes establecer varias extensiones separándolas por una coma.</li>
+			<li><strong>Descripción</strong>: Puedes usar este campo para dejar un comentario sobre la definición. Este campo no afecta al comportamiento de la entrega del archivo y se puede dejar en blanco.</li>
 			</ul>
 		</td>
 	</tr>
 	<tr>
-		<th>Insertion formart</th>
-		<td>Set the text to be inserted for the condition that is selected in the file drop definition list above.
+		<th>Insertar Formato</th>
+		<td>Establezca el texto que se insertará para la condición que se selecciona en la lista de definición de entregar archivos anterior.
 			<ul>
-				<li>In an insertion format, you can use CotEditor’s variables. Variables are going to be replaced with the corresponding information of the dropped file. See <a href="about_filedrop.html">Write insertion format for File Drop</a> for each variable’s details.</li>
+				<li>En un formato de inserción, puedes usar las variables de CotEditor. Las variables se reemplazarán con la información correspondiente del archivo entregado. Ver <a href="about_filedrop.html">Formato de inserción de escritura para Entrega de Archivos</a> para los detalles de cada variable.</li>
 			</ul>
 		</td>
 	</tr>
@@ -75,11 +75,11 @@
 
 
 <section id="cf">
-<h2>See also</h2>
+<h2>Ver también</h2>
 <ul>
-	<li><a href="howto_filedrop.html">Drop files to editor</a></li>
-	<li><a href="about_filedrop.html">Write insertion format for File Drop</a></li>
-	<li><a href="settings.html">Change settings</a></li>
+	<li><a href="howto_filedrop.html">Entrega de archivos en el editor</a></li>
+	<li><a href="about_filedrop.html">Formato de inserción de escritura para Entrega de Archivos</a></li>
+	<li><a href="settings.html">Cambiar la configuración</a></li>
 </ul>
 </section>
 
