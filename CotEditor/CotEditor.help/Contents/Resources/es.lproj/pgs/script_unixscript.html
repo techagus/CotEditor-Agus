@@ -1,83 +1,83 @@
-<html lang="en">
+<html lang="es">
 
 <head>
 	<meta charset="UTF-8"/>
-	<meta name="keywords" content="Script Menu, script"/>
+	<meta name="keywords" content="Menú de guión, guión, menú de script, script"/>
 	<link rel="stylesheet" href="../../Shared/sty/standard.css"/>
 	<script defer src="../../Shared/js/toc.js"></script>
 	
-	<title>Script CotEditor with UNIX script</title>
+	<title>Script CotEditor con guión UNIX</title>
 </head>
 
 <body>
 
-<h1>Script CotEditor with UNIX script</h1>
+<h1>Script CotEditor con script UNIX</h1>
 
-<p>This page explains how to pass your document’s text to UNIX scripts that are executable via the Script menu, or how to receive the outputs from them.</p>
+<p>Esta página explica cómo pasar el texto de su documento a los scripts UNIX que son ejecutables a través del menú Script, o cómo recibir los resultados de ellos.</p>
 
 <ul>
-	<li>The filename extensions of the scripts you can add to the Script menu are: .sh, .pl, .php, .rb, .py, .js, and .swift (regardless of the language)</li>
-	<li>In order to run a script, you need to set execute permission for the script file.</li>
+	<li>Las extensiones de nombre de archivo de los scripts que puedes añadir al menú Script son: .sh, .pl, .php, .rb, .py, .js y .swift (independientemente del idioma)</li>
+	<li>Para ejecutar un script, debe establecer el permiso de ejecución para el archivo de script.</li>
 </ul>
 
 
-<h2>Refer to the document file path</h2>
+<h2>Consulte la ruta del archivo del documento</h2>
 
-<p>If the frontmost document has already been saved, the absolute file path of the document will be referred to as an argument.</p>
-
-
-<h2>Pass text data to a script</h2>
-
-<p>A script can receive the contents of the frontmost document on STDIN (standard in). To pass text data from CotEditor to your script, you need to put a comment at the beginning of the script and write “<code>%%%{CotEditorXInput=<var>xxxx</var>}%%%</code>” inside. Replace “<code><var>xxxx</var></code>” with one of the parameters below. With no parameters, CotEditor passes nothing just like when you put “<coee>None</code>.”</p>
-
-<ul>
-	<li>CotEditor passes text data encoded with UTF-8.</li>
-</ul>
-
-<table>
-	<thead>
-		<tr><th>Keyword</th><th>Description</th></tr>
-	</thead>
-	<tbody>
-		<tr><th><code>Selection</code></th><td>To pass the text you are currently selecting.</td></tr>
-		<tr><th><code>AllText</code></th><td>To pass the whole text of your document.</td></tr>
-		<tr><th><code>None</code></th><td>To pass nothing (default).</td></tr>
-	</tbody>
-</table>
+<p>Si el documento principal ya se ha guardado, la ruta de archivo absoluta del documento se denominará como un argumento.</p>
 
 
-<h2>Receive output data from a script</h2>
+<h2>Pasar datos de texto a un script</h2>
 
-<p>CotEditor can receive the output text from the script on STDOUT (standard out) and apply it to the document and so on. To make CotEditor receive output data from a script, you need to put a comment at the beginning of the script and write “<code>%%%{CotEditorXOutput=<var>xxxx</var>}%%%</code>” inside. Replace <code><var>xxxx</var></code> with one of the parameters below. Without parameters, CotEditor does nothing just like when you put “<code>Discard</code>.”</p>
+<p>Un script puede recibir el contenido del documento principal en STDIN (entrada estándar). Para pasar datos de texto de CotEditor a tu script, debes poner un comentario al principio del script y escribir “<code>%%%{CotEditorXInput=<var>xxxx</var>}%%%</code>” en su interior. Reemplazar “<code><var>xxxx</var></code>” con uno de los siguientes parámetros. Sin parámetros, CotEditor no pasa nada como cuando pones “<coee>None</code>.”</p>
 
 <ul>
-	<li>The encoding of the text that CotEditor receives must be UTF-8.</li>
+	<li>CotEditor pasa datos de texto codificados con UTF-8.</li>
 </ul>
 
 <table>
 	<thead>
-		<tr><th>Keyword</th><th>Description</th></tr>
+		<tr><th>Palabra clave</th><th>Descripción</th></tr>
 	</thead>
 	<tbody>
-		<tr><th><code>ReplaceSelection</code></th><td>To replace the current selection with the contents of the output data.</td></tr>
-		<tr><th><code>ReplaceAllText</code></th><td>To replace the whole text of your document with the contents of the output data.</td></tr>
-		<tr><th><code>InsertAfterSelection</code></th><td>To insert the contents of the output data right after the current selection.</td></tr>
-		<tr><th><code>AppendToAllText</code></th><td>To insert the contents of the output data at the end of your document.</td></tr>
-		<tr><th><code>NewDocument</code></th><td>To create a new document and insert the contents to it.</td></tr>
-		<tr><th><code>Pasteboardputs</code></th><td>To store the contents of the output data in the Clipboard.</td></tr>
-		<tr><th><code>Discard</code></th><td>To do nothing (default).</td></tr>
+		<tr><th><code>Selection</code></th><td>Para pasar el texto que estás seleccionando actualmente.</td></tr>
+		<tr><th><code>AllText</code></th><td>Para pasar el texto completo de su documento.</td></tr>
+		<tr><th><code>None</code></th><td>Para no pasar nada (por defecto).</td></tr>
 	</tbody>
 </table>
 
 
-<h2>Print text to the Console</h2>
+<h2>Recibir datos de salida de un script</h2>
 
-<p>The string thrown to the standard error will be printed in the Console window.</p>
+<p>CotEditor puede recibir el texto de salida del script en STDOUT (salida estándar) y aplicarlo al documento, etc. Para que CotEditor reciba datos de salida de un script, debe poner un comentario al principio del script y escribir “<code>%%%{CotEditorXOutput=<var>xxxx</var>}%%%</code>” en su interior. Reemplazar <code><var>xxxx</var></code> Con uno de los siguientes parámetros. Sin parámetros, CotEditor no hace nada como cuando pones “<code>Discard</code>.”</p>
+
+<ul>
+	<li>La codificación del texto que recibe CotEditor debe ser UTF-8.</li>
+</ul>
+
+<table>
+	<thead>
+		<tr><th>Palabra clave</th><th>Descripción</th></tr>
+	</thead>
+	<tbody>
+		<tr><th><code>ReplaceSelection</code></th><td>Para reemplazar la selección actual con el contenido de los datos de salida.</td></tr>
+		<tr><th><code>ReplaceAllText</code></th><td>Para reemplazar todo el texto de su documento con el contenido de los datos de salida.</td></tr>
+		<tr><th><code>InsertAfterSelection</code></th><td>Para insertar el contenido de los datos de salida justo después de la selección actual.</td></tr>
+		<tr><th><code>AppendToAllText</code></th><td>Para insertar el contenido de los datos de salida al final de su documento.</td></tr>
+		<tr><th><code>NewDocument</code></th><td>Para crear un nuevo documento e insertar el contenido en él.</td></tr>
+		<tr><th><code>Pasteboardputs</code></th><td>Para almacenar el contenido de los datos de salida en el portapapeles.</td></tr>
+		<tr><th><code>Discard</code></th><td>No hacer nada (por defecto).</td></tr>
+	</tbody>
+</table>
 
 
-<h2>Example</h2>
+<h2>Imprimir texto en la consola</h2>
 
-<p>The following Python script prepends the “&gt;” character to every line in the selection of the frontmost document, and then prints the number of the processed lines to the Console.</p>
+<p>La cadena lanzada a la salida del error estándar se imprimirá en la ventana de la consola.</p>
+
+
+<h2>Ejemplo</h2>
+
+<p>El siguiente script de Python antepone el carácter "&gt;" a cada línea de la selección del documento principal, y luego imprime el número de líneas procesadas en la consola.</p>
 
 <pre class="source"><code><span class="comment">#!/usr/bin/env python3
 # %%%{CotEditorXInput=Selection}%%%
@@ -89,20 +89,20 @@ count = 0
 <span class="keyword">for</span> line <span class="keyword">in</span> sys.stdin:
     count += 1
     print(<span class="string">&quot;&gt;&quot;</span> + line.rstrip())
-sys.stderr.write(<span class="string">&quot;Processed {} lines.&quot;</span>.format(count))
+sys.stderr.write(<span class="string">&quot;{} líneas procesadas.&quot;</span>.format(count))
 </code></pre>
 
 <figure>
-	<figcaption>Output to the Console</figcaption>
-	<img src="../gfx/console@2x.png" width="406" alt="[2022-05-06 18:35:00] Example Code&#x0A;Processed 5 lines."/>
+	<figcaption>Salida de la consola</figcaption>
+	<img src="../gfx/console@2x.png" width="400" alt="[2023-08-06 15:02:39] Ejemplo de Código&#x0A;5 líneas procesadas."/>
 </figure>
 
-<p>You can get more sample scripts on:<br/>
+<p>Puedes obtener más scripts de ejemplo en:<br/>
 <a href="https://github.com/coteditor/SampleScripts" rel="external">coteditor/SampleScripts -GitHub</a></p>
 
 
 <section id="cf">
-<h2>See also</h2>
+<h2>Ver también</h2>
 <ul>
 	<li><a href="script_overview.html">Script CotEditor</a></li>
 </ul>
