@@ -2,7 +2,7 @@
 
 <head>
 	<meta charset="UTF-8"/>
-	<meta name="keywords" content="cot, command"/>
+	<meta name="keywords" content="cot, comando"/>
 	<link rel="stylesheet" href="../../Shared/sty/standard.css"/>
 	<script defer src="../../Shared/js/toc.js"></script>
 	
@@ -27,12 +27,12 @@ ln -s /Applications/CotEditor.app/Contents/SharedSupport/bin/cot /usr/local/bin/
 
 
 <h3>Autorización de seguridad</h3>
-<p>En macOS, se requiere la autorización del usuario para controlar CotEditor desde otras aplicaciones en las que el comando <code>cot</code> se utiliza. La autorización se realiza normalmente a través del cuadro de diálogo que se muestra al usar el comando <code>cot</code> por primera vez. Sin embargo, en algunos casos, es posible que tenga que autorizarlo manualmente desde Ajustes del Sistema &gt; Privacidad y seguridad &gt; Automatización. Selecciona la casilla de verificación para <strong>CotEditor</strong> (y también <strong>Eventos del sistema</strong> para la opción <code>--espera</code> ) bajo la solicitud de cliente, como Terminal.</p>
+<p>En macOS, se requiere la autorización del usuario para controlar CotEditor desde otras aplicaciones en las que el comando <code>cot</code> se utiliza. La autorización se realiza normalmente a través del cuadro de diálogo que se muestra al usar el comando <code>cot</code> por primera vez. Sin embargo, en algunos casos, es posible que tenga que autorizarlo manualmente desde Ajustes del Sistema &gt; Privacidad y seguridad &gt; Automatización. Selecciona la casilla de verificación para <strong>CotEditor</strong> (y también <strong>System Events</strong> para la opción <code>--wait</code>)bajo la solicitud de un cliente, como Terminal.</p>
 
 
 <h3>Instalación de Python 3</h3>
 <p>El comando cot se implementa en Python 3. Sin embargo, debido a que Python ya no se ha incluido en el sistema desde macOS 12.3, debes instalar <code>python3</code> manualmente para el comando cot.</p>
-<p>Las herramientas de desarrollo proporcionadas por Apple incluyen <code>python3</code>. Ejecute la siguiente línea en Terminal para instalar las herramientas de desarrollo de la línea de comandos de Apple. Obviamente, cualquier <code>python3</code> Instalado a través de otros métodos también se puede usar.</p>
+<p>Las herramientas de desarrollo proporcionadas por Apple incluyen <code>python3</code>. Ejecute el comando siguiente en el Terminal para instalar las herramientas de desarrollo de la línea de comandos de Apple. Obviamente, cualquier <code>python3</code> Instalado a través de otros métodos también se puede usar.</p>
 
 <pre class="source"><code>xcode-select --install</code></pre>
 
@@ -69,7 +69,7 @@ ln -s /Applications/CotEditor.app/Contents/SharedSupport/bin/cot /usr/local/bin/
 <pre class="source"><code>cot
 </code></pre>
 
-<p>El siguiente comando abre el archivo foo.txt en CotEditor y mueve el punto de inserción a la línea 200 en el documento abierto. <code>cot</code> El comando no hace nada si el archivo foo.txt no existe.</p>
+<p>El siguiente comando abre el archivo foo.txt en CotEditor y mueve el punto de inserción a la línea 200 en el documento abierto. El comando <code>cot</code> no hace nada si el archivo foo.txt no existe.</p>
 
 <pre class="source"><code>cot --line 200 foo.txt
 </code></pre>

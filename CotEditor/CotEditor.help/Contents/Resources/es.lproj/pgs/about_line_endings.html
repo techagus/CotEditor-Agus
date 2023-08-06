@@ -2,7 +2,7 @@
 
 <head>
 	<meta charset="UTF-8"/>
-	<meta name="keywords" content="line ending, newline, line break, LF, CR, CRLF, NEL, LS, PS"/>
+	<meta name="keywords" content="Final de línea, nueva línea, salto de línea, LF, CR, CRLF, NEL, LS, PS"/>
 	<link rel="stylesheet" href="../../Shared/sty/standard.css"/>
 	<script defer src="../../Shared/js/toc.js"></script>
 	
@@ -88,16 +88,16 @@
 
 <p>CotEditor detecta automáticamente el final de línea utilizado en un documento y lo establece como el final de línea para las siguientes entradas en el documento.</p>
 
-<p>Si un documento tiene finales de línea inconsistentes, CotEditor los alerta automáticamente y los resalta. Para más detalles, consulte <a href="howto_find_inconsistent_line_endings.html">Busca finales de línea inconsistentes</a>.</p>
+<p>Si un documento tiene finales de línea inconsistentes, CotEditor los alerta automáticamente y los resalta. Para más detalles, consulte <a href="howto_find_inconsistent_line_endings.html">Buscar finales de línea inconsistentes</a>.</p>
 
 
 
 <h2>Inspecciona el final de la línea del documento</h2>
 
-<p>Puede comprobar el tipo de finales de línea utilizados en el documento en la siguiente área:</p>
+<p>Puede comprobar el tipo de finales de línea utilizados en el documento en los siguientes lugares:</p>
 <ul>
 	<li>La visualización del menú emergente de finales de línea en el lado derecho de la barra de estado</li>
-	<li>El inspector de documentos eligiendo Ver &gt; Inspectores &gt; Documento</li>
+	<li>El inspector de documentos eligiendo Visualización &gt; Inspector &gt; Inspector del documento</li>
 	<li>La selección del submenú Finales de línea en el menú Formato</li>
 </ul>
 
@@ -105,25 +105,25 @@
 
 <h2>Cambiar el carácter final de línea del documento</h2>
 
-<p>Puede cambiar a otro todos los finales de línea del documento en la siguiente área:</p>
+<p>Puede cambiar a otro todos los finales de línea del documento en los siguientes lugares:</p>
 <ul>
 	<li>El menú emergente de finales de línea en el lado derecho de la barra de estado</li>
 	<li>El submenú Finales de línea en el menú Formato</li>
 </ul>
 
-<p>Para convertir los finales de línea del documento en uno oculto, como NEL, LS o PS, abra el menú Finales de línea pulsando la tecla <kbd>Alt</kbd>.</p>
+<p>Para convertir los finales de línea del documento en uno oculto, como NEL, LS o PS, abra el menú Finales de línea pulsando simultáneamente la tecla <kbd>Alt</kbd>.</p>
 
 
 
 <h2>Insertar finales de línea diferentes del final de línea del documento</h2>
 
-<p>En general, CotEditor utiliza solo el final de la línea del documento al romper líneas para que no tenga que preocuparse por la diferencia en los tipos de finales de línea. Incluso si inserta texto con diferentes terminaciones de línea de alguna manera, como por el script CotEditor o el reemplazo de texto usando la expresión regular, CotEditor convierte implícitamente todas las terminaciones de línea en el texto para insertarlas en el final de línea en el documento.</p>
+<p>En general, CotEditor utiliza solo el final de la línea del documento al romper líneas para que no tenga que preocuparse por la diferencia en los tipos de finales de línea. Incluso si inserta texto con diferentes terminaciones de línea de alguna manera, como por un script CotEditor o por el reemplazo de texto usando expresiones regulares, CotEditor convierte implícitamente todas las terminaciones de línea en el texto para equipararlas al final de línea del documento.</p>
 
 <p>Actualmente, CotEditor solo proporciona dos formas de insertar finales de línea diferentes del final de línea del documento:</p>
 
 <ul>
 	<li>Introduzca manualmente un carácter de final de línea por <a href="howto_input_unicode.html">Punto de código Unicode</a>.</li>
-	<li>Pegue texto que contenga algunos finales de línea diferentes con el comando <a href="howto_paste.html"> de pegar exactamente</a>.</li>
+	<li>Pegue texto que contenga algunos finales de línea diferentes con el comando <a href="howto_paste.html"> de Pegar exactamente (menú Editar con la tecla  <kbd>Alt</kbd> pulsada)</a>.</li>
 </ul>
 
 
