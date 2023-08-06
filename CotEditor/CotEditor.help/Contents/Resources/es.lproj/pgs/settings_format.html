@@ -1,89 +1,88 @@
-<html lang="en">
+<html lang="es">
 
 <head>
 	<meta charset="UTF-8"/>
-	<meta name="keywords" content="Format settings, format, line endings, new line, encoding, syntax"/>
+	<meta name="keywords" content="Ajustes de formato, formato, finales de línea, nueva línea, codificación, sintaxis"/>
 	<link rel="stylesheet" href="../../Shared/sty/standard.css"/>
 	<script defer src="../../Shared/js/toc.js"></script>
 	
-	<title>Change Format settings in CotEditor</title>
+	<title>Cambiar la configuración del formato en CotEditor</title>
 </head>
 
 <body>
 <a name="settings_format"></a>
 
-<h1>Change Format settings in CotEditor</h1>
+<h1>Cambiar la configuración del formato en CotEditor</h1>
 
-<p>In the CotEditor app <img class="appicon" src="../../Shared/gfx/icon_16x16@2x.png" height="16" alt=""/> on your Mac, use Format settings to set the default format for documents such as line ending type and text encoding, and to manage syntaxes. To change these settings, choose CotEditor &gt; Settings, then click Format.</p>
+<p>En la aplicación CotEditor <img class="appicon" src="../../Shared/gfx/icon_16x16@2x.png" height="16" alt=""/> En su Mac, utilice la configuración de formato para establecer el formato predeterminado para documentos como el tipo de final de línea y la codificación de texto, y para administrar las sintaxis. Para cambiar esta configuración, elija CotEditor &gt; Ajustes y, a continuación, haga clic en Formato.</p>
 
-<p class="openapp"><a href="x-help-action://openApp?bundleId=com.coteditor.CotEditor">Open CotEditor for me</a></p>
+<p class="openapp"><a href="x-help-action://openApp?bundleId=com.coteditor.CotEditor">Abre CotEditor para mí</a></p>
 
 
 
 <table class="settings">
 <thead>
-	<tr><th>Option</th><th>Description</th></tr>
+	<tr><th>Opción</th><th>Descripción</th></tr>
 </thead>
 
 <tbody>
 	<tr>
-		<th>Default line endings</th>
-		<td>The default line ending style is used when creating a new document. This setting is used also when the opened document doesn’t include any line endings.</td>
+		<th>Finales de línea predeterminados</th>
+		<td>El estilo de final de línea predeterminado que se utilizará al crear un nuevo documento. Esta configuración también se utiliza cuando el documento abierto no incluye ningún final de línea.</td>
 	</tr>
 
 	<tr>
-		<th>Default text encoding</th>
-		<td>The default text encoding is used when creating a new document. See <a href="about_line_endings.html">Handle various types of line endings</a> for details.</td>
+		<th>Codificación de texto predeterminada</th>
+		<td>La codificación de texto predeterminada que se utilizará al crear un nuevo documento. Ver <a href="about_line_endings.html">Manejar varios tipos de finales de línea</a> para más detalles.</td>
 	</tr>
 
 	<tr>
-		<th>Priority of encodings</th>
-		<td>The priority of encodings and the policy of encoding detection when opening an existing file.
+		<th>Prioridad de las codificaciones</th>
+		<td>La prioridad de las codificaciones y la política de detección de codificación al abrir un archivo existente.
 		<dl>
-			<dt>Edit List</dt>
-			<dd>Click Edit List to set the order of encodings that appear in the File Encoding submenu in the Format menu and the File Encoding drop-down list on the toolbar. This order is also used for encoding detection. CotEditor tries each encoding from the top of the list. See <a href="howto_customize_encoding_order.html">Change priorities of text encodings</a> for details.</dd>
+			<dt>Editar lista...</dt>
+			<dd>Haga clic en Editar lista para establecer el orden de las codificaciones que aparecen en el submenú Codificación de archivos en el menú Formato y en la lista desplegable Codificación de archivos en la barra de herramientas. Este orden también se utiliza para la detección de codificación. CotEditor prueba cada codificación desde la parte superior de la lista. Ver <a href="howto_customize_encoding_order.html">Cambiar las prioridades de las codificaciones de texto</a> para más detalles.</dd>
 		</dl></td>
 	</tr>
 
 	<tr>
-		<th>Refer to encoding declaration<br/>in document</th>
-		<td>The encoding declaration written in the document is respected when detecting the text encoding of the document. See <a href="about_autodetect_charset.html">Use encoding declarations for encoding detection</a> for details.</td>
+		<th>Consulte codificación hecha en el documento</th>
+		<td>La declaración de codificación escrita en el documento se respeta al detectar la codificación de texto del documento. Ver <a href="about_autodetect_charset.html">Usar declaraciones de codificación para la detección de codificación</a> para más detalles.</td>
 	</tr>
 
 	<tr>
-		<th>Default syntax</th>
-		<td>If there is no syntax associated with the extension of the file you opened, the one you specified here will be used for coloring.<br />
-		This setting applies to a newly created document as well.</td>
+		<th>Estilo de sintaxis predeterminado</th>
+		<td>Si no hay ninguna sintaxis asociada con la extensión del archivo que abrió, la que especificó aquí se utilizará para colorear.<br />
+		Esta configuración también se aplica a un documento recién creado.</td>
 	</tr>
 
 	<tr>
-		<th>Available syntaxes</th>
-		<td>The list of the existing syntaxes. A small dot in front of syntax names represents that it is customized.<br/>
-		See <a href="syntax_definition.html">Define a syntax</a> for editing syntax definitions.</dd>
+		<th>Estilos de sintaxis disponibles</th>
+		<td>La lista de las sintaxis existentes. Un pequeño punto delante de los nombres de sintaxis representa que está personalizado.<br/>	 Ver <a href="syntax_definition.html">Definir una sintaxis</a> para editar definiciones de sintaxis.</dd>
 
 		<dl>
-			<dt>Add +, Remove -</dt>
-			<dd>Create a new syntax or remove the selected syntax. The syntaxes bundled with CotEditor can not be removed.</dd>
+			<dt>Añadir (icono +), Eliminar (icono -)</dt>
+			<dd>Crea una nueva sintaxis o elimina la sintaxis seleccionada. Las sintaxis incluidas con CotEditor no se pueden eliminar.</dd>
 
-			<dt>Edit (pencil icon)</dt>
-			<dd>Edit the selected syntax.</dd>
+			<dt>Editar (icono de lápiz)</dt>
+			<dd>Editar la sintaxis seleccionada.</dd>
 
-			<dt>Other Actions (gear icon)</dt>
+			<dt>Otras acciones (icono (...))</dt>
 			<dd><dl>
-				<dt>Duplicate “[<span class="variable">syntax name</span>]”</dt>
-				<dd>Duplicate the selected syntax to make your own one.</dd>
+				<dt>Duplicar“[<span class="variable">nombre de la sintaxis</span>]”</dt>
+				<dd>Duplica la sintaxis seleccionada para crear la tuya.</dd>
 
-				<dt>Export “[<span class="variable">syntax name</span>]”</dt>
-				<dd>Export the syntax definition file made from the selected syntax. You can use this exported file to use it on another computer. To use the exported file, do Import.</dd>
+				<dt>Exportar “[<span class="variable">nombre de la sintaxis</span>]”</dt>
+				<dd>Exporta el archivo de definición de sintaxis hecho a partir de la sintaxis seleccionada. Puedes usar este archivo exportado para usarlo en otro ordenador. Para usar el archivo exportado, haz Importar.</dd>
 
-				<dt>Share</dt>
-				<dd>Share the syntax definition file made from the selected syntax.</dd>
+				<dt>Compartir</dt>
+				<dd>Comparte el archivo de definición de sintaxis hecho a partir de la sintaxis seleccionada.</dd>
 
-				<dt>Import</dt>
-				<dd>This allows you to use a syntax created on another computer. After selecting Import, choose the exported syntax file to install.</dd>
+				<dt>Importar...</dt>
+				<dd>Esto te permite usar una sintaxis creada en otro ordenador. Después de seleccionar Importar, elija el archivo de sintaxis exportado para instalar.</dd>
 
-				<dt>Show File Mapping Conflicts</dt>
-				<dd>Check if multiple syntaxes are associated with the same extension/filename.</dd>
+				<dt>Mostrar conflictos de mapeo de archivos</dt>
+				<dd>Compruebe si hay varias sintaxis asociadas con la misma extensión/nombre de archivo.</dd>
 			</dl></dd>
 		</dl></td>
 	</tr>
@@ -93,13 +92,13 @@
 
 
 <section id="cf">
-<h2>See also</h2>
+<h2>Ver también</h2>
 <ul>
-	<li><a href="about_line_endings.html">Handle various types of line endings</a></li>
-	<li><a href="howto_customize_encoding_order.html">Change priorities of text encodings</a></li>
-	<li><a href="syntax_definition.html">Define a syntax</a></li>
-	<li><a href="syntax_file_mapping.html">Map files to syntaxes</a></li>
-	<li><a href="settings.html">Change settings</a></li>
+	<li><a href="about_line_endings.html">Manejar varios tipos de finales de línea</a></li>
+	<li><a href="howto_customize_encoding_order.html">Cambiar las prioridades de las codificaciones de texto</a></li>
+	<li><a href="syntax_definition.html">Definir una sintaxis</a></li>
+	<li><a href="syntax_file_mapping.html">Asignar archivos a sintaxis</a></li>
+	<li><a href="settings.html">Cambiar la configuración</a></li>
 </ul>
 </section>
 
