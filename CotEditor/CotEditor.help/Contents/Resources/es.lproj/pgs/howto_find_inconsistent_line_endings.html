@@ -2,7 +2,7 @@
 
 <head>
 	<meta charset="UTF-8"/>
-	<meta name="keywords" content="line ending, newline, LF, CR, CRLF"/>
+	<meta name="keywords" content="final de línea, nueva línea, LF, CR, CRLF"/>
 	<link rel="stylesheet" href="../../Shared/sty/standard.css"/>
 	<script defer src="../../Shared/js/toc.js"></script>
 	
@@ -14,43 +14,43 @@
 
 <h1>Encuentra finales de línea inconsistentes en CotEditor</h1>
 
-<p>CotEditor detecta automáticamente los finales de línea inconsistentes con la configuración de final de línea del documento. Los finales de línea inconsistentes pueden causar problemas de varias maneras, como ejecutar un script.</p>
+<p>CotEditor detecta automáticamente los finales de línea inconsistentes con la configuración de final de línea del documento. Los finales de línea inconsistentes pueden causar problemas de varias maneras, como por ejemplo al ejecutar un script.</p>
 
 
-<h2>Detect line endings in the file</h2>
+<h2>Detectar finales de línea en el archivo</h2>
 
-<p>CotEditor automatically inspects line endings in the document when loaded, and set the common line ending type to the document line ending.</a>
+<p>CotEditor inspecciona automáticamente los finales de línea en el documento cuando se carga, y establece el tipo de final de línea común en el final de línea del documento.</a>
 
-<p>At the same time, if there are multiple types of line endings in the document, CotEditor alerts about it. In the dialog, you can then choose whether to convert all those inconsistent line endings to the most common line endings or leave them for now so that you can review them.</p>
-
-
-<h2>Look over the location of inconsistent line endings</h2>
-
-<p>The Warnings pane lists up all the line endings inconsistent with the document line ending.</p>
+<p>Al mismo tiempo, si hay varios tipos de finales de línea en el documento, CotEditor avisa al respecto. En el cuadro de diálogo, puede elegir si desea convertir todos esos finales de línea inconsistentes en los finales de línea más comunes o dejarlos por ahora para que pueda revisarlos.</p>
 
 
-<p>To show the Warnings pane:</p>
+<h2>Mira la ubicación de los finales de línea inconsistentes</h2>
+
+<p>El panel de Avisos muestra todos los finales de línea inconsistentes con el final de la línea del documento.</p>
+
+
+<p>Para mostrar el panel de avisos:</p>
 <ol>
-	<li>Choose View &gt; Inspector &gt; Warnings.</li>
+	<li>Elija Visualización &gt; Inspector &gt; Avisos.</li>
 </ol>
 
 
-<h2>Find inconsistent line endings in the editor</h2>
+<h2>Encuentra finales de línea inconsistentes en el editor</h2>
 
-<p>When the visibility setting of the line endings is selected, the inconsistent line endings are drawn in a different color. See <a href="howto_display_invisibles.html">Display invisible characters</a> for instruction on how to change the line endings visibility.</p>
+<p>Cuando se selecciona el ajuste de visibilidad de los finales de línea, los finales de línea inconsistentes se dibujan en un color diferente. Ver <a href="howto_display_invisibles.html">Mostrar caracteres invisibles</a> para obtener instrucciones sobre cómo cambiar la visibilidad de los finales de línea.</p>
 
 
-<h2>Normalize line endings</h2>
+<h2>Normalizar los finales de línea</h2>
 
-<p>You can convert all line endings including inconsistent ones to a single line ending type by selecting the document line ending in the Line Endings menu.</p>
+<p>Puede convertir todos los finales de línea, incluidos los inconsistentes, en un tipo de final de línea única seleccionando el final de la línea del documento en el menú Finales de línea.</p>
 
 
 <section id="cf">
-<h2>See also</h2>
+<h2>Ver también</h2>
 <ul>
-	<li><a href="about_line_endings.html">Handle various types of line endings</a></li>
-	<li><a href="howto_find_newline.html">Find or replace a line ending</a></li>
-	<li><a href="howto_inspect_usedchar.html">Find characters incompatible with document encoding</a></li>
+	<li><a href="about_line_endings.html">Manejar varios tipos de finales de línea</a></li>
+	<li><a href="howto_find_newline.html">Busca o reemplaza un final de línea</a></li>
+	<li><a href="howto_inspect_usedchar.html">Busca caracteres incompatibles con la codificación del documento</a></li>
 </ul>
 </section>
 
