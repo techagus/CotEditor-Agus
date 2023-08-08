@@ -2,7 +2,7 @@
 
 <head>
 	<meta charset="UTF-8"/>
-	<meta name="keywords" content="Sintaxis, mapeo de archivos, extensión,Shebang, interpreter"/>
+	<meta name="keywords" content="sintaxis, mapeo de archivos, extensión,Shebang, interpreter"/>
 	<link rel="stylesheet" href="../../Shared/sty/standard.css"/>
 	<script defer src="../../Shared/js/toc.js"></script>
 	
@@ -36,12 +36,12 @@
 	</ul></li>
 	<li>Shebang en la primera línea del documento<ul>
 		<li>Cuando no hay una sintaxis correspondiente para la extensión y el nombre de archivo, y si la primera línea del contenido del documento es un 'shebang', intenta determinar la sintaxis del shebang. En esta prueba, se utilizan los nombres de los intérpretes que se definen en las sintaxis. El intérprete puede ser la última parte de la ruta justo después de <code>#!</code> o el siguiente término a la ruta si la ruta apunta a <code>env</code>.</li>
-		<li>e.g.: <code>#!/usr/bin/perl</code> →Perl (intérprete: <code>perl</code>)</li>
-		<li>e.g.: <code>#!/usr/bin/env python3</code> → Python (intérprete: <code>python3</code>)</li>
+		<li>ej.: <code>#!/usr/bin/perl</code> →Perl (intérprete: <code>perl</code>)</li>
+		<li>ej.: <code>#!/usr/bin/env python3</code> → Python (intérprete: <code>python3</code>)</li>
 	</ul></li>
 	<li>Declaración XML<ul>
 		<li>Cuando no hay una sintaxis correspondiente hasta aquí, pero el contenido del archivo comienza con una declaración XML, la sintaxis se establece automáticamente en "XML".</li>
-		<li>e.g.: <code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</code> → XML</li>
+		<li>ej.: <code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</code> → XML</li>
 	</ul></li>
 	<li>Ninguna<ul>
 		<li>Si no se puede encontrar ninguna sintaxis adecuada, se establecería la sintaxis "Ninguna".</li>
