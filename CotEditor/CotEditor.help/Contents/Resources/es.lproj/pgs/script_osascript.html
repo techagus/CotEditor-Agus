@@ -2,185 +2,184 @@
 
 <head>
 	<meta charset="UTF-8"/>
-	<meta name="keywords" content="Script menu, script, AppleScript, JXA, JavaScript"/>
+	<meta name="keywords" content="menú de script, script, AppleScript, JXA, JavaScript"/>
 	<link rel="stylesheet" href="../../Shared/sty/standard.css"/>
 	<link rel="stylesheet" href="../../Shared/sty/applescript.css"/>
 	<script defer src="../../Shared/js/toc.js"></script>
 	
-	<title>Script CotEditor with AppleScript</title>
+	<title>Script CotEditor con AppleScript</title>
 </head>
 
 <body>
 
-<h1>Script CotEditor with AppleScript</h1>
+<h1>Script CotEditor con AppleScript</h1>
 
-<p>CotEditor works with AppleScript and JXA (JavaScript for Automation).</p>
+<p>CotEditor funciona con AppleScript y JXA (JavaScript para automatización).</p>
 
-<p>It has its own AppleScript dictionary so that you can look up all the classes or commands available with CotEditor. To open the dictionary:</p>
+<p>Tiene su propio diccionario AppleScript para que puedas buscar todas las clases o comandos disponibles con CotEditor. Para abrir el diccionario:</p>
 
 <ul>
-	<li>Choose Help &gt; CotEditor Scripting Guide &gt; AppleScript Dictionary.</li>
+	<li>Elegir Ayuda &gt; Guía de scripts en CotEditor &gt; Diccionario de AppleScript.</li>
 </ul>
 
-<p>To confirm the version history of the AppleScript support on CotEditor, see <a href="script_osascript_changes.html">Support different CotEditor versions in AppleScript</a>.</p>
+<p>Para confirmar el historial de versiones de la compatibilidad con AppleScript en CotEditor, consulte <a href="script_osascript_changes.html">Compatible con diferentes versiones de CotEditor en AppleScript</a>.</p>
 
 
 <section id="Class">
-<h2>Classes</h2>
-<p>The original classes and properties that are defined in CotEditor.</p>
+<h2>Clases</h2>
+<p>Las clases y propiedades originales que se definen en CotEditor.</p>
 
 <section>
-<h3>Application</h3>
+<h3>Aplicación</h3>
 
-<p>The CotEditor application.</p>
+<p>La aplicación CotEditor.</p>
 </section>
 
 
 <section>
-<h3>Window</h3>
+<h3>Ventana</h3>
 
-<p>A CotEditor window.</p>
+<p>Una ventana de CotEditor.</p>
 </section>
 
 
 <section>
-<h3>Document</h3>
+<h3>Documento</h3>
 
-<p>A CotEditor document.</p>
+<p>Un documento de CotEditor.</p>
 
 <dl class="tree">
-	<dt>Properties</dt>
+	<dt>Propiedades</dt>
 	<dd><dl class="subtree">
 		<dt><code>contents</code></dt>
-		<dd>The contents of the document. (text)</dd>
+		<dd>El contenido del documento. (texto)</dd>
 
 		<dt><code>text</code></dt>
-		<dd>The contents of the document. (text)</dd>
+		<dd>El contenido del documento. (texto)</dd>
 
 		<dt><del><code>length</code></del></dt>
-		<dd><del>The number of characters of the document in UTF-16. (int)</del> <span class="deprecated">deprecated on CotEditor 4.4</span></dd>
+		<dd><del>El número de caracteres del documento en UTF-16. (int)</del> <span class="deprecated">desechado en CotEditor 4.4</span></dd>
 
 		<dt><code>selection</code></dt>
-		<dd>The current selection. (text selection)</dd>
+		<dd>La selección actual. (selección de texto)</dd>
 
 		<dt><code>encoding</code></dt>
-		<dd>The text encoding name of the document. (text)</dd>
+		<dd>El nombre de la codificación de texto del documento. (texto)</dd>
 
 		<dt><code>IANA charset</code></dt>
-		<dd>The IANA charset name of the document. (text, e.g.<code>Shift_JIS</code>, <code>EUC-JP</code>)</dd>
+		<dd>El nombre del conjunto de caracteres IANA del documento. (texto, por ejemplo,<code>Shift_JIS</code>, <code>EUC-JP</code>)</dd>
 
 		<dt><code>has BOM</code></dt>
-		<dd>Has the file encoding a BOM (byte order mark)? (boolean) <span class="added">new on CotEditor 4.1</span></dd>
+		<dd>¿El archivo codifica con BOM (marca de orden de bytes)? (booleano)<span class="added">nuevo en CotEditor 4.1</span></dd>
 
 		<dt><code>line ending</code></dt>
-		<dd>The line ending code of the document. (<code>CR</code> / <code>LF</code> / <code>CRLF</code> / <code>NEL</code> / <code>LS</code> / <code>PS</code>)</dd>
+		<dd>El código de final de línea del documento. (<code>CR</code> / <code>LF</code> / <code>CRLF</code> / <code>NEL</code> / <code>LS</code> / <code>PS</code>)</dd>
 
 		<dt><code>tab width</code></dt>
-		<dd>The width of a tab character in space equivalents. (int) <span class="added">new on CotEditor 2.1</span></dd>
+		<dd>El ancho de un carácter de tabulación en espacios equivalentes. (int)<span class="added">new on CotEditor 2.1</span></dd>
 
 		<dt><code>expands tab</code></dt>
-		<dd>Are tab characters expanded to space? (boolean) <span class="added">new on CotEditor 3.1.2</span></dd>
+		<dd>¿Los caracteres de tabulación se expanden en espacios? (booleano) <span class="added">Nuevo en CotEditor 3.1.2</span></dd>
 
 		<dt><code>wrap lines</code></dt>
-		<dd>Whether to wrap lines or not. (boolean)</dd>
+		<dd>Se ajustan las líneas o no. (booleano)</dd>
 
 		<dt><code>coloring style</code></dt>
-		<dd>The syntax name of the document. (text)</dd>
+		<dd>El nombre de la sintaxis del documento. (texto)</dd>
 	</dl></dd>
 </dl>
 </section>
 
 
 <section>
-<h3>Text selection</h3>
+<h3>Selección de texto</h3>
 
-<p>The current selection.</p>
+<p>La selección actual.</p>
 
 <dl class="tree">
-	<dt>Properties</dt>
+	<dt>Propiedades</dt>
 	<dd><dl class="subtree">
 		<dt><code>contents</code></dt>
-		<dd>The contents of the selection.</dd>
+		<dd>El contenido de la selección.</dd>
 
 		<dt><code>range</code></dt>
-		<dd>The range of characters in the selection. The format is '{location, length}'.</dd>
+		<dd>El rango de caracteres de la selección. El formato es '{posición, longitud}'.</dd>
 
 		<dt><code>line range</code></dt>
-		<dd>The range of lines in the selection. The format is '{location, length}'. (<code>length</code> can be omitted, one line will be selected even if it were <code>0</code> or <code>0</code>)</dd>
+		<dd>El rango de líneas en la selección. El formato es '{posición, longitud}'. (<code>length</code> Se puede omitir, se seleccionará una línea incluso si fuera <code>0</code> o <code>0</code>)</dd>
 	</dl></dd>
 </dl>
 
 
-<h4>Example</h4>
+<h4>Ejemplo</h4>
 
 <figure>
 	<pre class="source"><code class="AppleScript">contents of selection of document 1</code></pre>
-	<figcaption>Returns the selected string in the frontmost document.</figcaption>
+	<figcaption>Devuelve la cadena seleccionada en el documento principal.</figcaption>
 </figure>
 
 <figure>
 	<pre class="source"><code class="AppleScript">set contents of selection of front document to &quot;Apple&quot;</code></pre>
-	<figcaption>Replaces the selection with “Apple.”</figcaption>
+	<figcaption>Reemplaza la selección por "Apple".</figcaption>
 </figure>
 
 <figure>
 	<pre class="source"><code class="AppleScript">range of selection of front document</code></pre>
-	<figcaption>Returns the selection range with {location, length}.</figcaption>
+	<figcaption>Devuelve el rango de selección con {posición, longitud}.</figcaption>
 </figure>
 
 <figure>
 	<pre class="source"><code class="AppleScript">set range of selection of front document to {1, 12}</code></pre>
-	<figcaption>Select from the 1st character to the 12th character.</figcaption>
+	<figcaption>Seleccione entre el primer carácter hasta el decimosegundo.</figcaption>
 </figure>
 
 <figure>
 	<pre class="source"><code class="AppleScript">set line range of selection of front document to 10</code></pre>
-	<figcaption>Select the 10th line (no scrolling).</figcaption>
+	<figcaption>Seleccione la décima línea (sin desplazamiento).</figcaption>
 </figure>
 
 <figure>
 	<pre class="source"><code class="AppleScript">set range of selection of front document to {-15, -1}</code></pre>
-	<figcaption>Select from the 15th last character to the last but one (no scrolling).</figcaption>
+	<figcaption>Seleccione desde los siguientes 15 caracterese hasta el último (sin desplazamiento).</figcaption>
 </figure>
 
-<h4>Discussion</h4>
+<h4>Debate</h4>
 
-<p>The <code>selection</code> property doesn’t work by itself. Use this property with others such as <code>contents</code>.</p>
+<p>La propiedad <code>selection</code> no funciona por sí sola. Usa esta propiedad con otras como <code>contents</code>.</p>
 
-<p>When ‘location’ is a negative value, the selection range starts from the ‘location’-th last character.<br/>
-When ‘length’ is a positive value, the selection range becomes the ‘length’ characters starting from ‘location.’ If ‘length’ is larger than the number of the rest characters in the document, the range will be from ‘location’ to the end.<br/>
-When ‘length’ is a negative value, the selection range ends at the ‘length’-th last character. If the absolute value of ‘length’ is smaller than ‘location’ (i.e. the selection’s end point is before ‘location’), the caret just moves to ‘location’ (same as when {location, 0} was input).</p>
-<p>This specifying method is based on <code>substr</code> in PHP.</p>
-<p>The command for changing selection doesn’t scroll the window. Use the <code>scroll to caret</code> command or <code>jump</code> command to make the selection remain in the view.</p>
+<p>Cuando la "posición" es un valor negativo, el rango de selección comienza desde el último carácter de la "posición".<br/>
+Cuando "longitud" es un valor positivo, el rango de selección se convierte en los caracteres de "longitud" a partir de la "posición". Si la "longitud" es mayor que el número de caracteres restantes en el documento, el rango será desde la "posición" hasta el final.<br/>
+Cuando "longitud" es un valor negativo, el rango de selección termina en el último carácter de "longitud". Si el valor absoluto de "longitud" es menor que la "posición" (es decir, el punto final de la selección está antes de la "posición"), la información se mueve a "posición" (igual que cuando se introdujera {posición, 0}).</p>
+<p>Este método de especificación se basa en <code>substr</code> en PHP.</p>
+<p>El comando para cambiar la selección no se desplaza por la ventana. Usa el comando <code>scroll to caret</code> o el comando <code>jump</code> para que la selección permanezca a la vista.</p>
 </section>
 </section>
 
 
 <section id="Command">
-<h2>Commands</h2>
-<p>The original commands that are defined in CotEditor.<br/>
-(properties surrounded by [ ] are options)</p>
+<h2>Comandos</h2>
+<p>Los comandos originales que se definen en CotEditor.<br/> (las propiedades rodeadas de [ ] son opcionales)</p>
 
 <section>
 <h3>write to console</h3>
 
 <dl class="tree">
 	<dt><code class="command">write to console</code></dt>
-	<dd>Display a string on CotEditor’s console window.</dd>
+	<dd>Muestra una cadena en la ventana de la consola de CotEditor.</dd>
 	<dd><dl>
-		<dt>target</dt>
-		<dd>‘document’ object</dd>
+		<dt>destino</dt>
+		<dd>objeto ‘document’ </dd>
 	</dl></dd>
 </dl>
 
-<h4>Availability</h4>
+<h4>Disponibilidad</h4>
 
 <p>CotEditor 3.2.0+</p>
 
-<h4>Example</h4>
+<h4>Ejemplo</h4>
 <figure>
-	<pre class="source"><code class="AppleScript">write to console &quot;Script failed.&quot;</code></pre>
-	<figcaption>Display the massege &quot;Script failed.&quot; on the CotEditor’s console.</figcaption>
+	<pre class="source"><code class="AppleScript">write to console &quot;Falla script.&quot;</code></pre>
+	<figcaption>Muestra el mensaje &quot;Falla script.&quot; en la consola de CotEditor.</figcaption>
 </figure>
 </section>
 
@@ -189,47 +188,47 @@ When ‘length’ is a negative value, the selection range ends at the ‘length
 
 <dl class="tree">
 	<dt><code class="command">find</code></dt>
-	<dd>Searches a string, selects the string and returns <code>true</code>, if any, otherwise returns <code>false</code>.</dd>
+	<dd>Busca una cadena, selecciona la cadena y devuelve <code>true</code>,si lo encuentra, de lo contrario devuelve <code>false</code>.</dd>
 	<dd><dl class="subtree">
-		<dt><code>for</code> (text)</dt>
-		<dd>The string to search for.</dd>
+		<dt><code>for</code> (texto)</dt>
+		<dd>La cadena a buscar.</dd>
 
-		<dt>[<code>RE</code> (boolean)]</dt>
-		<dd>Perform regular expression search or not.</dd>
+		<dt>[<code>RE</code> (booleano)]</dt>
+		<dd>Realizar una búsqueda con expresiones regulares o no.</dd>
 
-		<dt>[<code>wrap</code> (boolean)]</dt>
-		<dd>Perform wrap search or not.</dd>
+		<dt>[<code>wrap</code> (booleano)]</dt>
+		<dd>Realizar búsqueda envolvente o no.</dd>
 
-		<dt>[<code>ignore case</code> (boolean)]</dt>
-		<dd>Ignore case or not.</dd>
+		<dt>[<code>ignore case</code> (booleano)]</dt>
+		<dd>Ignora mayúsculas y minúsculas o no.</dd>
 
-		<dt>[<code>backwards</code> (boolean)]</dt>
-		<dd>Perform backwards search or not.</dd>
+		<dt>[<code>backwards</code> (booleano)]</dt>
+		<dd>Realizar una búsqueda hacia atrás o no.</dd>
 	</dl></dd>
 	<dd><dl>
-		<dt>Return value</dt>
-		<dd>boolean</dd>
+		<dt>Valor de retorno</dt>
+		<dd>booleano</dd>
 	</dl></dd>
 	<dd><dl>
-		<dt>target</dt>
-		<dd>‘document’ object</dd>
+		<dt>destino</dt>
+		<dd>objeto ‘document’</dd>
 	</dl></dd>
 </dl>
 
 
-<h4>Example</h4>
+<h4>Ejemplo</h4>
 
 <figure>
 	<pre class="source"><code class="AppleScript">find front document for &quot;Apple&quot; with ignore case</code></pre>
-	<figcaption>Searches “Apple” with ignoring case, starting from the current selection to the end of the frontmost document, and returns the result.</figcaption>
+	<figcaption>Busca "Apple" ignorando mayúsculas y minúsculas, comenzando desde la selección actual hasta el final del documento principal, y devuelve el resultado.</figcaption>
 </figure>
 
 
-<h4>Discussion</h4>
+<h4>Debate</h4>
 
-<p>The search starts from the current selection (caret position).<br/>
-For example, when not using the <code>wrap</code> or <code>backwards</code> options and when there are no matching string after the current selection, then <code>false</code> is returned.</p>
-<p>The regular expression search cannot search backwards. If both options were specified at the same time, <code>RE</code> takes precedence and <code>backwards</code> is ignored.</p>
+<p>La búsqueda comienza con la selección actual.<br/>
+Por ejemplo, cuando no usas las opciones <code>wrap</code> o <code>backwards</code> y cuando no hay una cadena coincidente después de la selección actual, entonces se devuelve <code>false</code>.</p>
+<p>La búsqueda de expresiones regulares no puede buscar hacia atrás. Si se especificaron ambas opciones al mismo tiempo, <code>RE</code> tiene prioridad y <code>backwards</code> es ignorada.</p>
 </section>
 
 
@@ -238,53 +237,53 @@ For example, when not using the <code>wrap</code> or <code>backwards</code> opti
 
 <dl class="tree">
 	<dt><code class="command">replace</code></dt>
-	<dd>Searches a string, replaces the string and returns the number of replacements, if any, otherwise returns <code>0</code>.</dd>
+	<dd>Busca una cadena, reemplaza la cadena y devuelve el número de reemplazos, si los hay, de lo contrario devuelve <code>0</code>.</dd>
 	<dd><dl class="subtree">
-		<dt><code>for</code> (text)</dt>
-		<dd>The string to search for.</dd>
+		<dt><code>for</code> (texto)</dt>
+		<dd>La cadena a buscar.</dd>
 
-		<dt><code>to</code> (text)</dt>
-		<dd>The string to replace with.</dd>
+		<dt><code>to</code> (texto)</dt>
+		<dd>La cadena a reemplazar con.</dd>
 
-		<dt>[<code>all</code> (boolean)]</dt>
-		<dd>Search the whole document or not.</dd>
+		<dt>[<code>all</code> (booleano)]</dt>
+		<dd>Busca en todo el documento o no.</dd>
 
-		<dt>[<code>RE</code> (boolean)]</dt>
-		<dd>Perform regular expression search or not.</dd>
+		<dt>[<code>RE</code> (booleano)]</dt>
+		<dd>Realizar una búsqueda de expresiones regulares o no.</dd>
 
-		<dt>[<code>wrap</code> (boolean)]</dt>
-		<dd>Perform wrap search or not.</dd>
+		<dt>[<code>wrap</code> (booleano)]</dt>
+		<dd>Realizar búsqueda de envolvente o no.</dd>
 
-		<dt>[<code>ignore case</code> (boolean)]</dt>
-		<dd>Ignore case or not.</dd>
+		<dt>[<code>ignore case</code> (booleano)]</dt>
+		<dd>Ignorar mayúsculas y minúsculas o no.</dd>
 
-		<dt>[<code>backwards</code> (boolean)]</dt>
-		<dd>Perform backwards search or not.</dd>
+		<dt>[<code>backwards</code> (booleano)]</dt>
+		<dd>Realizar una búsqueda hacia atrás o no.</dd>
 	</dl></dd>
 	<dd><dl>
-		<dt>Return value</dt>
+		<dt>Valor de retorno</dt>
 		<dd>int</dd>
 	</dl></dd>
 	<dd><dl>
-		<dt>target</dt>
-		<dd>‘document’ object</dd>
+		<dt>destino</dt>
+		<dd>objeto ‘document’</dd>
 	</dl></dd>
 </dl>
 
 
-<h4>Example</h4>
+<h4>Ejemplo</h4>
 
 <figure>
 	<pre class="source"><code class="AppleScript">replace front document for &quot;Apple&quot; to &quot;Orange&quot; with all and ignore case</code></pre>
-	<figcaption>Searches “Apple” with ignoring case in the frontmost document, replaces the matching strings with “Orange” and returns the number of replacements.</figcaption>
+	<figcaption>Busca "Apple" ignorando mayúsculas y minúsculas en el documento principal, reemplaza las cadenas coincidentes con "Naranja" y devuelve el número de reemplazos.</figcaption>
 </figure>
 
 
-<h4>Discussion</h4>
+<h4>Debate</h4>
 
-<p>As in the case of the <code>find</code> command, the search starts from the current selection (caret position). Use the <code>all</code> option for searching the whole document.</p>
-<p>After replacing the whole document using the <code>all</code> option, the caret moves to the head of the document. If there were no matching string, the caret doesn’t move.</p>
-<p>The regular expression search cannot search backwards. If both options were specified at the same time, the <code>backwards</code> option is ignored.</p>
+<p>Como en el caso del comando <code>find</code>, la búsqueda comienza con la selección actual. Usa la opción <code>all</code> para buscar en todo el documento.</p>
+<p>Después de reemplazar todo el documento usando la opción <code>all</code>, la mira se mueve a la cabecera del documento. Si no hubiera una cadena coincidente, la mira no se mueve.</p>
+<p>La búsqueda con expresiones regulares no puede buscar hacia atrás. Si se especificaron ambas opciones al mismo tiempo, la opción <code>backwards</code> se ignora.</p>
 </section>
 
 
@@ -294,19 +293,19 @@ For example, when not using the <code>wrap</code> or <code>backwards</code> opti
 
 <dl class="tree">
 	<dt><code class="command">scroll to caret</code></dt>
-	<dd>Scrolls the window so that the caret or the selection can be seen.</dd>
+	<dd>Se desplaza por la ventana para que se pueda ver la mira o la selección.</dd>
 	<dd><dl>
-		<dt>target</dt>
-		<dd>‘document’ object</dd>
+		<dt>destino</dt>
+		<dd>objeto ‘document’</dd>
 	</dl></dd>
 </dl>
 
 
-<h4>Example</h4>
+<h4>Ejemplo</h4>
 
 <figure>
 	<pre class="source"><code class="AppleScript">scroll to caret front document</code></pre>
-	<figcaption>Scrolls the frontmost window so that the caret or the selection can be seen.</figcaption>
+	<figcaption>Se desplaza por la ventana frontal para que se pueda ver la mira o la selección.</figcaption>
 </figure>
 </section>
 
@@ -317,31 +316,31 @@ For example, when not using the <code>wrap</code> or <code>backwards</code> opti
 
 <dl class="tree">
 	<dt><code class="command">jump</code></dt>
-	<dd>Move the caret to the specified location. At least, either one of a parameter is required.</dd>
+	<dd>Mueva la mira a la ubicación especificada. Al menos, se requiere cualquiera de los parámetros.</dd>
 	<dd><dl class="subtree">
 		<dt><code>to line</code> (int)</dt>
-		<dd>The number of the line to jump.</dd>
+		<dd>El número de la línea para saltar.</dd>
 
 		<dt>[<code>column</code> (int)]</dt>
-		<dd>The location in the line to jump.</dd>
+		<dd>La ubicación en la línea para saltar.</dd>
 	</dl></dd>
 </dl>
 
-<h4>Availability</h4>
+<h4>Disponibilidad</h4>
 
 <p>CotEditor 2.1.0+</p>
 
 
-<h4>Example</h4>
+<h4>Ejemplo</h4>
 
 <figure>
 	<pre class="source"><code class="AppleScript">jump front document to line -1</code></pre>
-	<figcaption>Move the caret to the last line and scroll the editor so that the speficifed area can be seen.</figcaption>
+	<figcaption>Mueva la mira a la última línea y desplácese por el editor para que se pueda ver el área especificada.</figcaption>
 </figure>
 
-<h4>Discussion</h4>
+<h4>Debate</h4>
 
-<p>If a negative value is provided, the line/column is counted from the end.</p>
+<p>Si se proporciona un valor negativo, la línea/columna se cuenta desde el final.</p>
 </section>
 
 
@@ -350,38 +349,38 @@ For example, when not using the <code>wrap</code> or <code>backwards</code> opti
 
 <dl class="tree">
 	<dt><code class="command">convert</code></dt>
-	<dd>Converts the text encoding of the document.</dd>
+	<dd>Convierte la codificación de texto del documento.</dd>
 	<dd><dl class="subtree">
-		<dt><code>to</code> (text)</dt>
-		<dd>The new encoding, either in localized encoding name or an IANA charset name.</dd>
+		<dt><code>to</code> (texto)</dt>
+		<dd>La nueva codificación, ya sea en un nombre de codificación localizado o en un nombre de conjunto de caracteres IANA.</dd>
 
 		<dt>[<code>lossy</code>] (boolean)</dt>
-		<dd>Whether to allow “lossy” conversion (might result in loss of character that couldn’t be converted) or not.</dd>
+		<dd>Para permitir la conversión "perdida" (podría resultar en una pérdida de carácter que no se pudo convertir) o no.</dd>
 
 		<dt>[<code>BOM</code>] (boolean)</dt>
-		<dd>Whether to add a BOM (byte order mark). <span class="added">(added on CotEditor 4.1)</span></dd>
+		<dd>Si se debe añadir BOM (marca de pedido de bytes). <span class="added">(Añadido en CotEditor 4.1)</span></dd>
 	</dl></dd>
 	<dd><dl>
-		<dt>Return value</dt>
-		<dd>boolean</dd>
+		<dt>Valor de retorno</dt>
+		<dd>booleano</dd>
 	</dl></dd>
 	<dd><dl>
-		<dt>target</dt>
-		<dd>‘document’ object</dd>
+		<dt>destino</dt>
+		<dd>objeto ‘document’</dd>
 	</dl></dd>
 </dl>
 
 
-<h4>Example</h4>
+<h4>Ejemplo</h4>
 
 <figure>
 	<pre class="source"><code class="AppleScript">convert front document to &quot;Unicode (UTF-8)&quot; with BOM without lossy</code></pre>
-	<figcaption>Converts the text encoding of the frontmost window to Unicode (UTF-8) with BOM, returns the result.</figcaption>
+	<figcaption>Convierte la codificación de texto de la ventana frontal a Unicode (UTF-8) con BOM sin pérdida, y devuelve el resultado.</figcaption>
 </figure>
 
-<h4>Discussion</h4>
+<h4>Debate</h4>
 
-<p>From CotEditor 4.0.7 on, the new encoding name accepts also IANA charset names.</p>
+<p>A partir de CotEditor 4.0.7, el nuevo nombre de codificación también acepta nombres de conjuntos de caracteres IANA.</p>
 </section>
 
 
@@ -390,36 +389,36 @@ For example, when not using the <code>wrap</code> or <code>backwards</code> opti
 
 <dl class="tree">
 	<dt><code class="command">reinterpret</code></dt>
-	<dd>Reinterpret the document with the specified text encoding.</dd>
+	<dd>Reinterpreta el documento con la codificación de texto especificada.</dd>
 	<dd><dl class="subtree">
-		<dt><code>as</code> (text)</dt>
-		<dd>The encoding for reinterpreting, either in localized encoding name or an IANA charset name.</dd>
+		<dt><code>as</code> (texto)</dt>
+		<dd>La codificación para reinterpretar, ya sea en un nombre de codificación localizado o en un nombre de conjunto de caracteres IANA.</dd>
 	</dl></dd>
 	<dd><dl>
-		<dt>Return value</dt>
-		<dd>boolean</dd>
+		<dt>Valor de retorno</dt>
+		<dd>booleano</dd>
 	</dl></dd>
 	<dd><dl>
-		<dt>target</dt>
-		<dd>‘document’ object</dd>
+		<dt>destino</dt>
+		<dd>objeto ‘document’</dd>
 	</dl></dd>
 </dl>
 
 
-<h4>Example</h4>
+<h4>Ejemplo</h4>
 
 <figure>
 	<pre class="source"><code class="AppleScript">reinterpret front document as &quot;Japanese (EUC)&quot;</code></pre>
-	<figcaption>Reinterprets the document with EUC-JP, returns the result.</figcaption>
+	<figcaption>Reinterpreta el documento con EUC-JP, devuelve el resultado.</figcaption>
 </figure>
 
 
-<h4>Discussion</h4>
+<h4>false</h4>
 
-<p>Returns <code>false</code> if the file has never been saved.</p>
-<p>Changes that are not yet saved will be lost.</p>
+<p>Devuelve <code>false</code> Si el archivo nunca se ha guardado.</p>
+<p>Los cambios que aún no se hayan guardado se perderán.</p>
 
-<p>From CotEditor 4.0.7 on, the new encoding name accepts also IANA charset names.</p>
+<p>A partir de CotEditor 4.0.7, el nuevo nombre de codificación también acepta nombres de conjuntos de caracteres IANA.</p>
 </section>
 
 
@@ -428,23 +427,23 @@ For example, when not using the <code>wrap</code> or <code>backwards</code> opti
 
 <dl class="tree">
 	<dt><code class="command">shift left</code></dt>
-	<dd>Shifts the current line left.</dd>
+	<dd>Desplaza la línea actual a la izquierda.</dd>
 
 	<dt><code class="command">shift right</code></dt>
-	<dd>Shifts the current line right.</dd>
+	<dd>Despalza la línea actual a la derecha.</dd>
 	
 	<dd><dl>
-		<dt>target</dt>
-		<dd>‘selection’ object</dd>
+		<dt>destino</dt>
+		<dd>objeto ‘selection’</dd>
 	</dl></dd>
 </dl>
 
 
-<h4>Example</h4>
+<h4>Ejemplo</h4>
 
 <figure>
 	<pre class="source"><code class="AppleScript">shift right selection of front document</code></pre>
-	<figcaption>Shifts the line where the selection/caret is positioned right.</figcaption>
+	<figcaption>Cambia la línea donde la selección/mira se coloca a la derecha.</figcaption>
 </figure>
 </section>
 
@@ -454,33 +453,33 @@ For example, when not using the <code>wrap</code> or <code>backwards</code> opti
 
 <dl class="tree">
 	<dt><code class="command">comment out</code></dt>
-	<dd>Append comment delimiters to selected text if possible.</dd>
+	<dd>Añade los delimitadores de comentarios al texto seleccionado si es posible.</dd>
 
 	<dt><code class="command">uncomment</code></dt>
-	<dd>Remove comment delimiters from selected text if possible.</dd>
+	<dd>Elimine los delimitadores de comentarios del texto seleccionado si es posible.</dd>
 	
 	<dd><dl>
-		<dt>target</dt>
-		<dd>‘selection’ object</dd>
+		<dt>destino</dt>
+		<dd>objeto ‘selection’</dd>
 	</dl></dd>
 </dl>
 
-<h4>Availability</h4>
+<h4>Disponibilidad</h4>
 
 <p>CotEditor 2.0.1+</p>
 
 
-<h4>Example</h4>
+<h4>Ejemplo</h4>
 
 <figure>
 	<pre class="source"><code class="AppleScript">comment out selection of front document</code></pre>
-	<figcaption>Comment out the selected text.</figcaption>
+	<figcaption>Comenta el texto seleccionado.</figcaption>
 </figure>
 
 
-<h4>Discussion</h4>
+<h4>Debate</h4>
 
-<p>These commands do nothing if not possible for example in cases where no delimiters are set in the current syntax or no comment delimiters to remove are available.</p>
+<p>Estos comandos no hacen nada si no es posible, por ejemplo, en los casos en que no se establecen delimitadores en la sintaxis actual o no hay delimitadores de comentarios para eliminar.</p>
 </section>
 
 
@@ -489,35 +488,35 @@ For example, when not using the <code>wrap</code> or <code>backwards</code> opti
 
 <dl class="tree">
 	<dt><code class="command">string</code></dt>
-	<dd>Returns the string in the specified range regardless of the current selection.</dd>
+	<dd>Devuelve la cadena en el rango especificado, independientemente de la selección actual.</dd>
 	<dd><dl class="subtree">
-		<dt><code>in</code> (list)</dt>
-		<dd>The range.</dd>
+		<dt><code>in</code> (lista)</dt>
+		<dd>El rango.</dd>
 	</dl></dd>
 	<dd><dl>
-		<dt>Return value</dt>
-		<dd>text</dd>
+		<dt>Valor de retorno</dt>
+		<dd>texto</dd>
 	</dl></dd>
 	
 	<dd><dl>
-		<dt>target</dt>
-		<dd>‘selection’ object</dd>
+		<dt>destino</dt>
+		<dd>objeto ‘selection’</dd>
 	</dl></dd>
 </dl>
 
 
-<h4>Example</h4>
+<h4>Ejemplo</h4>
 
 <figure>
 	<pre class="source"><code class="AppleScript">string front document in {0, 10}</code></pre>
-	<figcaption>Returns the first ten letters of the document.</figcaption>
+	<figcaption>Devuelve las diez primeras letras del documento.</figcaption>
 </figure>
 
 
-<h4>Discussion</h4>
+<h4>Debate</h4>
 
-<p>Returns an empty string if the specified range was invalid.</p>
-<p>This command does not change the specified range.</p>
+<p>Devuelve una cadena vacía si el rango especificado no era válido.</p>
+<p>Este comando no cambia el rango especificado.</p>
 </section>
 
 
@@ -526,24 +525,24 @@ For example, when not using the <code>wrap</code> or <code>backwards</code> opti
 
 <dl class="tree">
 	<dt><code class="command">change case</code></dt>
-	<dd>Uppercases/Lowercases/Capitalizes words.</dd>
+	<dd>Mayúsculas/minúsculas/palabras en mayúsculas.</dd>
 	<dd><dl class="subtree">
 		<dt><code>to</code> <code>upper</code>/<code>lower</code>/<code>capitalized</code></dt>
-		<dd>The case type to change.</dd>
+		<dd>El tipo de capitalización a cambiar.</dd>
 	</dl></dd>
 	
 	<dd><dl>
-		<dt>target</dt>
-		<dd>‘selection’ object</dd>
+		<dt>destino</dt>
+		<dd>objeto ‘selection’</dd>
 	</dl></dd>
 </dl>
 
 
-<h4>Example</h4>
+<h4>Ejemplo</h4>
 
 <figure>
 	<pre class="source"><code class="AppleScript">change case selection of front document to upper</code></pre>
-	<figcaption>Uppercases alphabetic words in the selection.</figcaption>
+	<figcaption>Palabras alfabéticas en mayúsculas en la selección.</figcaption>
 </figure>
 </section>
 
@@ -553,23 +552,23 @@ For example, when not using the <code>wrap</code> or <code>backwards</code> opti
 
 <dl class="tree">
 	<dt><code class="command">change roman width</code></dt>
-	<dd>Converts between halfwidth and full-width characters.</dd>
+	<dd>Convierte entre caracteres de medio ancho y de ancho completo.</dd>
 	<dd><dl class="subtree">
 		<dt><code>to</code> <code>half</code>/<code>full</code></dt>
-		<dd>The text width to change.</dd>
+		<dd>El ancho del texto a cambiar.</dd>
 	</dl></dd>
 	
 	<dd><dl>
-		<dt>target</dt>
-		<dd>‘selection’ object</dd>
+		<dt>destino</dt>
+		<dd>objeto ‘selection’</dd>
 	</dl></dd>
 </dl>
 
-<h4>Example</h4>
+<h4>Ejemplo</h4>
 
 <figure>
 	<pre class="source"><code class="AppleScript">change roman width selection of front document to full</code></pre>
-	<figcaption>Converts ASCII characters in the selection to their full-width equivalents.</figcaption>
+	<figcaption>Convierte los caracteres ASCII de la selección en sus equivalentes de ancho completo.</figcaption>
 </figure>
 </section>
 
@@ -579,23 +578,23 @@ For example, when not using the <code>wrap</code> or <code>backwards</code> opti
 
 <dl class="tree">
 	<dt><code class="command">change kana</code></dt>
-	<dd>Converts between Japanese Hiragana and Katakana.</dd>
+	<dd>Convierte entre Hiragana y Katakana japoneses.</dd>
 	<dd><dl class="subtree">
 		<dt><code>to</code> <code>hiragana</code>/<code>katakana</code></dt>
-		<dd>The Japanese character mode to change.</dd>
+		<dd>El modo de carácter japonés para cambiar.</dd>
 	</dl></dd>
 	
 	<dd><dl>
-		<dt>target</dt>
-		<dd>‘selection’ object</dd>
+		<dt>destino</dt>
+		<dd>objeto ‘selection’</dd>
 	</dl></dd>
 </dl>
 
-<h4>Example</h4>
+<h4>Ejemplo</h4>
 
 <figure>
 	<pre class="source"><code class="AppleScript">change kana selection of front document to katakana</code></pre>
-	<figcaption>Converts Hiragana in the selection to Katakana.</figcaption>
+	<figcaption>Convierte Hiragana en la selección a Katakana.</figcaption>
 </figure>
 </section>
 
@@ -605,26 +604,26 @@ For example, when not using the <code>wrap</code> or <code>backwards</code> opti
 
 <dl class="tree">
 	<dt><code class="command">smarten quotes</code></dt>
-	<dd>Convert straight quotes in the selected text to typographical quotes if exists.</dd>
+	<dd>Convierte comillas rectas en el texto seleccionado en comillas tipográficas si existen.</dd>
 
 	<dt><code class="command">straighten quotes</code></dt>
-	<dd>Convert typographical quotes in the selected text to straight quotes if exists.</dd>
+	<dd>Convierta las comillas tipográficas en el texto seleccionado en comillas rectas, si las hay.</dd>
 	
 	<dd><dl>
-		<dt>target</dt>
-		<dd>‘selection’ object</dd>
+		<dt>destino</dt>
+		<dd>objeto ‘selection’</dd>
 	</dl></dd>
 </dl>
 
-<h4>Availability</h4>
+<h4>Disponibilidad</h4>
 
 <p>CotEditor 3.9.7+</p>
 
-<h4>Example</h4>
+<h4>Ejemplo</h4>
 
 <figure>
 	<pre class="source"><code class="AppleScript">smarten quotes selection of front document</code></pre>
-	<figcaption>Convert straight quotes in the selected text to typographical quotes.</figcaption>
+	<figcaption>Convierte comillas rectas en el texto seleccionado en comillas tipográficas.</figcaption>
 </figure>
 </section>
 
@@ -634,23 +633,23 @@ For example, when not using the <code>wrap</code> or <code>backwards</code> opti
 
 <dl class="tree">
 	<dt><code class="command">smarten dashes</code></dt>
-	<dd>Convert double hyphens in the selected text to dashes if exists.</dd>
+	<dd>Convertir guiones dobles en el texto seleccionado en guiones, si existe.</dd>
 	
 	<dd><dl>
-		<dt>target</dt>
-		<dd>‘selection’ object</dd>
+		<dt>destino</dt>
+		<dd>objeto ‘selection’</dd>
 	</dl></dd>
 </dl>
 
-<h4>Availability</h4>
+<h4>Disponibilidad</h4>
 
 <p>CotEditor 3.9.7+</p>
 
-<h4>Example</h4>
+<h4>Ejemplo</h4>
 
 <figure>
 	<pre class="source"><code class="AppleScript">smarten dashes selection of front document</code></pre>
-	<figcaption>Convert straight double hyphens in the selected text to dashes.</figcaption>
+	<figcaption>Convierte guiones dobles rectos en guiones en el texto seleccionado.</figcaption>
 </figure>
 </section>
 
@@ -660,27 +659,27 @@ For example, when not using the <code>wrap</code> or <code>backwards</code> opti
 
 <dl class="tree">
 	<dt><code class="command">normalize unicode</code></dt>
-	<dd>Performs Unicode normalization.</dd>
+	<dd>Realiza la normalización de Unicode.</dd>
 	<dd><dl class="subtree">
 		<dt><code>to</code> <code>NFKC</code>/<code>NFD</code>/<code>NFC</code>/<code>NFKD</code>/<code>NFKC Casefold</code>/<code>Modified NFC</code>/<code>Modified NFD</code></dt>
-		<dd>The normalized forms of Unicode text.</dd>
+		<dd>Las formas normalizadas del texto Unicode.</dd>
 	</dl></dd>
 	
 	<dd><dl>
-		<dt>target</dt>
-		<dd>‘selection’ object</dd>
+		<dt>destino</dt>
+		<dd>objeto ‘selection’</dd>
 	</dl></dd>
 </dl>
 
-<h4>Availability</h4>
+<h4>Disponibilidad</h4>
 
 <p>CotEditor 2.0.0+</p>
 
-<h4>Example</h4>
+<h4>Ejemplo</h4>
 
 <figure>
 	<pre class="source"><code class="AppleScript">normalize unicode selection of front document to NFC</code></pre>
-	<figcaption>Perform Unicode normalization on the selection using normalization form C (NFC).</figcaption>
+	<figcaption>Realice la normalización Unicode en la selección utilizando la forma de normalización C (NFC).</figcaption>
 </figure>
 </section>
 
@@ -690,18 +689,18 @@ For example, when not using the <code>wrap</code> or <code>backwards</code> opti
 
 <dl class="tree">
 	<dt><code class="command">move line up</code></dt>
-	<dd>Swap selected lines with the line just above.</dd>
+	<dd>Cambia las líneas seleccionadas con la línea justo arriba.</dd>
 
 	<dt><code class="command">move line down</code></dt>
-	<dd>Swap selected lines with the line just below.</dd>
+	<dd>Cambie las líneas seleccionadas con la línea justo debajo.</dd>
 	
 	<dd><dl>
-		<dt>target</dt>
-		<dd>‘selection’ object</dd>
+		<dt>destino</dt>
+		<dd>objeto ‘selection’</dd>
 	</dl></dd>
 </dl>
 
-<h4>Availability</h4>
+<h4>Disponibilidad</h4>
 
 <p>CotEditor 2.3.0+</p>
 </section>
@@ -712,18 +711,18 @@ For example, when not using the <code>wrap</code> or <code>backwards</code> opti
 
 <dl class="tree">
 	<dt><code class="command">sort lines</code></dt>
-	<dd>Sort selected lines ascending.</dd>
+	<dd>Ordenar las líneas seleccionadas de forma ascendente.</dd>
 
 	<dt><code class="command">reverse lines</code></dt>
-	<dd>Reverse selected lines.</dd>
+	<dd>Invertir las líneas seleccionadas.</dd>
 	
 	<dd><dl>
-		<dt>target</dt>
-		<dd>‘selection’ object</dd>
+		<dt>destino</dt>
+		<dd>objeto ‘selection’</dd>
 	</dl></dd>
 </dl>
 
-<h4>Availability</h4>
+<h4>Disponibilidad</h4>
 
 <p>CotEditor 2.3.0+</p>
 </section>
@@ -734,15 +733,15 @@ For example, when not using the <code>wrap</code> or <code>backwards</code> opti
 
 <dl class="tree">
 	<dt><code class="command">delete duplicate line</code></dt>
-	<dd>Delete duplicate lines in selection.</dd>
+	<dd>Eliminar líneas duplicadas en la selección.</dd>
 	
 	<dd><dl>
-		<dt>target</dt>
-		<dd>‘selection’ object</dd>
+		<dt>destino</dt>
+		<dd>objeto ‘selection’</dd>
 	</dl></dd>
 </dl>
 
-<h4>Availability</h4>
+<h4>Disponibilidad</h4>
 
 <p>CotEditor 2.3.0+</p>
 </section>
@@ -751,11 +750,11 @@ For example, when not using the <code>wrap</code> or <code>backwards</code> opti
 
 
 <section id="cf">
-<h2>See also</h2>
+<h2>Ver también</h2>
 <ul>
 	<li><a href="script_overview.html">Script CotEditor</a></li>
-	<li><a href="script_osascript_changes.html">Support different CotEditor versions in AppleScript</a></li>
-	<li><a href="script_hook.html">Add scripting hooks to CotEditor scripts</a></li>
+	<li><a href="script_osascript_changes.html">Compatibilidad AppleScript en diferentes versiones de CotEditor</a></li>
+	<li><a href="script_hook.html">Añadir ganchos de scripting a los scripts de CotEditor</a></li>
 </ul>
 </section>
 

@@ -2,7 +2,7 @@
 
 <head>
 	<meta charset="UTF-8"/>
-	<meta name="keywords" content="Script Menu, script, script bundle, hook"/>
+	<meta name="keywords" content="Menú de scripts, guiones, scripts, paquete de scripts, guiones, gancho"/>
 	<link rel="stylesheet" href="../../Shared/sty/standard.css"/>
 	<link rel="stylesheet" href="../../Shared/sty/pygmentize.css"/>
 	<script defer src="../../Shared/js/toc.js"></script>
@@ -14,7 +14,7 @@
 
 <h1>Añadir ganchos de scripting a los scripts de CotEditor</h1>
 
-<p>Los ganchos de scripting permiten que los scripts de CotEditor se ejecuten en ciertos eventos. Los siguientes eventos están disponibles con CotEditor:</p>
+<p>Los ganchos de scripting permiten que los scripts de CotEditor se ejecuten con ciertos eventos. Los siguientes eventos están disponibles en CotEditor:</p>
 
 <ul>
 	<li><code>document opened</code> : después de abrir el archivo y cargar su contenido</li>
@@ -38,7 +38,7 @@
 
 <h2>Estructura del paquete de scripts</h2>
 
-<p>Un paquete de scripts tiene la estructura de directorios de la siguiente manera:</p>
+<p>Un paquete de scripts tiene la siguiente estructura de directorios:</p>
 
 <pre>
 HookingScript.scptd
@@ -86,7 +86,7 @@ HookingScript.scptd
 
 <h3>AppleScript</h3>
 
-<p>En AppleScript, los controladores se escriben con un bloque `using terms from` y `on` bloques.</p>
+<p>En AppleScript, los controladores se escriben con bloques `using terms from` y `on`.</p>
 
 <pre class="highlight source"><span></span><span class="k">using terms from</span> <span class="nb">application</span> <span class="s2">&quot;CotEditor&quot;</span>
     <span class="nb">on</span> <span class="na">document</span> <span class="nv">opened</span> <span class="nv">theDocument</span>
