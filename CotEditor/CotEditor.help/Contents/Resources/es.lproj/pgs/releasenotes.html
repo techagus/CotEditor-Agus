@@ -2839,10 +2839,10 @@
 <h2>Mejoras</h2>
 
 <ul>
-	<li>Avoid drawing variant sequence as invisible control characters.</li>
-	<li>Make line number view opaque if lines are unwrapped on macOS 10.14 to avoid drawing the editor’s text over the line numbers.</li>
-	<li>Revoke the line counting behavior change with VoiceOver in CotEditor 3.6.3.</li>
-	<li><span class="trivial">trivial</span>: Draw vertical tabs as general invisible control characters.</li>
+	<li>Evite dibujar una secuencia de variantes como caracteres de control invisibles.</li>
+	<li>Haga que la vista del número de línea sea opaca si las líneas se desenvuelven en macOS 10.14 para evitar dibujar el texto del editor sobre los números de línea.</li>
+	<li>Revocar el cambio de comportamiento de conteo de líneas con VoiceOver en CotEditor 3.6.3.</li>
+	<li><span class="trivial">trivial</span>: Dibuja pestañas verticales como caracteres de control invisibles generales.</li>
 </ul>
 </section>
 
@@ -2851,10 +2851,10 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix an issue where the editor area could still tuck under the line number view.</li>
-	<li>Fix an issue where the line number of the last empty line disappeared when lines are not wrapped and scrolled.</li>
-	<li><span class="trivial">trivial</span>: Fix a weird view expansion on the first transition to the General preferences pane.</li>
-	<li><span class="trivial">trivial</span>: Fix an issue on Mojave where the text selection highlight could remain between lines.</li>
+	<li>Se ha corregido un problema por el que el área del editor todavía podía estar debajo de la vista del número de línea.</li>
+	<li>Soluciona un problema por el que el número de línea de la última línea vacía desaparecía cuando las líneas no se envuelven y se desplazan.</li>
+	<li><span class="trivial">trivial</span>: Corregir una expansión de vista extraña en la primera transición al panel de preferencias generales.</li>
+	<li><span class="trivial">trivial</span>: Se ha corregido un problema en Mojave en el que el resaltado de la selección de texto podía permanecer entre líneas.</li>
 </ul>
 </section>
 </article>
@@ -2864,7 +2864,7 @@
 <article>
 <header>
 	<h1>CotEditor 3.6.4</h1>
-	<p>Lanzamiento: <time>2018-11-10</time></p>
+	<p>Lanzamiento: <time>10/11/2018</time></p>
 </header>
 
 
@@ -2872,7 +2872,7 @@
 <h2>Nuevas características</h2>
 
 <ul>
-	<li>Add a command “Select Word” (<kbd>⌘D</kbd>) to Edit menu.</li>
+	<li>Añade un comando "Seleccionar palabra" (<kbd>⌘D</kbd>) en el menú Edición.</li>
 </ul>
 </section>
 
@@ -2881,7 +2881,7 @@
 <h2>Mejoras</h2>
 
 <ul>
-	<li><span class="trivial">trivial</span>: Display default setting values as the input field’s placeholder for instance highlight delay option when empty.</li>
+	<li><span class="trivial">trivial</span>: Mostrar los valores de configuración predeterminados como el marcador de posición del campo de entrada, por ejemplo, la opción de retraso de resaltado cuando está vacío.</li>
 </ul>
 </section>
 
@@ -2890,9 +2890,9 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix an issue where editor area could be tuck under the line number view.</li>
-	<li>Fix an issue where changing the selection by shortcut <kbd>⇧→</kbd> just after shortcut <kbd>⌘⇧←</kbd> expanded the selection to a wrong direction.</li>
-	<li>Fix an issue where page guide did not update when font changed.</li>
+	<li>Solucionar un problema en el que el área del editor podría estar metida debajo de la vista del número de línea.</li>
+	<li>Solucionar un problema por el que se cambia la selección por atajo de teclado <kbd>⇧→</kbd> justo después del atajo <kbd>⌘⇧←</kbd> ampliaba la selección en una dirección incorrecta.</li>
+	<li>Se ha corregido un problema por el que la guía de la página no se actualizaba cuando se cambiaba el tipo de letra.</li>
 </ul>
 </section>
 </article>
@@ -2902,7 +2902,7 @@
 <article>
 <header>
 	<h1>CotEditor 3.6.3</h1>
-	<p>Lanzamiento: <time>2018-10-29</time></p>
+	<p>Lanzamiento: <time>29/10/2018</time></p>
 </header>
 
 
@@ -2910,14 +2910,14 @@
 <h2>Mejoras</h2>
 
 <ul>
-	<li>Assign <kbd>⌘⇧[</kbd> shortcut to “Show Next Tab” command instead of “Surround Selection with Brackets” command.</li>
-	<li>Treat a logical line, which is delimited by line ending characters, as one line in VoiceOver, instead of a visual (wrapped) line.<ul>
-		<li>Thereby, users can now also know the current line number by pressing VoiceOver shortcut VO+F3.</li>
+	<li>Asigna el atajo de teclado <kbd>⌘⇧[</kbd> a Comando "Mostrar pestaña siguiente" en lugar del comando "Rodear selección con corchetes".</li>
+	<li>Trata una línea lógica, que está delimitada por caracteres que terminan en la línea, como una línea en VoiceOver, en lugar de una línea visual (ajustada).<ul>
+		<li>Por lo tanto, los usuarios ahora también pueden conocer el número de línea actual pulsando el acceso directo de VoiceOver VO+F3.</li>
 	</ul></li>
-	<li>Improve the accessibility of user interface elements with VoiceOver.</li>
-	<li>Avoid performing custom sort with an invalid parameter.</li>
-	<li>Display default setting values as the input field’s placeholder in preferences window when empty.</li>
-	<li><span class="trivial">trivial</span>: Move the focus to the target input field when the clear button in the find panel was pressed.</li>
+	<li>Mejora la accesibilidad de los elementos de la interfaz de usuario con VoiceOver.</li>
+	<li>Evite realizar una clasificación personalizada con un parámetro no válido.</li>
+	<li>Mostrar los valores de configuración predeterminados como marcador de posición del campo de entrada en la ventana de preferencias cuando esté vacío.</li>
+	<li><span class="trivial">trivial</span>: Mueva el enfoque al campo de entrada de destino cuando se haya pulsado el botón de borrar en el panel de búsqueda.</li>
 </ul>
 </section>
 
@@ -2926,11 +2926,11 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix an issue where selected inspector pane was not stored.</li>
-	<li>Fix an issue where initial display area shifted unwontedly if line numbers are displayed lines are unwrapped.</li>
-	<li>Fix an issue where script name was not displayed in Console.</li>
-	<li>Fix an issue where the writing direction (RtL) was not delivered to printing.</li>
-	<li>Fix layout in some localized environment.</li>
+	<li>Soluciona un problema por el que el panel del inspector seleccionado no estaba almacenado.</li>
+	<li>Solucionar un problema en el que el área de visualización inicial se desplazaba de forma insósnea si se muestran los números de línea, las líneas se desenvuelven.</li>
+	<li>Soluciona un problema por el que el nombre del script no se mostraba en la Consola.</li>
+	<li>Solucionar un problema en el que la dirección de escritura (RtL) no se entregaba a la impresión.</li>
+	<li>Corregir el diseño en algún entorno traducido.</li>
 </ul>
 </section>
 </article>
@@ -2940,7 +2940,7 @@
 <article>
 <header>
 	<h1>CotEditor 3.6.2</h1>
-	<p>Lanzamiento: <time>2018-10-14</time></p>
+	<p>Lanzamiento: <time>14/10/2018</time></p>
 </header>
 
 
@@ -2948,7 +2948,7 @@
 <h2>Nuevas características</h2>
 
 <ul>
-	<li>Let the input fields in the find panel accept pinch-zoom.</li>
+	<li>Deje que los campos de entrada en el panel de búsqueda acepten el zoom-pellizco.</li>
 </ul>
 </section>
 
@@ -2957,11 +2957,11 @@
 <h2>Mejoras</h2>
 
 <ul>
-	<li>Avoid selecting deleted spaces when undoing a soft tab deletion.</li>
-	<li>Make the credits view in About panel dark in the Dark Mode.</li>
-	<li>Add “.cxx” extension to “C++” syntax style.</li>
-	<li>Adjust the width of line number views.</li>
-	<li><span class="label">versión no-AppStore</span>: Update Sparkle framework.</li>
+	<li>Evite seleccionar espacios eliminados al deshacer la eliminación de una tabulación suave.</li>
+	<li>Haz que la vista de créditos en el panel 'Acerca de' sea oscura en el modo oscuro.</li>
+	<li>Añade la extensión ".cxx" al estilo de sintaxis "C++".</li>
+	<li>Ajustar el ancho de las vistas del número de línea.</li>
+	<li><span class="label">versión no-AppStore</span>: Actualizar el framework Sparkle.</li>
 </ul>
 </section>
 
@@ -2970,10 +2970,10 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix an issue where the cursor position did not restore correctly after repeatedly undoing &amp; redoing bracket insertion with the “Automatically insert closing brackets and quotes” option enabled.</li>
-	<li>Fix an issue where editor scrolled unwontedly after pasting something at a latter half part of the document with “Link URLs in document” option enabled.</li>
-	<li>Fix an issue where URL link ranges expanded even if non-URL-related lines is pasted just after an URL.</li>
-	<li>Fix an issue where the application could rarely crash under specific conditions.</li>
+	<li>Soluciona un problema por el que la posición del cursor no se restauraba correctamente después de deshacer repetidamente &amp; rehacer la inserción del corchete con la opción "Insertar automáticamente los corchetes de cierre y las comillas" habilitada.</li>
+	<li>Se ha corregido un problema por el que el editor se desplazaba de forma insporádencia después de pegar algo en una segunda mitad del documento con la opción "Enlazar URL en el documento" habilitada.</li>
+	<li>Solucionar un problema por el que los rangos de enlaces URL se expandían incluso si las líneas no relacionadas con la URL se pegan justo después de una URL.</li>
+	<li>Solucionar un problema por el que la aplicación alguna vez podía bloquearse en condiciones específicas.</li>
 </ul>
 </section>
 </article>
@@ -2983,7 +2983,7 @@
 <article>
 <header>
 	<h1>CotEditor 3.6.1</h1>
-	<p>Lanzamiento: <time>2018-10-04</time></p>
+	<p>Lanzamiento: <time>04/10/2018</time></p>
 </header>
 
 
@@ -2991,8 +2991,8 @@
 <h2>Nuevas características</h2>
 
 <ul>
-	<li>Add “Match only whole word” option to advanced find options (Default: off).</li>
-	<li>Add syntax style for “Properties” (mainly for Java).</li>
+	<li>Añade la opción "Coincidir solo con la palabra entera" a las opciones de búsqueda avanzada (predeterminado: off).</li>
+	<li>Añadir estilo de sintaxis para "Properties" (principalmente para Java).</li>
 </ul>
 </section>
 
@@ -3001,9 +3001,9 @@
 <h2>Mejoras</h2>
 
 <ul>
-	<li><span class="label">AppStore ver.</span>: Enable the enhanced runtime protection on macOS 10.14 Mojave also by the MAS version.</li>
-	<li>Make the i-beam cursor more legible in a dark background theme.</li>
-	<li>Sync sidebar width among tabbed windows.</li>
+	<li><span class="label">version AppStore</span>: Habilite la protección mejorada en tiempo de ejecución en macOS 10.14 Mojave también por la versión MAS.</li>
+	<li>Haz que el cursor de inserción sea más legible en un tema de fondo oscuro.</li>
+	<li>Sincronizar el ancho de la barra lateral entre las ventanas con pestañas.</li>
 </ul>
 </section>
 
@@ -3012,10 +3012,10 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix an issue where the initial window size could be easily forgotten.</li>
-	<li>Fix an issue <code>cot</code> command failed if the client terminal is non-scriptable.</li>
-	<li>Fix an issue where the application could rarely crash on reopening documents under specific conditions.</li>
-	<li>Fix the tab window switching via a shortcut key in macOS 10.14.</li>
+	<li>Soluciona un problema en el que el tamaño inicial de la ventana podría olvidarse fácilmente.</li>
+	<li>Solucionar un problema en el comando <code>cot</code> si el cliente terminal es no-scriptable.</li>
+	<li>Solucionar un problema en el que la aplicación rara vez podía bloquearse al reabrir documentos en condiciones específicas.</li>
+	<li>Corregir el cambio de la ventana de pestañas a través de un atajo de teclado en macOS 10.14.</li>
 </ul>
 </section>
 </article>
@@ -3025,7 +3025,7 @@
 <article>
 <header>
 	<h1>CotEditor 3.6.0</h1>
-	<p>Lanzamiento: <time>2018-09-25</time></p>
+	<p>Lanzamiento: <time>25/09/2018</time></p>
 </header>
 
 
@@ -3033,12 +3033,12 @@
 <h2>Nuevas características</h2>
 
 <ul>
-	<li>Support Dark Mode in macOS 10.14 Mojave.</li>
-	<li>Add a new theme “Dendrobates (Dark)”.</li>
-	<li>Add new commands to transform selections to snake case, camel case, or pascal case.</li>
-	<li>Add “Emoji & Symbols” toolbar item.</li>
-	<li>Add an option to select the default writing direction among left-to-right, right-to-left, and vertical (Customize in Window preferences pane).</li>
-	<li><span class="label">versión no-AppStore</span>: The non-AppStore application binary is now notarized by Apple.</li>
+	<li>Compatible con el modo oscuro en macOS 10.14 Mojave.</li>
+	<li>Añade un nuevo tema "Dendrobates (Dark)”.</li>
+	<li>Añadir nuevos comandos para transformar selecciones a snake case, camel case, o pascal case.</li>
+	<li>Añadir el elemento de la barra de herramientas "Emoji y símbolos".</li>
+	<li>Añade una opción para seleccionar el sentido de escritura predeterminado, entre de izquierda a derecha, de derecha a izquierda y vertical (Personalizar en el panel de preferencias de la ventana).</li>
+	<li><span class="label">versión no-AppStore</span>: El binario de la aplicación que no es de la AppStore ahora está certificado ante notario por Apple.</li>
 </ul>
 </section>
 
@@ -3047,14 +3047,14 @@
 <h2>Mejoras</h2>
 
 <ul>
-	<li>Change the system requirement to <strong>macOS 10.12.2 Sierra and later</strong>.</li>
-	<li>Update <code>cot</code> command-line tool to return the focus to the client terminal window again after <code>--wait</code>.</li>
-	<li>Abandon the ancient ODB editor support.</li>
-	<li><span class="trivial">trivial</span>: Improve the high contrast mode support.</li>
-	<li><span class="trivial">trivial</span>: Optimize the performance of line number drawing.</li>
-	<li><span class="trivial">dev</span>: Update build environment to Xcode 10 (Swift 4.2, macOS 10.14 SDK).</li>
-	<li><span class="label">versión no-AppStore</span>: Enable Enhanced Runtime protection.</li>
-	<li><span class="label">versión no-AppStore</span>: Update Sparkle framework.</li>
+	<li>Cambiar el requisito del sistema a <strong>macOS 10.12.2 Sierra y posteriores</strong>.</li>
+	<li>Actualizar la herramienta en línea de comandos <code>cot</code> para devolver el enfoque a la ventana del terminal del cliente de nuevo después de <code>--wait</code>.</li>
+	<li>Abandonar el antiguo soporte del editor ODB.</li>
+	<li><span class="trivial">trivial</span>: Mejorar la compatibilidad con el modo de alto contraste.</li>
+	<li><span class="trivial">trivial</span>: Optimizar el rendimiento del dibujo de números de línea.</li>
+	<li><span class="trivial">dev</span>: Actualizar el entorno de compilación a Xcode 10 (Swift 4.2, macOS 10.14 SDK).</li>
+	<li><span class="label">versión no-AppStore</span>: Habilitar la protección de tiempo de ejecución mejorada.</li>
+	<li><span class="label">versión no-AppStore</span>: Actualizar el framework Sparkle.</li>
 </ul>
 </section>
 
@@ -3063,9 +3063,9 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix an issue where theme was not applied to document print when the print theme setting is “Same as Document’s Setting”.</li>
-	<li>Fix an issue where “Copy as Rich Text” command lost the style information when paste to some specific applications, such as Pages.</li>
-	<li>Fix an issue where the current line highlight could blink while pinch zoom.</li>
+	<li>Soluciona un problema por el que el tema no se aplicaba a la impresión del documento cuando la configuración del tema de impresión es "Igual que la configuración del documento".</li>
+	<li>Soluciona un problema por el que el comando "Copiar como texto enriquecido" perdía la información de estilo al pegar en algunas aplicaciones específicas, como Pages.</li>
+	<li>Soluciona un problema por el que el resaltado de la línea actual podía parpadear al utilizar zoom de pellizco.</li>
 </ul>
 </section>
 </article>
@@ -3075,7 +3075,7 @@
 <article>
 <header>
 	<h1>CotEditor 3.5.4</h1>
-	<p>Lanzamiento: <time>2018-09-18</time></p>
+	<p>Lanzamiento: <time>18/09/2018</time></p>
 </header>
 
 
@@ -3083,8 +3083,8 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix an issue where toolbar items did not reflect their state on macOS 10.12 or earlier.</li>
-	<li>Fix margin around the Tab toolbar icon on macOS 10.12 or earlier.</li>
+	<li>Se ha corregido un problema por el que los elementos de la barra de herramientas no reflejaban su estado en macOS 10.12 o anterior.</li>
+	<li>Corregir el margen alrededor del icono de la barra de herramientas de la pestaña en macOS 10.12 o anterior.</li>
 </ul>
 </section>
 </article>
@@ -3094,7 +3094,7 @@
 <article>
 <header>
 	<h1>CotEditor 3.5.3</h1>
-	<p>Lanzamiento: <time>2018-09-08</time></p>
+	<p>Lanzamiento: <time>08/09/2018</time></p>
 </header>
 
 
@@ -3102,7 +3102,7 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix an issue where the “Replace All” command didn’t work on CotEditor 3.5.2.</li>
+	<li>Soluciona un problema por el que el comando "Reemplazar todo" no funcionaba en CotEditor 3.5.2.</li>
 </ul>
 </section>
 </article>
@@ -3112,7 +3112,7 @@
 <article>
 <header>
 	<h1>CotEditor 3.5.2</h1>
-	<p>Lanzamiento: <time>2018-09-07</time></p>
+	<p>Lanzamiento: <time>07/09/2018</time></p>
 </header>
 
 
@@ -3120,10 +3120,10 @@
 <h2>Mejoras</h2>
 
 <ul>
-	<li>Avoid editor can be edited while a dialog covers it.</li>
-	<li>Update YAML syntax style for more reliable highlight.</li>
-	<li>Update Swift syntax style by fixing outline extraction.</li>
-	<li><span class="trivial">trivial</span> Adjust initial document window size.</li>
+	<li>Evitar que el editor se pueda editar mientras un cuadro de diálogo lo cubre.</li>
+	<li>Actualizar el estilo de sintaxis YAML para resaltar de forma más fiable.</li>
+	<li>Actualice el estilo de sintaxis de Swift arreglando la extracción del esquema.</li>
+	<li><span class="trivial">trivial</span> Ajustar el tamaño inicial de la ventana del documento.</li>
 </ul>
 </section>
 
@@ -3132,10 +3132,10 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix an issue where the multi replacement feature exported definitions without its file extension.</li>
-	<li>Fix an issue where “Hide extension” checkbox in the setting export dialog was ignored.</li>
-	<li>Fix an issue where an unhidable empty progress dialog was displayed if another dialog was displayed when the task started.</li>
-	<li>Address an issue where the application could rarely crash during syntax highlighting.</li>
+	<li>Soluciona un problema por el que la función de reemplazo múltiple exportaba definiciones sin su extensión de archivo.</li>
+	<li>Se ha corregido un problema en el que se ignoraba la casilla de verificación "Ocultar extensión" en el cuadro de diálogo de exportación de la configuración.</li>
+	<li>Se ha corregido un problema en el que se mostraba un cuadro de diálogo de progreso vacío no visible si se mostraba otro cuadro de diálogo cuando se iniciaba la tarea.</li>
+	<li>Soluciona un problema en el que la aplicación rara vez podía bloquearse durante el resaltado de sintaxis.</li>
 </ul>
 </section>
 </article>
@@ -3145,7 +3145,7 @@
 <article>
 <header>
 	<h1>CotEditor 3.5.1</h1>
-	<p>Lanzamiento: <time>2018-08-28</time></p>
+	<p>Lanzamiento: <time>28/08/2018</time></p>
 </header>
 
 
@@ -3153,7 +3153,7 @@
 <h2>Mejoras</h2>
 
 <ul>
-	<li>Change the find behavior of the simple Find/Replace command with “In selection” option to find a match only in the selection.</li>
+	<li>Cambie el comportamiento de búsqueda del simple comando Buscar/Reemplazar con la opción "En selección" para encontrar una coincidencia solo en la selección.</li>
 </ul>
 </section>
 
@@ -3162,11 +3162,11 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix an issue where the initial window size could be easily forgotten.</li>
-	<li>Fix an issue where the font button in the toolbar did not work.</li>
-	<li>Fix an issue where the inputting text that is not finalized yet could be wrongly highlighted.</li>
-	<li>Fix an issue where some Unicode block names were not displayed in character info popover.</li>
-	<li>Address an issue where the application could rarely crash during syntax highlighting.</li>
+	<li>Soluciona un problema en el que el tamaño inicial de la ventana podría olvidarse fácilmente.</li>
+	<li>Soluciona un problema en el que el botón de fuente en la barra de herramientas no funcionaban.</li>
+	<li>Solucionar un problema por el que el texto de entrada que aún no está finalizado podría resaltarse erróneamente.</li>
+	<li>Soluciona un problema por el que algunos nombres de bloques Unicode no se mostraban en la ventana emergente de información de caracteres.</li>
+	<li>Soluciona un problema en el que la aplicación rara vez podía bloquearse durante el resaltado de sintaxis.</li>
 </ul>
 </section>
 </article>
@@ -3176,7 +3176,7 @@
 <article>
 <header>
 	<h1>CotEditor 3.5.0</h1>
-	<p>Lanzamiento: <time>2018-08-15</time></p>
+	<p>Lanzamiento: <time>15/08/2018</time></p>
 </header>
 
 
@@ -3184,12 +3184,12 @@
 <h2>Nuevas características</h2>
 
 <ul>
-	<li>New toolbar icons.</li>
-	<li>Highlight the same substrings of the selection automatically (Customize the behavior in General preferences pane).</li>
-	<li>New option to allow overscrolling (Customize the behavior in Window preferences pane).</li>
-	<li>Enable to change the tab width of a specific document to a desired number.
+	<li>Nuevos iconos de la barra de herramientas.</li>
+	<li>Resalte las mismas subcadenas de la selección automáticamente (Personalice el comportamiento en el panel de preferencias generales).</li>
+	<li>Nueva opción para permitir el desplazamiento excesivo (Personalizar el comportamiento en el panel de preferencias de la ventana).</li>
+	<li>Habilitar para cambiar el ancho de tabulación de un documento específico a un número deseado.
 </li>
-	<li>Let the input fields in the find panel accept text scaling commands, such as “Bigger”, “Smaller” and “Reset to Default”.</li>
+	<li>Deje que los campos de entrada en el panel de búsqueda acepten comandos de escalado de texto, como "Mayor", "Pequeño" y "Restablecer a predeterminado".</li>
 </ul>
 </section>
 
@@ -3198,26 +3198,26 @@
 <h2>Mejoras</h2>
 
 <ul>
-	<li>Add command “Select All Find Matches” in Find menu.</li>
-	<li>Improve the editor’s scrolling behavior to scroll along the predominant axis.</li>
-	<li>Add menu item to toggle the visibility of the sidebar inspector.</li>
-	<li>Remove some setting options for windows such as window size and visibilities of document inspector and status bar from Window preferences pane.<ul>
-		<li>From now on, the latest change to a window will be inherited to future windows just like other standard Cocoa applications.</li>
+	<li>Añade el comando "Seleccionar todas las coincidencias encontradas" en el menú Buscar.</li>
+	<li>Mejorar el comportamiento de desplazamiento del editor para desplazarse a lo largo del eje predominante.</li>
+	<li>Añade un elemento de menú para cambiar la visibilidad del inspector de la barra lateral.</li>
+	<li>Elimine algunas opciones de configuración para las ventanas, como el tamaño de la ventana y la visibilidad del inspector de documentos y la barra de estado, en el panel de preferencias de la ventana.<ul>
+		<li>A partir de ahora, el último cambio en una ventana se heredará a futuras ventanas al igual que otras aplicaciones estándar de Cocoa.</li>
 	</ul></li>
-	<li>Remove “length” display in the status bar.</li>
-	<li>Remove feature to change only the frontmost editor’s opacity temporary.<ul>
-		<li>From this, <code>view opacity</code> property on AppleScript is also deprecated.</li>
+	<li>Eliminar la "longitud" de la pantalla en la barra de estado.</li>
+	<li>Eliminar la función para cambiar solo la opacidad temporal de la primera línea del editor.<ul>
+		<li>La propiedad <code>view opacity</code> en AppleScript ha quedado obsoleta.</li>
 	</ul></li>
-	<li>Keep the cursor position as possible after the editor content is updated to the latest version modified by another process.</li>
-	<li>Display current user’s system-wide setting for window tabbing in the menu on the Window pane.</li>
-	<li>Optimize the performance of character counting.</li>
-	<li>Improve general stability of the print operation.</li>
-	<li>Optimize auto URL detection with paste to a large document.</li>
-	<li>Update Python syntax style for Python 3.7.</li>
-	<li>Update Swift syntax style for Swift 4.2 and some improvements.</li>
-	<li><span class="trivial">trivial</span> Update some Japanese localization.</li>
-	<li><span class="trivial">trivial</span> Update editor opacity sample tips.</li>
-	<li><span class="trivial">trivial</span> <span class="label">versión no-AppStore</span>: Update Sparkle framework.</li>
+	<li>Mantenga la posición del cursor lo más posible después de que el contenido del editor se actualice a la última versión modificada por otro proceso.</li>
+	<li>Muestra la configuración actual de todo el sistema para la tabulación de ventanas en el menú del panel Ventana.</li>
+	<li>Optimizar el rendimiento del recuento de caracteres.</li>
+	<li>Mejorar la estabilidad general de la operación de impresión.</li>
+	<li>Optimizar la detección automática de URL al pegar en un documento grande.</li>
+	<li>Actualizar el estilo de sintaxis de Python para Python 3.7.</li>
+	<li>Actualizar el estilo de sintaxis de Swift para Swift 4.2 y algunas mejoras.</li>
+	<li><span class="trivial">trivial</span> Actualizar algo en la traducción al japonés.</li>
+	<li><span class="trivial">trivial</span> Consejos de muestra de opacidad del editor de actualización.</li>
+	<li><span class="trivial">trivial</span> <span class="label">versión no-AppStore</span>: Actualizar el framework Sparkle.</li>
 </ul>
 </section>
 
@@ -3226,7 +3226,7 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix an unlocalized text.</li>
+	<li>Arreglar un texto no traducido.</li>
 </ul>
 </section>
 </article>
@@ -3236,7 +3236,7 @@
 <article>
 <header>
 	<h1>CotEditor 3.4.4</h1>
-	<p>Lanzamiento: <time>2018-07-08</time></p>
+	<p>Lanzamiento: <time>08/07/2018</time></p>
 </header>
 
 
@@ -3244,8 +3244,8 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Address an issue where the application could rarely crash on syntax highlighting.</li>
-	<li>Fix a typo in Italian localization.</li>
+	<li>Solucionar un problema en el que la aplicación rara vez podría bloquearse en el resaltado de sintaxis.</li>
+	<li>Corrige un error tipográfico en la traducción italiana.</li>
 </ul>
 </section>
 </article>
@@ -3255,7 +3255,7 @@
 <article>
 <header>
 	<h1>CotEditor 3.4.3</h1>
-	<p>Lanzamiento: <time>2018-06-26</time></p>
+	<p>Lanzamiento: <time>26/06/2018</time></p>
 </header>
 
 
@@ -3263,12 +3263,12 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix an issue where the help button in the multiple replace window did not link to the suitable help page.</li>
-	<li>Fix an issue where the current line highlight was opaque in split editors although the editor background is non-opaque.</li>
-	<li>Fix an issue where unwanted debug log was printed in the Console.</li>
-	<li>Fix an issue where “Show File Mapping Conflicts” menu item was always available even no conflict exists.</li>
-	<li>Improve general stability.</li>
-	<li>Fix an unlocalized label.</li>
+	<li>Soluciona un problema por el que el botón de ayuda en la ventana de reemplazo múltiple no se vinculaban a la página de ayuda adecuada.</li>
+	<li>Solucionar un problema en el que el resaltado de la línea actual era opaco en los editores divididos, aunque el fondo del editor no es opaco.</li>
+	<li>Solucionar un problema por el que se imprimía un registro de depuración no deseado en la consola.</li>
+	<li>Solucionar un problema en el que el elemento de menú "Mostrar conflictos de mapeo de archivos" siempre estaba disponible, incluso si no existe ningún conflicto.</li>
+	<li>Mejorar la estabilidad general.</li>
+	<li>Arreglar una etiqueta no traducida.</li>
 </ul>
 </section>
 </article>
@@ -3278,7 +3278,7 @@
 <article>
 <header>
 	<h1>CotEditor 3.4.2</h1>
-	<p>Lanzamiento: <time>2018-06-05</time></p>
+	<p>Lanzamiento: <time>05/06/2018</time></p>
 </header>
 
 
@@ -3286,8 +3286,8 @@
 <h2>Mejoras</h2>
 
 <ul>
-	<li><span class="trivial">trivial</span>: Let input fields in preferences support dark mode (hidden option on the current systems).</li>
-	<li><span class="label">versión no-AppStore</span>: Update Sparkle framework.</li>
+	<li><span class="trivial">trivial</span>: Deje que los campos de entrada en las preferencias admitan el modo oscuro (opción oculta en los sistemas actuales).</li>
+	<li><span class="label">versión no-AppStore</span>: Actualizar el framework Sparkle.</li>
 </ul>
 </section>
 
@@ -3298,8 +3298,8 @@
 <ul>
 	<li>Fix an issue under OS X 10.11 where the application crashed with the auto completion.</li>
 	<li>Fix an issue where some syntax keywords were not highlighted correctly.</li>
-	<li>Improve general stability.</li>
-	<li><span class="trivial">trivial</span>: Fix drawing of capsules for variables in the insertion format setting field.</li>
+	<li>Mejorar la estabilidad general.</li>
+	<li><span class="trivial">trivial</span>: Corregir el dibujo de las cápsulas para las variables en el campo de configuración del formato de inserción.</li>
 </ul>
 </section>
 </article>
@@ -3309,7 +3309,7 @@
 <article>
 <header>
 	<h1>CotEditor 3.4.1</h1>
-	<p>Lanzamiento: <time>2018-05-28</time></p>
+	<p>Lanzamiento: <time>28/05/2018</time></p>
 </header>
 
 
@@ -3317,9 +3317,9 @@
 <h2>Mejoras</h2>
 
 <ul>
-	<li>Copy also the executability from the file permission of the original document when duplicating a document.</li>
-	<li><span class="trivial">trivial</span> Improve drawing of capsules for variables in the insertion format setting field.</li>
-	<li><span class="trivial">trivial</span>: Adjust preferences panes layout.</li>
+	<li>Copie también la ejecutabilidad del permiso de archivo del documento original al duplicar un documento.</li>
+	<li><span class="trivial">trivial</span> Mejorar el dibujo de las cápsulas para las variables en el campo de configuración del formato de inserción.</li>
+	<li><span class="trivial">trivial</span>:Ajustar el diseño de los paneles de preferencias.</li>
 </ul>
 </section>
 
@@ -3328,10 +3328,10 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix an issue under OS X 10.11 where the application could crash when an item in the outline inspector is clicked.</li>
-	<li>Fix an issue where the word completion of which word starts with double underscores (e.g. <code>__init__</code>) skipped the second underscore.</li>
-	<li>Fix an issue where the application could rarely crash while typing.</li>
-	<li><span class="label">AppStore ver.</span>: Fix an issue where the options for the software updater for non AppStore versions were wrongly displayed in the General preferences pane.</li>
+	<li>Solucionar un problema en OS X 10.11 en el que la aplicación podía bloquearse al hacer clic en un elemento del inspector de contorno.</li>
+	<li>Soluciona un problema en el que la finalización de la palabra que comienza con doble guión bajo (por ejemplo, <code>__init__</code>) omitía el segundo guión bajo.</li>
+	<li>Soluciona un problema por el que la aplicación alguna vez podía bloquearse mientras se escribía.</li>
+	<li><span class="label">version AppStore</span>: Solucionar un problema por el que las opciones del actualizador de software para versiones que no son de AppStore se mostraban incorrectamente en el panel de preferencias generales.</li>
 </ul>
 </section>
 </article>
@@ -3341,7 +3341,7 @@
 <article>
 <header>
 	<h1>CotEditor 3.4.0</h1>
-	<p>Lanzamiento: <time>2018-05-15</time></p>
+	<p>Lanzamiento: <time>15/05/2018</time></p>
 </header>
 
 
@@ -3349,15 +3349,15 @@
 <h2>Nuevas características</h2>
 
 <ul>
-	<li>Replace matches with preset replacement definition (Find &gt; Multiple Replace).</li>
-	<li>Add outline menu to side bar.</li>
-	<li>Select tabbed window with <code>⌘+number</code>.</li>
-	<li>Parse regular expression pattern in find string field in regular expression mode:<ul>
-		<li>Syntax highlight.</li>
-		<li>Highlight matching brace by moving cursor.</li>
-		<li>Select the range surrounded by a brace pair by double-clicking a brace.</li>
+	<li>Reemplazar coincidencias con definición de reemplazo preestablecida (Buscar &gt; Reemplazo múltiple).</li>
+	<li>Añadir menú de esquema en la barra lateral.</li>
+	<li>Seleccionar ventana con pestañas con <code>⌘+número</code>.</li>
+	<li>Analizar el patrón de expresión regular en el campo de búsqueda de cadena en el modo de expresión regular:<ul>
+		<li>Resaltado de sintaxis.</li>
+		<li>Resalte el corchete correspondiente moviendo el cursor.</li>
+		<li>Seleccione el rango encerrado por un par de llaves haciendo doble clic en una llave.</li>
 	</ul></li>
-	<li>Add a new theme “Resinifictrix”.</li>
+	<li>Añadir un nuevo tema “Resinifictrix”.</li>
 </ul>
 </section>
 
@@ -3366,24 +3366,24 @@
 <h2>Mejoras</h2>
 
 <ul>
-	<li>Give haptic feedback on pinch zoom when the scale becomes 100%.</li>
-	<li>Adjust background color for selected range in inactive editor to avoid unreadable text, especially by a dark theme.</li>
-	<li>Make the current line highlight semi-transparent if editor opacity is not 100%.</li>
-	<li>Ignore brackets escaped with <code>\</code> on bracket pair highlight.</li>
-	<li>Restore selected inspector pane on window restoration.</li>
-	<li>Move “Get Info” and “Show Incompatible Characters” menu items into newly added View &gt; Inspector submenu.</li>
-	<li>Update highlight style of icons in the side inspector.</li>
-	<li>Enable importing multiple syntax/theme setting files at once.</li>
-	<li>Import syntax style files via drag and drop to the Installed Syntax Styles area.</li>
-	<li>Avoid merging multiple separators next to each other in the navigation menu into a single separator.</li>
-	<li>Delete the feature alerting inconsistent encoding declaration in document on saving.</li>
-	<li>Remove <code>⌘1</code> shortcut for Console from default key-binding settings.</li>
-	<li>Avoid switching to inactive tabbed window only to show a syntax highlighting indicator.</li>
-	<li>Remove the workaround for the issue of editor scrolling on early macOS High Sierra that was introduced on CotEditor 3.2.4.</li>
-	<li>Optimize syntax highlighting performance.</li>
-	<li>Update “Java” syntax style by adding term <code>var</code> (Thanks to Marc Prud’hommeaux!)</li>
-	<li><span class="trivial">trivial</span> Use monospace digits where suitable.</li>
-	<li><span class="trivial">trivial</span> <span class="label">versión no-AppStore</span>: Update Sparkle framework.</li>
+	<li>Da retroalimentación háptica al pellizcar el zoom cuando la escala se convierta en el 100 %.</li>
+	<li>Ajuste el color de fondo para el rango seleccionado en el editor inactivo para evitar texto ilegible, especialmente por un tema oscuro.</li>
+	<li>Haga que el resaltado de línea actual sea semitransparente si la opacidad del editor no es del 100 %.</li>
+	<li>Ignorar los corchetes escapados con <code>\</code> resaltado en el par de llaves.</li>
+	<li>Restaurar el panel del inspector seleccionado en la restauración de la ventana.</li>
+	<li>Mueva los elementos de menú "Obtener información" y "Mostrar caracteres incompatibles" a la vista recién agregada &gt; submenú Inspector.</li>
+	<li>Actualizar el estilo de resaltado de los iconos en el inspector lateral.</li>
+	<li>Habilitar la importación de varios archivos de configuración de sintaxis/tema a la vez.</li>
+	<li>Importar archivos de estilo de sintaxis arrastrando y soltando en el área Estilos de sintaxis instalados.</li>
+	<li>Evite fusionar varios separadores uno al lado del otro en el menú de navegación en un solo separador.</li>
+	<li>Eliminar la función que alerta a la declaración de codificación inconsistente en el documento al guardar.</li>
+	<li>Eliminar el atajo para Consola <code>⌘1</code> desde la configuración predeterminada de atajos de teclado.</li>
+	<li>Evite cambiar a una ventana con pestañas inactiva solo para mostrar un indicador de resaltado de sintaxis.</li>
+	<li>Elimine la solución alternativa para el problema del desplazamiento del editor en los primeros macOS High Sierra que se introdujo en CotEditor 3.2.4.</li>
+	<li>Optimizar el rendimiento de resaltado de sintaxis.</li>
+	<li>Actualizar el estilo de sintaxis "Java" añadiendo un término <code>var</code> (¡Gracias a Marc Prud'hommeaux!)</li>
+	<li><span class="trivial">trivial</span>Utilice dígitos monoespaciales cuando sea adecuado.</li>
+	<li><span class="trivial">trivial</span> <span class="label">versión no-AppStore</span>: Actualizar el framework Sparkle.</li>
 </ul>
 </section>
 
@@ -3392,14 +3392,14 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix a possible crash with continuous find/replacement.</li>
-	<li>Fix an issue where the font settings cannot be changed on macOS 10.12.</li>
-	<li>Fix an issue where the cursor position did not follow the line when Move Up command was performed at the end of the document.</li>
-	<li>Fix an issue where the find result in the input field of the find panel did not clear when a new find string was set from the find history menu.</li>
-	<li>Fix an issue where the sidebar inspector did close inward when the pane was switched after opening the sidebar outward.</li>
-	<li>Fix an issue where snippet key bindings could not be restored to the default correctly.</li>
-	<li>Fix an issue where progress spinner for outline menu displayed unwontedly on document opening.</li>
-	<li><span class="trivial">trivial</span>: Fix some UI text.</li>
+	<li>Solucionar un posible bloqueo con búsqueda/reemplazo continuo.</li>
+	<li>Soluciona un problema por el que la configuración de la fuente no se puede cambiar en macOS 10.12.</li>
+	<li>Se ha corregido un problema por el que la posición del cursor no seguía la línea cuando se realizaba el comando Mover hacia arriba al final del documento.</li>
+	<li>Soluciona un problema en el que el resultado de búsqueda en el campo de entrada del panel de búsqueda no se aclaraba cuando se estableía una nueva cadena de búsqueda desde el menú del historial de búsqueda.</li>
+	<li>Soluciona un problema por el que el inspector de la barra lateral se cerraba hacia adentro cuando se cambiaba el panel después de abrir la barra lateral hacia afuera.</li>
+	<li>Se ha corregido un problema por el que los enlaces de teclas de fragmentos no se podían restaurar correctamente al valor predeterminado.</li>
+	<li>Solucionar un problema en el que la barra de progreso para el menú de esquema se mostraba de forma inadecuada al abrir el documento.</li>
+	<li><span class="trivial">trivial</span>: Arreglar algún texto UI (interfaz de usuario).</li>
 </ul>
 </section>
 </article>
@@ -3409,7 +3409,7 @@
 <article>
 <header>
 	<h1>CotEditor 3.3.5</h1>
-	<p>Lanzamiento: <time>2018-03-10</time></p>
+	<p>Lanzamiento: <time>10/03/2018</time></p>
 </header>
 
 
@@ -3418,7 +3418,7 @@
 
 <ul>
 
-	<li>Update “Swift” syntax style for Swift 4.1.</li>
+	<li>Actualizar el estilo de sintaxis "Swift" para Swift 4.1.</li>
 </ul>
 </section>
 
@@ -3427,9 +3427,9 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix an issue where application could rarely crash under specific environment on saving.</li>
-	<li>Fix an issue where the domain part of URLs was ignored when a favicon was dropped from Safari to editor.</li>
-	<li>Update “YAML” syntax style to fix outline extraction with a specific case.</li>
+	<li>Soluciona un problema por el que la aplicación rara vez podía bloquearse en un entorno específico al guardar.</li>
+	<li>Se ha corregido un problema por el que la parte de dominio de las URL se ignoraba cuando se eliminaba un favicon de Safari al editor.</li>
+	<li>Actualice el estilo de sintaxis "YAML" para corregir la extracción del esquema con un caso específico.</li>
 </ul>
 </section>
 </article>
@@ -3439,7 +3439,7 @@
 <article>
 <header>
 	<h1>CotEditor 3.3.4</h1>
-	<p>Lanzamiento: <time>2018-03-03</time></p>
+	<p>Lanzamiento: <time>13/03/2018</time></p>
 </header>
 
 
@@ -3447,7 +3447,7 @@
 <h2>Mejoras</h2>
 
 <ul>
-	<li>Update “Swift” syntax style for Swift 4.1.</li>
+	<li>Actualizar el estilo de sintaxis "Swift" para Swift 4.1.</li>
 </ul>
 </section>
 
@@ -3456,12 +3456,12 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix an issue where lossy saving was failed.</li>
-	<li>Fix an issue where <code>⌘←</code> was ignored when the cursor locates at the end of the document.</li>
-	<li>Fix an issue where save dialog layout corrupted when toggling the visibility of the file browser.</li>
-	<li>Fix an issue where no alert was raised on saving even when a document contains lossy yen signs.</li>
-	<li>Fix an issue where document syntax was parsed twice on file open.</li>
-	<li>Fix a possible crash on print.</li>
+	<li>Solucionar un problema en el que el ahorro con pérdidas fallaba.</li>
+	<li>Soluciona un problema en el que <code>⌘←</code> fue ignorado cuando el cursor se localiza al final del documento.</li>
+	<li>Se ha corregido un problema por el que el diseño del cuadro de diálogo de guardado se corrompía al desaglosar la visibilidad del navegador de archivos.</li>
+	<li>Solucionar un problema en el que no se generaba ninguna alerta sobre el ahorro, incluso cuando un documento contiene signos de yenes con pérdidas.</li>
+	<li>Se ha corregido un problema por el que la sintaxis del documento se analizaba dos veces en el archivo abierto.</li>
+	<li>Solucionar un posible bloqueo en la impresión.</li>
 </ul>
 </section>
 </article>
@@ -3471,7 +3471,7 @@
 <article>
 <header>
 	<h1>CotEditor 3.3.3</h1>
-	<p>Lanzamiento: <time>2018-02-25</time></p>
+	<p>Lanzamiento: <time>25/02/2018</time></p>
 </header>
 
 
@@ -3479,7 +3479,7 @@
 <h2>Nuevas características</h2>
 
 <ul>
-	<li>Add an option “Indent with Tab key” to the Edit pane in preferences.</li>
+	<li>Añade una opción "Sangría con la tecla Tabulación" al panel Editar en las preferencias.</li>
 </ul>
 </section>
 
@@ -3488,17 +3488,17 @@
 <h2>Mejoras</h2>
 
 <ul>
-	<li>Change the behavior of <code>⌘←</code> so that the cursor moves first to the beginning of the visual lines, then to the column right after indentation, and finally to the beginning of the line.</li>
-	<li>Remove “Open Hidden” command (Use “Show hidden files” option in the open dialog instead).</li>
-	<li>Display an open dialog on launch if so set even when iCloud storage is disabled.</li>
-	<li>Improve stability on text encoding change.</li>
-	<li>Refine dialog messages on text encoding change.</li>
-	<li>Change sidebar behavior to close inward when it was opened inward because of insufficient space.</li>
-	<li>Avoid requiring high power GPU use.</li>
-	<li><span class="trivial">trivial</span>: Hide insertion point in shortcut input fields in the Key Bindings pane.</li>
-	<li><span class="trivial">trivial</span>: Set a spoken name of CotEditor.</li>
-	<li><span class="trivial">trivial</span>: Add <code>enablesAsynchronousSaving</code> hidden default key that enables asynchronous saving.</li>
-	<li><span class="label">versión no-AppStore</span>: Update Sparkle framework.</li>
+	<li>Cambia el comportamiento de <code>⌘←</code> Para que el cursor se mueva primero al principio de las líneas visuales, luego a la columna justo después de la sangría y, finalmente, al principio de la línea.</li>
+	<li>Eliminar el comando "Abrir oculto" (en su lugar, utilice la opción "Mostrar archivos ocultos" en el cuadro de diálogo abrir).</li>
+	<li>Mostrar un cuadro de diálogo abrir en el lanzamiento si así se establece incluso cuando el almacenamiento de iCloud está deshabilitado.</li>
+	<li>Mejorar la estabilidad en el cambio de codificación de texto.</li>
+	<li>Refinar los mensajes de diálogo sobre el cambio de codificación de texto.</li>
+	<li>Cambie el comportamiento de la barra lateral para cerrar hacia adentro cuando se abrió hacia adentro debido a la falta de espacio.</li>
+	<li>Evite requerir el uso de GPU de alta potencia.</li>
+	<li><span class="trivial">trivial</span>: Ocultar el punto de inserción en los campos de entrada de acceso directo en el panel Enlaces de teclas.</li>
+	<li><span class="trivial">trivial</span>: Establecer un nombre hablado de CotEditor.</li>
+	<li><span class="trivial">trivial</span>: Añadir <code>enablesAsynchronousSaving</code> clave predeterminada oculta que permite el guardado asíncrono.</li>
+	<li><span class="label">versión no-AppStore</span>: Actualizar el framework Sparkle.</li>
 </ul>
 </section>
 
@@ -3507,12 +3507,12 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix a long-standing issue where incompatible characters could not be detected when the length of converted document text is changed.</li>
-	<li>Fix an issue where key-binding setting field sometimes ignored user input.</li>
-	<li>Fix an issue where wrong file creation date and file permission could be displayed in the document inspector.</li>
-	<li>Fix an issue where document files did not forget vertical orientation state when once set before.</li>
-	<li>Fix an issue where the encoding selected in the open dialog last time was unwontedly applied to the newly opened document when a document opened with the open dialog previously had already opened.</li>
-	<li>Fix an issue where menu item title for “Horizontal” (in Format &gt; Writing Direction) was displayed as “Vertical” in Japanese localization.</li>
+	<li>Se ha corregido un problema de larga data en el que no se podían detectar caracteres incompatibles cuando se cambiaba la longitud del texto del documento convertido.</li>
+	<li>Soluciona un problema en el que el campo de configuración de enlace de teclas a veces ignoraba la entrada del usuario.</li>
+	<li>Solucionar un problema por el que se podía mostrar una fecha de creación de archivo incorrecta y el permiso de archivo en el inspector de documentos.</li>
+	<li>Soluciona un problema por el que los archivos de documentos no olvidan el estado de orientación vertical cuando se configuran antes.</li>
+	<li>Se ha corregido un problema en el que la codificación seleccionada en el cuadro de diálogo abierto de la última vez se aplicaba de forma inecuada al documento recién abierto cuando un documento abierto con el cuadro de diálogo abierto ya se había abierto anteriormente.</li>
+	<li>Solucionar un problema en el que el título del elemento de menú era "Horizontal" (En formato &gt; Sentido de la escritura) se mostró como "Vertical" en la traducción japonesa.</li>
 </ul>
 </section>
 </article>
@@ -3522,7 +3522,7 @@
 <article>
 <header>
 	<h1>CotEditor 3.3.2</h1>
-	<p>Lanzamiento: <time>2018-02-12</time></p>
+	<p>Lanzamiento: <time>12/02/2018</time></p>
 </header>
 
 
@@ -3530,8 +3530,8 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix an issue on CotEditor 3.3.1 where the application could crash on window close.</li>
-	<li>Fix an issue where application crashed when performing “Find All” with the regular expression and without grouping (Thanks to @akimach!).</li>
+	<li>Solucionar un problema en CotEditor 3.3.1 en el que la aplicación podía bloquearse al cerrar la ventana.</li>
+	<li>Se ha corregido un problema por el que la aplicación se bloqueaba al ejecutar "Buscar todo" con la expresión regular y sin agrupar (¡Gracias a @akimach!).</li>
 </ul>
 </section>
 </article>
@@ -3541,7 +3541,7 @@
 <article>
 <header>
 	<h1>CotEditor 3.3.1</h1>
-	<p>Lanzamiento: <time>2018-02-12</time></p>
+	<p>Lanzamiento: <time>12/02/2018</time></p>
 </header>
 
 
@@ -3549,9 +3549,9 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix an issue where the application crashed on launch under specific conditions.</li>
-	<li>Fix an issue where the iCloud storage was not enabled.</li>
-	<li>Fix arrows in the navigation bar on the vertical text mode.</li>
+	<li>Soluciona un problema por el que la aplicación se bloqueaba en el lanzamiento en condiciones específicas.</li>
+	<li>Soluciona un problema por el que el almacenamiento de iCloud no estaba habilitado.</li>
+	<li>Fijar flechas en la barra de navegación en el modo de texto vertical.</li>
 </ul>
 </section>
 </article>
@@ -3561,7 +3561,7 @@
 <article>
 <header>
 	<h1>CotEditor 3.3.0</h1>
-	<p>Lanzamiento: <time>2018-02-09</time></p>
+	<p>Lanzamiento: <time>09/02/2018</time></p>
 </header>
 
 
@@ -3569,23 +3569,23 @@
 <h2>Nuevas características</h2>
 
 <ul>
-	<li>iCloud document.</li>
-	<li>Open a document in the existing Untitled window that was created automatically on an open/reopen event, if exists.</li>
-	<li>New feature “Sort by pattern,” which enables sort selected lines by specific column or fully freely using the regular expression.</li>
-	<li>Add new setting option “Reopen windows from the last session on launch” in General pane.</li>
-	<li>Add new setting option “including whitespace-only lines” for “trim trailing whitespace” command in General pane.</li>
-	<li>Introduce “Right to Left” writing direction by changing the direction from Format &gt; Writing Direction menu.</li>
-	<li>More integrated Share feature:<ul>
-		<li>Share documents with other people through iCloud drive with “Add People” command in the File &gt; Share menu.</li>
-		<li>Enable sharing a document that has not been saved yet.</li>
-		<li>Remove the feature that shares document content text from the File menu (You can still share selected text from the context menu).</li>
+	<li>Documento de iCloud.</li>
+	<li>Abra un documento en la ventana sin título existente que se creó automáticamente en un evento de apertura/reapertura, si existe.</li>
+	<li>Nueva función "Ordenar por patrón", que permite ordenar las líneas seleccionadas por columna específica o completamente libremente usando la expresión regular.</li>
+	<li>Añadir una nueva opción de configuración "Reabrir ventanas desde la última sesión en el inicio" en el panel General.</li>
+	<li>Agregue una nueva opción de configuración "incluyendo líneas de solo espacios en blanco" para el comando "recortar espacios en blanco al final" en el panel General.</li>
+	<li>Introduce la dirección de escritura de "derecha a izquierda" cambiando el sentido en el menú de Formato &gt; sentido de la escritura.</li>
+	<li>Función de compartir más integrada:<ul>
+		<li>Comparte documentos con otras personas a través de iCloud Drive con el comando “Añadir personas” en el menú Archivo &gt; Compartir...</li>
+		<li>Habilitar compartir un documento que aún no se ha guardado.</li>
+		<li>Elimine la función que comparte el texto del contenido del documento del menú Archivo (todavía puede compartir el texto seleccionado desde el menú contextual).</li>
 		<li>Other small improvements.</li>
 	</ul></li>
-	<li>Add new commands “Half-width to Full-width” and “Full-width to Half-width” to Text &gt; Transformations menu.</li>
-	<li>Add Portuguese localization (thanks to BR Lingo!).</li>
-	<li>Add the following encodings to the encoding list (To activate new encodings, restore default once in Preferences &gt; Format &gt; Edit List.):<ul>
-		<li>Thai (Windows, DOS)</li>
-		<li>Thai (ISO 8859-11)</li>
+	<li>Añade nuevos comandos "Medio ancho a ancho completo" y "A ancho completo a medio ancho" al menú Texto &gt; Transformaciones.</li>
+	<li>Añade la traducción al portugués (¡gracias a BR Lingo!).</li>
+	<li>Agregue las siguientes codificaciones a la lista de codificaciones (Para activar nuevas codificaciones, restaure el valor predeterminado una vez en Preferencias &gt; Formato &gt; Editar lista).:<ul>
+		<li>Tailandés (Windows, DOS)</li>
+		<li>Tailandés (ISO 8859-11)</li>
 	</ul></li>
 </ul>
 </section>
@@ -3595,33 +3595,33 @@
 <h2>Mejoras</h2>
 
 <ul>
-	<li>Change the system requirement to <strong>OS X 10.11 El Capitan and later</strong>.</li>
-	<li>Add clear button to the input fields in the find panel.</li>
-	<li>Gather the “open a new document” “on launch” and “when CotEditor becomes active” options and create new “When nothing else is open:” option.</li>
-	<li>Enable “shift right” and “shift left” commands to process multiple selections.</li>
-	<li>Scroll console view after getting a new message to make it visible.</li>
-	<li>Display sharing window within the target document window.</li>
-	<li>Swap position of “View” with “Format” menu to conform to the Apple’s Human Interface Guidelines.</li>
-	<li>Move the menu item changing the text orientation into Format &gt; Writing Direction.</li>
-	<li>Display full encoding name in the status bar instead of the IANA charset name.</li>
-	<li>Add tooltips to the Unicode normalization forms in Text menu.</li>
-	<li>Append “Option-Command-T” shortcut to “Show/Hide Toolbar” menu item.</li>
-	<li>Remove “Color Code Panel” command from the “Window” menu (use “Edit Color Code…” command in “Text” menu instead).</li>
-	<li>Remove “share find text with other applications” option.</li>
-	<li>Restore the last viewed preference pane when Preferences is opened.</li>
-	<li>Add an input field for the editor opacity setting.</li>
-	<li>Adjust scroll after toggling line wrap.</li>
-	<li>Add scroll margin to the right side of find panel fields dynamically, so that entire inputs can be seen even when find/replacement result is shown.</li>
-	<li>Update Python syntax style:<ul>
-		<li>Fix highlight of string and bytes literals.</li>
+	<li>Cambiar el requisito del sistema a <strong>OS X 10.11 El Capitan y posteriores</strong>.</li>
+	<li>Añadir el botón de borrar a los campos de entrada en el panel de búsqueda.</li>
+	<li>Reúne las opciones "abrir un nuevo documento" "en el lanzamiento" y "cuando CotEditor se active" y crea una nueva opción "Cuando no hay nada más abierto:".</li>
+	<li>Habilitar los comandos "cambiar a la derecha" y "cambiar a la izquierda" para procesar múltiples selecciones.</li>
+	<li>Desplácese por la vista de la consola después de recibir un nuevo mensaje para hacerlo visible.</li>
+	<li>Mostrar la ventana de uso compartido dentro de la ventana del documento de destino.</li>
+	<li>Cambie la posición de "Ver" con el menú "Formato" para cumplir con las Directrices de Interfaz Humana de Apple.</li>
+	<li>Mueva el elemento del menú cambiando la orientación del texto a Formato &gt; Sentido de la escritura.</li>
+	<li>Mostrar el nombre de codificación completo en la barra de estado en lugar del nombre del conjunto de caracteres IANA.</li>
+	<li>Añade información sobre herramientas a los formularios de normalización Unicode en el menú Texto.</li>
+	<li>Añade el atajo de teclado "Opción-Comando-T" al elemento de menú "Mostrar/Ocultar barra de herramientas".</li>
+	<li>Elimine el comando "Panel de código de color" del menú "Ventana" (use el comando "Editar código de color..." en el menú "Texto" en su lugar).</li>
+	<li>Eliminar la opción "compartir texto de búsqueda con otras aplicaciones".</li>
+	<li>Restaure el último panel de preferencias visto cuando se abra Preferencias.</li>
+	<li>Añadir un campo de entrada para la configuración de opacidad del editor.</li>
+	<li>Ajuste el desplazamiento después de ajustar la línea.</li>
+	<li>Agregue un margen de desplazamiento al lado derecho de los campos del panel de búsqueda de forma dinámica, para que se puedan ver entradas completas incluso cuando se muestre el resultado de búsqueda/reemplazo.</li>
+	<li>Actualizar el estilo de sintaxis de Python:<ul>
+		<li>Corregir el resaltado de los literales de cadena y bytes.</li>
 	</ul></li>
-	<li>Tweak acknowledgments window design.</li>
-	<li>Update Help contents style.</li>
-	<li>Some minor UI improvements and fixes.</li>
-	<li>Update Japanese localization to conform with the modern macOS localization rules.</li>
-	<li>Update the internal source code to Swift 4.</li>
-	<li><span class="label">versión no-AppStore</span>: Now, the application updater (Sparkle) can download and update CotEditor automatically, as like before CotEditor was Sandboxed.<ul>
-		<li>This feature can actually be used first updating CotEditor 3.3.0 to CotEditor 3.3.1 or later.</li>
+	<li>Ajustar el diseño de las ventanas de agradecimientos.</li>
+	<li>Actualizar el estilo del contenido de la ayuda.</li>
+	<li>Algunas mejoras y correcciones menores en la UI (interfaz de usuario).</li>
+	<li>Actualizar la traducción japonesa para ajustarse a las reglas modernas de localización de macOS.</li>
+	<li>Actualiza el código fuente interno a Swift 4.</li>
+	<li><span class="label">versión no-AppStore</span>: Ahora, el actualizador de aplicaciones (Sparkle) puede descargar y actualizar CotEditor automáticamente, como antes de que CotEditor estuviera en Sandboxed.<ul>
+		<li>En realidad, esta función se puede utilizar primero actualizando CotEditor 3.3.0 a CotEditor 3.3.1 o posterior.</li>
 	</ul></li>
 </ul>
 </section>
@@ -3631,11 +3631,11 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix an issue where the word suggestion in the Touch Bar cannot insert a word starts with a symbol correctly, and, therefore, a workaround was added on CotEditor 3.2.3.</li>
-	<li>Fix an issue where character inspector could expand vertically too much with some specific characters.</li>
-	<li>Fix an issue where invisible symbols for control characters were not drawn in input fields in find panel.</li>
-	<li>Fix scroll position in the help viewer on jumping to a help page from CotEditor.</li>
-	<li>Fix some unlocalized text.</li>
+	<li>Soluciona un problema por el que la sugerencia de palabras en la Touch Bar no puede insertar una palabra que comienza con un símbolo correctamente y, por lo tanto, se agregó una solución alternativa en CotEditor 3.2.3.</li>
+	<li>Soluciona un problema por el que el inspector de caracteres podía expandirse verticalmente demasiado con algunos caracteres específicos.</li>
+	<li>Soluciona un problema por el que los símbolos invisibles para los caracteres de control no se dibujaban en los campos de entrada en el panel de búsqueda.</li>
+	<li>Corregir la posición de desplazamiento en el visor de ayuda al saltar a una página de ayuda desde CotEditor.</li>
+	<li>Arreglar algún texto no localizado.</li>
 </ul>
 </section>
 </article>
@@ -3645,7 +3645,7 @@
 <article>
 <header>
 	<h1>CotEditor 3.2.8</h1>
-	<p>Lanzamiento: <time>2018-01-22</time></p>
+	<p>Lanzamiento: <time>22/01/2018</time></p>
 </header>
 
 
@@ -3653,9 +3653,9 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix an issue where CotEditor occasionally failed sending the standard input to a UNIX script launched from the Script menu.</li>
-	<li>Fix an issue where the custom “Surround Selection With” command in Text menu did not use the last input when OK button is pressed.</li>
-	<li>Fix an issue where the editing state dots in the installed style list was not updated after editing syntax style.</li>
+	<li>Se ha corregido un problema por el que CotEditor ocasionalmente fallaba al enviar la entrada estándar a un script UNIX iniciado desde el menú Script.</li>
+	<li>Se ha corregido un problema por el que el comando personalizado "Selección envolvente con" en el menú Texto no usaba la última entrada cuando se pulsa el botón Aceptar.</li>
+	<li>Soluciona un problema por el que los puntos de estado de edición en la lista de estilos instalada no se actualizaban después de editar el estilo de sintaxis.</li>
 </ul>
 </section>
 </article>
@@ -3665,7 +3665,7 @@
 <article>
 <header>
 	<h1>CotEditor 3.2.7</h1>
-	<p>Lanzamiento: <time>2017-12-29</time></p>
+	<p>Lanzamiento: <time>29/12/2017</time></p>
 </header>
 
 
@@ -3673,7 +3673,7 @@
 <h2>Mejoras</h2>
 
 <ul>
-	<li>Spread background drawing over paper width on printing.</li>
+	<li>Extienda el dibujo de fondo sobre el ancho del papel en la impresión.</li>
 </ul>
 </section>
 
@@ -3682,10 +3682,10 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix an issue where the find panel was over expanded when performing “Find All” with a long find string.</li>
-	<li>Fix an issue where the file size in the status bar was not updated after saving.</li>
-	<li>Fix an issue where the find panel didn’t select the previous field with Shift + Tab keys.</li>
-	<li>Fix an issue where the application frozen by opening the File Mapping Conflicts list when filename conflict exists.</li>
+	<li>Soluciona un problema por el que el panel de búsqueda se expandía demasiado al ejecutar "Buscar todo" con una cadena de búsqueda larga.</li>
+	<li>Se ha corregido un problema por el que el tamaño del archivo en la barra de estado no se actualizaba después de guardarlo.</li>
+	<li>Soluciona un problema por el que el panel de búsqueda no seleccionaba el campo anterior con las teclas Mayús + Tab.</li>
+	<li>Solucionar un problema en el que la aplicación se congeló abriendo la lista de conflictos de mapeo de archivos cuando existe un conflicto con el nombre de archivo.</li>
 </ul>
 </section>
 </article>
@@ -3695,7 +3695,7 @@
 <article>
 <header>
 	<h1>CotEditor 3.2.6</h1>
-	<p>Lanzamiento: <time>2017-12-11</time></p>
+	<p>Lanzamiento: <time>11/12/2017</time></p>
 </header>
 
 
@@ -3703,10 +3703,10 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix an issue where backslashes in replacement strings were not unescaped correctly.</li>
-	<li>Fix an issue where items in the Script menu were not sorted by prefix numbers.</li>
-	<li>Fix a possible crash on handling documents with an invalid shebang.</li>
-	<li>Fix Japanese localization.</li>
+	<li>Soluciona un problema por el que las barras invertidas en las cadenas de reemplazo no se escapaban correctamente.</li>
+	<li>Soluciona un problema por el que los elementos del menú Script no estaban ordenados por números de prefijo.</li>
+	<li>Solucionar un posible bloqueo en el manejo de documentos con un shebang no válido.</li>
+	<li>Corregir la traducción japonesa.</li>
 </ul>
 </section>
 </article>
@@ -3716,7 +3716,7 @@
 <article>
 <header>
 	<h1>CotEditor 3.2.5</h1>
-	<p>Lanzamiento: <time>2017-11-28</time></p>
+	<p>Lanzamiento: <time>28/11/2017</time></p>
 </header>
 
 
@@ -3724,7 +3724,7 @@
 <h2>Mejoras</h2>
 
 <ul>
-	<li>Some minor UI improvements.</li>
+	<li>Algunas mejoras menores en la interfaz de usuario.</li>
 </ul>
 </section>
 
@@ -3733,13 +3733,13 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix an issue where a vertical orientation document broke the layout on printing.</li>
-	<li>Fix an issue where the syntax highlighting indicator could display twice.</li>
-	<li>Fix an issue where the separator was selected meaninglessly in the Window pane if the window tabbing setting was set to “Manually”.</li>
-	<li>Fix an issue where editor’s text orientation was not cascaded to the print operation when the window was restored from the last session.</li>
-	<li>Fix the line-wrapping behavior when a line contains a long unbreakable word.</li>
-	<li>Fix some missing localized strings.</li>
-	<li>Improve general stability.</li>
+	<li>Se ha corregido un problema por el que un documento de orientación vertical rompió el diseño en la impresión.</li>
+	<li>Soluciona un problema por el que el indicador de resaltado de sintaxis podía mostrarse dos veces.</li>
+	<li>Se ha corregido un problema por el que el separador se seleccionaba sin sentido en el panel Ventana si la configuración de tabulación de la ventana se establecía en "Manualmente".</li>
+	<li>Soluciona un problema por el que la orientación del texto del editor no se conectaba en cascada a la operación de impresión cuando se restauró la ventana de la última sesión.</li>
+	<li>Corregir el comportamiento de envoltorio de líneas cuando una línea contiene una palabra larga e irrompible.</li>
+	<li>Arregla algunas cadenas localizadas que faltan.</li>
+	<li>Improve overall stability.</li>
 </ul>
 </section>
 </article>
@@ -3749,7 +3749,7 @@
 <article>
 <header>
 	<h1>CotEditor 3.2.4</h1>
-	<p>Lanzamiento: <time>2017-11-05</time></p>
+	<p>Lanzamiento: <time>05/11/2017</time></p>
 </header>
 
 
@@ -3757,11 +3757,11 @@
 <h2>Mejoras</h2>
 
 <ul>
-	<li>Keep showing the console when CotEditor becomes inactive.</li>
-	<li>Make the Key-Bindings for “Bigger” and “Smaller” actions in Font menu customizable.</li>
-	<li>Change to display the first line number even the document is empty.</li>
-	<li>Rename “Incompatible Characters” toolbar item to “Incompatibles”.</li>
-	<li>Some minor UI improvements and fixes.</li>
+	<li>Sigue mostrando la consola cuando CotEditor esta inactivo.</li>
+	<li>Haz que los atajos de teclado para las acciones "Más grande" y "Más pequeña" en el menú Tipo de letra sean personalizables.</li>
+	<li>Cambiar para mostrar el número de primera línea, incluso si el documento está vacío.</li>
+	<li>Cambie el nombre del elemento de la barra de herramientas "Caracteres incompatibles" a "Incompatibles".</li>
+	<li>Algunas mejoras y correcciones menores en la UI (interfaz de usuario).</li>
 </ul>
 </section>
 
@@ -3770,16 +3770,16 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li><span class="label">High Sierra</span>: Workaround a system issue where editor views could occasionally not scroll to the end of the document under specific environments on macOS 10.13 High Sierra.
+	<li><span class="label">High Sierra</span>: Solución a un problema del sistema en el que las vistas del editor ocasionalmente no podían desplazarse hasta el final del documento en entornos específicos en macOS 10.13 High Sierra.
 	<ul>
-		<li><strong>for advanced users</strong>: This workaround may affect rendering performance by large size documents, because the workaround disables non-contiguous layout on High Sierra (The non-contiguous layout are still used on lower versions). The workaround will be removed in the future when the bug origin is resolved. You can forcibly enable non-contiguous layout support on High Sierra by setting the hidden default key <code>enableNonContiguousLayoutOnHighSierra</code> to <code>YES</code> in Terminal, although this key is actually for debug-use.</li>
+		<li><strong>para usuarios avanzados</strong>: TSu solución alternativa puede afectar el rendimiento de renderizado de documentos de gran tamaño, porque la solución alternativa deshabilita el diseño no contiguo en High Sierra (el diseño no contiguo todavía se usa en versiones inferiores). La solución se eliminará en el futuro cuando se resuelva el origen del error. Puede habilitar por la fuerza el soporte de diseño no contiguo en High Sierra estableciendo la clave predeterminada oculta <code>enableNonContiguousLayoutOnHighSierra</code> a <code>YES</code> en el Terminal, aunque esta clave es en realidad para uso de depuración.</li>
 	</ul></li>
-	<li>Fix an issue where “Reset to Default” action in Font menu was ignored.</li>
-	<li>Fix an issue where matching brace was highlighted unwontedly also by text finding.</li>
-	<li>Fix an issue where the encoding and the line endings in the status bar were occasionally not displayed.</li>
-	<li>Fix an issue where the application froze by getting the content of a large document via the Script menu.</li>
-	<li>Fix an issue where the second value of the printed time in the console was not sexagesimal.</li>
-	<li>Improve general stability.</li>
+	<li>Se ha corregido un problema por el que se ignoraba la acción "Valor por defecto" en el menú Tipo de letra.</li>
+	<li>Solucionar un problema en el que la corchete coincidente se resaltaba de forma inecuada también mediante la búsqueda de textog.</li>
+	<li>Soluciona un problema en el que la codificación y los finales de línea en la barra de estado ocasionalmente no se mostraban.</li>
+	<li>Soluciona un problema por el que la aplicación se congela al obtener el contenido de un documento grande a través del menú Script.</li>
+	<li>Soluciona un problema por el que el segundo valor del tiempo impreso en la consola no era sexagesimal.</li>
+	<li>Mejorar la estabilidad general.</li>
 </ul>
 </section>
 </article>
@@ -3789,7 +3789,7 @@
 <article>
 <header>
 	<h1>CotEditor 3.2.3</h1>
-	<p>Lanzamiento: <time>2017-10-22</time></p>
+	<p>Lanzamiento: <time>22/10/2017</time></p>
 </header>
 
 
@@ -3797,12 +3797,12 @@
 <h2>Mejoras</h2>
 
 <ul>
-	<li>Disable toggling sidebar while the tab overview mode on High Sierra.</li>
-	<li>Update “CSS” syntax style:
+	<li>Desactivar la desaglose de la barra lateral mientras se utiliza el modo de descripción general de la pestaña en High Sierra.</li>
+	<li>Actualizar el estilo de sintaxis "CSS":
 	<ul>
-		<li>Fix an issue where keywords were highlighted incorrectly.</li>
+		<li>Solucionar un problema en el que las palabras clave se resaltaban incorrectamente.</li>
 	</ul></li>
-	<li>Some minor improvements and fixes.</li>
+	<li>Algunas mejoras y correcciones menores.</li>
 </ul>
 </section>
 
@@ -3811,11 +3811,11 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix an issue where UNIX scripts could fail getting the content of the document.</li>
-	<li>Fix an issue where font change in the preferences pane could be ignored.</li>
-	<li>Fix a potential issue where syntax keywords could be highlighted incorrectly if whitespaces accidentally get into keywords definition.</li>
-	<li>Workaround an issue where word suggestion in the Touch Bar cannot insert a word starts with a symbol correctly.</li>
-	<li>Workaround an issue where the application could crash on document auto-saving.</li>
+	<li>Solucionar un problema por el que los scripts de UNIX no podían obtener el contenido del documento.</li>
+	<li>Solucionar un problema por el que se podía ignorar el cambio de fuente en el panel de preferencias.</li>
+	<li>Solucionar un problema potencial en el que las palabras clave de sintaxis podrían resaltarse incorrectamente si los espacios en blanco entran accidentalmente en la definición de las palabras clave.</li>
+	<li>Solución a un problema en el que la sugerencia de palabras en la Touch Bar no puede insertar una palabra que comienza con un símbolo correctamente.</li>
+	<li>Solución de un problema en el que la aplicación podría bloquearse en el guardado automático de documentos.</li>
 </ul>
 </section>
 </article>
@@ -3825,7 +3825,7 @@
 <article>
 <header>
 	<h1>CotEditor 3.2.2</h1>
-	<p>Lanzamiento: <time>2017-10-01</time></p>
+	<p>Lanzamiento: <time>01/10/2017</time></p>
 </header>
 
 
@@ -3833,7 +3833,7 @@
 <h2>Nuevas características</h2>
 
 <ul>
-	<li>Add new <code>NewDocument</code> option to <code>CotEditorXOutput</code> for UNIX Scripting to put output string to a newly created document.</li>
+	<li>Añadir nueva opción <code>NewDocument</code> a <code>CotEditorXOutput</code>Para que UNIX Scripting ponga una cadena de salida en un documento recién creado.</li>
 </ul>
 </section>
 
@@ -3842,20 +3842,20 @@
 <h2>Mejoras</h2>
 
 <ul>
-	<li>Improve Replace All action:
+	<li>Mejorar la acción Reemplazar todo:
 	<ul>
-		<li>Avoid recoloring after Replace All if no text replaced.</li>
-		<li>Improve the progress indicator.</li>
+		<li>Evite volver a colorear después de reemplazar todo si no se ha reemplazado ningún texto.</li>
+		<li>Mejorar el indicador de progreso.</li>
 	</ul></li>
-	<li>Change to highlight matching braces just like Xcode.
+	<li>Cambiar para resaltar las llaves coincidentes al igual que Xcode.
 	<ul>
-		<li>No more beep for unbalanced braces.</li>
+		<li>No más pitidos para los aparatos de apoyos desequilibrados.</li>
 	</ul></li>
-	<li>Update “JavaScript” syntax style:
+	<li>Actualizar el estilo de sintaxis "JavaScript":
 	<ul>
-		<li>Add “.pac” extension.</li>
+		<li>Añade la extensión ".pac".</li>
 	</ul></li>
-	<li>Update build environment to Xcode 9 (SDK macOS 10.13).</li>
+	<li>Actualizar el entorno de compilación a Xcode 9 (SDK macOS 10.13).</li>
 </ul>
 </section>
 
@@ -3864,11 +3864,11 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix an issue where the Key Binding setting tables were empty on macOS 10.13 High Sierra.</li>
-	<li>Fix an issue where current line highlight was occasionally too wide when line height is 1.0.</li>
-	<li>Fix an issue where text selection highlight could remain between lines.</li>
-	<li>Fix an issue where the theme customization was not applied immediately.</li>
-	<li>Fix an issue where the hanging-indent was not updated in specific cases.</li>
+	<li>Solucionado un problema por el que las tablas de configuración de Key Binding estaban vacías en macOS 10.13 High Sierra.</li>
+	<li>Soluciona un problema por el que el resaltado de la línea actual era ocasionalmente demasiado amplio cuando la altura de la línea es 1.0.</li>
+	<li>Soluciona un problema en el que el resaltado de selección de texto podía permanecer entre líneas.</li>
+	<li>Soluciona un problema por el que la personalización del tema no se aplicaba inmediatamente.</li>
+	<li>Soluciona un problema en el que la sangría colgante no se actualizaba en casos específicos.</li>
 </ul>
 </section>
 </article>
@@ -3878,7 +3878,7 @@
 <article>
 <header>
 	<h1>CotEditor 3.2.1</h1>
-	<p>Lanzamiento: <time>2017-08-26</time></p>
+	<p>Lanzamiento: <time>26/08/2017</time></p>
 </header>
 
 
@@ -3886,14 +3886,14 @@
 <h2>Mejoras</h2>
 
 <ul>
-	<li>Adjust character inspector position for vertical tab.</li>
-	<li>Update <code>cot</code> command-line tool:
+	<li>Ajuste la posición del inspector de caracteres para la pestaña vertical.</li>
+	<li>Actualización de la herramienta en línea de comandos <code>cot</code>:
 	<ul>
-		<li>Avoid creating an extra blank document if <code>cot</code> command creates a new window.</li>
-		<li>Fix an issue where launching the application with <code>--background</code> option didn’t make CotEditor visible.</li>
+		<li>Evite crear un documento en blanco adicional si el comando <code>cot</code> crea una nueva ventana.</li>
+		<li>Soluciona un problema por el que se lanza la aplicación con la opción <code>--background</code> no hacia visible CotEditor.</li>
 	</ul></li>
-	<li>Adjust line height calculation.</li>
-	<li><span class="label">versión no-AppStore</span>: Update Sparkle framework to version 1.18.1.</li>
+	<li>Ajustar el cálculo de la altura de la línea.</li>
+	<li><span class="label">versión no-AppStore</span>: Actualizar el framework Sparkle to version 1.18.1.</li>
 </ul>
 </section>
 
@@ -3902,11 +3902,11 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix an issue where the File Drop settings couldn’t be saved.</li>
-	<li>Fix an issue where the regular expression didn’t handle <code>\v</code> meta-character correctly.</li>
-	<li>Fix an issue where the selection of encoding menu in toolbar didn’t restore to the previous one when encoding reinterpretation was failed.</li>
-	<li>Address an issue where the application could crash on document saving or text replacement.</li>
-	<li><span class="label">AppStore ver.</span>: Fix an issue where acknowledgement window was empty.</li>
+	<li>Soluciona un problema por el que no se podía guardar la configuración de File Drop.</li>
+	<li>Soluciona un problema en el que la expresión regular no se manejaba el metacarácter <code>\v</code> correctamente.</li>
+	<li>Se ha corregido un problema por el que la selección del menú de codificación en la barra de herramientas no se restauraba al anterior cuando fallaba la reinterpretación de la codificación.</li>
+	<li>Soluciona un problema por el que la aplicación podría bloquearse al guardar documentos o reemplazar el texto.</li>
+	<li><span class="label">version AppStore</span>: Solucionar un problema en el que la ventana de acuse de recibo estaba vacía.</li>
 </ul>
 </section>
 </article>
@@ -3916,7 +3916,7 @@
 <article>
 <header>
 	<h1>CotEditor 3.2.0</h1>
-	<p>Lanzamiento: <time>2017-07-15</time></p>
+	<p>Lanzamiento: <time>15/07/2017</time></p>
 </header>
 
 
@@ -3924,17 +3924,17 @@
 <h2>Nuevas características</h2>
 
 <ul>
-	<li>Improve File Drop feature:
+	<li>Mejorar la función de entregar archivos:
 	<ul>
-		<li>Now, you can add a file drop setting only for a specific syntax style.</li>
-		<li>Add description field to the setting table.</li>
-		<li>Draw capsule for variables in the insertion format setting field.</li>
-		<li>Update the default file drop settings.</li>
+		<li>Ahora, puedes añadir una configuración de entregar archivos solo para un estilo de sintaxis específico.</li>
+		<li>Añadir el campo de descripción a la tabla de ajuste.</li>
+		<li>Dibujar cápsula para variables en el campo de configuración del formato de inserción.</li>
+		<li>Actualizar la configuración predeterminada para la entrega del archivo.</li>
 	</ul></li>
-	<li>Now, key binding snippets can set cursor position.</li>
-	<li>Add “Surround Selection With” actions to “Text” menu.</li>
-	<li>Add a new AppleScript/JXA command <code>write to console</code> so that users can insert own message to the CotEditor’s console.</li>
-	<li>Add syntax style for “Fortran”.</li>
+	<li>Ahora, los atajos de teclado de fragmentos pueden establecer la posición del cursor.</li>
+	<li>Añade las acciones "Rodear selección con" al menú "Texto".</li>
+	<li>Añadir un nuevo comando AppleScript/JXA <code>write to console</code> para que los usuarios puedan insertar su propio mensaje en la consola de CotEditor.</li>
+	<li>Añadir estilo de sintaxis para "Fortran".</li>
 </ul>
 
 </section>
@@ -3944,24 +3944,24 @@
 <h2>Mejoras</h2>
 
 <ul>
-	<li>Change syntax style detection behavior to set to “None” style if no appropriate style can be found on file opening.</li>
-	<li>Significantly improve the performance of “Replace All” with a large document.</li>
-	<li>Avoid hiding console panel when CotEditor becomes not the frontmost application.</li>
-	<li>Reduce highlight parsing time with large size document.</li>
-	<li>Improve performance of closing large size document.</li>
-	<li>Improve drawing performance of a large size document with a non-opaque background (Not enough good as an opaque one but still better than before).</li>
-	<li>Add hidden “Reload All Themes/Styles” menu item to theme/syntax style action menus in Preferences (visible with <code>Option</code> key).</li>
-	<li>Enable changing text size with a single stroke by pressing and holding Touch Bar’s Text Size button.</li>
-	<li>Improve invisible character drawing on a non-opaque view.</li>
-	<li>Improve auto-brackets/quotes insertion behavior with multiple selections.</li>
-	<li>Improve the setting file naming rule for when the name overlaps with an existing setting.</li>
-	<li>Improve condition to insert a closing quote automatically.</li>
-	<li>Improve the encoding declaration detection.</li>
-	<li>Update “Ruby” syntax style to fix commands highlight.</li>
-	<li>Update “MATLAB” syntax style to fix strings highlight.</li>
-	<li>Remove less useful “Inline script menu items into contextual menu” option.</li>
-	<li>Update German localization (Thanks to J-rg!).</li>
-	<li>And some minor improvements and fixes.</li>
+	<li>Cambiar el comportamiento de detección de estilo de sintaxis para establecer en estilo “Ninguna” si no se puede encontrar un estilo apropiado en la apertura del archivo.</li>
+	<li>Mejorar significativamente el rendimiento de "Reemplazar todo" con un documento grande.</li>
+	<li>Evite ocultar el panel de la consola cuando CotEditor no se convierta en la aplicación principal.</li>
+	<li>Reduzca el tiempo de análisis de resaltado con un documento de gran tamaño.</li>
+	<li>Mejorar el rendimiento del cierre de documentos de gran tamaño.</li>
+	<li>Mejorar el rendimiento de dibujo de un documento de gran tamaño con un fondo no opaco (no lo suficientemente bueno como uno opaco, pero aún mejor que antes).</li>
+	<li>Agregue un elemento de menú oculto "Recargar todos los temas/estilos" a los menús de acción de tema/estilo de sintaxis en Preferencias (visible con la tecla <code>Alt</code>).</li>
+	<li>Habilite el cambio de tamaño del texto con un solo trazo manteniendo pulsado el botón Tamaño de texto de la Touch Bar.</li>
+	<li>Mejorar el dibujo de personajes invisibles en una vista no opaca.</li>
+	<li>Mejorar el comportamiento de inserción de paréntesos/comillas automáticas con múltiples selecciones.</li>
+	<li>Mejorar la regla de nomenclatura del archivo de configuración para cuando el nombre se superponga con una configuración existente.</li>
+	<li>Mejorar la condición para insertar un presupuesto de cierre automáticamente.</li>
+	<li>Mejorar la detección de la declaración de codificación.</li>
+	<li>Actualizar el estilo de sintaxis "Ruby" para corregir el resaltado de comandos.</li>
+	<li>Actualizar el estilo de sintaxis "MATLAB" para corregir el resaltado de las cadenas.</li>
+	<li>Eliminar la opción menos útil "Elementos del menú de secuencias de comandos en línea en el menú contextual".</li>
+	<li>Actualizar la traducción alemana (¡Gracias a J-rg!).</li>
+	<li>Y algunas mejoras y correcciones menores.</li>
 </ul>
 </section>
 
@@ -3970,16 +3970,16 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix an issue where the application could hang up when lots of tabbed windows are about open.</li>
-	<li>Fix an issue where the selections after “Replace All” in selection shifted one character.</li>
-	<li>Fix an issue where the document syntax style could be back to the default if the current style was set manually and the document was modified by another process.</li>
-	<li>Fix an issue where the status bar stopped updating after toggling the inspector sidebar.</li>
-	<li>Fix an issue where the “Cancel” button in the dialog shown when changing the Auto Save setting in General pane didn’t revert the actual setting state.</li>
-	<li>Fix an issue where author of a theme was not shown in the Appearance pane.</li>
-	<li>Fix an issue where width and height in the window size setting window were swapped.</li>
-	<li>Fix an issue where current line highlight occasionally blinked unwontedly.</li>
-	<li>Fix a possible crash on highlighting matching brace.</li>
-	<li>Fix few memory leaks.</li>
+	<li>Soluciona un problema por el que la aplicación podía colgar cuando muchas ventanas con pestañas están casi abiertas.</li>
+	<li>Se ha corregido un problema por el que las selecciones después de "Reemplazar todo" en la selección cambiaban un carácter.</li>
+	<li>Se ha corregido un problema por el que el estilo de sintaxis del documento podía volver al valor predeterminado si el estilo actual se estableceba manualmente y el documento se modificaba con otro proceso.</li>
+	<li>Soluciona un problema por el que la barra de estado dejaba de actualizarse después de cambiar la barra lateral del inspector.</li>
+	<li>Se ha corregido un problema por el que el botón "Cancelar" en el cuadro de diálogo que se muestra al cambiar la configuración de guardado automático en el panel General no revirtió el estado de configuración real.</li>
+	<li>Soluciona un problema por el que el autor de un tema no se mostraba en el panel Aspecto.</li>
+	<li>Se ha corregido un problema por el que se intercambiaba el ancho y el alto en la ventana de configuración del tamaño de la ventana.</li>
+	<li>Soluciona un problema en el que el resaltado de la línea actual parpadea de vez en cuando de forma insósnea.</li>
+	<li>Solucionar un posible bloqueo al resaltar el corsé correspondiente.</li>
+	<li>Solucionar algunas fugas de memoria.</li>
 </ul>
 </section>
 </article>
@@ -3989,7 +3989,7 @@
 <article>
 <header>
 	<h1>CotEditor 3.1.8</h1>
-	<p>Lanzamiento: <time>2017-03-15</time></p>
+	<p>Lanzamiento: <time>15/03/2017</time></p>
 </header>
 
 
@@ -3997,8 +3997,8 @@
 <h2>Mejoras</h2>
 
 <ul>
-	<li>Add “.swift” extension to file types treaded as CotEditor script.</li>
-	<li><span class="label">versión no-AppStore</span>: Update Sparkle framework to version 1.17.0.</li>
+	<li>Añade la extensión ".swift" a los tipos de archivo tratados como script CotEditor.</li>
+	<li><span class="label">versión no-AppStore</span>: Actualizar el framework Sparkle to version 1.17.0.</li>
 </ul>
 </section>
 
@@ -4007,10 +4007,10 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Update <code>cot</code> command-line tool:
+	<li>Actualizar la herramienta en línea de comandos <code>cot</code>:
 	<ul>
-		<li>Fix an issue where files cannot be opened if the default Python on macOS is version 3.x.</li>
-		<li>Fix a possible hang under specific environments.</li>
+		<li>Soluciona un problema por el que los archivos no se pueden abrir si el Python predeterminado en macOS es la versión 3.x.</li>
+		<li>Arreglar un posible bloqueo en entornos específicos.</li>
 	</ul></li>
 </ul>
 </section>
@@ -4021,7 +4021,7 @@
 <article>
 <header>
 	<h1>CotEditor 3.1.7</h1>
-	<p>Lanzamiento: <time>2017-03-03</time></p>
+	<p>Lanzamiento: <time>03/03/2017</time></p>
 </header>
 
 
@@ -4029,7 +4029,7 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix an issue on MacBook Pro with Touch Bar where the application crashed immediately after launch.</li>
+	<li>Solucionar un problema en el MacBook Pro con Touch Bar en el que la aplicación se bloqueaba inmediatamente después del lanzamiento.</li>
 </ul>
 </section>
 </article>
@@ -4039,7 +4039,7 @@
 <article>
 <header>
 	<h1>CotEditor 3.1.6</h1>
-	<p>Lanzamiento: <time>2017-03-02</time></p>
+	<p>Lanzamiento: <time>02/03/2017</time></p>
 </header>
 
 
@@ -4047,8 +4047,8 @@
 <h2>Mejoras</h2>
 
 <ul>
-	<li>Update Python syntax style for Python 3.6.</li>
-	<li>Improve line number drawing.</li>
+	<li>Actualizar el estilo de sintaxis de Python para Python 3.6.</li>
+	<li>Mejorar el dibujo del número de línea.</li>
 </ul>
 </section>
 
@@ -4057,11 +4057,11 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix an issue on OS X 10.11 where the application could crash on saving a document that contains incompatible characters.</li>
-	<li>Fix an issue on OS X 10.11 where “No incompatible characters were found.” message in the incompatible characters pane didn’t hide even when incompatible characters exist.</li>
-	<li>Fix an issue where editor view didn’t scroll by dragging on the line number view when the view is zoomed out.</li>
-	<li>Fix an issue where a large amount of scrolling down didn’t jump to the end of the target.</li>
-	<li>Fix an issue with syntax style editor where a newly added row wasn’t focused automatically.</li>
+	<li>Soluciona un problema en OS X 10.11 por el que la aplicación podía bloquearse al guardar un documento que contenía caracteres incompatibles.</li>
+	<li>Soluciona un problema en OS X 10.11 por el que el mensaje "No se encontraron caracteres incompatibles" en el panel de caracteres incompatibles no se ocultaba incluso cuando existían caracteres incompatibles.</li>
+	<li>Soluciona un problema en el que la vista del editor no se desplazaba arrastrando la vista del número de línea cuando la vista se aleja.</li>
+	<li>Soluciona un problema por el que una gran cantidad de desplazamiento hacia abajo no saltaba hasta el final del objetivo.</li>
+	<li>Solucionar un problema con el editor de estilo de sintaxis en el que una fila recién añadida no se enfocaba automáticamente.</li>
 </ul>
 </section>
 </article>
@@ -4089,7 +4089,7 @@
 <article>
 <header>
 	<h1>CotEditor 3.1.4</h1>
-	<p>Lanzamiento: <time>2017-02-20</time></p>
+	<p>Lanzamiento: <time>20/02/2017</time></p>
 </header>
 
 
@@ -4097,9 +4097,9 @@
 <h2>Nuevas características</h2>
 
 <ul>
-	<li>Update <code>cot</code> command-line tool:
+	<li>Actualizar la herramienta de línea de comandos <code>cot</code>:
 	<ul>
-		<li>Enable using wildcard for file path argument.</li>
+		<li>Habilitar el uso de comodines para el argumento de la ruta del archivo.</li>
 	</ul></li>
 </ul>
 </section>
@@ -4109,12 +4109,12 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix an issue where the application crashed by the Highlight command under the condition when the find string is a invalid regular expression pattern even the regular expression is turned off.</li>
-	<li>Fix an issue where the application could crash on El Capitan when a side inspector is about to open.</li>
-	<li>Fix an issue on the text search where the single text search couldn’t find the word intersects with the current selection.</li>
-	<li>Fix an issue where the metadata of a custom theme cannot be edited.</li>
-	<li>Fix an issue where the background of the line number view was drawn with wrong color when entered to the fullscreen mode.</li>
-	<li>Fix an issue on the regular expression Replace All with multiple selections where user cancellation didn’t stop search immediately.</li>
+	<li>Soluciona un problema por el que la aplicación se bloqueaba con el comando Resaltar bajo la condición de que la cadena de búsqueda fuera un patrón de expresión regular no válido, incluso la expresión regular está desactivada.</li>
+	<li>Soluciona un problema por el que la aplicación podía bloquearse en El Capitan cuando un inspector lateral está a punto de abrirse.</li>
+	<li>Soluciona un problema en la búsqueda de texto en el que la búsqueda de un solo texto no podía encontrar la palabra que se cruza con la selección actual.</li>
+	<li>Soluciona un problema por el que los metadatos de un tema personalizado no se pueden editar.</li>
+	<li>Soluciona un problema por el que el fondo de la vista de número de línea se dibujaba con un color incorrecto cuando se introducía en el modo de pantalla completa.</li>
+	<li>Solucionar un problema en la expresión regular Reemplazar todo con múltiples selecciones en las que la cancelación del usuario no detenía la búsqueda inmediatamente.</li>
 </ul>
 </section>
 </article>
@@ -4124,7 +4124,7 @@
 <article>
 <header>
 	<h1>CotEditor 3.1.3</h1>
-	<p>Lanzamiento: <time>2017-01-31</time></p>
+	<p>Lanzamiento: <time>31/01/2017</time></p>
 </header>
 
 
@@ -4132,16 +4132,16 @@
 <h2>Mejoras</h2>
 
 <ul>
-	<li>Optimize script menu updating performance.</li>
-	<li>Change behavior to avoid showing incompatible char list on undoing encoding change.</li>
-	<li>Evaluate also the shebang to specify the syntax style on saving the document newly.</li>
-	<li>Scale up character view in character inspector.</li>
-	<li>Change drawing font for some invisible characters to draw them at a better position.</li>
-	<li>Update “JavaScript” syntax style.</li>
-	<li>Add more description about scripting in the help contents.</li>
-	<li>Deprecate hidden settings for UI update interval.</li>
-	<li>Update build environment to Xcode 8.2.1 (SDK macOS 10.12.2).</li>
-	<li><span class="label">versión no-AppStore</span>: Update Sparkle framework to version 1.16.0.</li>
+	<li>Optimizar el rendimiento de actualización del menú de scripts.</li>
+	<li>Cambiar el comportamiento para evitar mostrar una lista de caracteres incompatible al deshacer el cambio de codificación.</li>
+	<li>Evalúe también el shebang para especificar el estilo de sintaxis al guardar el documento de nuevo.</li>
+	<li>Ampliar la vista de caracteres en el inspector de caracteres.</li>
+	<li>Cambiar la fuente de dibujo de algunos caracteres invisibles para dibujarlos en una mejor posición.</li>
+	<li>Actualizar el estilo de sintaxis "JavaScript".</li>
+	<li>Añade más descripción sobre los scripts en el contenido de la ayudas.</li>
+	<li>Desaprochar la configuración oculta para el intervalo de actualización de la UI (interfaz de usuario).</li>
+	<li>Actualizar el entorno de compilación a Xcode 8.2.1 (SDK macOS 10.12.2).</li>
+	<li><span class="label">versión no-AppStore</span>: Actualizar el framework Sparkle to version 1.16.0.</li>
 </ul>
 </section>
 
@@ -4150,18 +4150,18 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix an issue where the application could crash after lossy encoding change.</li>
-	<li>Fix an issue where the find string was not synchronized with other applications.</li>
-	<li>Fix an issue where the regular expression anchors <code>^</code> and <code>$</code> could match wrongly on the normal “Find Next/Previous” under specific conditions.</li>
-	<li>Fix an issue on AppleScript where a single replacement with the regular expression didn’t refer to the matches</li>
-	<li>Fix an issue where incompatible characters highlight could highlight wrong characters if line endings are CR/LF.</li>
-	<li>Fix an issue where some touch bar icons were drawn wrongly.</li>
-	<li>Fix an issue where the menu item “About Scripting” in Help &gt; “CotEditor Scripting Manual” didn’t work.</li>
-	<li>Fix an issue where the zoomed character in the character inspector was flipped when the popover is detached.</li>
-	<li>Fix an issue where <code>lossy</code> option in <code>convert</code> command by AppleScript scripting was ignored.</li>
-	<li>Fix an issue on the AppleScript scripting where <code>range</code> property of <code>document</code> contents could be wrong if document line endings are not LF. (thanks to Kaito Udagawa!).</li>
-	<li>Fix an issue where the editor opacity couldn’t be set via AppleScript.</li>
-	<li>Fix minor typos.</li>
+	<li>Se ha corregido un problema por el que la aplicación podía bloquearse después de un cambio de codificación con pérdida.</li>
+	<li>Se ha corregido un problema por el que la cadena de búsqueda no se sincronizaba con otras aplicaciones.</li>
+	<li>Solucionar un problema en el que los anclajes de expresión regular <code>^</code> y <code>$</code> podrían coincidir incorrectamente en el "Buscar siguiente/anterior" normal en condiciones específicas.</li>
+	<li>Se ha corregido un problema en AppleScript en el que un solo reemplazo con la expresión regular no hacía referencia a las coincidencias</li>
+	<li>Solucionar un problema por el que resaltar caracteres incompatibles podría resaltar caracteres incorrectos si los finales de línea son CR/LF.</li>
+	<li>Soluciona un problema por el que algunos iconos de la barra táctil se dibujaban incorrectamente.</li>
+	<li>Soluciona un problema por el que el elemento de menú "Acerca de Scripting" en la Ayuda > "CotEditor Scripting Manual" no funcionaba.</li>
+	<li>Soluciona un problema por el que el carácter ampliado en el inspector de caracteres se volteaba cuando se separaba la ventana emergente.</li>
+	<li>Soluciona un problema en el que la opción <code>lossy</code> en el comando <code>convert</code> de AppleScript scripting se ignoraba.</li>
+	<li>Soluciona un problema en las secuencias de comandos de AppleScript en el que la propiedad <code>range</code> de <code>document</code> contents podría estar mal si los finales de línea del documento no son LF. (¡Gracias a Kaito Udagawa!).</li>
+	<li>Soluciona un problema por el que la opacidad del editor no se podía establecer a través de AppleScript.</li>
+	<li>Corregir errores tipográficos menores.</li>
 </ul>
 </section>
 </article>
@@ -4171,7 +4171,7 @@
 <article>
 <header>
 	<h1>CotEditor 3.1.2</h1>
-	<p>Lanzamiento: <time>2016-12-10</time></p>
+	<p>Lanzamiento: <time>10/12/2016</time></p>
 </header>
 
 
@@ -4179,12 +4179,12 @@
 <h2>Nuevas características</h2>
 
 <ul>
-	<li>Add Scripting hook feature for document opening/saving (thanks to Kaito Udagawa!):
+	<li>Añade la función de gancho de secuencias de comandos para abrir/guardar documentos (¡gracias a Kaito Udagawa!):
 	<ul>
-		<li>See <a href="about_script_execution_model.html">Specifying the execution model of CotEditor scripts</a> from the Help menu &gt; CotEditor Scripting Manual &gt; <a href="script_overview.html">About Scripting</a> for details.</li>
+		<li>See <a href="about_script_execution_model.html">Especificación del modelo de ejecución de los scripts de CotEditor</a> desde el menú Ayuda &gt; Guia de scripts en CotEditor &gt; <a href="script_overview.html">Acerca de hacer scripts</a> para más detalles.</li>
 		</ul></li>
-	<li>Support AppleScript’s script bundle (.scptd) for scripting (thanks to Kaito Udagawa!).</li>
-	<li>Add a new AppleScript property <code>expands tab</code> for document object (thanks to Kaito Udagawa!).</li>
+	<li>Admite el paquete de scripts de AppleScript (.scptd) para scripts (¡gracias a Kaito Udagawa!).</li>
+	<li>Añadir una nueva propiedad de AppleScript <code>expands tab</code> Para el objeto del documento (¡gracias a Kaito Udagawa!).</li>
 </ul>
 </section>
 
@@ -4193,15 +4193,15 @@
 <h2>Mejoras</h2>
 
 <ul>
-	<li>Change the outline navigation arrows direction in the navigation bar if text orientation is vertical.</li>
-	<li>Add tooltips to the line endings menu in the toolbar.</li>
-	<li>Improve calculation of the vertical position of line numbers.</li>
-	<li>Tweak the behavior of the incompatible character table and the find result table to highlight the correspondent range in the editor every time when clicking a row in the table.</li>
-	<li>Update default settings about the visibility of invisible characters.
+	<li>Cambié la dirección de las flechas de navegación del contorno en la barra de navegación si la orientación del texto es vertical.</li>
+	<li>Añade información sobre herramientas al menú de finales de línea en la barra de herramientas.</li>
+	<li>Mejorar el cálculo de la posición vertical de los números de línea.</li>
+	<li>Ajuste el comportamiento de la tabla de caracteres incompatible y la tabla de resultados de búsqueda para resaltar el rango de corresponsales en el editor cada vez que haga clic en una fila de la tabla.</li>
+	<li>Actualizar la configuración predeterminada sobre la visibilidad de los caracteres invisibles.
 	<ul>
-		<li>From this change, the invisible character settings can be reset. If so, please reset from the “Appearance” pane in the preferences.</li>
+		<li>A partir de este cambio, se puede restablecer la configuración de caracteres invisibles. Si es así, restablezca desde el panel "Aspecto" en los Ajustes...</li>
 		</ul></li>
-	<li><span class="label">versión no-AppStore</span>: Update Sparkle framework to version 1.15.0.</li>
+	<li><span class="label">versión no-AppStore</span>: Actualizar el framework Sparkle to version 1.15.0.</li>
 </ul>
 </section>
 
@@ -4210,16 +4210,16 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix a possible crash on changing document’s encoding lossy.</li>
-	<li>Fix an issue where application crashed if syntax editor panel becomes too small.</li>
-	<li>Fix an issue where the print icon in the toolbar didn’t work.</li>
-	<li>Fix an issue where editor views didn’t update after changing the body font or the visibility of the other invisible characters.</li>
-	<li>Fix an issue where no error message raised when a text encoding reinterpretation failed.</li>
-	<li>Fix an issue where the current line highlight also highlights the last line when the cursor is in the second last line.</li>
-	<li>Fix an issue where the title of the menu item toggling invisible character visibility didn’t reflect the frontmost window state.</li>
-	<li>Fix an issue where the text size slider in the Touch Bar didn’t update if text size was updated excepting via Touch Bar while the slider is shown.</li>
-	<li>Address an issue with drawing area of zoomed character view in character inspector popover.</li>
-	<li>Fix a typo in the English menu</li>
+	<li>Corregir un posible bloqueo al cambiar la pérdida de codificación del documento.</li>
+	<li>Soluciona un problema por el que la aplicación se bloqueaba si el panel del editor de sintaxis se vuelve demasiado pequeño.</li>
+	<li>Se ha corregido un problema en el que el icono de impresión en la barra de herramientas no funcionaba.</li>
+	<li>Soluciona un problema en el que las vistas del editor no se actualizaban después de cambiar la fuente del cuerpo o la visibilidad de los otros caracteres invisibles.</li>
+	<li>Solucionar un problema por el que no se generaba ningún mensaje de error cuando fallaba una reinterpretación de codificación de texto.</li>
+	<li>Soluciona un problema en el que el resaltado de la línea actual también resalta la última línea cuando el cursor está en la penúltima línea.</li>
+	<li>Se ha corregido un problema por el que el título del elemento de menú que alternaba la visibilidad invisible de los caracteres no reflejaba el estado de la ventana frontal.</li>
+	<li>Soluciona un problema por el que el control deslizante de tamaño de texto en la Touch Bar no se actualizaba si el tamaño del texto se actualizaba, excepto a través de la Touch Bar mientras se muestra el control deslizante.</li>
+	<li>Solucionar un problema con el área de dibujo de la vista de caracteres con zoom en la ventana emergente del inspector de caracteres.</li>
+	<li>Corrige un error tipográfico en el menú en inglés</li>
 </ul>
 </section>
 
@@ -4227,7 +4227,7 @@
 <h2>Misc.</h2>
 
 <ul>
-	<li>You can now find CotEditor scripts on <a href="https://github.com/coteditor/CotEditor/wiki/CotEditor-Scripts" rel="external">GitHub Wiki</a>.</li>
+	<li>Ahora puedes encontrar los scripts de CotEditor en <a href="https://github.com/coteditor/CotEditor/wiki/CotEditor-Scripts" rel="external">GitHub Wiki</a>.</li>
 </ul>
 </section>
 </article>
@@ -4237,7 +4237,7 @@
 <article>
 <header>
 	<h1>CotEditor 3.1.1</h1>
-	<p>Lanzamiento: <time>2016-11-18</time></p>
+	<p>Lanzamiento: <time>18/11/2016</time></p>
 </header>
 
 
@@ -4245,7 +4245,7 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix a critical issue on CotEditor 3.1.0 where documents can’t be opened under some specific environments.</li>
+	<li>Solucionar un problema crítico en CotEditor 3.1.0 en el que los documentos no se pueden abrir en algunos entornos específicos.</li>
 </ul>
 </section>
 </article>
@@ -4255,7 +4255,7 @@
 <article>
 <header>
 	<h1>CotEditor 3.1.0</h1>
-	<p>Lanzamiento: <time>2016-11-17</time></p>
+	<p>Lanzamiento: <time>17/11/2016</time></p>
 </header>
 
 
@@ -4263,11 +4263,11 @@
 <h2>Nuevas características</h2>
 
 <ul>
-	<li>Improve window tabbing on macOS Sierra:<ul>
-		<li>Add an option to set window tabbing behavior (in Window pane).</li>
-		<li>Open multiple files in a single window with tabs when the window tabbing behavior is set as “Automatically” (or “In Full Screen Only” in system-wide).</li>
+	<li>Mejorar la tabulación de ventanas en macOS Sierra:<ul>
+		<li>Añadir una opción para establecer el comportamiento de tabulación de ventanas (en el panel Ventana).</li>
+		<li>Abrir varios archivos en una sola ventana con pestañas cuando el comportamiento de tabulación de la ventana se establece como "Automáticamente" (o "Solo en pantalla completa" en todo el sistema).</li>
 	</ul></li>
-	<li>Support Touch Bar on the new MacBook Pro.</li>
+	<li>Compatible con Touch Bar en el nuevo MacBook Pro.</li>
 </ul>
 </section>
 
@@ -4276,8 +4276,8 @@
 <h2>Mejoras</h2>
 
 <ul>
-	<li>Display the number of replaced in the replacement string field after Replace All in the find panel.</li>
-	<li>Display the IANA charset name conflict alert as a document-modal sheet.</li>
+	<li>Mostrar el número de reemplazados en el campo de cadena de reemplazo después de Reemplazar todo en el panel de búsqueda.</li>
+	<li>Muestra la alerta de conflicto de nombres de conjuntos de caracteres de la IANA como una hoja de documento-modal.</li>
 </ul>
 </section>
 
@@ -4286,13 +4286,13 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix an issue where the application could crash on a large amount of text change.</li>
-	<li>Fix an issue where the application crashed when try to save a document with Non-lossy ASCII encoding.</li>
-	<li>Fix an issue where text fields in find panel cut off the end of long lines.</li>
-	<li>Fix an issue where the alert about the conflict with IANA charset name was not displayed.</li>
-	<li>Fix an issue where some kind of files could not be opened via Service.</li>
-	<li>Fix syntax highlight of quoted text of which quotation delimiter consists of multiple characters.</li>
-	<li>Improve general stability.</li>
+	<li>Solucionar un problema por el que la aplicación podía bloquearse en una gran cantidad de cambios de texto.</li>
+	<li>Soluciona un problema por el que la aplicación se bloqueaba al intentar guardar un documento con codificación ASCII no desordenada.</li>
+	<li>Soluciona un problema en el que los campos de texto en el panel de búsqueda cortaban el final de las líneas largas.</li>
+	<li>Se ha corregido un problema por el que no se mostraba la alerta sobre el conflicto con el nombre del conjunto de caracteres IANA.</li>
+	<li>Soluciona un problema por el que algún tipo de archivo no se podía abrir a través del servicio.</li>
+	<li>Corregir el resaltado de sintaxis del texto entre comillas del que el delimitador de citas consta de varios caracteres.</li>
+	<li>Mejorar la estabilidad general.</li>
 </ul>
 </section>
 </article>
@@ -4302,7 +4302,7 @@
 <article>
 <header>
 	<h1>CotEditor 3.0.5</h1>
-	<p>Lanzamiento: <time>2016-11-15</time></p>
+	<p>Lanzamiento: <time>15/11/2016</time></p>
 </header>
 
 
@@ -4310,10 +4310,10 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix an issue where scripts didn’t put results on the document/console.</li>
-	<li>Fix an issue where the editor area was occasionally stacked under the window toolbar on macOS 10.12.</li>
-	<li>Fix an issue where MarsEdit via the App Store didn’t update its contents after closing the document in CotEditor.</li>
-	<li>Improve general stability.</li>
+	<li>Solucionar un problema en el que los scripts no ponieran resultados en el documento/consola.</li>
+	<li>Solucionar un problema por el que el área del editor se apilaba ocasionalmente debajo de la barra de herramientas de la ventana en macOS 10.12.</li>
+	<li>Se ha corregido un problema por el que MarsEdit a través de la App Store no actualizaba su contenido después de cerrar el documento en CotEditor.</li>
+	<li>Mejorar la estabilidad general.</li>
 </ul>
 </section>
 </article>
@@ -4323,7 +4323,7 @@
 <article>
 <header>
 	<h1>CotEditor 3.0.4</h1>
-	<p>Lanzamiento: <time>2016-10-31</time></p>
+	<p>Lanzamiento: <time>31/10/2016</time></p>
 </header>
 
 
@@ -4331,7 +4331,7 @@
 <h2>Mejoras</h2>
 
 <ul>
-	<li>Update build environment to Xcode 8.1 (SDK macOS 10.12.1).</li>
+	<li>Actualice el entorno de compilación a Xcode 8.1 (SDK macOS 10.12.1).</li>
 </ul>
 </section>
 
@@ -4340,10 +4340,10 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix an issue where scripts didn’t put results on the document/console.</li>
-	<li>Fix an issue where find all results didn’t open anymore under the specific conditions.</li>
-	<li>Fix an issue where MarsEdit didn’t update its contents after closing the document in CotEditor.</li>
-	<li>Improve general stability.</li>
+	<li>Solucionar un problema en el que los scripts no ponieran resultados en el documento/consola.</li>
+	<li>Soluciona un problema por el que todos los resultados ya no se abríen bajo las condiciones específicas.</li>
+	<li>Se ha corregido un problema por el que MarsEdit no actualizaba su contenido después de cerrar el documento en CotEditor.</li>
+	<li>Mejorar la estabilidad general.</li>
 </ul>
 </section>
 </article>
@@ -4353,7 +4353,7 @@
 <article>
 <header>
 	<h1>CotEditor 3.0.3</h1>
-	<p>Lanzamiento: <time>2016-10-25</time></p>
+	<p>Lanzamiento: <time>25/10/2016</time></p>
 </header>
 
 
@@ -4361,11 +4361,11 @@
 <h2>Nuevas características</h2>
 
 <ul>
-	<li>Add the following encodings to the encoding list (To activate new encodings, restore default once in Preferences &gt; Format &gt; Edit List.):
+	<li>Agregue las siguientes codificaciones a la lista de codificaciones (para activar nuevas codificaciones, restaure el valor predeterminado una vez en Preferencias &gt; Formato &gt; Editar lista.):
 		<ul>
-		<li>Arabic (Windows)</li>
-		<li>Greek (Windows)</li>
-		<li>Hebrew (Windows)</li>
+		<li>Árabe (Windows)</li>
+		<li>Griego (Windows)</li>
+		<li>Hebreo (Windows)</li>
 	</ul></li>
 </ul>
 </section>
@@ -4375,11 +4375,11 @@
 <h2>Mejoras</h2>
 
 <ul>
-	<li>Adjust glyph size calculation.</li>
-	<li>Improve performance of Find All and Replace All.</li>
-	<li>Disable customizing key bindings for window tabbing actions (Because it’s impossible to handle them correctly.)</li>
-	<li>Update “Swift” syntax style to add some missing keywords.</li>
-	<li>Improve error message on script error.</li>
+	<li>Ajustar el cálculo del tamaño del glifo.</li>
+	<li>Mejorar el rendimiento de Buscar todo y reemplazar todo.</li>
+	<li>Desactivar la personalización de las encuadernaciones de teclas para las acciones de tabulación de ventanas (porque es imposible manejarlas correctamente).</li>
+	<li>Actualice el estilo de sintaxis "Swift" para añadir algunas palabras clave que faltan.</li>
+	<li>Mejorar el mensaje de error en el error del script.</li>
 </ul>
 </section>
 
@@ -4388,14 +4388,14 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix an issue where default syntax style didn’t highlight document until the first save.</li>
-	<li>Fix an issue where selection range after some text actions was wrong.</li>
-	<li>Fix an issue where document icons were blurry in non-Retina display.</li>
-	<li>Fix an issue where status bar layout collapsed if status line overflows.</li>
-	<li>Fix an issue where document theme reloaded unnecessarily on the first time Appearances pane display.</li>
-	<li>Fix an issue where the application could crash when script was failed.</li>
-	<li>Fix an issue where scrolling to the end of document with <kbd>⌘</kbd>+<kbd>↓</kbd> shortcut didn’t scroll to the end.</li>
-	<li>Improve general stability.</li>
+	<li>Se ha corregido un problema por el que el estilo de sintaxis predeterminado no resaltaba el documento hasta la primera guardado.</li>
+	<li>Soluciona un problema en el que el rango de selección después de algunas acciones de texto era incorrecto.</li>
+	<li>Solucionar un problema por el que los iconos de los documentos estaban borrosos en la pantalla que no era Retina.</li>
+	<li>Solucionar un problema por el que el diseño de la barra de estado se constuía si la línea de estado se desbordaba.</li>
+	<li>Soluciona un problema por el que el tema del documento se recarga innecesariamente en la primera vez que se mostraban las apariencias.</li>
+	<li>Solucionar un problema por el que la aplicación podía bloquearse cuando el script fallaba.</li>
+	<li>Soluciona un problema en el que se desplaza hasta el final del documento con el atajo de teclado <kbd>⌘</kbd>+<kbd>↓</kbd> no se desplazaba hasta el final.</li>
+	<li>Mejorar la estabilidad general.</li>
 </ul>
 </section>
 </article>
@@ -4405,7 +4405,7 @@
 <article>
 <header>
 	<h1>CotEditor 3.0.2</h1>
-	<p>Lanzamiento: <time>2016-10-17</time></p>
+	<p>Lanzamiento: <time>17/10/2016</time></p>
 </header>
 
 
@@ -4413,15 +4413,15 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix an issue where the application could rarely freeze after replacing large document.</li>
-	<li>Fix an issue where new syntax style couldn’t be created.</li>
-	<li>Fix an issue where new value of last edited text field in preferences was occasionally discarded.</li>
-	<li>Fix an issue where replacement string was not registered to the replacement history.</li>
-	<li>Fix an issue where horizontal scroll bars in the find panel fields were disappeared.</li>
-	<li>Fix a possible crash on application termination.</li>
-	<li>Fix a possible crash on opening document.</li>
+	<li>Solucionar un problema por el que la aplicación rara vez podía congelarse después de reemplazar un documento grande.</li>
+	<li>Se ha corregido un problema por el que no se podía crear un nuevo estilo de sintaxis.</li>
+	<li>Solucionar un problema por el que el nuevo valor del último campo de texto editado en las preferencias se descartaba ocasionalmente.</li>
+	<li>Solucionar un problema por el que la cadena de reemplazo no se registraba en el historial de reemplazo.</li>
+	<li>Soluciona un problema por el que las barras de desplazamiento horizontales en los campos del panel de búsqueda desaparecieron.</li>
+	<li>Corregir un posible bloqueo en la terminación de la aplicación.</li>
+	<li>Corregir un posible bloqueo al abrir el documento.</li>
 	<li>Fix error message of syntax style validation.</li>
-	<li>Improve general stability.</li>
+	<li>Mejorar la estabilidad general.</li>
 </ul>
 </section>
 </article>
@@ -4431,7 +4431,7 @@
 <article>
 <header>
 	<h1>CotEditor 3.0.1</h1>
-	<p>Lanzamiento: <time>2016-10-11</time></p>
+	<p>Lanzamiento: <time>11/10/2016</time></p>
 </header>
 
 
@@ -4439,12 +4439,12 @@
 <h2>Mejoras</h2>
 
 <ul>
-	<li>Add “Complete” action to “Edit” menu.
+	<li>Añadir acción “Completar” al menú “Edición”.
 	<ul>
-		<li>On macOS Sierra, the default shortcut for completion action was changed to <kbd>⌥⎋</kbd>.</li>
+		<li>En macOS Sierra, el atajo de teclado predeterminado para la acción de finalización se cambió a <kbd>⌥⎋</kbd>.</li>
 	</ul></li>
-	<li>Move action items in the menu “Edit” &gt; “Transformations” to “Text” &gt; “Transformations”.</li>
-	<li>Transform word contains the cursor if nothing is selected on transformation or Unicode normalization actions.</li>
+	<li>Mover elementos de acción en el menú “Edición” &gt; “Transformaciones” a “Texto” &gt; “Transformaciones”.</li>
+	<li>La palabra de transformación contiene el cursor si no se selecciona nada en las acciones de transformación o normalización de Unicode.</li>
 </ul>
 </section>
 
@@ -4453,20 +4453,20 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix an issue where the application could crash while editing text on Yosemite.</li>
-	<li>Fix an issue where the application could crash on split editors under specific conditions.</li>
-	<li>Fix an issue where the application could crash on running an AppleScript/JXA.</li>
-	<li>Fix an issue where sidebar couldn’t be opened on Yosemite.</li>
-	<li>Fix an issue where text completion list didn’t occasionally display.</li>
-	<li>Fix an issue where syntax highlighting progress indicator was always full.</li>
-	<li>Fix an issue where key bindings of recent documents were customizable.</li>
-	<li>Fix an issue where the application crashed when a folder is dropped to the application icon.</li>
-	<li>Fix an issue where find panel position was not saved.</li>
-	<li>Fix an issue where no beep sound was made when there was no match on find/replace.</li>
-	<li>Fix an issue where the application could freeze after replace large document.</li>
-	<li>Fix an issue where editable area didn’t spread to the full width after changing text orientation when content is empty.</li>
-	<li>Fix an issue where matched brackets in unfocused split editors were highlighted without the need while editing one of split editors.</li>
-	<li>Improve general stability.</li>
+	<li>Soluciona un problema por el que la aplicación podía bloquearse al editar texto en Yosemite.</li>
+	<li>Solucionar un problema por el que la aplicación podía bloquearse en editores divididos en condiciones específicas.</li>
+	<li>Solucionar un problema por el que la aplicación podía bloquearse al ejecutar un AppleScript/JXA.</li>
+	<li>Solucionado un problema por el que no se podía abrir la barra lateral en Yosemite.</li>
+	<li>Soluciona un problema en el que la lista de finalización de texto no se mostraba ocasionalmente.</li>
+	<li>Soluciona un problema en el que el indicador de progreso de resaltado de sintaxis siempre estaba lleno.</li>
+	<li>Solucionar un problema por el que las encuadernaciones de teclas de documentos recientes eran personalizables.</li>
+	<li>Solucionar un problema por el que la aplicación se bloqueaba cuando se dejaba caer una carpeta en el icono de la aplicación.</li>
+	<li>Solucionar un problema por el que no se guardaba la posición del panel de búsqueda.</li>
+	<li>Se ha corregido un problema en el que no se hacía ningún pitido cuando no había coincidencia en la búsqueda/reemplazo.</li>
+	<li>Solucionar un problema por el que la aplicación podía congelarse después de reemplazar un documento grande.</li>
+	<li>Soluciona un problema por el que el área editable no se extendía a todo el ancho después de cambiar la orientación del texto cuando el contenido estaba vacío.</li>
+	<li>Soluciona un problema en el que se resaltaban los corchetes coincidentes en editores divididos desenfocados sin necesidad de editar uno de los editores divididos.</li>
+	<li>Mejorar la estabilidad general.</li>
 </ul>
 </section>
 </article>
@@ -4476,7 +4476,7 @@
 <article>
 <header>
 	<h1>CotEditor 3.0.0</h1>
-	<p>Lanzamiento: <time>2016-10-04</time></p>
+	<p>Lanzamiento: <time>04/10/2016</time></p>
 </header>
 
 
@@ -4484,14 +4484,14 @@
 <h2>Nuevas características</h2>
 
 <ul>
-	<li>Support window tabbing on macOS Sierra:
+	<li>Soporte de tabulación de la ventana en macOS Sierra:
 	<ul>
-		<li>Add “New Tab” action to File menu.</li>
-		<li>Sync sidebar visibility among tabs in a window.</li>
+		<li>Añadir la acción "Nueva pestaña" al menú Archivo.</li>
+		<li>Sincronizar la visibilidad de la barra lateral entre las pestañas de una ventana.</li>
 	</ul></li>
-	<li>Display recent used syntax styles at the top of the toolbar syntax style popup list.</li>
-	<li>Add individual “Block Comment”, “Inline Comment” and “Uncomment” actions in Text menu unlike the “Comment Selection” action changes its behavior intelligently.</li>
-	<li>Add Italian localization (thanks to Agostino Maiello!).</li>
+	<li>Mostrar los estilos de sintaxis utilizados recientemente en la parte superior de la lista emergente de estilos de sintaxis de la barra de herramientas.</li>
+	<li>Añadir las acciones individuales "Comentario de bloque", "Comentario de línea" y "Deshacer comentario" en el menú Texto, a diferencia de la acción "Selección de comentarios", cambia su comportamiento de forma inteligente.</li>
+	<li>Añade la traducción italiana (¡gracias a Agostino Maiello!).</li>
 </ul>
 </section>
 
@@ -4500,69 +4500,69 @@
 <h2>Mejoras</h2>
 
 <ul>
-	<li>Support <strong>macOS 10.12 Sierra</strong> and drop support for <strong>OS X 10.8 Mountain Lion</strong> and <strong>10.9 Mavericks</strong>.</li>
-	<li>Migrate all source code from Objective-C to Swift.</li>
-	<li>Update application icon.</li>
-	<li>Update find panel search algorithm:
+	<li>Soporta <strong>macOS 10.12 Sierra</strong> y dejar el soporte para <strong>OS X 10.8 Mountain Lion</strong> y <strong>10.9 Mavericks</strong>.</li>
+	<li>Migrar todo el código fuente de Objective-C a Swift.</li>
+	<li>Icono de la aplicación actualizado.</li>
+	<li>Actualizar el algoritmo de búsqueda del panel de búsqueda:
 	<ul>
-		<li>Change the regular expression engine from Onigmo to the ICU library.
+		<li>Cambia el motor de expresión regular de Onigmo a la biblioteca de la ICU.
 		<ul>
-			<li>From this, the reference symbol of matches is changed from <code>\1</code> style to <code>$1</code>.</li>
+			<li>A partir de esto, el símbolo de referencia de las coincidencias se cambia del estilo <code>\1</code> a <code>$1</code>.</li>
 		</ul></li>
-		<li>Update line-up of the advanced search options.</li>
+		<li>Actualizar la alineación de las opciones de búsqueda avanzada.</li>
 	</ul></li>
-	<li>Enable Autosave and Versions by default.</li>
-	<li>Inserting single surrogate character is no more valid.</li>
-	<li>Update toolbar.</li>
-	<li>Update preferences icons.</li>
-	<li>Exclude file extension from the initial selection in the document save panel.</li>
-	<li>Update key binding setting format.
+	<li>Habilitar el guardado automático y las versiones de forma predeterminada.</li>
+	<li>Insertar un solo carácter sustituto ya no es válido.</li>
+	<li>Actualizar barra de herramientas.</li>
+	<li>Actualizar iconos de preferencias.</li>
+	<li>Excluir la extensión de archivo de la selección inicial en el panel de guardado de documentos.</li>
+	<li>Actualizar el formato de configuración de los atajos de teclado.
 	<ul>
-		<li>Not compatible with previous key bindings setting. Please customize again in the preferences window.</li>
+		<li>No es compatible con la configuración de los atajos de teclado anteriores. Por favor, personalice de nuevo en la ventana de preferencias.</li>
 	</ul></li>
-	<li>Auto-sync Script menu with script folder.
+	<li>Menú de secuencias de comandos de sincronización automática con la carpeta de secuencias de comandos.
 	<ul>
-		<li>Now, you don’t need anymore to update script menu after script folder modification.</li>
+		<li>Ahora, ya no necesitas actualizar el menú de scripts después de la modificación de la carpeta de scripts.</li>
 	</ul></li>
-	<li>New acknowledgments window.</li>
-	<li>Update “Swift” syntax style to Swift 3.0.</li>
-	<li>Update “Coffee Script” syntax style for the block regular expression.</li>
-	<li>Improve syntax highlighting algorithm with symbols.</li>
-	<li>New “Go To Line” panel.</li>
-	<li>Display “Not Found” in the find string field in the find panel also when “Find All” failed.</li>
-	<li>Remove the following less important text actions:
+	<li>Nueva ventana de agradecimientos.</li>
+	<li>Actualizar el estilo de sintaxis "Swift" a Swift 3.0.</li>
+	<li>Actualizar el estilo de sintaxis "Coffee Script" para la expresión regular del bloque.</li>
+	<li>IAlgoritmo de resaltado de sintaxis con símbolos.</li>
+	<li>Nuevo panel "Ir a la línea".</li>
+	<li>Mostrar "No encontrado" en el campo de cadena de búsqueda en el panel de búsqueda también cuando falla "Buscar todo".</li>
+	<li>Elimine las siguientes acciones de texto menos importantes:
 	<ul>
-		<li>Insert Encoding Name with “charset=”</li>
-		<li>Insert Encoding Name with “encoding=”</li>
+		<li>Inserte el nombre de codificación con “charset=”</li>
+		<li>Inserte el nombre de codificación con “encoding=”</li>
 	</ul></li>
-	<li>Remove the following less important toolbar items:
+	<li>Elimine los siguientes elementos de la barra de herramientas menos importantes:
 	<ul>
-		<li>Show / Hide Navigation Bar</li>
-		<li>Show / Hide Line Numbers</li>
-		<li>Show / Hide Status Bar</li>
+		<li>Mostrar / Ocultar barra de navegación</li>
+		<li>Mostrar / Ocultar números de línea</li>
+		<li>Mostrar / Ocultar barra de estado</li>
 	</ul></li>
-	<li>Remove the feature that changes the line height of current document from the “Format” menu.
+	<li>Elimine la función que cambia la altura de la línea del documento actual del menú "Formato".
 	<ul>
-		<li>From this, <code>line spacing</code> property on AppleScript is also deprecated.</li>
+		<li>Por eso, la propiedad <code>line spacing</code> en AppleScript queda obsoleta.</li>
 	</ul></li>
-	<li>Remove “Not writable” alert which displayed on file opening.</li>
-	<li>Remove “Set as Default” button in the editor opacity panel.</li>
-	<li>Change specification not to treat full-width spaces as indent.</li>
-	<li>Add help buttons to syntax style editor.</li>
-	<li>Make text font, theme and tab width restorable from the last session.</li>
-	<li>Make indent deletion more naturally.</li>
-	<li>Remove byte count display in document inspector.</li>
-	<li>Display also an accurate file size in document inspector.</li>
-	<li>Display dialogs for changing file encoding as a document-modal sheet.</li>
-	<li>Move scripting manual into help contents.</li>
-	<li>Make window size setting window translucent.</li>
-	<li>Avoid expanding status bar into side inspector.</li>
-	<li>Improve line height calculation.</li>
-	<li>Keep visible area after toggling text-wrapping.</li>
-	<li>Improve scrolling with line number view drag.</li>
-	<li>Better syntax highlighting while editing.</li>
-	<li>Enable activate “Show Invisibles” action even if all of the invisible characters were set as not shown when the document was opened.</li>
-	<li>Update build environment to macOS Sierra + Xcode 8 (SDK macOS 10.12).</li>
+	<li>Eliminar la alerta "No se puede escribir" que se muestra al abrir el archivo.</li>
+	<li>Elimine el botón "Establecer como predeterminado" en el panel de opacidad del editor.</li>
+	<li>Cambiar la especificación para no tratar los espacios de ancho completo como sangría.</li>
+	<li>Añadir botones de ayuda al editor de estilos de sintaxis.</li>
+	<li>Haz que el tipo de letra del texto, el tema y el ancho de la pestaña sean restaurables desde la última sesión.</li>
+	<li>Haz que la eliminación sea más natural.</li>
+	<li>Eliminar la visualización del recuento de bytes en el inspector de documentos.</li>
+	<li>Mostrar también un tamaño de archivo preciso en el inspector de documentos.</li>
+	<li>Mostrar cuadros de diálogo para cambiar la codificación de archivos como una hoja de documento-modal.</li>
+	<li>Mover el manual de secuencias de comandos a los contenidos de ayuda.</li>
+	<li>Hacer que la ventana de ajuste del tamaño de la ventana sea translúcida.</li>
+	<li>Evite expandir la barra de estado en el inspector lateral.</li>
+	<li>Mejorar el cálculo de la altura de la línea.</li>
+	<li>Mantenga el área visible después de ajustar las líneas de texto.</li>
+	<li>Mejorar el desplazamiento con el arrastre de la vista del número de línea.</li>
+	<li>Mejor resaltado de sintaxis durante la edición.</li>
+	<li>Habilitar la acción "Mostrar invisibles" incluso si todos los caracteres invisibles se configuraron como no se muestran cuando se abrió el documento.</li>
+	<li>Actualizar el entorno de compilación a macOS Sierra + Xcode 8 (SDK macOS 10.12).</li>
 </ul>
 </section>
 
@@ -4571,10 +4571,10 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix an issue find string is not shared with other applications after quitting CotEditor.</li>
-	<li>Fix an issue where some of script APIs returned always string with LF line endings.</li>
-	<li>Fix an issue where page guide remained after toggling page guide visibility.</li>
-	<li>Address an issue with drawing area of zoomed character view in character inspector popover.</li>
+	<li>Soluciona un problema, la cadena de búsqueda no se comparte con otras aplicaciones después de salir de CotEditor.</li>
+	<li>Se ha corregido un problema por el que algunas de las API de script devolvieron siempre una cadena con finales de línea LF.</li>
+	<li>Soluciona un problema en el que la guía de la página permanecía después de alternar la visibilidad de la guía de la página.</li>
+	<li>Solucionar un problema con el área de dibujo de la vista de caracteres con zoom en la ventana emergente del inspector de caracteres.</li>
 </ul>
 </section>
 </article>
@@ -4584,7 +4584,7 @@
 <article>
 <header>
 	<h1>CotEditor 2.5.7</h1>
-	<p>Lanzamiento: <time>2016-08-22</time></p>
+	<p>Lanzamiento: <time>22/08/2016</time></p>
 </header>
 
 
@@ -4592,12 +4592,12 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix German localization (Thanks to J-rg!).</li>
-	<li>Fix “Markdown” and “Verilog” syntax styles.</li>
-	<li>Fix update range of syntax highlight while editing.</li>
-	<li>Fix key binding setting error message.</li>
-	<li>Fix an issue where syntax validation result view was editable.</li>
-	<li>Address an issue where editor’s drawing area could become wrong after scaling font size by vertical text.</li>
+	<li>Arreglar la traducción alemana (¡Gracias a J-rg!).</li>
+	<li>Corregir los estilos de sintaxis "Markdown" y "Verilog".</li>
+	<li>Corregir el rango de actualización de la resaltado de sintaxis durante la edición.</li>
+	<li>Corregir el mensaje de error de configuración de vinculación de teclas.</li>
+	<li>Se ha corregido un problema por el que la vista de resultados de validación de sintaxis era editable.</li>
+	<li>Solucionar un problema en el que el área de dibujo del editor podría volverse incorrecta después de escalar el tamaño de la fuente por texto vertical.</li>
 </ul>
 </section>
 </article>
@@ -4607,7 +4607,7 @@
 <article>
 <header>
 	<h1>CotEditor 2.5.6</h1>
-	<p>Lanzamiento: <time>2016-06-16</time></p>
+	<p>Lanzamiento: <time>16/06/2016</time></p>
 </header>
 
 
@@ -4615,11 +4615,11 @@
 <h2>Nuevas características</h2>
 
 <ul>
-	<li>Add newly rewritten syntax styles for “C” and “C++”.
+	<li>Añade estilos de sintaxis recién reescritos para "C" y "C++".
 	<ul>
-		<li>From this change, previous “C, C++, Objective-C” syntax style is deleted.</li>
+		<li>De este cambio, se elimina el estilo de sintaxis anterior "C, C++, Objective-C".</li>
 	</ul></li>
-	<li>Add syntax styles for “MATLAB” and “Verilog”.</li>
+	<li>Añadir estilos de sintaxis para "MATLAB" y "Verilog".</li>
 </ul>
 </section>
 
@@ -4628,16 +4628,16 @@
 <h2>Mejoras</h2>
 
 <ul>
-	<li>Update “Markdown” syntax style:
+	<li>Actualizar el estilo de sintaxis "Markdown":
 	<ul>
-		<li>Support strikethrough with <code>~~</code> that is defined in the GitHub flavored Markdown.</li>
-		<li>Support emphasis with triple <code>*</code> and <code>_</code>.</li>
+		<li>Soporta el tachado con <code>~~</code> que se define en el GitHub flavored Markdown.</li>
+		<li>soporta al énfasis con triple <code>*</code> y <code>_</code>.</li>
 	</ul></li>
-	<li>Focus back on the find panel after performing “Find All”, “Replace All” and “Highlight.”</li>
-	<li>Change to use the body text color for line numbers on printing that was previously always black.</li>
-	<li>Improve scroll behavior with arrow keys.</li>
-	<li>Improve compatibility with macOS Sierra beta.</li>
-	<li>And some other trivial improvements.</li>
+	<li>Concéntrate de nuevo en el panel de búsqueda después de realizar "Buscar todo", "Reemplazar todo" y "Resaltar".</li>
+	<li>Cambiar para usar el color del cuerpo del texto para los números de línea en la impresión que antes siempre era negro.</li>
+	<li>Mejorar el comportamiento de desplazamiento con las teclas de flecha.</li>
+	<li>Mejorar la compatibilidad con la versión beta de macOS Sierra.</li>
+	<li>Y algunas otras mejoras triviales.</li>
 </ul>
 </section>
 
@@ -4646,23 +4646,23 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix document counting as followings:
+	<li>Corregir el recuento de documentos como los siguientes:
 	<ul>
-		<li>“Char Count” counts composite characters as well as CR/LF as single characters and omits counting line endings if “Count each line ending as one character” option is off.</li>
-		<li>“Length” counts bytes in UTF-16 literally and always counts line endings even if “Count each line ending as one character” option is off.</li>
-		<li>“Location” and “Column” count characters just like “Char Count”.</li>
+		<li>"Cuenta caracteres" cuenta los caracteres compuestos, así como CR/LF como caracteres individuales y omite contar los finales de línea si la opción "Contar cada final de línea como un carácter" está desactivada.</li>
+		<li>"Longitud" cuenta los bytes en UTF-16 literalmente y siempre cuenta los finales de línea, incluso si la opción "Contar cada final de línea como un carácter" está desactivada.</li>
+		<li>"Posición" y "Columna" cuentan caracteres como "Cuenta caracteres".</li>
 	</ul></li>
-	<li>Fix an issue where the selected marks of line height / tab width in the Format menu disappeared.</li>
-	<li>Fix an issue where unselected last line number could be highlighted if the text orientation is vertical.</li>
-	<li>Fix an issue where invisible characters were drawn off to the side if the text orientation is vertical.</li>
-	<li>Fix an issue where documents were marked as “Edited” just after document duplication if line ending is not the default one.</li>
-	<li>Fix an issue where detected indent style was applied not only on file opening but also every time when file reverted.</li>
-	<li>Fix an issue where “Find All” result view did not open on OS X Mountain Lion.</li>
-	<li>Fix an issue where incompatible character markup could break if undo/redo lossy encoding change continuously.</li>
-	<li>Fix an issue where key bindings of some submenu containers were customizable.</li>
-	<li>Fix an issue where tab width could be set as <code>0</code>.</li>
-	<li>Fix an issue where tab width changing via AppleScript changes only the tab width in the focused editor rather than all split editors.</li>
-	<li>Fix an issue where byte length display did not update after changing file encoding.</li>
+	<li>Se ha corregido un problema por el que las marcas seleccionadas de altura de línea / ancho de tabulación en el menú Formato desaparecieron.</li>
+	<li>Solucionar un problema por el que el último número de línea no seleccionado podría resaltarse si la orientación del texto es vertical.</li>
+	<li>Soluciona un problema en el que los caracteres invisibles se dibujaban hacia un lado si la orientación del texto es vertical.</li>
+	<li>Soluciona un problema por el que los documentos se marcaban como "Editados" justo después de la duplicación del documento si el final de la línea no es el predeterminado.</li>
+	<li>Se ha corregido un problema por el que el estilo de sangría detectado se aplicaba no solo en la apertura del archivo, sino también cada vez que el archivo se revirtió.</li>
+	<li>Soluciona un problema por el que la vista de resultados "Buscar todo" no se abría en OS X Mountain Lion.</li>
+	<li>Soluciona un problema en el que el marcado de caracteres incompatible podría romperse si deshacer/rehacer el cambio de codificación con pérdida continuamente.</li>
+	<li>Se ha corregido un problema por el que los atajos de teclado de algunas opciones de submenús eran personalizables.</li>
+	<li>Soluciona un problema en el que el ancho de la pestaña se podía establecer como <code>0</code>.</li>
+	<li>Soluciona un problema por el que el cambio de ancho de tabulación a través de AppleScript cambia solo el ancho de tabulación en el editor enfocado en lugar de todos los editores divididos.</li>
+	<li>Solucionar un problema en el que la visualización de la longitud de bytes no se actualizaba después de cambiar la codificación del archivo.</li>
 </ul>
 </section>
 </article>
@@ -4672,7 +4672,7 @@
 <article>
 <header>
 	<h1>CotEditor 2.5.5</h1>
-	<p>Lanzamiento: <time>2016-05-23</time></p>
+	<p>Lanzamiento: <time>23/05/2016</time></p>
 </header>
 
 
@@ -4680,7 +4680,7 @@
 <h2>Nuevas características</h2>
 
 <ul>
-	<li>Add syntax style for “Git”.</li>
+	<li>Añadir estilo de sintaxis para “Git”.</li>
 </ul>
 </section>
 
@@ -4689,9 +4689,9 @@
 <h2>Mejoras</h2>
 
 <ul>
-	<li>Update “Julia” and “Swift” syntax styles.</li>
-	<li>Apply the change of line height/tab width to all split editors so that split editors not focused also can layout text correctly after the change.</li>
-	<li>Optimize text rendering performance a bit.</li>
+	<li>Actualizar los estilos de sintaxis "Julia" y "Swift".</li>
+	<li>Aplique el cambio de altura de línea/ancho de tabulación a todos los editores divididos para que los editores divididos no enfocados también puedan diseñar el texto correctamente después del cambio.</li>
+	<li>Optimizar un poco el rendimiento de representación de texto.</li>
 </ul>
 </section>
 
@@ -4700,20 +4700,20 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix an issue where editor area was not focused when document opens.</li>
-	<li>Fix an issue where width of tab character could be wrong with specific fonts.</li>
-	<li>Fix an issue where selection highlight remained between lines under specific conditions.</li>
-	<li>Fix an issue where the current line highlight didn’t update under the specific condition.</li>
-	<li>Fix an issue where unwanted dirt was drawn if use the Google Japanese Input.</li>
-	<li>Fix an issue where file path display in inspector was not updated when document file is moved.</li>
-	<li>Fix an issue where wrong data were displayed in document inspector when a window of an unsaved document is resumed.</li>
-	<li>Fix an issue where hanging indent was applied when document style is changed even it is turned off.</li>
-	<li>Fix an issue where custom syntax style/theme couldn’t be removed from the style list if the definition file is already deleted.</li>
-	<li>Fix an issue where “Copy as Rich Text” was enabled even if no text is selected.</li>
-	<li>Fix an issue where URL links were removed when editor is split.</li>
-	<li>Fix an issue where line height broke if font whose editor is split is changed via font panel.</li>
-	<li>Fix an issue where the first insertion was registered to the undo history on opening document with the selection in another application via Services.</li>
-	<li>Fix an issue where the key binding for “Re-Color All” was forced to reset to the default <code>⌥⌘R</code> if syntax style list is updated.</li>
+	<li>Solucionar un problema en el que el área del editor no estaba enfocada cuando se abre el documento.</li>
+	<li>Soluciona un problema por el que el ancho del carácter de tabulación podría estar mal con fuentes específicas.</li>
+	<li>Soluciona un problema por el que el resaltado de la selección permanecía entre líneas en condiciones específicas.</li>
+	<li>Soluciona un problema en el que el resaltado de la línea actual no se actualizaba bajo la condición específica.</li>
+	<li>Soluciona un problema en el que se extraía suciedad no deseada si se usaba la entrada japonesa de Google.</li>
+	<li>Solucionar un problema por el que la visualización de la ruta del archivo en el inspector no se actualizaba cuando se movía el archivo del documento.</li>
+	<li>Solucionar un problema por el que se mostraban datos incorrectos en el inspector de documentos cuando se reanudaba una ventana de un documento no guardado.</li>
+	<li>Solucionar un problema en el que se aplicaba la sangría colgante cuando se cambiaba el estilo del documento, incluso si estaba desactivado.</li>
+	<li>Se ha corregido un problema por el que el estilo/tema de sintaxis personalizado no se podía eliminar de la lista de estilos si el archivo de definición ya se había eliminado.</li>
+	<li>Se ha corregido un problema en el que se habilitaba "Copiar como texto enriquecido" incluso si no se seleccionaba ningún texto.</li>
+	<li>Solucionar un problema por el que los enlaces URL se eliminaban cuando el editor se divide.</li>
+	<li>Soluciona un problema en el que la altura de la línea se rompía si la fuente cuyo editor está dividido se cambia a través del panel de fuentes.</li>
+	<li>Solucionar un problema en el que la primera inserción se registraba en el historial de deshacer al abrir el documento con la selección en otra aplicación a través de Servicios.</li>
+	<li>Se ha corregido un problema por el que el enlace de teclas para "Ccolorear todo" se obligaba a restablecerse al <code>⌥⌘R</code> predeterminado si se actualizaba la lista de estilos de sintaxis.</li>
 </ul>
 </section>
 </article>
@@ -4723,7 +4723,7 @@
 <article>
 <header>
 	<h1>CotEditor 2.5.4</h1>
-	<p>Lanzamiento: <time>2016-05-13</time></p>
+	<p>Lanzamiento: <time>13/05/2016</time></p>
 </header>
 
 
@@ -4731,8 +4731,8 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix an issue where the application didn’t work on Mavericks and earlier.</li>
-	<li>Fix an issue where syntax was occasionally parsed twice on window restoration.</li>
+	<li>Soluciona un problema por el que la aplicación no funcionaba en Mavericks y anteriores.</li>
+	<li>Se ha corregido un problema por el que la sintaxis se analizaba ocasionalmente dos veces en la restauración de la ventana.</li>
 </ul>
 </section>
 </article>
@@ -4742,7 +4742,7 @@
 <article>
 <header>
 	<h1>CotEditor 2.5.3</h1>
-	<p>Lanzamiento: <time>2016-05-12</time></p>
+	<p>Lanzamiento: <time>12/05/2016</time></p>
 </header>
 
 
@@ -4884,7 +4884,7 @@
 <h2>Mejoras</h2>
 
 <ul>
-	<li>Update <code>cot</code> command-line tool:
+	<li>Actualizar la herramienta de línea de comandos <code>cot</code>:
 	<ul>
 		<li>Create a new file if a non-existent file path is passed in with <code>--new</code> option.</li>
 	</ul></li>
@@ -4980,7 +4980,7 @@
 	<li>Now, the change of the page guide column option is applied to opened documents immediately.</li>
 	<li>Tweak text in preferences.</li>
 	<li>Update help contents.</li>
-	<li><span class="label">versión no-AppStore</span>: Update Sparkle framework to version 1.14.0.</li>
+	<li><span class="label">versión no-AppStore</span>: Actualizar el framework Sparkle to version 1.14.0.</li>
 </ul>
 </section>
 
@@ -5015,7 +5015,7 @@
 
 <ul>
 	<li>Turn regular expression option off automatically by using selected text for search.</li>
-	<li>Update <code>cot</code> command-line tool:
+	<li>Actualizar la herramienta de línea de comandos <code>cot</code>:
 	<ul>
 		<li>Add <code>--wait</code> (<code>-w</code>) option to wait until a newly opened window closes.</li>
 		<li>Optimize command performance.</li>
@@ -5268,7 +5268,7 @@
 	<li>Update default fonts.</li>
 	<li>Tweak preferences layout.</li>
 	<li>Tweak Chinese localization.</li>
-	<li>Improve general stability.</li>
+	<li>Mejorar la estabilidad general.</li>
 </ul>
 </section>
 
@@ -5567,7 +5567,7 @@
 	<li>Print with vertical text orientation.</li>
 	<li>Save text orientation state to the file and restore it when the file is opened.
 	<ul>
-		<li><strong>for advanced users</strong>: In this feature, CotEditor saves an <i>extended attribute</i> which named <code>com.coteditor.VerticalText</code> to the file <strong>only when</strong> the editor’s text orientation is vertical. You can even disable the feature running the command <code>defaults write com.coteditor.CotEditor savesTextOrientation -bool NO</code> in Terminal.</li>
+		<li><strong>para usuarios avanzados</strong>: In this feature, CotEditor saves an <i>extended attribute</i> which named <code>com.coteditor.VerticalText</code> to the file <strong>only when</strong> the editor’s text orientation is vertical. You can even disable the feature running the command <code>defaults write com.coteditor.CotEditor savesTextOrientation -bool NO</code> in Terminal.</li>
 	</ul></li>
 	<li>Add interpreter name list to the syntax style definition to determine syntax style from the shebang in the file content for in case when syntax style cannot be determined from the file name.</li>
 	<ul>
@@ -5652,7 +5652,7 @@
 	<ul>
 		<li>New pre-releases are always subject to the update check no matter the user setting if the current running CotEditor is a pre-release version.</li>
 	</ul></li>
-	<li><span class="label">versión no-AppStore</span>: Update Sparkle framework to version 1.11.0.</li>
+	<li><span class="label">versión no-AppStore</span>: Actualizar el framework Sparkle to version 1.11.0.</li>
 </ul>
 </section>
 
@@ -5675,7 +5675,7 @@
 	<li>Fix an issue where some ligatured characters were drawn at a wrong position when the line height for composite font is fixed.</li>
 	<li>Fix an issue where unwanted invisible character marks were drawn when tab drawing is turned off and other invisibles drawing is turned on.</li>
 	<li>Add some missing localized strings in Japanese.</li>
-	<li>Improve general stability.</li>
+	<li>Mejorar la estabilidad general.</li>
 </ul>
 </section>
 
@@ -5756,7 +5756,7 @@
 	<li>Modify layout of “General” pane in Preferences.</li>
 	<li>Add tooltip hint to controls in the find panel.</li>
 	<li>Optimize image resources size.</li>
-	<li>Update Sparkle framework to version 1.10.0.</li>
+	<li>Actualizar el framework Sparkle to version 1.10.0.</li>
 </ul>
 </section>
 
@@ -5802,7 +5802,7 @@
 <ul>
 	<li>Fix line number drawing with large line numbers.</li>
 	<li>Fix an issue where the external modification notification did not work.</li>
-	<li>Improve general stability.</li>
+	<li>Mejorar la estabilidad general.</li>
 </ul>
 </section>
 </article>
@@ -5858,7 +5858,7 @@
 <ul>
 	<li>Fix an issue where octal file permission in the document inspector was wrong.</li>
 	<li>Fix an issue where the application could hang up on text editing.</li>
-	<li>Improve general stability.</li>
+	<li>Mejorar la estabilidad general.</li>
 </ul>
 </section>
 </article>
@@ -5933,7 +5933,7 @@
 		<li>Add horizontal rules to outline menu.</li>
 	</ul></li>
 	<li>Tweak text view drawing performance.</li>
-	<li>Update Sparkle framework to version 1.9.0.</li>
+	<li>Actualizar el framework Sparkle to version 1.9.0.</li>
 </ul>
 </section>
 
@@ -6331,7 +6331,7 @@
 	<li>Deprecate font settings for navigation bar and line number view which are hidden settings.</li>
 	<li>Move version history from rich text format to one of the Help contents.</li>
 	<li>Update documents.</li>
-	<li>Update Sparkle framework to 1.8.0.</li>
+	<li>Actualizar el framework Sparkle to 1.8.0.</li>
 	<li>Update build environment to OS X Yosemite + Xcode 6.1 (SDK 10.10).</li>
 	<li>And more internal changes.</li>
 </ul>
@@ -6559,7 +6559,7 @@
 			<li>From this, bundled syntax styles follow updates after CotEditor 1.5 as long as the styles are not customized.<ul>
 				<li>This is not applied to the syntax styles that were copied previous. To apply it to them, perform “Set to Factory Defaults” on style editing sheet of each bundled syntax style in Preferences &gt; Format pane &gt; Installed styles.</li>
 			</ul></li>
-			<li><strong>for advanced users</strong>: “~/Application Support/CotEditor/SyntaxColorings (old)” will be created on the first launch of CotEditor 1.5, if you updated it from the previous version. This folder is just a backup data for this switching. you can generally remove it if you want.</li>
+			<li><strong>para usuarios avanzados</strong>: “~/Application Support/CotEditor/SyntaxColorings (old)” will be created on the first launch of CotEditor 1.5, if you updated it from the previous version. This folder is just a backup data for this switching. you can generally remove it if you want.</li>
 		</ul></li>
 		<li>Handle files Sandbox level safety on style import/export.</li>
 	</ul></li>
@@ -6612,7 +6612,7 @@
 	<li>Improve syntax coloring on text inputing.</li>
 	<li>Migrate memory management to ARC (Automatic Reference Counting).</li>
 	<li>Optimize processes on application launch.</li>
-	<li>Update Sparkle framework to version 1.6.0:<ul>
+	<li>Actualizar el framework Sparkle to version 1.6.0:<ul>
 		<li>Add Japanese localization.</li>
 		<li>Fix “Automatically download and install updates in the future.” checkbox.</li>
 	</ul></li>
@@ -6671,7 +6671,7 @@
 <ul>
 	<li>Disable smart dash/quotes feature of Mavericks as default.
 	<ul>
-		<li><strong>for advanced users</strong>: Run <code>defaults write com.aynimac.CotEditor enableSmartQuotes YES</code> in Terminal to enable this feature again.</li>
+		<li><strong>para usuarios avanzados</strong>: Run <code>defaults write com.aynimac.CotEditor enableSmartQuotes YES</code> in Terminal to enable this feature again.</li>
 		<li>On the next CotEditor 1.5, this feature will be able to be changed on Preferences.</li>
 	</ul></li>
 </ul>
@@ -8005,16 +8005,16 @@
 <h2>Mejoras</h2>
 
 <ul>
-	<li>Changing the line ending style to the style already using is now ignored.</li>
-	<li>Modified the default toolbar to “Line Endings, File Encoding, Syntax Coloring, (flexible space), Get Info.”</li>
-	<li>Added syntax style file for CSS.</li>
-	<li>Updated the default style file for HTML (added ‘&amp;yen;’ and corrected ‘acronym’).</li>
-	<li>The AppleScript command ‘select all’ is no longer supported.</li>
-	<li>Disabled scrolling when changing the selection range with AppleScript commands.</li>
-	<li>Updated the bundled AppleScript scripts (corrected closing <code>&lt;dl&gt;</code> tag, added <code>&lt;hr /&gt;</code>, clarified the documents to that ‘selection’ objects belong).</li>
-	<li>Slightly modified the About window.</li>
-	<li>Slightly modified the buttons of the Edit Syntax Coloring sheet.</li>
-	<li>Increased the minimum number of characters which toggles coloring indicator sheet on opening documents.</li>
+	<li>Cambiar el estilo de final de línea al estilo que ya se está usando ahora se ignora.</li>
+	<li>Se ha modificado la barra de herramientas predeterminada a "Finales de línea, codificación de archivos, Coloración de sintaxis, (espacio flexible), Obtener información.”</li>
+	<li>Se ha añadido un archivo de estilo de sintaxis para CSS.</li>
+	<li>Se ha actualizado el archivo de estilo predeterminado para HTML (añadido ‘&amp;yen;’ y corregido ‘acronym’).</li>
+	<li>El comando AppleScript ‘select all’ ya no es compatible.</li>
+	<li>Desplazamiento desactivado al cambiar el rango de selección con los comandos de AppleScript.</li>
+	<li>Se han actualizado los scripts AppleScript incluidos (etiqueta cierre corregido <code>&lt;dl&gt;</code>, añadido <code>&lt;hr /&gt;</code>, aclaró los documentos para eso en los objectos ‘selection’).</li>
+	<li>La ventana 'Acerca de' ha modificado ligeramente.</li>
+	<li>Los botones de la hoja para colorear de la sintaxis de edición se modificaron ligeramente.</li>
+	<li>IAumentó el número mínimo de caracteres que cambia la hoja indicadora para colorear en la apertura de documentos.</li>
 </ul>
 </section>
 
@@ -8022,13 +8022,13 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>You couldn’t open a window when the specific font for displaying line numbers was not installed. This problem has been fixed.</li>
-	<li>Fixed a bug where the selection would corrupt after executing AppleScript command ‘<code>shift right</code>’ or ‘<code>shift left</code>.’</li>
-	<li>The document’s coloring style became the extension-based style after saving, even when manually selecting a style other than the one determined by the extension. This problem has been fixed.</li>
-	<li>The backwards search option of AppleScript command ‘<code>find</code>’ and ‘<code>replace</code>’ is now ‘<code>backwards</code>.’</li>
-	<li>Fixed a bug that would hide part of text in the Get Info drawer after resizing the document window.</li>
-	<li>Undo now works properly after failing to save an unwritable file.</li>
-	<li>Fixed a bug of “Go to” where inputting negative values didn’t work.</li>
+	<li>No se podía abrir una ventana cuando la fuente específica para mostrar los números de línea no estaba instalada. Este problema se ha solucionado.</li>
+	<li>Se ha corregido un error por el que la selección se corrompía después de ejecutar el comando AppleScript ‘<code>shift right</code>’ o ‘<code>shift left</code>.’</li>
+	<li>El estilo de color del documento se convirtió en el estilo basado en la extensión después de guardarlo, incluso al seleccionar manualmente un estilo que no sea el determinado por la extensión. Este problema se ha solucionado.</li>
+	<li>La opción de búsqueda hacia atrás del comando AppleScript ‘<code>find</code>’ y ‘<code>replace</code>’ es ahora ‘<code>backwards</code>.’</li>
+	<li>Se ha corregido un error que ocultaba parte del texto en el cajón Obtener información después de cambiar el tamaño de la ventana del documento.</li>
+	<li>Deshacer ahora funciona correctamente después de no poder guardar un archivo no grabable.</li>
+	<li>Se ha corregido un error de "Ir a" en el que la introducción de valores negativos no funcionaba.</li>
 </ul>
 </section>
 </article>
@@ -8038,10 +8038,10 @@
 <article>
 <header>
 	<h1>CotEditor 0.6.0</h1>
-	<p>Lanzamiento: <time>2005-03-19</time></p>
+	<p>Lanzamiento: <time>19/03/2005</time></p>
 </header>
 
-<p><strong>initial release</strong></p>
+<p><strong>Lanzamiento inicial</strong></p>
 </article>
 </body>
 </html>
