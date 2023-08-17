@@ -6548,80 +6548,80 @@
 	</ul></li>
 	<li>Actualizaciones sobre la impresión:<ul>
 		<li>Implementar la vista previa de impresión en el panel de impresión.</li>
-		<li>Apply the document name to the print job.</li>
-		<li>Add “Syntax Name” to the header/footer information choices.</li>
-		<li>Remove hyphens next to page number.</li>
-		<li>Adjust print panel layout.</li>
+		<li>Aplique el nombre del documento al trabajo de impresión.</li>
+		<li>Añade "Nombre de la sintaxis" a las opciones de información de encabezado/pie de página.</li>
+		<li>Eliminar guiones junto al número de página.</li>
+		<li>Ajuste el diseño del panel de impresión.</li>
 	</ul></li>
-	<li>Toggle menu item names occasionally like “Show” / “Hide”, instead displaying checkmark.</li>
-	<li>Change syntax styles management method.<ul>
-		<li>Don’t to copy bundled styles to user’s “Application Support” area on launch.<ul>
-			<li>From this, bundled syntax styles follow updates after CotEditor 1.5 as long as the styles are not customized.<ul>
-				<li>This is not applied to the syntax styles that were copied previous. To apply it to them, perform “Set to Factory Defaults” on style editing sheet of each bundled syntax style in Preferences &gt; Format pane &gt; Installed styles.</li>
+	<li>Alternar los nombres de los elementos del menú de vez en cuando como "Mostrar" / "Ocultar", en lugar de mostrar una marca de verificación.</li>
+	<li>Cambiar el método de gestión de estilos de sintaxis.<ul>
+		<li>No copie los estilos incluidos en el área de "Soporte de aplicaciones" del usuario en el lanzamiento.<ul>
+			<li>A partir de esto, los estilos de sintaxis incluidos siguen las actualizaciones después de CotEditor 1.5, siempre y cuando los estilos no estén personalizados.<ul>
+				<li>Esto no se aplica a los estilos de sintaxis que se copiaron anteriormente. Para aplicarlo a ellos, realice "Establecer en valores predeterminados de fábrica" en la hoja de edición de estilo de cada estilo de sintaxis incluido en Ajustes... &gt; Panel de Formato &gt; Estilos instalados.</li>
 			</ul></li>
-			<li><strong>para usuarios avanzados</strong>: “~/Application Support/CotEditor/SyntaxColorings (old)” will be created on the first launch of CotEditor 1.5, if you updated it from the previous version. This folder is just a backup data for this switching. you can generally remove it if you want.</li>
+			<li><strong>para usuarios avanzados</strong>: “~/Application Support/CotEditor/SyntaxColorings (viejo)” se creará en el primer lanzamiento de CotEditor 1.5, si lo actualizaste desde la versión anterior. Esta carpeta es solo un dato de copia de seguridad para este cambio. Por lo general, puede eliminarla si lo desea.</li>
 		</ul></li>
-		<li>Handle files Sandbox level safety on style import/export.</li>
+		<li>Manejar archivos de seguridad a nivel de Sandbox en importación/exportación de estilos.</li>
 	</ul></li>
-	<li>Updates about Preferences window:<ul>
-		<li>More compact window.</li>
-		<li>New grouping.<ul>
-			<li>Remove “Syntax” pane and move its settings to “Format” pane and “Appearance” pane.</li>
-			<li>Create a new “Edit” pane extracting settings about editing from “General” pane and “Format” pane.</li>
-			<li>Other several setting moves.</li>
+	<li>Actualizaciones sobre la ventana de Ajustes...:<ul>
+		<li>Ventana más compacta.</li>
+		<li>Nueva agrupación.<ul>
+			<li>Elimine el panel "Sintaxis" y mueva su configuración al panel "Formato" y al panel "Apariencia".</li>
+			<li>Crear un nuevo panel "Editar" que extraiga la configuración sobre la edición desde el panel "General" y el panel "Formato".</li>
+			<li>Otros varios movimientos de ajuste.</li>
 		</ul></li>
-		<li>Use More OS X-friendly terms for labels.</li>
-		<li>Apply selected font style to the font fields.</li>
-		<li>Use selected pane name for the preferences window title.</li>
-		<li>New syntax style management UI.</li>
-		<li>Update syntax style editing sheet.<ul>
-			<li>Change mode switching from popup button to list.</li>
-			<li>Now, multiple lines can be selected and removed at once.</li>
-			<li>Validate new syntax name immediately on editing and show an error message if it isn’t valid.</li>
+		<li>Usa más términos compatibles con OS X para las etiquetas.</li>
+		<li>Aplicar el estilo de fuente seleccionado a los campos de fuente.</li>
+		<li>Utilice el nombre del panel seleccionado para el título de la ventana de preferencias.</li>
+		<li>Nueva interfaz de usuario de gestión de estilos de sintaxis.</li>
+		<li>Actualizar la hoja de edición del estilo de sintaxis.<ul>
+			<li>Cambiar el modo de cambio de botón emergente a lista.</li>
+			<li>Ahora, se pueden seleccionar y eliminar varias líneas a la vez.</li>
+			<li>Valide el nuevo nombre de sintaxis inmediatamente después de la edición y muestre un mensaje de error si no es válido.</li>
 		</ul></li>
-		<li>Improve UI of the extension conflicts sheet.</li>
-		<li>Add stepper next to number field.</li>
+		<li>Mejorar la interfaz de usuario de la hoja de conflictos de extensión.</li>
+		<li>Añadir pasos junto al campo de número.</li>
 	</ul></li>
-	<li>Updates about AppleScript:<ul>
-		<li>Remove <code>transparency</code> and <code>alpha only textView</code> properties.</li>
-		<li>Add <code>view opacity</code> property to window object.</li>
-		<li>Remove <code>selection</code> object direct under the Application object.</li>
+	<li>Actualizaciones sobre AppleScript:<ul>
+		<li>Eliminar las propiedades <code>transparency</code> y <code>alpha only textView</code>.</li>
+		<li>Añadir la propiedad <code>view opacity</code> al objeto window.</li>
+		<li>eliminar el objeto directo <code>selection</code> bajo el objeto Application.</li>
 	</ul></li>
-	<li>Updates about saving position of the script samples and documents:<ul>
-		<li>Now, documents for CotEditor scripting can be found in “Help” menu.</li>
-		<li>Now, sample scripts will be copied only on the first CotEditor launch.</li>
-		<li>Add hidden “Copy Sample to Scripts Folder” menu item that will be appeared only when option key is pressed.</li>
+	<li>Actualizaciones sobre la posición de guardado de los ejemplos de scripts y documentos:<ul>
+		<li>Ahora, los documentos para las secuencias de comandos de CotEditor se pueden encontrar en el menú "Ayuda".</li>
+		<li>Ahora, los scripts de ejemplo se copiarán solo en el primer lanzamiento de CotEditor.</li>
+		<li>Agregue el elemento de menú oculto "Copiar muestra a la carpeta de scripts" que aparecerá solo cuando se presione la tecla de opción.</li>
 	</ul></li>
-	<li>Remove unimportant settings.<ul>
-		<li>Remove setting about file Type/Creator that are used until OS X 10.5 to determine document type on system.</li>
-		<li>Remove setting about wrapped mark in the line number view and now wrapped marks are always shown.</li>
-		<li>Remove the coloring option setting “Include Input Method chars” and now they are always included.</li>
+	<li>Eliminar ajustes sin importancia.<ul>
+		<li>Eliminar la configuración sobre el tipo de archivo/Creador que se utiliza hasta OS X 10.5 para determinar el tipo de documento en el sistema.</li>
+		<li>Elimine la configuración sobre la marca envuelta en la vista del número de línea y ahora siempre se muestran las marcas envueltas.</li>
+		<li>Elimine la configuración de la opción de coloración "Incluir caracteres del método de entrada" y ahora siempre están incluidos.</li>
 	</ul></li>
-	<li>Updates about script error panel:<ul>
-		<li>Implement text search in error messages.</li>
-		<li>Increase text size and insert a blank line between error messages.</li>
+	<li>Actualizaciones sobre el panel de errores del script:<ul>
+		<li>Implementar la búsqueda de texto en los mensajes de error.</li>
+		<li>Aumente el tamaño del texto e inserte una línea en blanco entre los mensajes de error.</li>
 	</ul></li>
-	<li>Add information about number of selected lines to status bar and information drawer.</li>
-	<li>Support surrogate pair on Unicode display in information drawer.</li>
-	<li>Make matching brace highlight more noticeable.</li>
-	<li>Add “Report Bug…” menu item to “Help” menu.</li>
-	<li>Use light scroller style when background color is dark.</li>
-	<li>Change line/character selection on Go To panel from radio buttons to popup menu.</li>
-	<li>Improve inspector drawer layout.</li>
-	<li>Now line number view updates while window resizing.</li>
-	<li>Improve syntax coloring on text inputing.</li>
-	<li>Migrate memory management to ARC (Automatic Reference Counting).</li>
-	<li>Optimize processes on application launch.</li>
-	<li>Actualizar el framework Sparkle to version 1.6.0:<ul>
-		<li>Add Japanese localization.</li>
-		<li>Fix “Automatically download and install updates in the future.” checkbox.</li>
+	<li>Añadir información sobre el número de líneas seleccionadas a la barra de estado y al cajón de información.</li>
+	<li>Admite el par sustituto en la pantalla Unicode en el cajón de información.</li>
+	<li>Haz que el resaltado del corsé a juego sea más notable.</li>
+	<li>Añade el elemento de menú "Informar de error..." al menú "Ayuda".</li>
+	<li>Usa el estilo de desplazamiento claro cuando el color de fondo sea oscuro.</li>
+	<li>Cambiar la selección de línea/carácter en el panel Ir a desde los botones de opción al menú emergente.</li>
+	<li>Mejorar el diseño del cajón del inspector.</li>
+	<li>Ahora la vista del número de línea se actualiza mientras se redimensiona la ventana.</li>
+	<li>Mejorar el color de la sintaxis en la entrada de texto.</li>
+	<li>Migrar la gestión de la memoria a ARC (Recuento automático de referencias).</li>
+	<li>Optimizar los procesos en el lanzamiento de la aplicación.</li>
+	<li>Actualizar el framework Sparkle a la versión 1.6.0:<ul>
+		<li>Añadir la traducción en japonés.</li>
+		<li>Arreglar la casilla de verificación "Descargar e instalar actualizaciones automáticamente en el futuro".</li>
 	</ul></li>
-	<li>Update OgreKit framework to version 2.1.6.<ul>
-		<li>Now find panel is displayed always on current desktop space.</li>
-		<li>Disable automatic substitutions in find panel.</li>
+	<li>Actualice el marco OgreKit a la versión 2.1.6.<ul>
+		<li>Ahora el panel de búsqueda se muestra siempre en el espacio de escritorio actual.</li>
+		<li>Desactivar las sustituciones automáticas en el panel de búsqueda.</li>
 	</ul></li>
-	<li>A huge bunch of code and document changes.</li>
-	<li>Many code and document changing.</li>
+	<li>Un montón de cambios en el código y los documentos.</li>
+	<li>Muchos cambios de código y documentos.</li>
 </ul>
 </section>
 
@@ -6629,30 +6629,30 @@
 <h2>Correcciones</h2>
 
 <ul>
-	<li>Fix an issue that all print page number becomes “-1-”.</li>
-	<li>Fix an issue that check mark on line endings popup menu in toolbar was disappear.</li>
-	<li>Fix an issue that re-coloring didn’t proceed after the text replacement.</li>
-	<li>Fix an issue that the <code>close</code> command via AppleScript was ignored.</li>
-	<li>Fix an issue that unwanted window objects were visible and could be handled via AppleScript.</li>
-	<li>Fix an issue that <code>^</code> (beginning of a line) on AppleScript’s search/replacement was not recognized when the document’s line endings are set to CR.</li>
-	<li>Fix an issue that visual tab width didn’t follow new font when font is temporary changed via font panel.</li>
-	<li>Fix an issue that strings between quotes/dashes were not colored when comment coloring definition is not contained in the syntax coloring definition.</li>
-	<li>Fix an issue that invalid style name was accepted and the saving was failed on syntax style editing under the specific conditions.</li>
-	<li>Fix an issue that syntax style file override another existing one without alert on syntax style editing under the specific conditions.</li>
-	<li>Fix an issue that application freeze when one of the installed syntax styles contains an extension definition with the empty string.</li>
-	<li>Fix an issue that key-bindings contain back-slash didn’t work under the Japanese locale.</li>
-	<li>Fix an issue that encoding names in the encoding list on the preferences was editable.</li>
-	<li>Fix an issue that document saving is failed when the document that is set to “Non-lossy ASCII” contains non-ASCII characters.</li>
-	<li>Fix an issue that application didn’t terminate on quite even “Don’t Save and Close” button was selected when a document whose Finder lock couldn’t be unlocked exists.</li>
-	<li>Fix an issue that error message is output to console when completion list is called while the document is empty.</li>
-	<li>Fix PHP code on the application icon.</li>
+	<li>Soluciona un problema por el que todo el número de página de impresión se convierte en "-1-".</li>
+	<li>Soluciona un problema por el que la marca de verificación en el menú emergente de finales de línea en la barra de herramientas desaparecía.</li>
+	<li>Solucionar un problema por el que la recoloración no se realizaba después del reemplazo del texto.</li>
+	<li>Soluciona un problema que el comando <code>close</code> via AppleScript se ignoraba.</li>
+	<li>Solucionar un problema por el que los objetos de ventana no deseados eran visibles y se podían manejar a través de AppleScript.</li>
+	<li>Soluciona un problema que <code>^</code> (comienzo de una línea) en la búsqueda/reemplazo de AppleScript no se reconoció cuando los finales de línea del documento se establecen en CR.</li>
+	<li>Soluciona un problema por el que el ancho de la pestaña visual no seguía la nueva fuente cuando la fuente se cambia temporalmente a través del panel de fuentes.</li>
+	<li>Soluciona un problema por el que las cadenas entre comillas/dañas no estaban coloreadas cuando la definición de coloración de comentarios no está contenida en la definición de coloración de la sintaxis.</li>
+	<li>Se ha corregido un problema por el que se aceptaba un nombre de estilo no válido y el ahorro fallaba en la edición del estilo de sintaxis bajo las condiciones específicas.</li>
+	<li>Solucionar un problema de que el archivo de estilo de sintaxis anula otro existente sin avisar sobre la edición del estilo de sintaxis bajo las condiciones específicas.</li>
+	<li>Soluciona un problema que la aplicación congela cuando uno de los estilos de sintaxis instalados contiene una definición de extensión con la cadena vacía.</li>
+	<li>Solucionar un problema por el que las combinaciones de teclas contenían una barra invertida que no funcionaba en la configuración regional japonesa.</li>
+	<li>Se ha corregido un problema por el que los nombres de codificación en la lista de codificación en las preferencias eran editables.</li>
+	<li>Soluciona un problema por el que el almacenamiento del documento fallaba cuando el documento que está establecido en "ASCI ASCII no desordenado" contiene caracteres que no son ASCII.</li>
+	<li>Solucionar un problema por el que la aplicación no terminaba, incluso en el botón "No guardar y cerrar" se seleccionaba cuando existía un documento cuyo bloqueo del Finder no se podía desbloquear.</li>
+	<li>Soluciona un problema de que el mensaje de error se envía a la consola cuando se llama a la lista de finalización mientras el documento está vacío.</li>
+	<li>Corregir el código PHP en el icono de la aplicación.</li>
 </ul>
 
 </section>
 
 <footer>
 	<ol>
-		<li id="v1.5fnote1">same as ones that were distributed on <a href="https://wolfrosch.com/works/goodies/coteditor_syntax" rel="external" hreflang="ja" title="Syntax Definition Files for CotEditor //Wolfrosch">wolfrosch.com</a></li>
+		<li id="v1.5fnote1">Igual que los que se distribuyeron en <a href="https://wolfrosch.com/works/goodies/coteditor_syntax" rel="external" hreflang="ja" title="Syntax Definition Files for CotEditor //Wolfrosch">wolfrosch.com</a></li>
 	</ol>
 </footer>
 </article>
@@ -6662,17 +6662,17 @@
 <article>
 <header>
 	<h1>CotEditor 1.4.1</h1>
-	<p>Lanzamiento: <time>2014-03-22</time></p>
+	<p>Lanzamiento: <time>22/03/2014</time></p>
 </header>
 
 
 <section>
 <h2>Mejoras</h2>
 <ul>
-	<li>Disable smart dash/quotes feature of Mavericks as default.
+	<li>Desactivar la función de guión/comillas inteligentes de Mavericks por defecto.
 	<ul>
-		<li><strong>para usuarios avanzados</strong>: Run <code>defaults write com.aynimac.CotEditor enableSmartQuotes YES</code> in Terminal to enable this feature again.</li>
-		<li>On the next CotEditor 1.5, this feature will be able to be changed on Preferences.</li>
+		<li><strong>para usuarios avanzados</strong>: Ejecuta <code>defaults write com.aynimac.CotEditor enableSmartQuotes YES</code> en el Terminal para habilitar esta función de nuevo.</li>
+		<li>En el próximo CotEditor 1.5, esta función se podrá cambiar en Preferencias.</li>
 	</ul></li>
 </ul>
 </section>
@@ -6680,7 +6680,7 @@
 <section>
 <h2>Correcciones</h2>
 <ul>
-	<li>Fix an issue on ver. 1.4 that line count was always zero.</li>
+	<li>Soluciona un problema en ver. 1.4 ese recuento de líneas siempre fue cero.</li>
 </ul>
 </section>
 </article>
@@ -6690,72 +6690,72 @@
 <article>
 <header>
 	<h1>CotEditor 1.4.0</h1>
-	<p>Lanzamiento: <time>2014-03-19</time></p>
+	<p>Lanzamiento: <time>19/03/2014</time></p>
 </header>
 
 
 <section>
 <h2>Mejoras</h2>
 <ul>
-	<li>Change support OS: OS X 10.7 and later.</li>
-	<li>Support 64-bit.</li>
-	<li>Support Retina display.</li>
-	<li>Update regular expression library used on search &amp; replace feature from Oniguruma to Onigmo.<a href="#v1.4fnote1"><sup>1</sup></a>
+	<li>Cambiar el soporte del sistema operativo: OS X 10.7 y posterior.</li>
+	<li>Soportat 64-bit.</li>
+	<li>Soporta display Retina.</li>
+	<li>Actualizar la biblioteca de expresiones regulares utilizada en la búsqueda &amp; reemplazar la función de Oniguruma a Onigmo.<a href="#v1.4fnote1"><sup>1</sup></a>
 	<ul>
-		<li>Now the most regular expression syntax defined on Perl 5.10+ like look-behind/look-ahead are available.</li>
+		<li>Ahora la sintaxis de expresión más regular definida en Perl 5.10+ como look-behind/look-ahead está disponible.</li>
 	</ul></li>
-	<li>Update application, document and toolbar icons.</li>
-	<li>Add small size toolbar icons.</li>
-	<li>Add new “Apache”, “Markdown”, “Scala” and “XML” syntax coloring definitions.<a href="#v1.4fnote2"><sup>2</sup></a></li>
-	<li>Update “PHP” syntax coloring definition.<a href="#v1.4fnote2"><sup>2</sup></a>
+	<li>Actualizar los iconos de aplicación, documento y barra de herramientas.</li>
+	<li>Añadir iconos de barra de herramientas de tamaño pequeño.</li>
+	<li>Añade nuevas definiciones de color de sintaxis "Apache", "Markdown", "Scala" y "XML".<a href="#v1.4fnote2"><sup>2</sup></a></li>
+	<li>Actualizar la definición de color de la sintaxis "PHP".<a href="#v1.4fnote2"><sup>2</sup></a>
 	<ul>
-		<li>Support until PHP5.5.</li>
-		<li>Color properties and numbers.</li>
-		<li>Improve outline menu.</li>
+		<li>Soporte hasta PHP5.5.</li>
+		<li>Propiedades y números de color.</li>
+		<li>Mejorar el menú de esquema.</li>
 	</ul></li>
-	<li>Update “Python” syntax coloring definition.<a href="#v1.4fnote2"><sup>2</sup></a>
+	<li>Actualizar la definición de color de la sintaxis "Python".<a href="#v1.4fnote2"><sup>2</sup></a>
 	<ul>
-		<li>Support Python3. (>=3.3)</li>
-		<li>Color decorators.</li>
-		<li>Improve and fix number coloring.</li>
-		<li>distinguish between “print” statement and “print” command.</li>
+		<li>Compatible con Python3. (>=3.3)</li>
+		<li>Decoradores de color.</li>
+		<li>Mejorar y corregir la coloración de los números.</li>
+		<li>Distinguir entre la declaración "imprimir" y el comando "imprimir".</li>
 	</ul></li>
-	<li>Update “LaTeX” syntax coloring definition.
+	<li>Actualizar la definición de color de sintaxis "LaTeX".
 	<ul>
-		<li>Fixed <code>{}</code> symbol escaping</li>
+		<li>Fija <code>{}</code> símbolo escapado</li>
 	</ul></li>
-	<li>Add py, markdown, md, xml, scala and conf extensions to document type.</li>
-	<li>Add “Enter Full Screen” command to menu &gt; View.</li>
-	<li>Remove “Preferences”, “Save”, “Save As”, “Page Setup” and “Transparency Panel” icons from toolbar.</li>
-	<li>Hide dot files and folders in script menu.</li>
-	<li>Improve alert descriptions.</li>
-	<li>Adjust styles of windows and panels.</li>
-	<li>Rename HexColorCode Editor to Color Code Editor</li>
-	<li>Update documents.</li>
+	<li>Añade extensiones py, markdown, md, xml, scala y conf al tipo de documento.</li>
+	<li>Añade el comando "Entrar a pantalla completa" al menú &gt; Visualización.</li>
+	<li>Elimine los iconos "Ajustes", "Guardar", "Guardar como", "Configuración de la página" y "Panel de transparencia" de la barra de herramientas.</li>
+	<li>Ocultar archivos y carpetas de puntos en el menú de secuencias de comandos.</li>
+	<li>Mejorar las descripciones de las alertas.</li>
+	<li>Ajustar los estilos de ventanas y paneles.</li>
+	<li>Cambiar el nombre del editor HexColorCode al editor de código de color</li>
+	<li>Actualizar documentos.</li>
 </ul>
 </section>
 
 <section>
 <h2>Correcciones</h2>
 <ul>
-	<li>Fixed an issue that unexpected “Update by external process” alert comes up even file is actually not updated.</li>
-	<li>Fixed “from an unidentified developer” alert on the first launch.</li>
-	<li>Fixed an issue that toolbar background becomes transparent on fullscreen mode (Lion binary).</li>
-	<li>Fixed an issue that text view doesn’t become transparent (Lion binary).</li>
-	<li>Fixed an issue that top and bottom margin are flipped on printing since OS X Lion.</li>
-	<li>Fixed an issue that readonly icon in status bar doesn’t represent the state correctly, if status bar was hidden when window opened.</li>
-	<li>Fixed a miss placed label on Preferences (Japanese localization).</li>
-	<li>Add blank between words on toolbar labels.</li>
-	<li>Fixed an issue that RegexKitLite was actually not updated to 4.0 on CotEditor 1.1.</li>
-	<li>Fixed an issue that after the specific operation, closed find panel appears again and become not closable.</li>
+	<li>Se ha corregido un problema por el que aquetaba la alerta inesperada de "Actualización por proceso externo", incluso el archivo en realidad no está actualizado.</li>
+	<li>Se ha corregido la alerta "de un desarrollador no identificado" en el primer lanzamiento.</li>
+	<li>Se ha solucionado un problema por el que el fondo de la barra de herramientas se vuelve transparente en el modo de pantalla completa (binario de león).</li>
+	<li>Se ha solucionado un problema por el que la vista de texto no se vuelve transparente (binario de León).</li>
+	<li>Se ha corregido un problema por el que los márgenes superior e inferior se voltean en la impresión desde OS X Lion.</li>
+	<li>Se ha corregido un problema por el que el icono de solo lectura en la barra de estado no representaba el estado correctamente, si la barra de estado estaba oculta cuando se abría la ventana.</li>
+	<li>Se ha corregido una etiqueta mal colocada en Preferencias (traducción japonesa).</li>
+	<li>Añadir espacio en blanco entre palabras en las etiquetas de la barra de herramientas.</li>
+	<li>Se ha corregido un problema por el que RegexKitLite en realidad no se actualizaba a 4.0 en CotEditor 1.1.</li>
+	<li>Se ha solucionado un problema que, después de la operación específica, el panel de búsqueda cerrado aparece de nuevo y no se puede cerrar.</li>
 </ul>
 
 </section>
 
 <footer>
 	<ol>
-		<li id="v1.4fnote1">The regular expression match on the syntax coloring has no effect by this change, since ICU library is used for it.</li>
-		<li id="v1.4fnote2">same as ones that were distributed on <a href="https://wolfrosch.com/works/goodies/coteditor_syntax" rel="external" hreflang="ja" title="Syntax Definition Files for CotEditor //Wolfrosch">wolfrosch.com</a></li>
+		<li id="v1.4fnote1">La coincidencia de expresiones regulares en el color de la sintaxis no tiene ningún efecto por este cambio, ya que la biblioteca de la UCI se utiliza para ello.</li>
+		<li id="v1.4fnote2">Igual que los que se distribuyeron en <a href="https://wolfrosch.com/works/goodies/coteditor_syntax" rel="external" hreflang="ja" title="Syntax Definition Files for CotEditor //Wolfrosch">wolfrosch.com</a></li>
 	</ol>
 </footer>
 </article>
@@ -6765,13 +6765,13 @@
 <article>
 <header>
 	<h1>CotEditor 1.3.1</h1>
-	<p>Lanzamiento: <time>2012-02-12</time></p>
+	<p>Lanzamiento: <time>12/02/2012</time></p>
 </header>
 
 <section>
 <h2>Correcciones</h2>
 <ul>
-	<li>Fix a bug that cannot install via automatic update.</li>
+	<li>Se ha corregido un error que no se puede instalar a través de la actualización automática.</li>
 </ul>
 
 </section>
@@ -6782,23 +6782,23 @@
 <article>
 <header>
 	<h1>CotEditor 1.3.0</h1>
-	<p>Lanzamiento: <time>2012-02-10</time></p>
+	<p>Lanzamiento: <time>10/02/2012</time></p>
 </header>
 
 
 <section>
 <h2>Nuevas características</h2>
 <ul>
-	<li>Full screen feature. (For 10.7 only)</li>
-	<li>Add option to append extension “txt” when saving a file.</li>
+	<li>Función de pantalla completa. (Solo para 10.7)</li>
+	<li>Añadir la opción para añadir la extensión "txt" al guardar un archivo.</li>
 </ul>
 </section>
 
 <section>
 <h2>Mejoras</h2>
 <ul>
-	<li>On Find Panel, don’t close panel when you press return key. (If you’d like to close panel, press shift+return key.) (thanks to akinull-san)</li>
-	<li>Add binary for 10.7. (build separately for 10.4–10.6 and for 10.7)</li>
+	<li>En el panel Buscar, no cierres el panel cuando pulses la tecla de retorno. (Si desea cerrar el panel, presione la tecla Mayús + Retorno.) (gracias a akinull-san)</li>
+	<li>Añadir binario para 10.7. (construir por separado para 10,4-10,6 y para 10.7)</li>
 </ul>
 </section>
 </article>
@@ -6808,30 +6808,30 @@
 <article>
 <header>
 	<h1>CotEditor 1.2.0</h1>
-	<p>Lanzamiento: <time>2011-05-23</time></p>
+	<p>Lanzamiento: <time>23/05/2011</time></p>
 </header>
 
 
 <section>
 <h2>Nuevas características</h2>
 <ul>
-	<li>Add automatic update feature.</li>
+	<li>Añadir función de actualización automática.</li>
 </ul>
 </section>
 
 <section>
 <h2>Mejoras</h2>
 <ul>
-	<li>Change the application icon. (thanks to 1024jp-san)</li>
-	<li>Update 'About The ScriptMenu Folder' document.</li>
+	<li>Cambia el icono de la aplicación. (gracias a 1024jp-san)</li>
+	<li>Actualizar el documento "Acerca de la carpeta ScriptMenu".</li>
 </ul>
 </section>
 
 <section>
 <h2>Correcciones</h2>
 <ul>
-	<li>Fix a bug that ignores tab in auto indent.</li>
-	<li>Fix a bug that cannot open AppleScript Editor for 10.6 by Option+Click on script menu.</li>
+	<li>Corrige un error que ignora la pestaña en la sangría automática.</li>
+	<li>Corrige un error que no puede abrir el Editor de AppleScript para 10.6 con Opción+Clic en el menú de script.</li>
 </ul>
 </section>
 </article>
@@ -6841,14 +6841,14 @@
 <article>
 <header>
 	<h1>CotEditor 1.1.1</h1>
-	<p>Lanzamiento: <time>2011-04-06</time></p>
+	<p>Lanzamiento: <time>06/04/2011</time></p>
 </header>
 
 
 <section>
 <h2>Correcciones</h2>
 <ul>
-	<li>Fix a bug that cannot start in some environment.</li>
+	<li>Soluciona un error que no puede iniciarse en algún entorno.</li>
 </ul>
 </section>
 </article>
@@ -6858,18 +6858,18 @@
 <article>
 <header>
 	<h1>CotEditor 1.1.0</h1>
-	<p>Lanzamiento: <time>2011-04-03</time></p>
+	<p>Lanzamiento: <time>03/04/2011</time></p>
 </header>
 
 <section>
 <h2>Mejoras</h2>
 <ul>
-	<li>Include documents to the application, and open them from the Help menu.</li>
-	<li>Include sample scripts to application, and copy them to script folder on the first launch.</li>
-	<li>Change SDK version and the deployment target to 10.4.</li>
-	<li>Update OgreKit to 2.1.4.</li>
-	<li>Update RegexKitLite to 4.0.</li>
-	<li>Add usami-k to copyright.</li>
+	<li>Incluya documentos en la solicitud y ábralos desde el menú Ayuda.</li>
+	<li>Incluya scripts de ejemplo en la aplicación y cópielos en la carpeta de scripts en el primer lanzamiento.</li>
+	<li>Cambie la versión del SDK y el objetivo de implementación a 10.4.</li>
+	<li>Actualizar OgreKit a 2.1.4.</li>
+	<li>Actualizar RegexKitLite a 4.0.</li>
+	<li>Añadir usami-k a los derechos de autor.</li>
 </ul>
 
 </section>
@@ -6877,8 +6877,8 @@
 <section>
 <h2>Correcciones</h2>
 <ul>
-	<li>Fix a crash bug on MacBook Air.</li>
-	<li>Fix the default style file for CSS.</li>
+	<li>Corrección de un error de bloqueo en el MacBook Air.</li>
+	<li>Corregir el archivo de estilo predeterminado para CSS.</li>
 </ul>
 </section>
 </article>
@@ -6888,25 +6888,25 @@
 <article>
 <header>
 	<h1>CotEditor 1.0.1</h1>
-	<p>Lanzamiento: <time>2009-05-01</time></p>
+	<p>Lanzamiento: <time>01/05/2009</time></p>
 </header>
 
 
 <section>
 <h2>Mejoras</h2>
 <ul>
-	<li>Adjusted vertical character display position in a line.</li>
-	<li>Modified some Utility menu items’ names (English).</li>
+	<li>Posición de visualización vertical de caracteres ajustada en una línea.</li>
+	<li>Se modificaron los nombres de algunos elementos del menú Utilidades (inglés).</li>
 </ul>
 </section>
 
 <section>
 <h2>Correcciones</h2>
 <ul>
-	<li>The default style file for PHP was missing. This problem has been fixed.</li>
-	<li>Updated the default style file for “C, C++, Objective-C”, Java, Haskell.</li>
-	<li>A newly added user couldn’t launch CotEditor due to the permission issue of the default style file for eRuby. This problem has been fixed.</li>
-	<li>Fixed a bug where scripts failed to handle selected strings of a document with CR/LF line endings.</li>
+	<li>Faltaba el archivo de estilo predeterminado para PHP. Este problema se ha solucionado.</li>
+	<li>Se actualizó el archivo de estilo predeterminado para "C, C++, Objective-C", Java, Haskell.</li>
+	<li>Un usuario recién agregado no pudo iniciar CotEditor debido al problema de permiso del archivo de estilo predeterminado para eRuby. Este problema se ha solucionado.</li>
+	<li>Se ha corregido un error por el que los scripts no se manejan las cadenas seleccionadas de un documento con finales de línea CR/LF.</li>
 </ul>
 </section>
 </article>
@@ -6916,22 +6916,22 @@
 <article>
 <header>
 	<h1>CotEditor 1.0.0</h1>
-	<p>Lanzamiento: <time>2009-02-28</time></p>
+	<p>Lanzamiento: <time>28/02/2009</time></p>
 </header>
 
 
 <section>
 <h2>Mejoras</h2>
 <ul>
-	<li>Updated development environment to 10.5.6 + Xcode 3.1.2.</li>
+	<li>Entorno de desarrollo actualizado a 10.5.6 + Xcode 3.1.2.</li>
 </ul>
 </section>
 
 <section>
 <h2>Correcciones</h2>
 <ul>
-	<li>When the option “Fix line height with composite font” is enabled, the text display with particular fonts was not updated as it should be. This problem has been fixed.</li>
-	<li>Fixed a bug where changing font cluttered the Page Guide display.</li>
+	<li>Cuando la opción "Fijar altura de línea con fuente compuesta" está habilitada, la visualización del texto con fuentes particulares no se actualizó como debería. Este problema se ha solucionado.</li>
+	<li>Se ha corregido un error por el que el cambio de fuente desordena la visualización de la guía de la página.</li>
 </ul>
 </section>
 </article>
@@ -6941,37 +6941,37 @@
 <article>
 <header>
 	<h1>CotEditor 0.9.6</h1>
-	<p>Lanzamiento: <time>2008-12-27</time></p>
+	<p>Lanzamiento: <time>27/12/2008</time></p>
 </header>
 
 
 <section>
 <h2>Nuevas características</h2>
 <ul>
-	<li>Added an option allows you to save UTF-8 files with a BOM. (UTF-8 with BOM may cause various problems, use this option with care. OFF by default.)</li>
+	<li>Se ha añadido una opción que le permite guardar archivos UTF-8 con una lista de materiales. (UTF-8 con BOM puede causar varios problemas, use esta opción con cuidado. APAGADO por defecto.)</li>
 </ul>
 </section>
 
 <section>
 <h2>Mejoras</h2>
 <ul>
-	<li>Removed the “A colon (:) is considered as a delimiter when you select a word by double-clicking” feature added on version 0.9.5 (this made expanding the selection with SHIFT-click impossible).</li>
-	<li>Improved syntax coloring accuracy on 10.5.x.</li>
-	<li>Upgraded RegexKitLite to version 2.2.</li>
-	<li>Updated development environment.</li>
+	<li>Se eliminó la función "Un dos puntos (:) se considera un delimitador cuando se selecciona una palabra haciendo doble clic" añadida en la versión 0.9.5 (esto hizo que la expansión de la selección con la tecla MAYÚS y el clic fuera imposible).</li>
+	<li>Precisión de coloración de la sintaxis mejorada en 10.5.x.</li>
+	<li>Actualización de RegexKitLite a la versión 2.2.</li>
+	<li>Entorno de desarrollo actualizado.</li>
 </ul>
 </section>
 
 <section>
 <h2>Correcciones</h2>
 <ul>
-	<li>Fixed a problem where you could drop a folder on the CotEditor icon.</li>
-	<li>Fixed a bug where a newly created Syntax Style couldn’t be saved.</li>
-	<li>Fixed a bug where the name of a copied Syntax Style couldn’t be changed.</li>
-	<li>Cleared unused variables, uninitialized variables and memory leaks from my own code using clang’s scan-build.</li>
-	<li>Fixed a bug where pasting text containing line endings would break the highlight of the current line.</li>
-	<li>When you delete strings from the last line, the first line was highlighted as the current line on 10.5.x. This problem has been fixed.</li>
-	<li>Hitting RETURN while selecting the indent part of line auto-indented the new line. This problem has been fixed.</li>
+	<li>Se ha corregido un problema por el que podías soltar una carpeta en el icono de CotEditor.</li>
+	<li>Se ha corregido un error por el que no se podía guardar un estilo de sintaxis recién creado.</li>
+	<li>Se ha corregido un error por el que no se podía cambiar el nombre de un estilo de sintaxis copiado.</li>
+	<li>Variables no utilizadas borradas, variables no inicializadas y fugas de memoria de mi propio código usando scan-build de clang.</li>
+	<li>Se ha corregido un error por el que pegar texto que contenía terminaciones de línea rompía el resaltado de la línea actual.</li>
+	<li>Cuando eliminas cadenas de la última línea, la primera línea se resaltaba como la línea actual en 10.5.x. Este problema se ha solucionado.</li>
+	<li>Al hacer clic en RETURN mientras se selecciona la parte de sangría de la línea, se sangría automáticamente la nueva línea. Este problema se ha solucionado.</li>
 </ul>
 </section>
 </article>
@@ -6981,39 +6981,39 @@
 <article>
 <header>
 	<h1>CotEditor 0.9.5</h1>
-	<p>Lanzamiento: <time>2008-07-20</time></p>
+	<p>Lanzamiento: <time>20/07/2008</time></p>
 </header>
 
 
 <section>
 <h2>Nuevas características</h2>
 <ul>
-<li>You can now highlight the current line.</li>
-<li>The number of characters from the beginning of the line to the current insertion point is now displayed in the status bar and the Get Info drawer.</li>
-<li>You can now inline Script menu items into contextual menu.</li>
+<li>Ahora puedes resaltar la línea actual.</li>
+<li>El número de caracteres desde el principio de la línea hasta el punto de inserción actual ahora se muestra en la barra de estado y en el cajón Obtener información.</li>
+<li>Ahora puedes inlinear los elementos del menú Script en el menú contextual.</li>
 </ul>
 </section>
 
 <section>
 <h2>Mejoras</h2>
 <ul>
-	<li>Revised coloring process on 10.4 or later and adopted RegexKitLite for regular expression search of the syntax coloring function, which made coloring speed about 1.5-4.0 times faster compared to version 0.9.3. (Note that there are slight differences between the new and old regular expression syntax. The default coloring rules are not affected by the differences. See “ReadMe-en.rtf” for more details.)</li>
+	<li>Se revisó el proceso de coloración en 10.4 o posterior y adoptó RegexKitLite para la búsqueda de expresiones regulares de la función de coloración de sintaxis, lo que hizo que la velocidad de coloración fuera aproximadamente 1,5-4,0 veces más rápida en comparación con la versión 0.9.3. (Tenga en cuenta que hay ligeras diferencias entre la sintaxis de la expresión regular nueva y la antigua. Las reglas de coloración predeterminadas no se ven afectadas por las diferencias. Consulte "ReadMe-en.rtf" para obtener más detalles.)</li>
 	<li>When opening a read-only document, the warning message is now displayed immediately (used to be displayed when making a change).</li>
-	<li>Resized the Print dialog smaller.</li>
-	<li>Modified the way of displaying invisible characters (10.4 or later).</li>
-	<li>Improved the performance of text inputting.</li>
-	<li>A colon (:) is now considered as a delimiter when you select a word by double-clicking.</li>
-	<li>Modified the way of updating Outline Menu during inputting text in order to prevent screen flickering.</li>
-	<li>“Show wrapped-line mark” in the Window preference and “Fix line height with composite font” in the Format preference are now turned on by default.</li>
-	<li>Removed “Bounce Dock icon on each file change by another process” from the General preference pane (the setting still works internally, turned on by default).</li>
-	<li>Modified the item layout of the Get Info drawer.</li>
-	<li>If the “Sync Find strings with other apps” option is turned on, the strings in the Find field are now all selected only when they are retrieved, and making CotEditor frontmost does not cancel the selection anymore.</li>
-	<li>When closing the Edit Style sheet by pressing OK, a warning message is now displayed if some errors were detected.</li>
-	<li>Placed the shortcut button for Help on each Preferences pane.</li>
-	<li>When CotEditor Preferences is already opened, selecting “Preferences…” now just makes the Preferences window frontmost without centering it.</li>
-	<li>CotEditor Preferences no longer shows the oval button in the top-right corner of the window (10.4 or later).</li>
-	<li>Modified the look of the default Style Name on the Edit Style sheet.</li>
-	<li>Optimized source code.</li>
+	<li>Redimensionar el cuadro de diálogo Imprimir más pequeño.</li>
+	<li>Se modificó la forma de mostrar caracteres invisibles (10.4 o posterior).</li>
+	<li>Mejorado el rendimiento de la entrada de texto.</li>
+	<li>Los dos puntos (:) ahora se consideran un delimitador cuando se selecciona una palabra haciendo doble clic.</li>
+	<li>Se modificó la forma de actualizar el menú de esquema al introducir texto para evitar el parpadeo de la pantalla.</li>
+	<li>"Mostrar marca de línea envuelta" en la preferencia Ventana y "Fijar altura de línea con fuente compuesta" en la preferencia Formato ahora están activados de forma predeterminada.</li>
+	<li>Se ha eliminado el "Icono de Bounce Dock en cada cambio de archivo por otro proceso" del panel de preferencias generales (la configuración sigue funcionando internamente, activada de forma predeterminada).</li>
+	<li>Se modificó el diseño del artículo del cajón Obtener información.</li>
+	<li>Si la opción "Sincronizar búsqueda de cadenas con otras aplicaciones" está activada, las cadenas en el campo Buscar ahora se seleccionan solo cuando se recuperan, y hacer que CotEditor esté en primer plano ya no cancela la selección.</li>
+	<li>Al cerrar la hoja de estilo de edición pulsando OK, ahora se muestra un mensaje de advertencia si se detectan algunos errores.</li>
+	<li>Se ha colocado el botón de acceso directo para ayuda en cada panel de Ajustes.</li>
+	<li>Cuando Ajustes CotEditor ya está abierto, seleccionar "Ajustes..." ahora solo hace que la ventana de Ajustes esté en primer plano sin centrarla.</li>
+	<li>Los ajustes de CotEditor ya no muestran el botón ovalado en la esquina superior derecha de la ventana (10.4 o posterior).</li>
+	<li>Se modificó el aspecto del nombre de estilo predeterminado en la hoja Editar estilo.</li>
+	<li>Código fuente optimizado.</li>
 </ul>
 
 </section>
@@ -7021,23 +7021,23 @@
 <section>
 <h2>Correcciones</h2>
 <ul>
-	<li>Fixed a bug where the line endings of strings generated by drag-and-dropping or copy-and-pasting were always LF.</li>
-	<li>Fixed a coloring issue when pasting at the end of a sentence.</li>
-	<li>Fixed a bug where syntax coloring had not been updated after performing Replace.</li>
-	<li>Fixed a bug where the Line Number display and the Outline Menu display and the Incompatible Char list had not been updated after performing Replace All.</li>
-	<li>Revised the English resource of About window.</li>
-	<li>Fixed a bug where updating Line Number display would cause an endless loop when invisible characters are showed.</li>
-	<li>When a read-only document was saved as another file, the new file also showed the read-only icon. This problem has been fixed.</li>
-	<li>If you closed the Find panel while the Find All window opened, switching applications recreated the panel and there was no way to close it. This problem has been fixed.</li>
-	<li>Fixed a bug where editing text erased the highlight.</li>
-	<li>Fixed a bug where performing Unhighlight after highlighting colored strings erased the color.</li>
-	<li>Fixed an Edit Style sheet issue where the “Set to Factory Defaults” button would become active incorrectly on 10.5.</li>
-	<li>On 10.5, when you pressed “+” button on the Edit Style sheet the added item did not become instantly editable, now it does.</li>
-	<li>After editing a syntax style in the Syntax preference an already opened document using that style will be re-colored when it is made frontmost, but all documents were actually re-colored regardless of their styles. This problem has been fixed.</li>
-	<li>When CotEditor is not in front, selecting “New” or “Open…” from the Dock icon did not make the new window frontmost. This problem has been fixed.</li>
-	<li>Fixed an image lag issue when changing the transparency of text view.</li>
-	<li>When the window was split, changing the transparency of text view did not apply to all views. This problem has been fixed.</li>
-	<li>Removed a redundant item from the default coloring definition for PHP.</li>
+	<li>Se ha corregido un error por el que los finales de línea de las cadenas generadas por arrastrar y soltar o copiar y pegar siempre eran LF.</li>
+	<li>Se ha corregido un problema de coloración al pegar al final de una oración.</li>
+	<li>Se ha corregido un error por el que el color de la sintaxis no se había actualizado después de realizar Reemplazar.</li>
+	<li>Se ha corregido un error por el que la visualización del número de línea y la visualización del menú de contorno y la lista de caracteres incompatibles no se habían actualizado después de realizar Reemplazar todo.</li>
+	<li>Se revisó el recurso en inglés de About window.</li>
+	<li>Se ha corregido un error por el que actualizar la visualización del número de línea provocaba un bucle sin fin cuando se mostraban caracteres invisibles.</li>
+	<li>Cuando se guardaba un documento de solo lectura como otro archivo, el nuevo archivo también mostraba el icono de solo lectura. Este problema se ha solucionado.</li>
+	<li>Si cerraste el panel Buscar mientras se abría la ventana Buscar todo, las aplicaciones de cambio recrearon el panel y no había forma de cerrarlo. Este problema se ha solucionado.</li>
+	<li>Se ha corregido un error por el que la edición de texto borraba el resaltado.</li>
+	<li>Se ha corregido un error por el que la ejecución de Unhighlight después de resaltar las cadenas de colores borraba el color.</li>
+	<li>Se ha corregido un problema de editar la hoja de estilo por el que el botón "Establecer a los valores predeterminados de fábrica" se activaba incorrectamente en 10.5.</li>
+	<li>En 10.5, cuando presionaste el botón "+" en la hoja Editar estilo, el elemento añadido no se volvió editable al instante, ahora sí.</li>
+	<li>Después de editar un estilo de sintaxis en la preferencia de sintaxis, un documento ya abierto que usa ese estilo se volverá a colorear cuando se haga más adelante, pero en realidad todos los documentos se volvieron a colorear independientemente de sus estilos. Este problema se ha solucionado.</li>
+	<li>Cuando CotEditor no está al frente, seleccionar "Nuevo" o "Abrir..." en el icono del Dock no hizo que la nueva ventana estuviera en la parte delantera. Este problema se ha solucionado.</li>
+	<li>Se ha corregido un problema de retraso de imagen al cambiar la transparencia de la vista de texto.</li>
+	<li>Cuando se partió la ventana, cambiar la transparencia de la vista de texto no se aplicaba a todas las vistas. Este problema se ha solucionado.</li>
+	<li>Se ha eliminado un elemento redundante de la definición de color predeterminada para PHP.</li>
 </ul>
 </section>
 </article>
@@ -7047,49 +7047,49 @@
 <article>
 <header>
 	<h1>CotEditor 0.9.4</h1>
-	<p>Lanzamiento: <time>2008-02-01</time></p>
+	<p>Lanzamiento: <time>01/02/2008</time></p>
 </header>
 
 
 <section>
 <h2>Nuevas características</h2>
 <ul>
-	<li>Added support for the “com.apple.TextEncoding” extended attribute in order to read/write the encoding of a file (requires Mac OS X 10.5 or later).</li>
-	<li>The progress sheet showing coloring activity now has the Cancel button.</li>
-	<li>You can now print a file with syntax coloring enabled.</li>
+	<li>Se ha añadido soporte para el atributo extendido "com.apple.TextEncoding" para leer/escribir la codificación de un archivo (requiere Mac OS X 10.5 o posterior).</li>
+	<li>La hoja de progreso que muestra la actividad para colorear ahora tiene el botón Cancelar.</li>
+	<li>Ahora puedes imprimir un archivo con el color de sintaxis habilitado.</li>
 </ul>
 </section>
 
 <section>
 <h2>Mejoras</h2>
 <ul>
-	<li>Bundled utility scripts written in Ruby.</li>
-	<li>The Go To panel now automatically closes after the operation.</li>
-	<li>“Auto expand tabs to spaces” in the Format preference is now turned off by default.</li>
-	<li>Single clicking on a character in the Incompatible Char drawer selects the corresponding character (double clicking used to be needed).</li>
-	<li>Made some performance optimizations, for example, a document having no syntax coloring rule (such as a ‘Plain Text’ file) no longer displays coloring progress.</li>
-	<li>Implemented new highlight style for Find results (requires Mac OS X 10.5 or later).</li>
-	<li>Selecting other than “Auto-Detect” for “File Encoding &gt; when opening a file” in the Format preference now brings up a warning message.</li>
-	<li>The Find function can now automatically retrieve the latest Find string searched in another Cocoa application.</li>
-	<li>Modified some of the alternative characters to a half-width space.</li>
-	<li>Readjusted invisible character display position.</li>
-	<li>Adjusted the layout of the Preferences panes.</li>
-	<li>Updated build environment to 10.5.1 + Xcode 3.0.</li>
-	<li>Changed some build options (SDKROOT=10.4u, SDKROOT_i386=&quot;&quot;, SDKROOT_ppc=&quot;&quot;, etc.).</li>
+	<li>Scripts de utilidad incluidos escritos en Ruby.</li>
+	<li>El panel Ir a ahora se cierra automáticamente después de la operación.</li>
+	<li>"Ampliar automáticamente las pestañas a espacios" en la preferencia Formato ahora está desactivado de forma predeterminada.</li>
+	<li>Un solo clic en un carácter en el cajón de caracteres incompatibles selecciona el carácter correspondiente (solía hacer doble clic).</li>
+	<li>Se han realizado algunas optimizaciones de rendimiento, por ejemplo, un documento que no tiene regla de coloración de sintaxis (como un archivo de "Texto plano") ya no muestra el progreso de coloración.</li>
+	<li>Se ha implementado un nuevo estilo de resaltado para encontrar resultados (requiere Mac OS X 10.5 o posterior).</li>
+	<li>Selección que no sea "Detección automática" para "Codificación de archivos" &gt; al abrir un archivo", en la preferencia Formato, ahora aparece un mensaje de advertencia.</li>
+	<li>La función Buscar ahora puede recuperar automáticamente la última cadena de búsqueda buscada en otra aplicación de cacao.</li>
+	<li>Se modificaron algunos de los caracteres alternativos a un espacio de medio ancho.</li>
+	<li>Posición de visualización del carácter invisible reajustado.</li>
+	<li>Se ha ajustado el diseño de los paneles de Preferencias.</li>
+	<li>Entorno de compilación actualizado a 10.5.1 + Xcode 3.0.</li>
+	<li>Se han cambiado algunas opciones de construcción (SDKROOT=10.4u, SDKROOT_i386=&quot;&quot;, SDKROOT_ppc=&quot;&quot;, etc.).</li>
 </ul>
 </section>
 
 <section>
 <h2>Correcciones</h2>
 <ul>
-	<li>Fixed a bug where the “Create a new document on startup” and “Open blank window with a reopen AppleEvent” settings in the General preference wouldn’t be reflected.</li>
-	<li>Auto-detection of UTF-16 (on Intel machines) and UTF-8 BOM didn’t work properly. This problem has been fixed.</li>
-	<li>When a document has only one multi-page-long line, the text view would be forcibly scrolled to the last page. This problem has been fixed.</li>
-	<li>Fixed a bug where changing “Encoding” in the Open dialog also changed the “File Encoding” setting for opening files.</li>
-	<li>Fixed a bug where drag-and-dropping text containing line endings in the same document wouldn’t work properly on Mac OS X 10.5.1.</li>
-	<li>Fixed the line number display on Mac OS X 10.5.1.</li>
-	<li>Fixed a bug where the “Line numbers” and “Invisible Chars” settings in the Print dialog didn’t work properly.</li>
-	<li>Some of the warning messages were not localized into Japanese. This problem has been fixed.</li>
+	<li>Se ha corregido un error por el que la configuración "Crear un nuevo documento al inicio" y "Abrir una ventana en blanco con un AppleEvent de reapertura" en la preferencia general no se reflejabad.</li>
+	<li>La detección automática de UTF-16 (en máquinas Intel) y la lista de materiales UTF-8 no funcionó correctamente. Este problema se ha solucionado.</li>
+	<li>Cuando un documento tiene solo una línea de varias páginas, la vista de texto se desplazaría por la fuerza hasta la última página. Este problema se ha solucionado.</li>
+	<li>Se ha corregido un error por el que cambiar "Codificación" en el cuadro de diálogo Abrir también se cambiaba la configuración de "Codificación de archivos" para abrir archivos.</li>
+	<li>Se ha corregido un error por el que arrastrar y soltar texto que contenía terminaciones de línea en el mismo documento no funcionaba correctamente en Mac OS X 10.5.1.</li>
+	<li>Se ha corregido la visualización del número de línea en Mac OS X 10.5.1.</li>
+	<li>Se ha corregido un error por el que la configuración de "Números de línea" y "Charlas invisibles" en el cuadro de diálogo Imprimir no funcionaba correctamente.</li>
+	<li>Algunos de los mensajes de advertencia no estaban traducidos en japonés. Este problema se ha solucionado.</li>
 </ul>
 </section>
 </article>
@@ -7099,39 +7099,39 @@
 <article>
 <header>
 	<h1>CotEditor 0.9.3</h1>
-	<p>Lanzamiento: <time>2007-10-01</time></p>
+	<p>Lanzamiento: <time>01/10/2007</time></p>
 </header>
 
 
 <section>
 <h2>Nuevas características</h2>
 <ul>
-	<li>The character encoding (IANA character encoding name) and the line ending style in use are now displayed on the status bar.</li>
-	<li>You can now exclude line endings from character count.</li>
+	<li>La codificación de caracteres (nombre de codificación de caracteres IANA) y el estilo de final de línea en uso ahora se muestran en la barra de estado.</li>
+	<li>Ahora puedes excluir los finales de línea del recuento de caracteres.</li>
 </ul>
 </section>
 
 <section>
 <h2>Mejoras</h2>
 <ul>
-	<li>Added syntax style files for Haskell and Python.</li>
-	<li>Revised English localization.</li>
-	<li>Added the Unhighlight button to the Find panel.</li>
-	<li>The parameter string of a shell script for storing output data in the clipboard has been changed to 'Pasteboard' (the existing parameter 'Pasteboard puts' can also be used as before).</li>
-	<li>While an input method is translating, the composed text is no longer considered as a selection in the status bar and the Get Info drawer.</li>
-	<li>CotEditor runs an AppleScript when launching (as in version 0.9.1 or earlier).</li>
+	<li>Se han añadido archivos de estilo de sintaxis para Haskell y Python.</li>
+	<li>Revisada la traducción en inglés.</li>
+	<li>Se ha añadido el botón Desresaltar al panel Buscar.</li>
+	<li>La cadena de parámetros de un script de shell para almacenar datos de salida en el portapapeles se ha cambiado a "Pasteboard" (el parámetro existente "Pasteboard puts" también se puede usar como antes)).</li>
+	<li>Mientras que un método de entrada está traduciendo, el texto compuesto ya no se considera como una selección en la barra de estado y en el cajón Obtener información.</li>
+	<li>CotEditor ejecuta un AppleScript al iniciar (como en la versión 0.9.1 o anterior).</li>
 </ul>
 </section>
 
 <section>
 <h2>Correcciones</h2>
 <ul>
-	<li>When switching panes in the CotEditor preferences using the Tab/arrow/Space key, the toolbar items didn’t appear as currently selected. This problem has been fixed.</li>
-	<li>Corrected a problem where an image could be pasted into the Find panel’s Replace field.</li>
-	<li>Fixed some scrolling bugs.</li>
-	<li>Fixed a bug where the menu wasn’t updated after importing a new syntax file.</li>
-	<li>Some of the “pre-formatted string” menu items in the File Drop preferences pane didn’t show tooltips. This problem has been fixed.</li>
-	<li>Showing invisible characters such as control characters would slow down the application performance. This problem has been slightly fixed.</li>
+	<li>Al cambiar los paneles en las preferencias de CotEditor usando la tecla Tab/flecha/Espacio, los elementos de la barra de herramientas no aparecieron como se han seleccionado actualmente. Este problema se ha solucionado.</li>
+	<li>Se ha corregido un problema en el que se podía pegar una imagen en el campo Reemplazar del panel Buscar.</li>
+	<li>Se han corregido algunos errores de desplazamiento.</li>
+	<li>Se ha corregido un error por el que el menú no se actualizaba después de importar un nuevo archivo de sintaxis.</li>
+	<li>Algunos de los elementos del menú "cadena preformateada" en el panel de preferencias de File Drop no mostraban información sobre herramientas. Este problema se ha solucionado.</li>
+	<li>Mostrar caracteres invisibles, como los de control, ralentizaría el rendimiento de la aplicación. Este problema se ha solucionado ligeramente.</li>
 </ul>
 </section>
 </article>
@@ -7141,7 +7141,7 @@
 <article>
 <header>
 	<h1>CotEditor 0.9.2</h1>
-	<p>Lanzamiento: <time>2006-10-14</time></p>
+	<p>Lanzamiento: <time>14/10/2006</time></p>
 </header>
 
 
